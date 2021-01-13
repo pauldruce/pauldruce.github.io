@@ -6,6 +6,7 @@ compile:
 
 production:
 		JEKYLL_ENV=production bundle exec jekyll build
+		git push -f origin `git subtree split --prefix _site/ master`:gh-pages
 
 development:
 		bundle exec jekyll serve --livereload --host 0.0.0.0
