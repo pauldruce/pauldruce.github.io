@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<!-- <script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-134367955-1', 'auto');
+  ga('send', 'pageview');
+}
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134367955-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134367955-1');
+</script>
+
+<!--- MathJax Configuration -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Set Theory Questions - Unfinished | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Set Theory Questions - Unfinished" />
+<meta name="author" content="Paul Druce" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If you find errors in any of the question here, please feel free to leave a comment below and I will fix it ASAP." />
+<meta property="og:description" content="If you find errors in any of the question here, please feel free to leave a comment below and I will fix it ASAP." />
+<link rel="canonical" href="https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html" />
+<meta property="og:url" content="https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html" />
+<meta property="og:site_name" content="Paul J Druce’s site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Set Theory Questions - Unfinished" />
+<script type="application/ld+json">
+{"url":"https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html","headline":"Set Theory Questions - Unfinished","dateModified":"2020-11-02T00:00:00+00:00","datePublished":"2020-11-02T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html"},"author":{"@type":"Person","name":"Paul Druce"},"description":"If you find errors in any of the question here, please feel free to leave a comment below and I will fix it ASAP.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper"><a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="75px" width="75px" /></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce&#39;s site</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          <a class="page-link" href="/CV"> CV </a>
+          
+          <a class="page-link" href="/research"> Research </a>
+          
+          <a class="page-link" href="/tutoring"> Tutoring </a>
+          
+          <a class="page-link" href="/posts"> All Posts </a>
+          
+          <a class="page-link" href="/aboutme"> About Me </a>
+          
+          <!---->
+        </div>
+      </nav></div>
+</header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Set Theory Questions - Unfinished</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-11-02T00:00:00+00:00" itemprop="datePublished">Nov 2, 2020
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <p>If you find errors in any of the question here, please feel free to leave a comment below and I will fix it ASAP.</p>
+<details open>
+<summary>
+<div class="question" name="Cartesian Conundrum">
+<p>Let <span class="math inline">\(A = \{\text{badger, snake, mushroom}\}\)</span> and <span class="math inline">\(\{\text{snake, mushroom, fox}\}\)</span>.</p>
+<ol type="a">
+<li>Write down <span class="math inline">\(A\cap B\)</span></li>
+<li>Write down <span class="math inline">\(A \cup B\)</span></li>
+<li>Write down <span class="math inline">\(A\setminus B\)</span></li>
+<li>Write down <span class="math inline">\(A\times B\)</span>.</li>
+</ol>
+</div>
+</summary>
+<p><u> Solutions </u></p>
+<ol type="a">
+<li><span class="math inline">\(A = \{snake, mushroom\}\)</span></li>
+<li></li>
+</ol>
+</details>
+<div class="question">
+<p>Which of the following does <span class="math inline">\(A \cap (B\cup C)\)</span> equal?</p>
+<ol type="1">
+<li><span class="math inline">\((A \cup B) \cap (A\cup C)\)</span></li>
+<li><span class="math inline">\((A \cap B) \cup C\)</span></li>
+<li><span class="math inline">\((A \cap B) \cup (A \cap C)\)</span></li>
+<li><span class="math inline">\(B \cup (A\cap C)\)</span></li>
+</ol>
+<p>Which of the above does <span class="math inline">\(A\cup (B\cap C)\)</span> equal?</p>
+</div>
+<div class="question">
+<p>Donald Trump is writing his speech for the next rally he is going to. He decides his sentences won’t contain more than 5 words taken from the following list of words: <span class="math display">\[\text{The Best Words} = \{\text{tremendous}, \text{huge}, \text{bigly} , \text{billions}, \text{wall}\}\]</span></p>
+<ol type="a">
+<li>How many “sentences” can you form from this list if you can’t repeat words?</li>
+<li>Trump learns a new word “<span class="math inline">\(\text{fake-news}\)</span>”, how many “sentences” can you form now?</li>
+</ol>
+</div>
+<div class="question">
+<p>Find a counter example to the statement <span class="math inline">\(\mathcal{P}(A) \cup \mathcal{P}(B) = \mathcal{P}(A\cup B)\)</span>.</p>
+<p>What is a correct statement between the left and right side of the equality above?</p>
+</div>
+<details open>
+<summary>
+<div class="question">
+<p>You are making a multiplayer racing game. The players have a choice of the following characters: <span class="math inline">\(\text{CHAR} = \{\text{pikachu, bulbasaur, charmander, venosaur} \}\)</span>.</p>
+<ol type="a">
+<li>Write down all the possible pairings of characters.
+<ul>
+<li>What set operation would form this set?</li>
+<li>How many pairings are there? What is the set operation that would give you this value?</li>
+</ul></li>
+<li>One of the people playing has paid the company extra money to unlock a premium character, they now have the choice of <span class="math inline">\(\text{CHAR}^* = \{\text{pikachu, } \text{bulbasaur, } \text{charmander, } \text{venosaur, } \text{meowth}\}.\)</span> What are all the possible pairings now?</li>
+<li>The player who has unlocked the <span class="math inline">\(\text{CHAR}^*\)</span> selection always plays with meowth. What are the possible pairings now?
+<ul>
+<li>Calculate the size of this set.</li>
+</ul></li>
+</ol>
+</div>
+</summary>
+<p><u> Solutions </u></p>
+<ol type="a">
+<li>All the possible pairings are as follows: <span class="math display">\[\begin{align} \{ &amp; (\text{bulbasaur,bulbasaur}),(\text{bulbasaur,charmander}),(\text{bulbasaur,pikachu}),\\
+  &amp;(\text{bulbasaur,venosaur}),(\text{charmander,bulbasaur}),(\text{charmander,charmander}),\\
+  &amp;(\text{charmander,pikachu}),(\text{charmander,venosaur}),(\text{pikachu,bulbasaur}),\\
+  &amp;(\text{pikachu,charmander}),(\text{pikachu,pikachu}),(\text{pikachu,venosaur}),\\
+  &amp;(\text{venosaur,bulbasaur}),(\text{venosaur,charmander}),(\text{venosaur,pikachu}),\\
+ &amp;(\text{venosaur,venosaur}) \}
+\end{align}
+\]</span> Which is given by the cartesian product of <span class="math inline">\(\text{CHAR}\)</span> with itself, i.e. <span class="math inline">\(\text{CHAR}\times \text{CHAR}\)</span>. There are <span class="math inline">\(16\)</span> total pairings which is given by the cardinality of the cartesian product, i.e. <span class="math inline">\(|\text{CHAR}\times \text{CHAR}|\)</span>.</li>
+</ol>
+</details>
+<div class="question">
+<p>State which of the following relations are <em>reflexive, transitive, symmetry</em>.</p>
+<p>Let <span class="math inline">\(R\)</span> be the set of relations <span class="math inline">\((a,b)\)</span>,</p>
+<ol type="a">
+<li>where <span class="math inline">\(a,b\in \mathbb{N}\)</span> such that <span class="math inline">\(a&lt;b\)</span>.</li>
+<li>where <span class="math inline">\(a,b\in \mathbb{N}\)</span> such that <span class="math inline">\(a\leq b\)</span></li>
+<li>where <span class="math inline">\(a\)</span> is a country and <span class="math inline">\(b\)</span> is the capital city of <span class="math inline">\(a\)</span>.</li>
+<li>where <span class="math inline">\(a,b\)</span> are people such that <span class="math inline">\(b\)</span> is a relative of <span class="math inline">\(a\)</span>.</li>
+<li>where <span class="math inline">\(a,b\)</span> are people such that <span class="math inline">\(b\)</span> is an ancestor of <span class="math inline">\(a\)</span>.</li>
+</ol>
+</div>
+<h2 id="functions-special-maps-between-sets">Functions: Special maps between sets</h2>
+<p>Most people think they have a good understanding of what a function is. However, the definition in set theory typically causes some issues. “What do you mean the square-root isn’t a function?”, “I want a function that characterises my blog posts in the categories. Why is that an issue?”. These are questions that are very reasonable to ask, and as always in mathematics, understanding why these questions might be asked comes down to understanding the <strong>definition</strong> of a function.</p>
+<p>So a function is a subset of the cartesian product, <span class="math inline">\(A\times B\)</span> of two sets <span class="math inline">\(A,B\)</span>, such that there is only one elements in the subset for each and every element <span class="math inline">\(a\in A\)</span>.</p>
+<p>This definition is complete, but it lacks depth. It’s nice, it’s short, you can rattle it off in an exam say, but this doesn’t help you understand unless you pick it apart, word by word.</p>
+<p>So let’s do that.</p>
+<details>
+<summary>
+<div class="question">
+<p>Are the following maps functions? If they aren’t can you change the domain and/or the co-domain, to make them functions?</p>
+<ol type="a">
+<li><span class="math inline">\(f:\mathbb{N}\to\mathbb{N}\)</span>, <span class="math inline">\(f(x) = x^2\)</span></li>
+<li><span class="math inline">\(f:\mathbb{N}\to\mathbb{N}\)</span>, <span class="math inline">\(f(x) = x+3\)</span></li>
+<li><span class="math inline">\(f:\mathbb{N}\to\mathbb{N}\)</span>, <span class="math inline">\(f(x) = x-3\)</span></li>
+<li><span class="math inline">\(f:\mathbb{N}\to\mathbb{N}\)</span>, <span class="math inline">\(f(x) = \sqrt{x}\)</span></li>
+</ol>
+</div>
+</summary>
+<p><u> Solutions</u></p>
+<ol type="a">
+<li>Yes this is a function, every element of <span class="math inline">\(\mathbb{N}\)</span> has a unique square, so every element of <span class="math inline">\(\mathbb{N}\)</span> is mapped to an element of <span class="math inline">\(\mathbb{N}\)</span>. Note that we don’t require that every element of the co-domain be a square number.</li>
+<li>Yes this is a function. For every element, <span class="math inline">\(x\)</span>, of <span class="math inline">\(\mathbb{N}\)</span>, <span class="math inline">\(x+3\)</span> is again a unique natural number. Note that despite the numbers <span class="math inline">\(0,1,2\)</span> in the co-domain not being “hit” by this function, it still satisfies the definition, just as the above example.</li>
+<li>This is not a function, this is because the elements <span class="math inline">\(0,1,2\in \mathbb{N}\)</span> do not get mapped. There are no elements <span class="math inline">\(-3,-2,-1\)</span> in <span class="math inline">\(\mathbb{N}\)</span>. This map can be made into a function if we remove the problematic values from the domain. I.e. if we define <span class="math inline">\(f\colon \mathbb{N}\setminus \{0,1,2\} \to \mathbb{N}\)</span>. Then this is perfectly valid function. Alternatively, if we enhanced the co-domain from <span class="math inline">\(\mathbb{N}\)</span> to the integers <span class="math inline">\(\mathbb{Z}\)</span>, then <span class="math inline">\(f\colon \mathbb{N} \to \mathbb{Z}\)</span> is also a perfectly valid function.</li>
+<li>No this is not a function, as <span class="math inline">\(\sqrt{2}\notin \mathbb{N}\)</span>. Making this into a valid function requires a bit of thinking. We need to include the irrational numbers, which can be done by enlarging the co-domain from the natural numbers to the real numbers, i.e. <span class="math inline">\(f\colon \mathbb{N} \to \mathbb{R}\)</span>. BUT, this introduces a new issue. The square-root function is not single valued over this new co-domain. Both <span class="math inline">\(-\sqrt{2}\)</span> and <span class="math inline">\(+\sqrt{2}\)</span> are valid under this map, this means that the pairs <span class="math inline">\((2,-\sqrt{2})\)</span> and <span class="math inline">\((2,\sqrt{2})\)</span> are in this map. So we need to remove this duplicity. This can be done in two simple ways by defining <span class="math inline">\(\mathbb{R}^+ = \{x\in \mathbb{R} \ | \ x\geq 0\}\)</span> and <span class="math inline">\(\mathbb{R}^- \{ x\in \mathbb{R} \ | \ x&lt;0\}\)</span>. Then <span class="math inline">\(\sqrt{x}\colon \mathbb{N} \to \mathbb{R}^+\)</span> and <span class="math inline">\(\sqrt{x}\colon \mathbb{N} \to \mathbb{R}^-\)</span> are now perfectly valid functions. Note that there are many other ways to make this a well defined function, but these are the most common. Note that <span class="math inline">\(\sqrt{x}\colon\mathbb{R}\to \mathbb{R}^{\pm}\)</span> is not a well defined function for a completely different reason. We don’t have real numbers which are the square root of negative numbers. We need to enhance the real numbers to the **complex numbers*. Which requires much more work to understand properly, so we will still to taking square roots of positive real numbers.</li>
+</ol>
+</details>
+<details>
+<summary>
+<div class="question">
+<p>It is common for blogs to try organise their posts into a number of different categories. The aim is then to provide you with links to show posts from different categories for easy viewing. Is the map that sends a blog post to the different categories necessarily a function? Justify your answer.</p>
+</div>
+</summary>
+<p><u> Solutions </u></p>
+No it is not necessary a function. For instance, on my website I sometimes write posts which are notes on a specific topic, questions for a specific topic or posts that contain both questions and notes. If I want to show characterise my posts, the map needed would have to map the posts contain both notes and questions to two different categories. Functions can not, <strong>by definition</strong>, do this. This doesn’t mean that the map in questions isn’t useful, it’s just not a function as defined by set theory.
+</details>
+
+  </div><!-- <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html';
+      this.page.identifier = 'https://pauldruce.github.io/2020/tutoring/2020/11/02/set-theory.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://pauldruce-github-io.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/2020/tutoring/2020/11/02/set-theory.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce&#39;s site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce&#39;s site</li><li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li><li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li><li><a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X"  target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class = "username">ORCID</span> </a> </li><li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
