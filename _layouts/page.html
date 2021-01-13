@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="page">
+
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
+  <div class="page-content">
+    {% if page.toc %}
+    <div class="page-toc">
+      {% include toc.html html=content h_min=1 h_max=2 %}
+    </div>
+    {% endif %}
+    {{ content }}
+  </div>
+
+</article>

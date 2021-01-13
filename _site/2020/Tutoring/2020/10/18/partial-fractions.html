@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<!-- <script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-134367955-1', 'auto');
+  ga('send', 'pageview');
+}
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134367955-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134367955-1');
+</script>
+
+<!--- MathJax Configuration -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Partial Fractions - Unfinished | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="Partial Fractions - Unfinished" />
+<meta name="author" content="Paul Druce" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A guide for A level mathematics students about partial fractions. An explanation of why the procedures work is given along with easy, medium and difficult questions." />
+<meta property="og:description" content="A guide for A level mathematics students about partial fractions. An explanation of why the procedures work is given along with easy, medium and difficult questions." />
+<link rel="canonical" href="https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html" />
+<meta property="og:url" content="https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html" />
+<meta property="og:site_name" content="Paul J Druce’s site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-18T00:00:00+01:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-10-18T00:00:00+01:00","dateModified":"2020-10-18T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html"},"url":"https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html","author":{"@type":"Person","name":"Paul Druce"},"description":"A guide for A level mathematics students about partial fractions. An explanation of why the procedures work is given along with easy, medium and difficult questions.","@type":"BlogPosting","headline":"Partial Fractions - Unfinished","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper"><a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="75px" width="75px" /></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce&#39;s site</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          <a class="page-link" href="/CV"> CV </a>
+          
+          <a class="page-link" href="/research"> Research </a>
+          
+          <a class="page-link" href="/tutoring"> Tutoring </a>
+          
+          <a class="page-link" href="/posts"> All Posts </a>
+          
+          <a class="page-link" href="/aboutme"> About Me </a>
+          
+          <!---->
+        </div>
+      </nav></div>
+</header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Partial Fractions - Unfinished</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-10-18T00:00:00+01:00" itemprop="datePublished">Oct 18, 2020
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <h1 id="summary">Summary</h1>
+<p>For those looking for the tl;dr here is a summary of the techniques:</p>
+<p>The coefficients <span class="math inline">\(a,b,c,A,B,C, \alpha,\beta\)</span> in the table below can be any real number, which need to be found. A polynomial <span class="math inline">\(a_ix^2 + b_ix + c_i\)</span> is said to be irreducible if it has no real roots.</p>
+<center>
+<table>
+<table>
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math display">\[P(x)\over Q(x)\]</span></th>
+<th style="text-align: center;">Partial Fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math display">\[{ax+b \over (x-r_1)(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_2)}\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math display">\[{ax+b \over (x-r)^2}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {B\over (x-r)^2}\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx +c \over (x-r_1)(x-r_2)(x-r_3)} \text{ where } r_1 \neq r_2\neq r_3\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_2)} + {C\over (x-r_3)}\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c \over (x-r_1)^2(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_1)^2} + {C\over (x-r_2)}\]</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c \over (x-r)^3}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {B\over (x-r)^2} + {C\over (x-r)^3}\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math display">\[{\alpha x+\beta \over (ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{ is irreducible}\]</span></td>
+<td style="text-align: center;">No simplification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math display">\[{\alpha x+\beta \over (x-r)(ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{ is irreducible}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {Bx+C\over(ax^2 + bx +c ) }\]</span></td>
+</tr>
+</tbody>
+</table>
+</table>
+</center>
+<p>In general if we have two polynomials <span class="math inline">\(P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\)</span> and <span class="math inline">\(Q(x) = b_m x^m + b_{m-1} x^{m-1} + \dots b_1 x + b_0\)</span>, where <span class="math inline">\(n,m\)</span> are both integers such that <span class="math inline">\(n&lt;m\)</span> and all of the coefficients <span class="math inline">\(a_i, b_i\)</span> are real numbers.</p>
+<p>Then by the fundamental theorem of algebra we can rewrite <span class="math inline">\(Q(x)\)</span> as the product of it’s linear factors <span class="math inline">\((x-r_i)\)</span> and irreducible quadratic factors <span class="math inline">\((a_i x^2 + b_i x +c_i)\)</span>, so we have that <span class="math display">\[Q(x) = (x-r_1)^{j_1} (x-r_2)^{j_2} \cdots(x-r_{m_1})^{j_{m_1}}(a_1 x^2+ b_1x +c_1 )^{k_1}\cdots (a_{m_2} x^2+ b_{m_2}x +c_{m_2} )^{k_{m_2}}\]</span> where <span class="math inline">\(m_1+m_2 = m\)</span>, <span class="math inline">\(j_i\)</span> is the number of times <span class="math inline">\(r_i\)</span> is a root of <span class="math inline">\(Q(x)\)</span> and <span class="math inline">\(k_m\)</span> are positive integers<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">The factors <span class="math inline">\(a_i x^2 + b_ix +c_i\)</span> actually correspond to a pair of complex roots which are conjugate to each other. So <span class="math inline">\(k_i\)</span> is the number of times that these roots are repeated.</span></span>.</p>
+<p>We have that the expression <span class="math inline">\({P(x)/ Q(x)}\)</span> can be written a sum of terms of the form <span class="math display">\[
+{P(x)\over Q(x)} = \sum\limits_{i=1}^{m_1} \sum\limits_{l=1}^{j_i} {A_{il}\over (x-r_i)^l} +  \sum\limits_{i=1}^{m_2} \sum\limits_{l=1}^{k_i} {B_{il}x + C_{il}\over a_i x^2 + b_ix+c_i}
+\]</span></p>
+<h1 id="why-do-we-care-about-partial-fractions">Why do we care about partial fractions?</h1>
+<p>The first question I always ask myself before learning something new, is to ask myself:</p>
+<center>
+<blockquote>
+<p>Why do people care about this? How is it useful?</p>
+</blockquote>
+</center>
+<p>There isn’t a bad answer to this question. I’m not looking for some ground breaking revelation as an answer. I’m looking for the motivation, why people study this, what are the problems they are trying to solve? What is the situation where this topic is involved? If people study an area of mathematics because it is useful for predicting the stock market, that is a valid answer. If people study an area of mathematics because it is ‘elegant’, then that is also perfectly fine. I just want to understand <strong>why</strong> it is useful for stock markets, and <strong>why</strong> they think it is elegant.</p>
+<p>Why do I do this? Well because it helps me. I find myself more motivated to learning something, if I know why I’m doing it, and what it is all about.</p>
+<p>So with that said, let’s look at partial fractions:</p>
+<center>
+<blockquote>
+<p>what are they? why do we care? and how do we solve questions about them?</p>
+</blockquote>
+</center>
+<h2 id="what-are-partial-fractions">What are partial fractions?</h2>
+<p>Partial fractions, or more formally “the method of partial fractions for rational polynomials” is a procedure to write a complicated fraction of polynomials into a sum of simpler ones. It is the reverse process of ‘combining fractions’ when we have multiple fractions with polynomials in the numerator and denominator. For instance take the polynomial: <span class="math display">\[
+{13x + 18 \over 10x^2 + 27x +18}
+\]</span> Can this be written as a sum of simpler polynomials? If it can, how do we find the simple? Well it turns out that it can be written in the following way: <span class="math display">\[
+\begin{align}
+{1 \over 2x + 3} + {4\over 5x+6} &amp;= {5x + 6 + 4\cdot(2x+3)\over (2x+3)(5x+6)}\\
+&amp;={13x + 18 \over 10x^2 + 27x +18}
+\end{align}
+\]</span></p>
+<p>This was entirely un-obvious from the initial fraction, so how do we do this in general? That is what the method of partial fractions provides us.</p>
+<p>Now you might be wondering, why would you want to split a single (but complicated) fraction into multiple (but simpler) fractions? Well that depends who you are, and what you are trying to do. Are you an electrical engineer trying to analyse a complicated circuit? If you are, you may want to switch to the so-called ‘frequency-domain’ from the ‘time-domain’, solve you problems in the frequency domain and then switch back at the very end. Well the process of doing this requires you to integrate rational polynomial expressions, which is far easier if we express them in polynomial form.</p>
+<p>In general the method of partial fractions is useful because it is a lot easier to integrate <span class="math display">\[
+{1 \over 2x + 3} + {4\over 5x+6}
+\]</span> than it is to integrate <span class="math display">\[
+{13x + 18 \over 10x^2 + 27x +18}.
+\]</span></p>
+<h1 id="section"></h1>
+
+  </div><!-- <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html';
+      this.page.identifier = 'https://pauldruce.github.io/2020/tutoring/2020/10/18/partial-fractions.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://pauldruce-github-io.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/2020/tutoring/2020/10/18/partial-fractions.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce&#39;s site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce&#39;s site</li><li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li><li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li><li><a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X"  target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class = "username">ORCID</span> </a> </li><li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+docs:
+  - title: CV
+    url: CV
+  - title: Research
+    url: research
+  - title: Tutoring
+    url: tutoring
+  - title: All Posts
+    url: posts
+  - title: About Me
+    url: aboutme

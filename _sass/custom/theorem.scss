@@ -1,0 +1,91 @@
+// Mathematics Theorem, Definition and Lemma environments
+//  My Custom colors
+$def-colour:       rgb(145, 141, 251);
+$thm-colour:       rgb(255, 104, 105);
+$lem-colour:       rgb(98,126,110);
+
+
+body{
+  // Produce counters (for that every page) to automatically number the lemma, theorem and definition environments.
+  counter-reset: definition theorem lemma example question;
+}
+
+
+// Settings for all environments
+.definition, .theorem, .lemma, .example, .question{
+    display: block;
+    margin: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    font-style: normal;
+}
+.question {
+	border: 2px solid rgb(255/2,0,255/2);
+	display: block;
+	font-style: normal;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin: 5px;
+	padding-left: 10px;
+	&:before {
+		content: "Question " counter(question) ".";
+		counter-increment: question;
+		font-style: normal;
+		font-weight: bold;
+	}
+}
+.question[name] {
+  &:before {
+    content: "Question " counter(question) ". (" attr(name) ") ";
+    counter-increment: question;
+  }
+}
+
+
+.definition:before, .theorem:before, .lemma:before, .example:before{
+  font-weight: bold;
+  font-style: normal;
+}
+
+.example {border-left:2px solid black;}
+.example:before{
+  content: "Example " counter(example) ".";
+  counter-increment: example;
+}
+.example[name]:before{
+  content: "Example " counter(example) ". (" attr(name) ") ";
+  counter-increment: example;
+}
+
+.definition{border: 2px solid $def-colour;}
+.definition:before { // The default environment
+    content: "Definition " counter(definition) ".";
+    counter-increment: definition;
+}
+.definition[name]:before{ // When the definition has been given a name
+  content: "Definition " counter(definition) ". (" attr(name) ") ";
+  counter-increment: definition;
+}
+
+// Settings for the definition environment
+.theorem{border: 2px solid $thm-colour;}
+.theorem:before { // The default theorem environment
+    content: "Theorem " counter(theorem) ".";
+    counter-increment: theorem;
+}
+.theorem[name]:before{ // When the theorem has been given a name
+  content: "Theorem " counter(theorem) ". (" attr(name) ") ";
+  counter-increment: theorem;
+}
+
+// Settings for the lemma environment
+.lemma{border: 2px solid $lem-colour;}
+.lemma:before { // The default lemma environment
+    content: "Lemma " counter(lemma) ".";
+    counter-increment: lemma;
+}
+.lemma[name]:before{ // when the lemma has been given a name
+  content: "Definition " counter(lemma) ". (" attr(name) ") ";
+  counter-increment: lemma;
+}

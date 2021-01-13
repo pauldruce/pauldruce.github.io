@@ -1,0 +1,576 @@
+---
+layout: post
+title: First Year Report
+summary: A report made at the end of the first year of my PhD outlining the motivation and background of the project.
+date: 2016-6-30
+categories: research
+tags: [PhD,document]
+comments: true
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Paul Druce" />
+  <title>First Year Report - Noncommutative Geometry and Quantum Gravity</title>
+  <style type="text/css">
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <h1 class="title">First Year Report - Noncommutative Geometry and Quantum Gravity</h1>
+    <p class="author">Paul Druce</p>
+  </header>
+  <p> This a unstable HTML version of my first year report. <a href="{{ site.url}}/assets/PDFs/Paul_Druce_First_Year_Report_2016.pdf" download> Click here for the pdf version </a>
+  </p>
+
+  <h1 id="motivation">Motivation</h1>
+  <p>Noncommutative geometry<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> is an attempt to generalise the notion of differential geometry. The generalisation is taken by considering the fact that the differential nature of a
+    manifold, <span class="math inline">\(M\)</span>, is encoded in a commutative algebra of smooth functions <span class="math inline">\(C^{\infty}(M)\)</span>. We then pose the question of what sort of structure has similar properties but where the
+    corresponding algebra is noncommutative. This question has been extended to consider Riemannian spin manifolds and their appropriate generalisations with the aim of developing a good model for reality. The standard model of particle physics has a
+    very natural origin within noncommutative geometry and current research is looking into incorporating gravity into the overall picture. To make sense of the basic objects in noncommutative geometry it is useful to cast the corresponding
+    “normal&quot; commutative picture into the correct framework. As the object we wish to generalise is that of a Riemannian spin manifold, below is a brief walk through the basics of spin geometry in the appropriate view point.</p>
+  <h1 id="introduction-to-spin-geometry">Introduction to Spin Geometry</h1>
+  <p>Spin geometry has far reaching applications in mathematics and physics and is the topic on many books and papers. A very thorough and most famous is that by Lawson and Michelsohn <span class="citation" data-cites="LawsonJr:1989ub"></span>
+    however for out applications it is very mathematically dense and there are more digestible books. For the more geometrically incline the book by Friedrich <span class="citation" data-cites="Friedrich:2000wd"></span> is very good and for those who
+    prefer to stay closely related to physics the books by Lawrie <span class="citation" data-cites="Lawrie:2012uz"></span>, Benn and Tucker <span class="citation" data-cites="Benn:1987td"></span> and specifically for those interested in
+    noncommutative geometry and physics the book by Suijlekom <span class="citation" data-cites="vanSuijlekom:2014kl"></span> is excellent.</p>
+  <p>The basic object of interest are called Riemannian spin manifolds. These are manifolds with a riemannian metric and spin structure on them. T he formalism for spinors and therefore particle physics requires such an object, however, there is
+    considerable prerequisite material needed in order to define a spin manifold. To begin with, we start with the definition of a Clifford algebra bundle<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Given a Riemannian manifold,
+    <span class="math inline">\(M\)</span>, we can define a Clifford algebra, <span class="math inline">\(\text{Cl}(T_xM,Q_g)\)</span>, at each point of the manifold, where <span class="math inline">\(T_xM\)</span> is the tangent space at the point
+    <span class="math inline">\(x\)</span> and <span class="math inline">\(Q_g\)</span> is a quadratic form induced by the metric <span class="math inline">\(g\)</span> defined as follows: <span class="math display">\[Q_g(X_x) = g_x(X_x,X_x) \quad
+      \forall X_x \in T_xM\]</span> by letting <span class="math inline">\(x\)</span> vary we can construct the Clifford algebra bundle:</p>
+  <p>The Clifford Algebra bundle <span class="math inline">\(\text{Cl}^+(TM)\)</span> is the fibre bundle<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> over <span class="math inline">\(M\)</span>, where the fibres are the clifford
+    algebras <span class="math inline">\(\text{Cl}(T_xM,Q_g)\)</span> and the transition functions are inherited from the tangent bundle <span class="math inline">\(TM\)</span>, <span class="math inline">\(t_{ij}\colon U_i\cap U_j \to SO(n)\)</span>,
+    where <span class="math inline">\(n = dim(M)\)</span> and their action on <span class="math inline">\(\text{Cl}(T_xM, Q_g)\)</span> is given by: <span class="math display">\[t_{ij}( v_1 v_2 \dots v_k) = t_{ij}(v_1) \dots t_{ij}(v_k)\]</span></p>
+  <p>Given a Clifford algebra bundle we can define the algebra of continuous real-valued sections denoted by <span class="math inline">\(\text{Cliff}^+(M) := \Gamma (\text{Cl}^+(TM))\)</span>. By replacing <span class="math inline">\(Q_g\)</span>
+    with <span class="math inline">\(-Q_g\)</span> we can analogously define <span class="math inline">\(\text{Cl}^-(TM)\)</span> and <span class="math inline">\(\text{Cliff}^-(M)\)</span>. We can also define: <span
+      class="math display">\[\mathbb{C}\text{liff}(M) \vcentcolon=\text{Cliff}^+(M) \otimes_{\mathbb{R}} \mathbb{C}\]</span> which is the space of continuous sections of the bundle of complexified algebras <span
+      class="math inline">\(\mathbb{C}\text{l}(TM)\)</span>. Now we are ready to start describing what spin structures are and therefore what spinors are. As spinors are one of the most fundamental objects in quantum physics, a precise notion of what
+    we mean is desirable.</p>
+  <p>A Riemannian manifold, <span class="math inline">\(M\)</span>, is said to be <span class="math inline">\(spin^{c}\)</span> if there exists a vector bundle<br />
+    <span class="math inline">\((S, M, End(S), f)\)</span> such that there is an algebra bundle isomorphism: <span class="math display">\[
+      <!-- \begin{align} -->
+      \mathbb{C}\text{l}(TM) &amp;\simeq End(S) \qquad \text{$M$ is even dimensional}\\
+      \mathbb{C}\text{l}^0(TM) &amp;\simeq End(S) \qquad \text{$M$ is odd dimensional}
+      <!-- \end{align} -->
+      \]</span> In such a case, the pair <span class="math inline">\((M,S)\)</span> is said to be a <em><span class="math inline">\(spin^c\)</span> structure</em><a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> for <span
+      class="math inline">\(M\)</span>.</p>
+  <p>If a spin<span class="math inline">\(^c\)</span> structure <span class="math inline">\((M,S)\)</span> exists, the we refer to the bundle as the <em>spinor bundle</em> and the sections as <em>spinors</em>. However, not all of these spinors will
+    be physical spinors. As we require physical spinors to be <em>square integrable</em> and so we now define the space of spinors we want.</p>
+  <p>The <em>Hilbert space of square-integrable spinors</em>, denoted <span class="math inline">\(L^2(S)\)</span>, is define by the completion of <span class="math inline">\(\Gamma(S)\)</span> under the norm induced by the following inner product for
+    <span class="math inline">\(\phi_i \in \Gamma(S)\)</span>. : <span class="math display">\[(\phi_1, \phi_2)_M = \int\limits_M \langle \phi_1, \phi_2 \rangle_S \sqrt{g} \mathop{}\!\mathrm{d}x\]</span></p>
+  <p>The inner product of spinors is just the clifford inner product at each point of the manifold, where the inner product on on the Clifford algebras can be defined on basis elements from its quadratic form as follows:</p>
+  <p>Let <span class="math inline">\(\{ e_i\}\)</span> be an orthonormal basis<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> of V. Setting <span class="math inline">\(\alpha = e_1 \dots e_p\)</span> let <span
+      class="math inline">\(\hat{\alpha} = e_p \dots e_1\)</span>, then the inner product is <span class="math display">\[\langle e_{i_1} e_{i_2} \dots e_{i_p}, e_{j_1} e_{j_2} \dots e_{j_q} \rangle \vcentcolon=\langle 1 , e_{i_p} \dots e_{i_2}
+      e_{i_1} e_{j_1} e_{j_2} \dots e_{j_q}\rangle =
+      \begin{cases}
+      0 \quad \text{if $p \neq q$} \\
+      0 \quad \text{if $e_{i_k} \neq e_{j_k} $ for any $k$}\\
+      Q(e_{i_1}) \dots Q(e_{i_p}) \quad \text{otherwise}
+      \end{cases}\]</span> and can be extended linearly to arbitrary elements of <span class="math inline">\(Cl(V,Q)\)</span> by <span class="math inline">\(\langle \alpha , \beta \rangle =\langle 1, \hat{\alpha} \beta \rangle\)</span></p>
+  <p>However, the model we have for reality requires us to be able to pair up each spinor with its anti-particle spinor. To be able to do this mathematically requires us to have not just a spin<span class="math inline">\(^{\mathbb{C}}\)</span>
+    manifold but a <em>spin manifold</em></p>
+  <p>A Riemannian spin<span class="math inline">\(^c\)</span> manifold is called a <em>Riemannian spin manifold</em> if there exists an anti-unitary operator <span class="math inline">\(J_M\colon \Gamma(S) \to \Gamma(S)\)</span> such that:</p>
+  <ol>
+    <li>
+      <p><span class="math inline">\(J_M\)</span> commutes with the action of real valued continuous functions on <span class="math inline">\(\Gamma(S)\)</span>.</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(J_M\)</span> commutes with <span class="math inline">\(\text{Cliff}^-(M)\)</span> in the even cases and with <span class="math inline">\(\text{Cliff}^-(M)^0\)</span> in the odd cases.</p>
+    </li>
+  </ol>
+  <p>The pair <span class="math inline">\((S,J_M)\)</span> is referred to as a <em>spin structure</em> on <span class="math inline">\(M\)</span> and <span class="math inline">\(J_M\)</span> is referred to as the <em>charge conjugation</em> on <span
+      class="math inline">\(M\)</span>. Another important structure which is necessary for understanding the basic objects in noncommutative geometry is the notion of a <em>chirality operator</em>. Let <span
+      class="math inline">\(\{\gamma_a\}_{a=1}^n\)</span> be the generators of <span class="math inline">\(\text{Cliff}^+(M)\big|_U\)</span> for some some open neighbourhood, U, of M, where <span class="math inline">\(\{x_a\}_{a=1}^n\)</span> are the
+    local coordinates. The <span class="math inline">\(\gamma_a\)</span> satisfy: <span class="math inline">\(\gamma_a\gamma_b + \gamma_b\gamma_a = 2 g(\partial_a, \partial_b)\)</span> and if we choose an orthonormal basis for <span
+      class="math inline">\(\Gamma(TM)\big|_U\)</span> then the <span class="math inline">\(\gamma_a\)</span> satisfy the relation: <span class="math display">\[\gamma_a \gamma_b + \gamma_b \gamma_a = 2 \delta_{ab}\]</span>.</p>
+  <p>The <em>chiratity operator</em> can be constructed from the <span class="math inline">\(\gamma_a\)</span> as follows: <span class="math display">\[\gamma_M = (-i)^m \gamma_1 \dots \gamma_n\]</span> where <span class="math inline">\(m =
+      n/2\)</span> (when <span class="math inline">\(n\)</span> is even) or <span class="math inline">\(m = (n-1)/2\)</span> (when n is odd).</p>
+  <h2 id="the-dirac-operator">The Dirac Operator</h2>
+  <p>The Dirac operator can be thought of a “square root” of the Laplacian of a space and contains a lot of information. The Dirac operator describes the dynamics of spinors but also encodes the metric information. Thus if we are given the Dirac
+    operator we can extract the full metric and thus know everything we need to about the space we are making calculations in. Do define it however, the notion of a spin connection is required. Given a Riemannian spin manifold <span
+      class="math inline">\(M\)</span> with spin structure <span class="math inline">\((S,J_M)\)</span>, let <span class="math inline">\(\{E_a\}\)</span> be a local orthonormal basis for <span class="math inline">\(TM\big|_U\)</span> then <span
+      class="math inline">\(g(E_a, E_b) = \delta_{ab}\)</span>. Let <span class="math inline">\(\theta^a\)</span> be the duals to <span class="math inline">\(E_a\)</span>, then the Levi-Civita connection in this basis acts on vectors and one forms in
+    the following way: <span class="math display"> \[ \nabla E_a = \tilde{\Gamma}{}_a{}^b{}_{c} \mathrm{d}{x^c}\otimes E_b \\
+      \nabla \theta^a = - \tilde{\Gamma}{}^a{}_{bc} \mathrm{d}{x^b} \otimes \theta^c \] </span> And recall that if we have an orthonormal basis for <span class="math inline">\(TM|_U\)</span> then we have that <span class="math inline">\(\gamma_a
+      \gamma_b + \gamma_b \gamma_a = 2 \delta_{ab}\)</span>.</p>
+  <p>The spin connection <span class="math inline">\(\nabla^S\)</span> on the Spinor bundle <span class="math inline">\((S, M, End(S), f)\)</span> is the lift of the Levi-Civita connection and in locally is given by: <span
+      class="math display">\[\nabla^S_{a} \psi(x) = \left( \partial_{a} - \frac{1}{4} \tilde{\Gamma}{}^b{}_{ac} \gamma^d \gamma_d \right) \psi(x)\]</span></p>
+  <p>The notion of Clifford multiplication is necessary to define the Dirac operator so we include its definition in this setting below:</p>
+  <p><em>Clifford multiplication</em> is defined as the linear map: <span class="math display">\[\begin{align}
+      c\colon &amp;\Omega_{\text{dR}}^1(M) \times \Gamma(S) \to \Gamma(S) \\
+      &amp;(\omega, \psi) \to \omega^{\#} \cdot \psi\end{align}\]</span> where <span class="math inline">\(\Omega_{\text{dR}}^1(M)\)</span> is the space of 1-forms on <span class="math inline">\(M\)</span> and <span
+      class="math inline">\(\omega^{\#}\)</span> vector field in <span class="math inline">\(\Gamma(TM)\)</span> associated to <span class="math inline">\(\omega\)</span>. The vector field acts an endomorphism on the fibres of <span
+      class="math inline">\(S\)</span> via the embedding <span class="math inline">\(\Gamma(TM) \to \text{Cliff}^+(M)\subset\Gamma(\text{End}(S))\)</span>. Choosing local coordinates for <span class="math inline">\(U\subset M\)</span> we can write
+    <span class="math inline">\(\omega|_U = \omega_a \mathop{}\!\mathrm{d}{x}^a\)</span> and we can write the Clifford multiplication as follows <span class="math display">\[c(\omega,\psi)|_U = \omega_a (\gamma^a \psi)|_U\]</span></p>
+  <p>where the <span class="math inline">\(\mathop{}\!\mathrm{d}{x}^a\)</span> have been identified with <span class="math inline">\(\partial_a\)</span> via the metric and then embedded in <span class="math inline">\(\text{Cliff}^+(M)\)</span> and
+    become the <span class="math inline">\(\gamma^a\)</span>. The pair <span class="math inline">\(\left(\Gamma(S),c\right)\)</span> is a <em>Clifford module</em> and will play an important roll in the noncommutative setting. For completeness the
+    definition for a Clifford module has been included below:</p>
+  <p>A <em>Clifford module</em> over a compact Riemannian manifold <span class="math inline">\((M,g)\)</span> is a pair <span class="math inline">\((\Gamma(E),c)\)</span> where <span class="math inline">\(\Gamma(E)\)</span> is the sections of a
+    smooth vector bundle, <span class="math inline">\(E\)</span>, and <span class="math inline">\(c\)</span> is a <span class="math inline">\(\text{Cl}(TM)\)</span>-module homomorphism from <span class="math inline">\(\Gamma\left(\text{Cl}(TM)\right)
+      \to \Gamma\left( \text{End}\left(\Gamma(E)\right)\right)\)</span></p>
+  <p>We are now ready to define the Dirac operator for a Riemannian manifold, I have included its expression in local coordinates to indicate why so much preparatory work was necessary.</p>
+  <p>The <em>Dirac operator</em> for a spin manifold <span class="math inline">\(M\)</span> with spin structure <span class="math inline">\((S,J_M)\)</span> is the composition of spin connection with Clifford multiplication and can be expressed in
+    local coordinates as: <span class="math display">\[\begin{align}
+      \slashed{D}_M &amp;= c \circ \nabla^S\colon \Gamma(S) \to \Gamma(S)\\
+      \slashed{D}_M \psi(x) &amp;= -i \gamma^a \left(\partial_a - \frac{1}{4}\tilde{\Gamma}{}^b{}_{ac} \gamma^c\gamma_b \right) \psi(x)\end{align}\]</span></p>
+  <p>To see how we can unwrap the Dirac operator and retrieve the metric it is useful to look at the definition of a Dirac operator in terms of vielbeins.</p>
+  <p>Vielbeins are defined as follows: Take an orthonormal basis <span class="math inline">\(\{e_a \}\)</span> for <span class="math inline">\(\Gamma(TM)\)</span> such that<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> <span
+      class="math inline">\(g(e_a,e_b)(x) = \delta_{ab}\)</span>, we can express this basis in terms of the coordinate basis <span class="math inline">\(\{ \partial_{\mu} \}\)</span> as follows <span class="math inline">\(e_a(x) =
+      e{}^{\mu}{}_a(x) \partial_{\mu}(x)\)</span>. A vielbein is defined to be <span class="math inline">\(e{}^{\mu}{}_a\)</span>; the invertible transformation matrix, however the name often extends to the orthonormal basis also. Also
+    note that the metric equation about can now be rewritten as <span class="math inline">\(g_{\mu \nu}(x) e{}^{\mu}{}_a(x) e{}^{\nu}{}_b(x) = \delta_{ab}\)</span> or equivalently <span class="math display">\[g_{\mu \nu}(x) =
+      e{}_\mu^{a}(x) e{}_{\nu}{}^b(x) \delta_{ab}\]</span> where <span class="math inline">\(e{}^\mu_a(x) e{}^{a}{}_{\nu}(x) = \delta{}^\mu{}_\nu\)</span> and <span class="math inline">\(e{}^\mu{}_a(x)
+      e{}^{b}{}_{\mu}(x) = \delta{}_a{}^b\)</span>. The Dirac operator in terms of these vielbeins is defined as below: <span class="math display">\[\slashed{D}_M = -i \gamma^a e{}_a{}^b \nabla^S_b
+      \label{tetdir}\]</span> So given a Dirac operator we can extract the vielbeins and therefore we can reconstruct the full metric.</p>
+  <h1 id="noncommutative-geometry">Noncommutative Geometry</h1>
+  <p>We are now ready to delve into noncommutative geometry and we start with a definition which took many years to refine and is still only appropriate for Riemannian spin geometries , although current research is investigating formalisms for
+    “noncommutative psudeo-Riemannian spin geometry”. A noncommutative geometry is described by a collection of objects called a spectral triple:</p>
+  <p>A <em>spectral triple</em> is a triple <span class="math inline">\(\left( \mathcal{H},\mathcal{A}, D\right)\)</span>, where:</p>
+  <ul>
+    <li>
+      <p><span class="math inline">\(\mathcal{H}\)</span> is a Hilbert space</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\mathcal{A}\)</span> is a <span class="math inline">\(\ast\)</span>-unital algebra represented as bounded operators on <span class="math inline">\(\mathcal{H}\)</span>.</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(D\)</span> is a self-adjoint operator on <span class="math inline">\(\mathcal{H}\)</span> such that the resolvent <span class="math inline">\((i+D)^{-1}\)</span> is a compact operator and <span
+          class="math inline">\(\left[D, a \right]\)</span> is bounded for each <span class="math inline">\(a\in \mathcal{A}\)</span>.</p>
+    </li>
+  </ul>
+  <p>We often require additional structure to our noncommutative geometries if we require them to be appropriate generalisations of Riemannian spin geometries. The first is a <span class="math inline">\(\mathbb{Z}_2\)</span>-grading <span
+      class="math inline">\(\gamma\)</span> on the Hilbert space <span class="math inline">\(\mathcal{H}\)</span> such that: <span class="math display">\[\gamma a = a \gamma \quad (\forall a\in \mathcal{A}), \qquad \gamma D = -D \gamma\]</span> If
+    such a <span class="math inline">\(\gamma\)</span> exists then we the spectral triple is said to be <em>even</em>. The second is an anti-linear map <span class="math inline">\(J\colon \mathcal{H} \to \mathcal{H}\)</span> such that: <span
+      class="math display">\[J^2 = \epsilon, \qquad JD = \epsilon^\prime DJ, \qquad J\gamma = \epsilon^{\prime \prime} \gamma J \quad (\text{when $\gamma$ exists})\]</span> where <span class="math inline">\(\epsilon, \epsilon^{\prime},
+      \epsilon^{\prime \prime}\)</span> take values from Table <a href="#epsilonval" data-reference-type="ref" data-reference="epsilonval">[epsilonval]</a>. We also require If such a <span class="math inline">\(J\)</span> exists then the spectral
+    triple is said to be <em>real</em> and <span class="math inline">\(J\)</span> is referred to the as the <em>real structure</em>.</p>
+
+  <table style width="100%">
+    <tr>
+      <th><span class="math inline">\(n\)</span></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+    </tr>
+    <tr>
+      <td><span class="math inline">\(\epsilon\)</span></td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><span class="math inline">\(\epsilon^{\prime}\)</span></td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><span class="math inline">\(\epsilon^{\prime\prime}\)</span></td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <caption> The values for <span class="math inline">\(\epsilon, \epsilon^{\prime}, \epsilon^{\prime\prime}\)</span> are determined by the <em>KO dimension</em> of the real spectral triple, which for the spectral triple of a Riemannian spin
+      manifold will be equal to the dimension of the manifold modulo 8.</caption>
+  </table>
+
+  <p>We also impose to two extra conditions which are chosen to keep up from straying too far away from commutative geometry. Firstly, using the <span class="math inline">\(J\)</span> operator we can define the <em>opposite algebra</em> which entails
+    the right action of the algebra. If <span class="math inline">\(a\in\mathcal{A}\)</span> then we can define <span class="math inline">\(a^{\circ} = J a^\ast J^{-1}\)</span>. Thus we can define the right action of the algebra on the Hilbert space
+    to be <span class="math inline">\(\psi b = b^{\circ} \psi\)</span>. The first requirement is that: <span class="math display">\[\left[a,b^\circ \right] = 0 \hspace{1cm} \text{Order zero condition}\]</span> which is used to model the fact
+    that if we take a function <span class="math inline">\(f\in C^{\infty}(M)\)</span> for some Riemannian spin manifold and <span class="math inline">\(\psi\)</span> some spinor, then <span class="math inline">\((f\psi)(x) = f(x)\psi(x) = (\psi f
+      )(x)\)</span>. In other words, in commutative geometry we cannot distinguish between left and right actions of the algebra of functions and we want to keep some property of this commutative geometry feature even when the ‘functions’ no longer
+    commute. The other condition is to do with the fact that commutation with the Dirac operator should also commute with the right action:
+    <span class="math display">\[\left[ \left[D,a\right], b^\circ \right] = 0 \hspace{1cm} \text{First order condition}.\]</span> If we again look at commutative geometry, the Dirac operator can be expressed as in Eq <a href="#tetdir"
+      data-reference-type="eqref" data-reference="tetdir">[tetdir]</a>, and thus: <span class="math inline">\(\left[ D, f
+      \right]\psi = -i\gamma^a e_a^b (\nabla^S_b f) \psi\)</span> and so acts as just multiplying pointwise by a function and so will commute with a right multiplication by a function. It is this property we wish to persist in our noncommutative
+    geometry. We also note that there are noncommutative geometry models where higher order conditions are available, notably the work by Boyle and Farnsworth <span class="citation" data-cites="Boyle:2016ut"></span>.</p>
+  <p>We are now ready to write down the spectral triple for a commutative geometry (a Riemannian spin manifold):</p>
+  <p>The real spectral triple for a Riemannian spin manifold, <span class="math inline">\(M\)</span>, with spin structure <span class="math inline">\((S,J_M)\)</span> is the structure <span class="math inline">\(\left(L^2(S), C^{\infty}(M),
+      \slashed{D}_M; \gamma_M, J_M \right)\)</span>, where <span class="math inline">\(L^2(S)\)</span> is the Hilbert space as the space of square integrable spinors and <span class="math inline">\(C^{\infty}(M)\)</span> is the algebra of smooth
+    functions. And where <span class="math inline">\(\slashed{D}_M\)</span>, <span class="math inline">\(\gamma_M\)</span> and <span class="math inline">\(J_M\)</span> are the Dirac operator, chirality operator and charge conjugation as defined in
+    the previous section.</p>
+  <h1 id="fuzzy-space">Fuzzy Space</h1>
+  <p>We are going to look at a specific type of noncommutative geometry, referred to as a <em>fuzzy space</em>. Fuzzy spaces belong to a class of noncommutative geometries called <em>matrix geometries</em>, which briefly are a spectral triple that is
+    a product of a type <span class="math inline">\((0,0)\)</span> matrix geometry with a Clifford module. I will go onto define this is more detail below. Fuzzy spaces can be thought of as approximating Riemannian spin manifold with <span
+      class="math inline">\(n \times n\)</span> matrices where <span class="math inline">\(n\)</span> is an integer free to choose. Firstly, some important facts about Clifford modules have been described:</p>
+  <p>To successfully describe a fuzzy space we have to deal with Clifford algebras over <span class="math inline">\(\mathbb{R}^n\)</span> such that <span class="math inline">\(\text{Cl}(\mathbb{R}^n)\)</span> has generators <span
+      class="math inline">\(\{\gamma_a\}_{a=1}^n\)</span>which satisfy: <span class="math display">\[\gamma_a \gamma_b + \gamma_b \gamma_a = 2 \eta_{ab}\]</span> where <span class="math inline">\(\eta\)</span> is a diagonal matrix with <span
+      class="math inline">\(\pm 1\)</span> in its entries. However, as we still require a Hilbert space in our spectral triple, which in turn requires us to have a positive definite inner product. We require that all the <span
+      class="math inline">\(\gamma_a\)</span>’s are unitary and we have the standard hermitian inner product <span class="math inline">\((u,v) = \sum_i \bar{u}_i v_i\)</span> on the Hilbert space. This requirement doesn’t impose any restrictions on
+    the <span class="math inline">\(\gamma_a\)</span> as they form a finite group and finite groups always have a unitary representation <span class="citation" data-cites="Hamermesh:1962wm"></span>. Which just leaves us to choose a basis of the
+    vector space these elements act on, <span class="math inline">\(V\)</span>, which will be the Hilbert space of our spectral triple, such that the hermitian form is the standard one. Thus, if <span class="math inline">\(\gamma_a^2 = 1\)</span>
+    then <span class="math inline">\(\gamma_a\)</span> is Hermitian and if <span class="math inline">\(\gamma_b^2 = -1\)</span> then <span class="math inline">\(\gamma_b\)</span> is anti-Hermitian. Note that if <span
+      class="math inline">\(\eta\)</span> has <span class="math inline">\(p\)</span> entries of <span class="math inline">\(+1\)</span> and <span class="math inline">\(q\)</span> entries of <span class="math inline">\(-1\)</span>, then we say the
+    Clifford module is of type <span class="math inline">\((p,q)\)</span>, and the number <span class="math inline">\(s = p-q\)</span> (mod 8), called the signature of the clifford module, determines much of the characteristics of the Clifford
+    module. The signature, <span class="math inline">\(s\)</span>, also coincides with the KO-dimension of the associated spectral triple. Representing this Clifford algebra as complex matrices<a href="#fn7" class="footnote-ref"
+      id="fnref7"><sup>7</sup></a>, which act on a vector space <span class="math inline">\(V\)</span>, provides us with the Clifford module we require to define a fuzzy space.</p>
+  <p>Now let us define a type <span class="math inline">\((0,0)\)</span> matrix geometry:</p>
+  <p>A type <span class="math inline">\((0,0)\)</span> matrix geometry<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> is a real spectral triple of KO dimension <span class="math inline">\(s_0 = 0\)</span> and the following objects:
+    <span class="math inline">\((\mathcal{H}_0, \mathcal{A}_0, D_0=0; \gamma_0 = 1, J_0)\)</span></p>
+  <p>It can be shown (see <span class="citation" data-cites="2015JMP....56h2301B"></span>) that all type <span class="math inline">\((0,0)\)</span> matrix geometries are isomorphic to the case when <span class="math inline">\(\mathcal{H}_0\)</span>
+    is a <span class="math inline">\(\mathbb{C}\)</span>-linear vector subspace of <span class="math inline">\(M_n(\mathbb{C})\)</span> such that if <span class="math inline">\(\mathbb{C}^n\)</span> with its standard Hermitian inner product is a
+    faithful left module of the algebra <span class="math inline">\(\mathcal{A}_0\)</span>, we have that <span class="math inline">\(am \in \mathcal{H}_0\)</span> and also <span class="math inline">\(m^*\in \mathcal{H}_0\)</span>. If this is the case
+    then the representation of <span class="math inline">\(\mathcal{A}_0\)</span> on to <span class="math inline">\(\mathcal{H}_0\)</span> is just matrix multiplication, the real structure is just Hermitian conjugation <span
+      class="math inline">\(J_0(\cdot) = (\cdot)^\ast\)</span> and the inner product is just <span class="math inline">\((m_1,m_2) = \text{Tr}( m_1^\ast m_2)\)</span>. It can be shown that all the axioms for a type <span
+      class="math inline">\((0,0)\)</span> matrix geometry are satisfied by this collection of objects (see <span class="citation" data-cites="2015JMP....56h2301B"></span>).</p>
+  <p>We are now ready to define a fuzzy geometry. First we take all of the algebras in question to be <em>simple algebras</em>. Thats means <span class="math inline">\(\mathcal{A} = M_n(\mathbb{C}), M_n(\mathbb{R})\)</span> or <span
+      class="math inline">\(M_{n/2}(\mathbb{H})\)</span>. For the sake of brevity, the assumption that <span class="math inline">\(\mathcal{A} = M_N(\mathbb{C})\)</span> will be taken. Furthermore we impose that <span
+      class="math inline">\(\mathcal{H}_0 = M_n(\mathbb{C})\)</span>, where in the case of <span class="math inline">\(\mathcal{A} = M_{n/2}(\mathbb{H})\)</span> we express the quaternions as <span class="math inline">\(2\times 2\)</span> complex
+    matrices, such that <span class="math inline">\(M_{n/2}(\mathbb{H}) \subset M_n(\mathbb{C})\)</span></p>
+  <p>Let <span class="math inline">\(V\)</span> be a Clifford module of type <span class="math inline">\((p,q)\)</span> with chirality operator <span class="math inline">\(\gamma\)</span> and real structure <span class="math inline">\(C\)</span>. For
+    <span class="math inline">\(p+q\)</span> even let <span class="math inline">\(V\)</span> be irreducible and for <span class="math inline">\(p+q\)</span> odd let the chiral subspaces <span class="math inline">\(V_\pm\)</span> be irreducible. A
+    <em>fuzzy space</em> is a real spectral triple with the following objects</p>
+  <ul>
+    <li>
+      <p><span class="math inline">\(\mathcal{H} = V \otimes M_n(\mathbb{C})\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\mathcal{A} = M_n(\mathbb{C})\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\Gamma = \gamma \otimes 1\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(J = C\otimes J_0\)</span></p>
+    </li>
+  </ul>
+
+  <p>where the inner product on <span class="math inline">\(\mathcal{H}\)</span> is defined by: <span class="math display">\[\langle v_1 \otimes m_1, v_2 \otimes m_2 \rangle = (v_1,v_2) \text{Tr}(m_1^\ast m_2)\]</span> and the action of the algebra
+    is just my multiplication on <span class="math inline">\(M_n(\mathbb{C})\)</span>, i.e. <span class="math inline">\(\rho(a)(v\otimes m) = v \otimes (am)\)</span>. The actions of <span class="math inline">\(\Gamma\)</span> and <span
+      class="math inline">\(J\)</span> on an element of <span class="math inline">\(\mathcal{H}\)</span> are as follows: <span class="math display">\[\Gamma(v\otimes m) = \gamma v \otimes m, \qquad J(v \otimes m) = Cv \otimes m^{\ast}\]</span> And
+    the final object is the Dirac operator, <span class="math inline">\(D\)</span>, where it can be shown (see <span class="citation" data-cites="2015JMP....56h2301B"></span>) that depending on the sign of <span
+      class="math inline">\(\epsilon^{\prime}\)</span>, takes the following forms:</p>
+
+  <p>For this case we have that <span class="math inline">\(J\)</span> and <span class="math inline">\(D\)</span> commute and that <span class="math inline">\(\langle D(v_1 \otimes m_1), v_2 \otimes m_2 \rangle= \langle v_1 \otimes m_1, D(v_2 \otimes
+      m_2 ) \rangle\)</span>, we have that the Dirac operator has to be of the form <span class="citation" data-cites="2015JMP....56h2301B"></span>: <span class="math display">\[D (v\otimes m ) = \sum_i \alpha^i v \otimes \left[ L_i, m \right] +
+      \sum_j \tau^{j} v \otimes \{H_j, m \}
+      \label{D1}\]</span> where <span class="math inline">\(\alpha^i\)</span> are products of gamma matrices and both <span class="math inline">\(\alpha^i\)</span> and <span class="math inline">\(L_i\)</span> are anti-Hermitian matrices, and where
+    <span class="math inline">\(\tau^j\)</span> are products of gamma matrices and both <span class="math inline">\(\tau^j\)</span> and <span class="math inline">\(H_j\)</span> are Hermitian matrices.</p>
+
+  <p>For this case, we have that <span class="math inline">\(J\)</span> and <span class="math inline">\(D\)</span> now anti-commute and also note that <span class="math inline">\(C\)</span> anti-commutes with the <span
+      class="math inline">\(\gamma_a\)</span> in such cases, so we need to split the sums into sums where we have a product of even or odd number of <span class="math inline">\(\gamma_a\)</span>. However we still require <span
+      class="math inline">\(D\)</span> to be self-adjoint, so we still require <span class="math inline">\(D\)</span> to have either entirely Hermitian or entirely anti-Hermitian entries. This leaves us with the following form <span class="citation"
+      data-cites="2015JMP....56h2301B"></span>: <span class="math display">\[\begin{align}
+      D (v\otimes m ) &amp;= \sum_i \alpha_-^i v \otimes \left[ L_i, m \right] + \sum_j \tau_-^{j} v \otimes \left\{H_j, m \right\} \\
+      &amp;+ \sum_k \alpha_+^k v \otimes \left\{L_k, m \right\} + \sum_l \tau_+^{l} v \otimes \left[H_l, m\right]
+      \label{D-1}\end{align}\]</span> where the <span class="math inline">\(+\)</span> or <span class="math inline">\(-\)</span> subscript on <span class="math inline">\(\alpha, \tau\)</span> indicates whether they are the product of an even number
+    of <span class="math inline">\(\gamma_a\)</span>, indicated by <span class="math inline">\(+\)</span>, or by an odd number of <span class="math inline">\(\gamma_a\)</span>, indicated by a <span class="math inline">\(-\)</span>.</p>
+  <p>To show the usefulness of this rather abstract concept, a brief account of a well studied example is that of the <em>fuzzy sphere</em> is included below.</p>
+  <h2 id="the-fuzzy-sphere">The Fuzzy Sphere</h2>
+  <p>For an appropriate approximation to the sphere, which gets closer and closer to model a sphere as we increase the matrix size, <span class="math inline">\(n\)</span>, we utilise the fact that the sphere has <span
+      class="math inline">\(SO(3)\)</span> symmetry. If we take the Lie algebra of <span class="math inline">\(SO(3)\)</span>, namely <span class="math inline">\(so(3)\)</span> and take an <span class="math inline">\(n\)</span>-dimensional
+    representation of it. Its generators are to be denoted by <span class="math inline">\(L_{ij}\)</span>, with <span class="math inline">\(i&lt;j=1,2,3\)</span> such that they satisfy: <span class="math display">\[\left[L_{ij}, L_{kl} \right] =
+      \delta_{jk} L_{il} + \delta_{il} L_{jk} - \delta_{jl} L_{ik} - \delta_{ik} L_{jl}\]</span> with the fact that <span class="math inline">\(L_{ij} = - L_{jk}\)</span>. These generators, represented into the algebra, <span
+      class="math inline">\(M_n(\mathbb{C})\)</span>, with be the Hermitian/anti-Hermitian matrices that go into the Dirac operator. So the precise set up for the fuzzy sphere has undergone some changes in the recent past. One of the most noteworthy
+    approaches is that by Grosse and Prešnajder <span class="citation" data-cites="Grosse:1995gq"></span>, however they choose a type <span class="math inline">\((0,3)\)</span> fuzzy space, but this yields a KO dimension of <span
+      class="math inline">\(s=3\)</span> and as we want it to be the fuzzy analogue to the spheres dimensions which is <span class="math inline">\(s=2\)</span>. However, the method implemented by Barrett <span class="citation"
+      data-cites="2015JMP....56h2301B"></span>, enriches the <span class="math inline">\((0,3)\)</span> geometry to a <span class="math inline">\((1,3)\)</span> geometry, where the new Hermitian generator is denoted by <span
+      class="math inline">\(\gamma_0\)</span>. In which the KO dimension would be <span class="math inline">\(s=3-1 = 2\)</span>, as desired for a fuzzy sphere.</p>
+  <p>The Dirac operator for the fuzzy sphere is found to be:</p>
+  <p><span class="math display">\[D = \gamma_0 + \sum\limits_{i&lt;j=1}^3 \gamma_0 \gamma_i \gamma_j \otimes \left[L_{ij}, \cdot \right]
+      \label{FuzzSphDirac}\]</span> we note that the product <span class="math inline">\(\gamma_0 \gamma_i\gamma_j\)</span> is anti-Hermitian and an odd product so this definition of the Dirac operator agrees with the Dirac operator definitions in <a
+      href="#D1" data-reference-type="eqref" data-reference="D1">[D1]</a> and <a href="#D-1" data-reference-type="eqref" data-reference="D-1">[D-1]</a>. It is possible to arrive back at the Grosse-Prešnajder Dirac operator as done by Barrett in <span
+      class="citation" data-cites="2015JMP....56h2301B"></span>, and for reference later on the form of the Grosse-Prešnajder Dirac operator is: <span class="math display">\[D_{\text{G-P}} = 1 + \sum\limits_{i&lt;j=1}^{3}\sigma_i \sigma_j \otimes
+      \left[L_{ij},\cdot \right]
+      \label{GPDirac}\]</span></p>
+  <p>The Dirac operators both yields the spectrum <span class="math display">\[Spec(D) = \pm 1, \pm 2, \pm 3, \dots \pm n-1, +n\]</span> So as we let the matrix size tend to infinity we retrieve the spectrum <span
+      class="math inline">\(\pm\mathbb{Z}\)</span>, which is the spectrum for the Dirac operator on the commutative 2-sphere.</p>
+  <p>The link between these Dirac operators and the commutative 2-sphere’s Dirac operator is more clearly seen when the commutative 2-spheres Dirac operator is expressed as embedded from <span class="math inline">\(\mathbb{R}^3\)</span> as opposed to
+    intrinsically in terms of local coordinates. A method to get a general hyper-surface is reviewed below, and an attempt to look at the fuzzy analogue for the ellipsoid is pursued.</p>
+  <p>However, finally, the reason current research into noncommutative geometry as a model for quantum gravity is due to the interpretation the ‘fuzziness’ has on the small scale of the fuzzy sphere. A great paper for further details about the
+    following is that by Madore <span class="citation" data-cites="Madore:1992ij"></span>. In brief, it explains the reasons why noncommutativity is necessary for a finite model of a sphere, but that is still <span
+      class="math inline">\(SO(3)\)</span> invariant. The premise is that if we consider the commutative 2-sphere, and look at the algebra of coordinates, <span class="math inline">\(C(\mathbb{S}^2)\)</span>. This is the algebra spanned by the
+    products of the coordinates <span class="math inline">\(x^1, x^2, x^3\)</span>, so elements have polynomial expansions such as: <span class="math display">\[f(x^i) = f_0 + f_a x^a + f_{ab}x^{a}x^b \dots\]</span> for some constants <span
+      class="math inline">\(f_0, f_a, f_{ab}, \dots\)</span> and where Einstein summation is assumed. This algebra has the ability to separate the points of a sphere and is also dense is the algebra of smooth functions <span
+      class="math inline">\(C^{\infty}(\mathbb{S}^2)\)</span>, so it is good enough to deal with just <span class="math inline">\(C(\mathbb{S}^2)\)</span> in this setting.</p>
+  <p>Now if we approximate the functions by truncating their series expansion after the <span class="math inline">\(n^{\text{th}}\)</span> products, i.e. <span class="math inline">\(f(x^i) = f_0 + f_a x^a + f_{ab}x^{a}x^b \dots + f_{a_1 a_2 \dots
+      a_n} x^{a_1} x^{a_2} \dots x^{a_n}\)</span> and take all the functions of this type, we would end up with a n-dimensional vector space of the entries <span class="math inline">\(f_0, \dots, f_{a_1 a_2 \dots a_n}\)</span>. In order to turn this
+    vector space into an algebra requires some thought. The normal product of two elements <span class="math inline">\(f,g\)</span>, we would obviously be taken out of this set of objects as it would require terms such as <span
+      class="math inline">\(x^{a_1} x^{a_2} \dots x^{a_n} x^{a_{n+1}}\)</span> etc. Looking at the case when <span class="math inline">\(n =1\)</span>, we could define a product to be <span class="math inline">\(f\cdot g = f_0g_0 + \sum_{a=1}^3f_a
+      g_a x^a\)</span>, this would turn the vector space into an algebra. However, we can identify this algebra with four copies of <span class="math inline">\(\mathbb{C}\)</span>, which is exactly the algebra of functions at four discrete points.
+    This product can be extended to any value for <span class="math inline">\(n\)</span> in the straight forward manner and we still only get an algebra which is the functions on a set of discrete points. This is unappealing because these point will
+    not be invariant under the action of <span class="math inline">\(SO(3)\)</span> and thus we have no notion of a fuzzy sphere.</p>
+  <p>A way to preserve this invariance under the action of <span class="math inline">\(SO(3)\)</span> is to make the algebra we desire noncommutative. We start by taking the <span class="math inline">\(n\)</span>-dimensional generators of <span
+      class="math inline">\(su(2)\simeq so(3)\)</span>, and denote them by <span class="math inline">\(L_{a}\)</span>, the we set <span class="math inline">\(x^a = \kappa L_a\)</span>, where <span class="math inline">\(\kappa\)</span> is a constant
+    set by requiring <span class="math inline">\(\sum_i (x^i)^2 = 1\)</span> (<span class="math inline">\(\kappa\)</span>’s value will vary with the value for <span class="math inline">\(n\)</span>). Firstly we notice that the coordinates no longer
+    commute, we have <span class="math inline">\(\left[x^1,x^1 \right] = i \kappa x^3\)</span>, and the cyclic permutations. So the notion of a point <span class="math inline">\((x^1,x^2,x^3)\)</span> vanishes as we can never know all three entries
+    at the same time. However, if we take a look at the 2-dimensional representations; the Pauli matrices, we notice that we get 2 eigenvalues for each generator, namely <span class="math inline">\(\pm 1\)</span>. This is interpreted as being able to
+    only distinguish which hemisphere of the sphere we lie in. As we increase the dimension of the representation we get more eigenvalues for each of the generators, which means we can narrow down the zone we lie. Which gives credence in the name
+    fuzzy sphere as the spaces we end up with are like the points of a sphere have been smeared together in a certain fashion. Also as for a given <span class="math inline">\(n\)</span>, the value of <span class="math inline">\(\kappa = \frac{1}{n^2
+      - 1}\)</span> we have that as <span class="math inline">\(n \to \infty\)</span> then <span class="math inline">\(\kappa \to 0\)</span>, so the coordinates in the limit commute and we retrieve the normal commutative sphere. This interpretation
+    gives us a natural picture of what we mean by a ‘quantum geometry’. However, there is another interpretation which is arguably more enticing as it imposes a cutoff on the spherical harmonics and in turn the energy states. For a full treatment of
+    this view point see <span class="citation" data-cites="DAndrea:2012dh"></span>.</p>
+  <p>Going back to the algebra of coordinates, we can decompose <span class="math inline">\(C(\mathbb{S}^2)\)</span> in to a direct sum of irreducible representations of <span class="math inline">\(su(2)\)</span>: <span
+      class="math display">\[C(\mathbb{S}^2) \simeq \bigoplus\limits_{l=0}^\infty V_l\]</span> where <span class="math inline">\(V_l\)</span> is the vector space underlying the irreducible representation of <span class="math inline">\(su(2)\)</span>
+    with the highest weight <span class="math inline">\(l\in \mathbb{N}\)</span> which is spanned by the spherical harmonics <span class="math inline">\(Y_{l,m}\)</span>. We can then impose a cutoff in the energy spectrum by ignore all but the first
+    <span class="math inline">\(n+1\)</span> representations in the decomposition of <span class="math inline">\(C(\mathbb{S}^2)\)</span>. Thus, in the fuzzy sphere’s spectral triple we can take the <em>fuzzy spherical harmonics</em><a href="#fn9"
+      class="footnote-ref" id="fnref9"><sup>9</sup></a> <span class="math inline">\(\hat{Y}_{l,m}\)</span> to be the generators of <span class="math inline">\(M_{n+1}(\mathbb{C})\)</span>, where<a href="#fn10" class="footnote-ref"
+      id="fnref10"><sup>10</sup></a> <span class="math inline">\(l&lt;n\)</span>. We can then decompose the algebra into <span class="math display">\[\mathcal{A}_n \simeq \bigoplus\limits_{l=0}^{n}V_l\]</span> Thus so a fuzzy sphere can be viewed as
+    having an energy cutoff, which can be recast as a minimal renderable distance, i.e. a Planck length. The implications of a planck length being a natural outcome of requiring the underlying space to be noncommutative is a very appealing property
+    and the idea is that a noncommutative analogue to a spacetime will provide a good model for quantum gravity.</p>
+  <p>A brief note on the standard model in noncommutative geometry. This is possibly the most talked about triumph of noncommutative geometry is that the standard model presents itself as a noncommutative internal structure attached to a commutative
+    Minkowski spacetime. There are many book walking through the details on how you formulate integrals and quantum field theory on these <em>almost-commutative manifolds</em>. The book by Suijlekom <span class="citation"
+      data-cites="vanSuijlekom:2014kl"></span> is an excellent introduction to these topics however the book by Connes and Marcolli <span class="citation" data-cites="Connes:wl"></span> is much more involved and the finer details and subtleties can
+    be found there.</p>
+  <h1 id="present-and-future-work">Present and Future Work</h1>
+  <h2 id="the-fuzzy-ellipsoid">The Fuzzy Ellipsoid</h2>
+  <p>Not many examples of fuzzy spaces exist that are deemed approximations of commutative manifolds, so an investigation into constructing a fuzzy ellipsoid was made. This would be a very useful fuzzy space as it would be the first non-symmetric
+    fuzzy space and may provide vital insight into how to generalise the procedure of ‘fuzzification’ to other manifolds. Firstly, the Dirac operator for an ellipsoid was found as an embedding in <span class="math inline">\(\mathbb{R}^3\)</span>, as
+    was suggested by the fuzzy sphere example.</p>
+  <h3 id="dirac-operators-for-hypersurfaces-of-mathbbrn">Dirac operators for Hypersurfaces of <span class="math inline">\(\mathbb{R}^n\)</span></h3>
+  <p>The following method for getting the induced Dirac operator on a hypersurface is a very brief and to the point method taken from <span class="citation" data-cites="Trautman:1995td"></span> and calculations for the sphere and ellipsoids are
+    given. For full rigour of the results and steps to arrive at the formula, please refer to <span class="citation" data-cites="Trautman:1995td"></span>.</p>
+  <p>The method of constructing the Dirac operator begins with taking the polynomial that defines the hypersurface, <span class="math inline">\(f(x^i)=0\)</span>. First, for an embedding in <span class="math inline">\(\mathbb{R}^n\)</span> we take
+    <span class="math inline">\(n\)</span> Dirac matrices, <span class="math inline">\(\{\gamma_a\}\)</span> that satisfy the relation <span class="math inline">\(\gamma_a\gamma_b + \gamma_b\gamma_a = - 2\delta_{ab}\)</span>. Specifically, we have
+    that <span class="math inline">\(\gamma_a^2 = -1\)</span>. Then we find the unit normals to the surface <span class="math inline">\(\boldsymbol{n}\)</span>. This can be done by using the formula <span class="math inline">\(\boldsymbol{n} =
+      \frac{\nabla
+      f}{|\nabla f|}\)</span>. Then the formula for the Dirac operator, taken from <span class="citation" data-cites="1998hep.th...10018T"></span>, is as follows: <span class="math display">\[D = \sum\limits_{i,j=1}^3 (\gamma_i \gamma_j +
+      \delta_{ij})n_i \partial_j + \frac{1}{2} \text{div}(n)
+      \label{diracembed}\]</span> Where <span class="math inline">\(n_i\)</span> are the <span class="math inline">\(i\)</span>th components of the normal vector and <span class="math inline">\(\text{div}(n) = \sum\limits_{i,j=1}^3 \left(\delta_{ij}
+      - n_i n_j \right)\partial_i n_j\)</span>.</p>
+  <h3 id="the-dirac-operator-for-mathbbs2-embedded-in-mathbbrn">The Dirac operator for <span class="math inline">\(\mathbb{S}^2\)</span> embedded in <span class="math inline">\(\mathbb{R}^n\)</span></h3>
+  <p>For the sphere defined as: <span class="math inline">\(\sum\limits_{i=1}^{3} (x^i)^2 = 1\)</span>, we find the normals by the method outine above and get: <span class="math inline">\(\boldsymbol{n}^i = x^i\)</span>. Thus we can calculate: We
+    note that:
+    <span class="math inline">\(\partial_i n_j = \delta_{ij}\)</span> and therefore: <span class="math display">\[\text{div}(n) = \sum\limits_{i,j=1}^3 \delta_{ij}\delta_{ij} - n_i n_j \delta_{ij}= \underbrace{\sum\limits_{i=1}^3 \delta_{ii}}_{=3} -
+      \underbrace{\sum\limits_{i=1}^{3} x_i^2}_{=1} = 2\]</span> Making use of this result in <a href="#diracembed" data-reference-type="eqref" data-reference="diracembed">[diracembed]</a> we can rewrite the Dirac operator as: <span
+      class="math display">\[D = \sum\limits_{i,j=1}^3 (\gamma_i \gamma_j + \delta_{ij})x_i \partial_j + 1 = \sum\limits_{i\neq j = 1}^{3} \gamma_i \gamma_j x_i \partial_j + \sum\limits_{i=1}^3 (\gamma_i^2 + 1)x_i \partial_j + 1\]</span> Here we use
+    the fact that <span class="math inline">\(\gamma_i^2 = -1\)</span> and thus the middle term vanishes in general to give: <span class="math display">\[D = \sum\limits_{i\neq j = 1}^{3} \gamma_i \gamma_j x_i \partial_j + 1\]</span> Now using that
+    <span class="math inline">\(\gamma_i \gamma_j = -\gamma_j \gamma_i\)</span> we get the final form for the Dirac operator on <span class="math inline">\(\mathbb{S}^2\)</span>: <span class="math display">\[D_{\mathbb{S}^2} = \sum\limits_{i &lt; j =
+      1}^3 \gamma_i \gamma_j (x_i \partial_j - x_j \partial_i) + 1\]</span> Comparing this Dirac operator to the Dirac operators for the fuzzy sphere in Eq <a href="#FuzzSphDirac" data-reference-type="eqref"
+      data-reference="FuzzSphDirac">[FuzzSphDirac]</a> and <a href="#GPDirac" data-reference-type="eqref" data-reference="GPDirac">[GPDirac]</a>, we can clearly see a relation. The basic premise is that the vector fields <span
+      class="math inline">\(X_{ij} = x_i \partial_j - x_j \partial_i\)</span> form are the <em>commutative limits</em> of the commutators with the generators of the Lie algebra, <span class="math inline">\(\left[L_{ij}, \cdot \right]\)</span>. This
+    interpretation is discussed in further detail in <span class="citation" data-cites="2015JMP....56h2301B"></span>.</p>
+  <p>An attempt to extend this relationship to the case for an Ellipsoid was made as outlines below:</p>
+  <h3 id="the-dirac-operator-on-the-ellipsoid">The Dirac operator on the Ellipsoid</h3>
+  <p>Now for the Ellipsoid defined by: <span class="math inline">\(\sum\limits_{i=1}^3 (\frac{x_i}{\alpha_i})^2 = 1\)</span>, the calculation follows the same steps however, the normals now have a more complicated form due the require them that have
+    unit magnitude. The normals here are: <span class="math inline">\(n_i = N \frac{x^i}{\alpha_i^2}\)</span>, where <span class="math display">\[\frac{1}{N}= \sqrt{\sum\limits_{k=1}^3 \frac{x_k^2}{\alpha_k^4}}\]</span> The complexities lie in the
+    <span class="math inline">\(\text{div}(n)\)</span> terms as that requires use to take derivatives of <span class="math inline">\(N\)</span>, which brings up extra terms. However the first term in Eqn <a href="#diracembed"
+      data-reference-type="eqref" data-reference="diracembed">[diracembed]</a> can be computed in a similar fashion to sphere case and we arrive at: <span class="math display">\[D_{\mathbb{E}^2} = \sum\limits_{i &lt; j = 1}^3 \gamma_i \gamma_j N
+      (\frac{x_i}{\alpha_i^2} \partial_j - \frac{x_j}{\alpha_j^2} \partial_i) + \frac{1}{2} \text{div}(n)\]</span> The <span class="math inline">\(\text{div}(n)\)</span> can also be computed, and is found to be: <span
+      class="math display">\[\text{div}(n) = N \sum\limits_{j=1}^3 \left( \frac{1}{\alpha_j^2} - N^2 \frac{x_j^2}{\alpha_j^6} \right)\]</span> So the total Dirac Operator for the Ellipsoid is: <span class="math display">\[D_{\mathbb{E}^2} = N \left(
+      \sum\limits_{i &lt; j = 1}^3 \gamma_i \gamma_j (\frac{x_i}{\alpha_i^2} \partial_j - \frac{x_j}{\alpha_j^2} \partial_i) + \frac{1}{2} \sum\limits_{j=1}^3 \left( \frac{1}{\alpha_j^2} - N^2 \frac{x_j^2}{\alpha_j^6} \right) \right)
+      \label{ellipdirac}\]</span> This is a much more complicated Dirac operator as the presence of <span class="math inline">\(N\)</span> involves fractions with the coordinates in the denominator, which the ‘fuzzy’ analogue is currently unknown. I
+    have included the calculation to explicitly show that this is the correct Dirac operator for an ellipsoid in Appendix <a href="#sanity" data-reference-type="ref" data-reference="sanity">8</a>. Several attempts have been made to find make a
+    sensible correspondence but with minimal success.</p>
+  <h2 id="future-work">Future Work</h2>
+  <p>The next port of call is to look at Dirac operators on general coadjoint orbits. As the sphere is a coadjoint orbit of <span class="math inline">\(SU(2)\)</span>, the idea is to construct more examples using this correspondence as a guide line.
+    More generally, investigations in to the <em>commutative limit</em> of a fuzzy space is to be investigated. However, more examples of fuzzy spaces is required to make fruitful progress in this topic. Also investigations into looking for the
+    noncommutative analogue to a Lorentzian manifold is planned. Some headway has been made in this topic, see for example <span class="citation" data-cites="Franco:2013bw"></span> <span class="citation" data-cites="DAndrea:2016vk"></span> amongst
+    other. However, there is still much to uncover in this topic.</p>
+
+
+  <h1 id="alg">Algebra</h1>
+  <p>A vector space, <span class="math inline">\(V\)</span>, over a field <span class="math inline">\(\mathbb{F}\)</span>, is a set of objects that satisfy the following conditions:</p>
+  <ul>
+    <li>
+      <p>It is closed under finite vector addition: <span class="math inline">\(\forall v,w\in V \Rightarrow v+w \in V\)</span>.</p>
+    </li>
+    <li>
+      <p>It is closed under scalar multiplication: <span class="math inline">\(\forall \lambda \in \mathbb{F}, v \in V \Rightarrow \lambda v \in V\)</span></p>
+    </li>
+  </ul>
+  <p>If <span class="math inline">\(U, V\)</span> are complex vector spaces the the map <span class="math inline">\(f\colon U \to V\)</span> is said to be <em>antilinear</em> if <span class="math inline">\(f(u + v) = f(u) + f(v)\)</span> and <span
+      class="math inline">\(f(\lambda u) = \bar{\lambda} f(u)\)</span>, where <span class="math inline">\(\bar{\lambda}\)</span> denotes complex conjugation.</p>
+  <p>A <em>isometry</em> between normed vector spaces, <span class="math inline">\(U, V\)</span>, is a linear map <span class="math inline">\(f\colon U \to V\)</span> that preserves the norm: <span class="math inline">\(\|f(u)\| = \| u \|\)</span>
+    for all <span class="math inline">\(u \in U\)</span>.</p>
+  <p>A Hilbert space, <span class="math inline">\(\mathcal{H}\)</span> is a vector space with an inner product <span class="math inline">\(\langle f,g \rangle\)</span> such that the norm defined by <span class="math display">\[\|f \| =\sqrt{\langle
+      f,f \rangle}\]</span> turns <span class="math inline">\(\mathcal{H}\)</span> into a complete metric space.</p>
+  <p>An algebra <span class="math inline">\(\mathcal{A}\)</span> over field <span class="math inline">\(\mathbb{F}\)</span> is a vector space equipped with a bilinear associative product (multiplication). An algebra is said to be unital if it has an
+    identity element with respects to the multiplication.</p>
+  <p>Let <span class="math inline">\(R\)</span> be a ring and <span class="math inline">\(1_R\)</span> be the multiplication identity. A <em>left <span class="math inline">\(R\)</span>-module</em>, <span class="math inline">\(\mathcal{M}\)</span>,
+    consists of an abelian group <span class="math inline">\((\mathcal{M},+)\)</span> and an operation <span class="math inline">\(\cdot:R\times \mathcal{M} \to \mathcal{M}\)</span> such that <span class="math inline">\(\forall r,s\in R\)</span> and
+    <span class="math inline">\(\forall x,y\in \mathcal{M}\)</span>:</p>
+
+  <p><span class="math inline">\(r \cdot (x+y) = r\cdot x + r\cdot y\)</span></p>
+  <p><span class="math inline">\((r+s) \cdot x = r\cdot x + s\cdot x\)</span></p>
+  <p><span class="math inline">\((rs)\cdot x = r \cdot (s\cdot x)\)</span></p>
+  <p><span class="math inline">\(1_R \cdot x = x\)</span></p>
+  <p>The only difference between an algebra and a module is that an algebra is a module over a ring, where the ring is also a field.</p>
+  <p>A <span class="math inline">\(*\)</span>-algebra or <em>involutive algebra</em> is an algebra <span class="math inline">\(\mathcal{A}\)</span> together with a conjugate linear map called the involution: <span
+      class="math inline">\(*\colon\mathcal{A} \to \mathcal{A}\)</span> such that <span class="math inline">\((ab)^* = b^*a^*\)</span> and <span class="math inline">\((a^*)^* = a\)</span> for any <span class="math inline">\(a,b \in
+      \mathcal{A}\)</span>.</p>
+  <p>A representation of a finite-dimensional <span class="math inline">\(*\)</span>-algebra <span class="math inline">\(\mathcal{A}\)</span> is a pair <span class="math inline">\((\mathcal{H},\pi)\)</span>. Where <span
+      class="math inline">\(\mathcal{H}\)</span> is a Hilbert space and <span class="math inline">\(\pi\)</span> is a <span class="math inline">\(*\)</span>-algebra map: <span class="math display">\[\pi\colon \mathcal{A} \to L(\mathcal{H})\]</span>
+  </p>
+  <p>Given a vector space <span class="math inline">\(V\)</span> (over <span class="math inline">\(\mathbb{F}\)</span>) and a quadratic form, <span class="math inline">\(Q\)</span> on <span class="math inline">\(V\)</span>. We define the <em>Clifford
+      Algebra</em> <span class="math inline">\(\text{Cl}(V,Q)\)</span> as the algebra generated (over <span class="math inline">\(\mathbb{F}\)</span>) by the vectors <span class="math inline">\(v\in V\)</span> and the multiplicative unit <span
+      class="math inline">\(1_F\)</span> such that: <span class="math display">\[v \cdot v= v^2 = Q(v) 1_F\]</span></p>
+  <p>A Clifford algebra can also be defined by taking a bilinear form, <span class="math inline">\(B\)</span>, instead of a quadratic form and defining the quadratic form by: <span class="math inline">\(Q(v) = B(v,v)\)</span>. One can also construct
+    a bilinear form from a quadratic form via <em>polarisation</em>: <span class="math inline">\(B(u,v) = \frac{1}{2}\left( Q(u+v) - Q(u) - Q(v) \right)\)</span>. Using this polarisation we can show that for <span class="math inline">\(u,v \in
+      V\)</span> we have that: <span class="math display">\[u v + v u = 2 B(u,v)\]</span></p>
+  <p>There is a natural grading of a clifford algebra by the grading <span class="math inline">\(\chi(v_1 v_2 \dots v_k) = (-1)^k v_1 v_2 \dots v_k\)</span> which allows us to decompose a Clifford algebra into even (<span class="math inline">\(\chi =
+      +1\)</span>) and odd (<span class="math inline">\(\chi = -1\)</span>) parts: <span class="math display">\[\text{Cl}(V,Q) =\vcentcolon Cl^0(V,Q) \oplus Cl^1(V,Q)\]</span> This decomposition is often useful in technicalities.</p>
+  <h1 id="geom">Geometry</h1>
+  <p>A fibre bundle is a very general object and many subclasses are often used in physics such as vector bundle or principal bundles. The bundles of object in spin geometry include algebra bundles along side the usual bundles. A fibre bundle in
+    layman’s terms is a way to describe that a space <em>locally looks like a product space</em>. If there is are topological spaces <span class="math inline">\(E, B, F\)</span> and a map <span class="math inline">\(f\colon E \to B\)</span>, such
+    that for some neighbourhood <span class="math inline">\(U\)</span> of a point <span class="math inline">\(x\in B\)</span>, such that <span class="math inline">\(f^{-1}(U)\)</span> is homeomorphic to <span class="math inline">\(U\times F\)</span>
+    in a specific way, then we call <span class="math inline">\((E,B,F,f)\)</span> a fibre bundle. I include the rigorous definition below for clarity:</p>
+  <p>A <em>fibre bundle</em> is a structure <span class="math inline">\((E,B,F,f)\)</span>, where <span class="math inline">\(E,B,F\)</span> are all topological spaces and <span class="math inline">\(f\colon E\to B\)</span> is a continuous surjection
+    that satisfies the following properties: <span class="math inline">\(\forall x\in E\)</span> there exists a neighbourhood <span class="math inline">\(U\)</span> of <span class="math inline">\(f(x)\in B\)</span> such that there exists a
+    homeomorphism <span class="math inline">\(\phi: f^{-1}(U) \to U\times F\)</span> which, when composed with projection onto the first component, agrees with <span class="math inline">\(f\)</span>.</p>
+  <p>The condition for <span class="math inline">\(f\)</span> can be summarised in the requiring that the following diagram commutes:</p>
+  <p>f^<span>-1</span>(U) &amp; &amp; U F<br />
+    &amp; U</p>
+  <p>Given a fibre bundle <span class="math inline">\((E, B, F, f)\)</span> and given a topological group <span class="math inline">\(G\)</span> that has a left action on the fibres <span class="math inline">\(F\)</span>, then we can specify a <span
+      class="math inline">\(G\)</span>-atlas for the bundle, which is a local trivialisation such that for any overlapping charts <span class="math inline">\((U_i, \phi_i)\)</span> and <span class="math inline">\((U_j, \phi_j)\)</span> the function:
+    <span class="math display">\[\phi_i \phi_j^{-1} \colon (U_i \cup U_j)\times F \to (U_i \cup U_j)\times F\]</span> is given by <span class="math display">\[\phi_i \phi_j^{-1} \left(x, \alpha \right) = \left(x, t_{ij}(x) \alpha \right)\]</span>
+    where <span class="math inline">\(t_{ij}\colon U_i \cap U_j \to G\)</span> is a continuous map. The maps <span class="math inline">\(t_{ij}\)</span> are called transition functions and given just <span class="math inline">\((B, F, \{ t_{ij}
+      \})\)</span> we can reconstruct the fibre bundle if the transition functions satisfy the following: <span class="math display">\[\begin{align}
+      t_{ii}(x)&amp;=x \\
+      t_{ij}(x)&amp;=t_{ji}^{-1}(x)\\
+      t_{ik}(x)&amp;= t_{ij}(x)t_{jk}(x) \quad \text{on} \quad U_i \cap U_j \cap U_k\end{align}\]</span></p>
+  <p>A <em>section</em> of a fibre bundle <span class="math inline">\((E, B, F, f)\)</span> is a continuous map <span class="math inline">\(\pi\colon B \to E\)</span> such that <span class="math inline">\(f(\pi(x)) = x\)</span> for all <span
+      class="math inline">\(x\in B\)</span>. The space of section of a fibre bundle <span class="math inline">\((E, B, F, f)\)</span> is denoted by <span class="math inline">\(\Gamma (E)\)</span></p>
+  <p>A <em>fibre bundle morphism</em> (bundle map) between two fibre bundles <span class="math inline">\((E_1, B_1, F_1, f_1)\)</span> and <span class="math inline">\((E_2, B_2, F_2, f_2)\)</span> is defined as a pair continuous maps <span
+      class="math inline">\(\phi \colon E_1 \to E_2\)</span> and <span class="math inline">\(\alpha\colon B_1 \to B_2\)</span> such there exists we have: <span class="math inline">\(f_2 \circ \phi = \alpha \circ f_1\)</span>. If we have a bundle map
+    whose inverse is also a bundle map, then we have a bundle isomorphism.</p>
+  <p>The <em>endomorphism</em> ring over an abelian group <span class="math inline">\(A\)</span>, is denoted by <span class="math inline">\(End(A)\)</span> is the set of all homomorphism of <span class="math inline">\(A\)</span> into itself. If we
+    take <span class="math inline">\(A\)</span> to be a field, and then the <em>endormorhpism ring</em> over the space <span class="math inline">\(A^n\)</span>, is an <span class="math inline">\(A\)</span>-algebra and is the set of all linear maps
+    form <span class="math inline">\(A^n\)</span> into <span class="math inline">\(A^n\)</span>. We refer to this endomorphism ring as an <em>endormorphism algebra</em>.</p>
+  <h1 id="sanity">Sanity Checking for the Dirac operator for the Ellipsoid</h1>
+  <p>This is to check that Eq <a href="#ellipdirac" data-reference-type="eqref" data-reference="ellipdirac">[ellipdirac]</a> does indeed give the correct Dirac operator we require. We do this by using the equation <span class="math inline">\(D =
+      e^{\alpha a} \sigma_a \nabla_{\alpha}\)</span>. For the ellipse we want to use <span class="math inline">\(\nabla_{\alpha} = \partial_{\alpha} + \frac{1}{8} \omega^{a b}_{\alpha} \left(\gamma_a \gamma_b - \gamma_b \gamma_a\right)\)</span>. If
+    we ignore the spin connection terms and concentrate solely on the derivative part we can calculate the <span class="math inline">\(e^{\alpha a}\)</span>’s. We do this by looking at the case where the gamma matrices are <span
+      class="math inline">\(\gamma_a = i \sigma_a\)</span>, where <span class="math inline">\(\sigma_a\)</span> are the Pauli matrices. Thus we have the following properties for the gamma matrices: <span class="math display">\[\left[\gamma_a,
+      \gamma_b \right] = - 2 \tensor{\epsilon}{_{ab}^c} \gamma_c \qquad
+      \left\{ \gamma_a, \gamma_b \right\} = - 2 \delta_{ab} \qquad
+      \gamma_a \gamma_b = -\tensor{\epsilon}{_{ab}^c} \gamma_c - \delta_{ab}\]</span></p>
+  <p>Using these relations we can simplify Eqn <a href="#EllipDirac" data-reference-type="eqref" data-reference="EllipDirac">[EllipDirac]</a> to: <span class="math display">\[D_{\mathbb{E}^2} = N \left( \sigma_3 \left(\frac{x_1}{\alpha_1^2}
+      \partial_2 - \frac{x_2}{\alpha_2^2}\partial_1 \right)- \sigma_2 \left(\frac{x_1}{\alpha_1^2} \partial_3 - \frac{x_3}{\alpha_3^2}\partial_1 \right) + \sigma_1 \left(\frac{x_2}{\alpha_2^2} \partial_3 - \frac{x_3}{\alpha_3^2}\partial_2 \right)
+      \right) + \frac{1}{2} \text{div}(n)\]</span></p>
+  <p>And thus we can read off the inverse tetrad: <span class="math inline">\(e^{\alpha a}\)</span>:</p>
+  <p><span class="math display">\[e^{\alpha a} = N
+      \begin{pmatrix}
+      0 &amp; \frac{x_3}{\alpha_3^2} &amp; - \frac{x_2}{\alpha_2^2} \\
+      -\frac{x_3}{\alpha_3^2} &amp; 0 &amp; \frac{x_1}{\alpha_1^2} \\
+      \frac{x_2}{\alpha_2^2} &amp;- \frac{x_1}{\alpha_1^2} &amp; 0
+      \end{pmatrix}\]</span> Which produces the inverse metric via the formula: <span class="math inline">\(g^{\alpha \beta} = e^{\alpha a} e^{\beta b} \delta_{ab}\)</span></p>
+  <p><span class="math display">\[g^{\alpha \beta} = N^2
+      \begin{pmatrix}
+      \frac{x_2^2}{\alpha_2^4} + \frac{x_3^2}{\alpha_3^4} &amp; - \frac{x_1}{\alpha_1^2} \frac{x_2}{\alpha_2^2}&amp; - \frac{x_1}{\alpha_1^2} \frac{x_3}{\alpha_3^2}\\
+      - \frac{x_2}{\alpha_2^2} \frac{x_1}{\alpha_1^2} &amp; \frac{x_1^2}{\alpha_1^4} + \frac{x_3^2}{\alpha_3^4} &amp; \frac{x_2}{\alpha_2^2} \frac{x_3}{\alpha_3^2} \\
+      \frac{x_3}{\alpha_3^2} \frac{x_1}{\alpha_1^2} &amp;\frac{x_3}{\alpha_3^2}\frac{x_2}{\alpha_2^2} &amp; \frac{x_1^2}{\alpha_1^4} + \frac{x_2^2}{\alpha_2^4}
+      \end{pmatrix}\]</span> This metric is degenerate and is rank 2. The vector which annihilates this metric is <span class="math inline">\(\left(\frac{x_1}{\alpha_1^2} ,\frac{x_2}{\alpha_2^2} ,\frac{x_3}{\alpha_3^2} \right)\)</span>. Which can be
+    rewritten as: <span class="math inline">\(df = d \left(\frac{1}{2} \left( \frac{x_1^2}{\alpha_1^2}+ \frac{x_2^2}{\alpha_2^2}+ \frac{x_3^2}{\alpha_3^2} \right)\right)\)</span>. Using the fact that when this functiion <span
+      class="math inline">\(f\)</span> is constant we can construct a unit normal to surface <span class="math inline">\(f= \text{const}\)</span> by <span class="math inline">\(n = \frac{\nabla f}{|\nabla f |}\)</span>. This is what makes us pursue
+    that we have the metric on an ellipsoid in <span class="math inline">\(\mathbb{R}^3\)</span>.</p>
+  <p>So using the parametrisation: <span class="math display">\[\begin{align}
+      x_1 &amp;= \alpha_1 \cos(u) \sin(v) \\
+      x_2 &amp;= \alpha_2 \sin(u) \sin(v) \\
+      x_3 &amp;= \alpha_3 \cos(v)\end{align}\]</span> We get the following change of basis matrix (Jacobian)</p>
+  <p><span class="math display">\[Jac(u,v) = D\left(\frac{u,v}{x_1,x_2,x_3}\right)=
+      \begin{pmatrix}
+      -\frac{\csc(v) \sin (u)}{\alpha_1} &amp; \frac{\cos (u) \csc (v)}{\alpha_2} &amp; 0 \\
+      0 &amp; 0 &amp; -\frac{1}{\alpha_3 \sqrt{\sin ^2(v)}} \\
+      \end{pmatrix}\]</span> We note that as <span class="math inline">\(v\)</span> runs between <span class="math inline">\(0\)</span> and <span class="math inline">\(\pi\)</span> then <span class="math inline">\(\sin(v)&gt;0\)</span> and therefore
+    <span class="math inline">\(\sqrt{\sin(v)^2} = \sin(v)\)</span>. So we can write the Jacobian as follows:</p>
+  <p><span class="math display">\[Jac(u,v) =
+      \begin{pmatrix}
+      -\frac{\csc(v) \sin (u)}{\alpha_1} &amp; \frac{\cos (u) \csc (v)}{\alpha_2} &amp; 0 \\
+      0 &amp; 0 &amp; -\frac{\csc(v)}{\alpha_3} \\
+      \end{pmatrix}\]</span></p>
+  <p>We then change the inverse metric <span class="math inline">\(g^{-1}(x_i)\)</span> by the formula: <span class="math display">\[g^{-1}(u,v) = Jac(u,v)\cdot g^{-1}(x_i(u,v)) \cdot Jac(u,v)^T\]</span> Which gives the following formula:</p>
+  <p><span class="math display">\[\begin{pmatrix}
+      \frac{\csc ^2(v) \left(\alpha_3^2 \cos ^4(u)+\left(\alpha_1^2 \cot ^2(v)+2 \alpha_3^2 \sin ^2(u)\right) \cos ^2(u)+\alpha_3^2 \sin ^4(u)+\alpha_2^2 \cot ^2(v) \sin ^2(u)\right)}{\left(\alpha_2^2 \cot ^2(v)+\alpha_3^2 \sin ^2(u)\right)
+      \alpha_1^2+\alpha_2^2 \alpha_3^2 \cos ^2(u)} &amp;
+      \frac{(\alpha_1-\alpha_2) (\alpha_1+\alpha_2) \cos (u) \cot (v) \csc ^2(v) \sin (u)}{\left(\alpha_2^2 \cot ^2(v)+\alpha_3^2 \sin ^2(u)\right) \alpha_1^2+\alpha_2^2 \alpha_3^2 \cos ^2(u)} \\
+      \frac{(\alpha_1-\alpha_2) (\alpha_1+\alpha_2) \cos (u) \cot (v) \sin (u)}{\alpha_1^2 \alpha_2^2 \cos ^2(v)+\alpha_3^2 \left(\alpha_2^2 \cos ^2(u)+\alpha_1^2 \sin ^2(u)\right) \sin ^2(v)} &amp; \frac{\csc ^2(v)
+      \left(\alpha_2^2 \cos ^2(u)+\alpha_1^2 \sin ^2(u)\right)}{\left(\alpha_2^2 \cot ^2(v)+\alpha_3^2 \sin ^2(u)\right) \alpha_1^2+\alpha_2^2 \alpha_3^2 \cos ^2(u)} \\
+      \end{pmatrix}\]</span></p>
+  <p>This ugly however, if we calculate the inverse of this matrix (as it now has full rank), we should be able to recognise the normal metric for the ellipsoid. And indeed after some trigonometry juggling we arrive at the following metric: <span
+      class="math display">\[g(u,v) =
+      \begin{pmatrix}
+      \left( \alpha_1^2 \sin^2(u) \alpha_2^2 \cos^2(u) \right) \sin ^2(v) &amp; \left(\alpha_2^2 - \alpha_1^2 \right) \cos(u) \cos(v) \sin(u) \sin(v) \\
+      \left(\alpha_2^2 - \alpha_1^2 \right) \cos(u) \cos(v) \sin(u) \sin(v) &amp; \alpha_3 \sin^2(v) + \cos^2(v)\left( \alpha_1^2 \cos^2(u) + \alpha_2^2 \sin^2(u) \right) \\
+      \end{pmatrix}\]</span> Huzza!</p>
+
+  <section class="footnotes">
+    <hr />
+    <ol>
+      <li id="fn1">
+        <p>Sometimes this is referred to as Noncommutative Differential geometry to distinguish it from Noncommutative Algebraic Geometry.<a href="#fnref1" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn2">
+        <p>For details on clifford algebras, see the Appendix A<a href="#fnref2" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn3">
+        <p>For more details on the construction of fibre bundles see Appendix B.s<a href="#fnref3" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn4">
+        <p>This definition looks a little contrived without knowing the motivation for it, which arises when we consider the Euclidean space <span class="math inline">\(\mathbb{R}^n\)</span> with the standard metric, <span
+            class="math inline">\(\delta\)</span>. It can be shown that we have <span class="math inline">\(\mathbb{C}\text{l}(\mathbb{R}^{2n}) \simeq M_n(\mathbb{C})\)</span> and <span class="math inline">\(\mathbb{C}\text{l}^0(\mathbb{R}^{2n+1})
+            \simeq M_n(\mathbb{C})\)</span>. And this definition is the generalisation to arbitrary Riemannian manifolds.<a href="#fnref4" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn5">
+        <p>So that <span class="math inline">\(Q(e_i) = \pm 1\)</span> and <span class="math inline">\(B(e_i, e_j) = 0\)</span> if <span class="math inline">\(i \neq j\)</span>. Where <span class="math inline">\(B\)</span> is defined as in the
+          Appendix <a href="#alg" data-reference-type="ref" data-reference="alg">6</a>.<a href="#fnref5" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn6">
+        <p>This is for Riemannian metrics, for pseudo-Riemannian metrics the <span class="math inline">\(\delta\)</span> in the relation is replaced with the corresponding pseudo-Riemannian equivalent.<a href="#fnref6" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn7">
+        <p>A Clifford module can be viewed as just representing a Clifford algebra as matrices. Hence the colloquial term for the <span class="math inline">\(\gamma_a\)</span> discussed above as <em>gamma matrices</em>.<a href="#fnref7"
+            class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn8">
+        <p>The term matrix geometries arises from examples of this definiton being made by matrix contstructions. To see examples of how to construct some examples, see <span class="citation" data-cites="2015JMP....56h2301B"></span>.<a href="#fnref8"
+            class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn9">
+        <p>These are matrix versions of the spherical harmonics, there precise constructure can be found in <span class="citation" data-cites="Chan:2002kt"></span>.<a href="#fnref9" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn10">
+        <p>Note that the reason <span class="math inline">\(l&lt;n\)</span> not <span class="math inline">\(l&lt;n+1\)</span> is because the index <span class="math inline">\(l\)</span> starts at zero. So there are still <span
+            class="math inline">\(n+1\)</span> generators for <span class="math inline">\(M_{n+1}(\mathbb{C})\)</span><a href="#fnref10" class="footnote-back">↩</a></p>
+      </li>
+    </ol>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<!-- <script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-134367955-1', 'auto');
+  ga('send', 'pageview');
+}
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134367955-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134367955-1');
+</script>
+
+<!--- MathJax Configuration -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Second Year Report | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="Second Year Report" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="&lt;!DOCTYPE html&gt;" />
+<meta property="og:description" content="&lt;!DOCTYPE html&gt;" />
+<link rel="canonical" href="https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html" />
+<meta property="og:url" content="https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html" />
+<meta property="og:site_name" content="Paul J Druce’s site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-30T00:00:00+01:00" />
+<script type="application/ld+json">
+{"datePublished":"2017-06-30T00:00:00+01:00","dateModified":"2017-06-30T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html"},"url":"https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html","description":"&lt;!DOCTYPE html&gt;","@type":"BlogPosting","headline":"Second Year Report","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper"><a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="75px" width="75px" /></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce&#39;s site</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          <a class="page-link" href="/CV"> CV </a>
+          
+          <a class="page-link" href="/research"> Research </a>
+          
+          <a class="page-link" href="/tutoring"> Tutoring </a>
+          
+          <a class="page-link" href="/posts"> All Posts </a>
+          
+          <a class="page-link" href="/aboutme"> About Me </a>
+          
+          <!---->
+        </div>
+      </nav></div>
+</header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Second Year Report</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-06-30T00:00:00+01:00" itemprop="datePublished">Jun 30, 2017
+      </time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Paul Druce" />
+  <title>Second Year Report — Noncommutative Geometry and Quantum Gravity</title>
+  <style type="text/css">
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Second Year Report</h1>
+    <p class="author">Paul Druce</p>
+  </header>
+  <p>This is an unstable html version, for the correctly formatted pdf version, <a href="https://pauldruce.github.io/assets/PDFs/PaulDruce-SecondYearReport-2017.pdf" download> click here </a>.</p>
+  <h1 id="literature-review">Literature Review</h1>
+  <p>The aim of this literature review is to outline the setting in which my current work lies. To do this, a brief physical motivation is provided to explain why the study of noncommutative geometries is interesting to those who wish to achieve a
+    theory of quantum gravity. Then a more detailed review of finite noncommutative geometry as noncommutative analogues to well known spaces will be presented.</p>
+  <p>One of the problems to overcome with a quantum theory of gravity is that the current framework for gravity requires the space we, and all of physics, exist in to be described by a manifold. Manifolds by construction allow for infinitesimally
+    small regions of space to be a well defined construct. And all of the physics we do over this manifold, is required to deal with these infinitesimally small regions. It is this feature that causes the incompatibility between our understanding of
+    gravity and out quantum theory of the other forces we know of. Some of the more well known approaches to quantum gravity aim to fix this problem by make space discretised. By making the space on which everything exists on to be built up from some
+    smallest building blocks, they circumvent this problem. However, different problems arise and there is much research into producing a framework built on these principles that is satisfactory <span class="citation"
+      data-cites="Dupuis:2012fm"></span>. The other main approach is string theory, which was found to be connected to gravity by the fact that one of the string modes corresponds to the graviton, the hypothetical force boson for gravity. However
+    there are issues with string theory, which include its reliance on supersymmetry. A proposed new symmetry that means every particles currently known has a supersymmetric partner. However, no evidence has of supersymmetry has been seen and this
+    coupled with the lack of predictive power of string theory make it a undesirable framework to currently research.<br />
+    Noncommutative geometry is being investigated as a model for quantum gravity for two main reasons. The first is that the standard model of particle physics can be expressed as a finite noncommutative geometry <span class="citation"
+      data-cites="Connes:1995fd"></span>. Which then under the framework of spectral triples, puts general relativity and particle physics in the same framework (see below for how manifolds are expressed as noncommutative geometries) making
+    unification of the forces a realistic future of the theory. Also the idea of noncommutative geometry is to make the algebra of functions to be noncommutative, which would make the positions on the space no longer commute, making the notion of a
+    point ill-defined. This is an exciting feature for a potential theory of gravity, because it would make our understanding of quantum mechanics and gravity both regularise all of the divergences that usually appear in the standard way of trying to
+    make gravity a quantum field theory.</p>
+  <p>A problem with discretised models such as loop quantum gravity and causal set theory is their lack of familiar structure, and a lot of work goes into setting up various structures that exist in normal differential geometric approaches. This
+    problem is also present in the framework of noncommutative geometry. A brief outline of the fundamentals of noncommutative geometry is given below in Appendix <a href="#Sec:SpecTrip" data-reference-type="ref"
+      data-reference="Sec:SpecTrip">[Sec:SpecTrip]</a>.</p>
+  <p>Noncommutative geometry is an extension of normal <em>commutative geometry</em> where the commutativity refers to the algebra of continuous functions defined on a topological space always being a commutative algebra. For instance, a Riemannian
+    manifold always has a commutative algebra associated to it, <span class="math inline">\(C^\infty(M)\)</span>, which is all of the smooth functions defined everywhere on the manifold, where the algebra structure is provided by <em>pointwise</em>
+    multiplication and addition. I.e given two functions <span class="math inline">\(f,g\colon M \to \mathbb{R}\)</span> we define <span class="math inline">\(f g\)</span> and <span class="math inline">\(f+g\)</span> as follows <span
+      class="math display">\[\begin{aligned}
+      (f g)(x)&amp;= f(x) g(x) \\
+      (f+g)(x) &amp;= f(x) + g(x).\end{aligned}\]</span> The task of noncommutative geometry is to try and explore spaces where this algebra of smooth functions is no longer commutative.</p>
+  <p>Originally the space was taken to be a topological spaces and then using the Gelfand duality between topological spaces and commutative <span class="math inline">\(C^\ast\)</span>-algebras as a guideline, efforts to extend this duality to
+    noncommutative algebras and seeing what sort of geometric objects resulted from the procedure was undertaken. It was also shown that there exists a duality between a compact Riemannian spin manifolds and an algebraic structure called a
+    <em>commutative real spectral triple</em> <span class="citation" data-cites="Connes:2013ht"></span>. An aim of noncommutative geometry is to try extend this duality to where the algebra (of smooth functions) involved in the spectral triple is
+    noncommutative <span class="citation" data-cites="Madore:1992ij Paschke:2006ex"></span>. Efforts to relax some of the other conditions on the manifold are being investigated, such as the work on Lorentzian spectral triples <span class="citation"
+      data-cites="DAndrea:2016hm Besnard:2014uj Eckstein:2017eb Strohmaier:-1wi_auc Franco:2013bw 2014SIGMA..10..010F"></span> and noncompact geoemtries <span class="citation" data-cites="Gayral:2004ip Wulkenhaar:2010us"></span>.</p>
+  <p>This is where the field branches into different subtopics, and where we will follow only one. Depending on what correspondence between the geometrical world and the algebraic world you want to focus on specifies which area of noncommutative
+    geometry you end up work in. The focus for the rest of this report will be on the differential nature of geometries, which follows the work of Connes mentioned above<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+  <h3 id="noncommutative-analogues-to-manifolds">Noncommutative analogues to manifolds</h3>
+  <p>A lot of work has gone into trying to find noncommutative spectral triples that have the behaviour of a manifold<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. The most famous example is that of the Fuzzy Sphere <span
+      class="citation" data-cites="Madore:1992ij"></span> which constructions a noncommutative spectral triple, where the algebra is a finite matrix algebra and the Dirac operator is invariant under the action of <span
+      class="math inline">\(\mathfrak{su}(2)\)</span>, the Lie algebra of <span class="math inline">\(SO(3)\)</span>. The construction of the fuzzy sphere as a spectral triple is outlined in Appendix <a href="#A:fuzzysphere" data-reference-type="ref"
+      data-reference="A:fuzzysphere">[A:fuzzysphere]</a>.</p>
+  <p>The fuzzy sphere highlights one of the reasons why there is current research into noncommutative geometry as a quantum gravity pathway. There is an interpretation of the fuzzy sphere as being a sphere but with cutoff in the spectral harmonics
+    which is described extensively in <span class="citation" data-cites="DAndrea:2012dh"></span>. Given the algebra of functions <span class="math inline">\(C(\mathbb{S}^2)\)</span>, we can decompose this space into a direct sum of irreducible
+    representations of <span class="math inline">\(\mathfrak{su}(2)\)</span>: <span class="math display">\[C(\mathbb{S}^2) \simeq \bigoplus\limits_{l=0}^\infty V_l\]</span> where <span class="math inline">\(V_l\)</span> is the vector space underlying
+    the irreducible representation of <span class="math inline">\(su(2)\)</span> with the highest weight <span class="math inline">\(l\in \mathbb{N}\)</span> which is spanned by the spherical harmonics <span class="math inline">\(Y_{l,m}\)</span>. We
+    can then impose a cutoff in the energy spectrum by ignore all but the first <span class="math inline">\(n+1\)</span> representations in the decomposition of <span class="math inline">\(C(\mathbb{S}^2)\)</span>. Thus, in the fuzzy sphere’s
+    spectral triple we can take the <em>fuzzy spherical harmonics</em><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> <span class="math inline">\(\hat{Y}_{l,m}\)</span> to be the generators of <span
+      class="math inline">\(M_{n+1}(\mathbb{C})\)</span>, where<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> <span class="math inline">\(l&lt;n\)</span>. We can then decompose the algebra into <span
+      class="math display">\[\mathcal{A}_n \simeq \bigoplus\limits_{l=0}^{n}V_l\]</span> As the spherical harmonics correspond to higher angular momentum modes, the fact that there is a <em>cutoff in <span class="math inline">\(l\)</span></em> can be
+    interpreted as having a maximum angular momentum and thus energy for the space. As we can view a maximum energy as an equivalent minimum region we can probe, the fuzzy sphere can be viewed as having a minimal renderable distance, i.e. a Planck
+    length. The implications of a planck length being a natural outcome of requiring the underlying space to be noncommutative is a very appealing property and the idea is that a noncommutative analogue to a spacetime will provide a good model for
+    quantum gravity.</p>
+  <h1 id="overview-of-attained-results">Overview of attained results</h1>
+  <p>One of the main drawbacks of noncommutative geometry is the lack of any familiar differential calculus. With the notion of coordinates being ill defined, derivatives and integrals are also hard to express. However, there is a mechanism for
+    integration over the noncommutative geometry and also there are frameworks for a differential calculus, but they have some caveats and intricacies to work out (see <span class="citation" data-cites="GraciaBondia:2001gt"></span> for a review of
+    the developments.). However, the other tools we usually have in geometry to describe certain spaces are few and far between. The notions of curvature and dimension are all lost in the translation. So much of the research conducted is to create
+    spaces that have some familiar traits, and also to develop measurements we can take of these spaces that give us a way to categorise them. So far, the spaces well described all have some Lie algebra symmetry underlying them. The easiest to grasp
+    is that of a fuzzy sphere mentioned before. Determining what dimension the fuzzy sphere is a non-trivial question due to the fact that its algebra is finite dimensional, many of the proposed dimensional measures proposed do not yield results for
+    such spaces. So methods of determining the dimension of a fuzzy sphere has been explored and also applied to the random fuzzy geometries of <span class="citation" data-cites="Barrett:2015hq"></span> and also a fuzzy torus being developed by <span
+      class="citation" data-cites="barrett_gaunt"></span>. These methods are based on the spectral properties of the heat kernel trace and the spectral zeta function.</p>
+  <h1 id="research-plan-for-the-next-12-months">Research Plan for the next 12 months</h1>
+  <ol>
+    <li>
+      <p>Finish Spectral Dimension and Zeta function paper with John and Lisa August/September 2017</p>
+    </li>
+    <li>
+      <p>Research Dirac operators on coadjoint orbits (and their generalisation when they don’t exist in the normal sense)</p>
+    </li>
+    <li>
+      <p>Research the difference between Lie derivative and covariant derivative on spinor fields. This will be closely related to the coadjoint orbit work.</p>
+    </li>
+  </ol>
+  <h1 id="time-table-for-drafting-thesis">Time table for drafting Thesis</h1>
+  <p>Once the paper for the zeta function is submitted, I’ll start writing up the section of zeta functions and all the necessary details. If the submission is delayed, I will start writing the thesis section in September/October 2017.</p>
+  <p>Once I have a section on the zeta function, this will lead me to introduce various topics. Which I will use to flesh out the document. So as December arrives, I’ll be writing up the basics needed, trying to not be too mathematically heavy where
+    I can, otherwise it will be a long arduous document. By April 2018 I should have produced some new work on the topics mentioned above, which again will lead me to writing up new background and new chapters. Which will start around April if all
+    goes well. The finishing of the thesis will be set into full motion in August/September 2018, when all research will stop and I know what topics I will be dealing with.</p>
+  <h1 id="a-substantial-piece-of-work-demonstrating-clear-and-coherent-maths.">A substantial piece of work demonstrating clear and coherent maths.</h1>
+  <h2 id="spectral-zeta-functions-heat-kernels-and-geometry">Spectral Zeta Functions, Heat Kernels and Geometry</h2>
+  <p>The aim of spectral geometry as a whole is to try and recover the geometric information of various types of space (Riemannian manifolds, metric spaces etc) by examining the spectrum of their various operators. The most famous example is by
+    studying the Laplacian of a Riemannian manifold and trying to determine the dimension, volume, integral of the scalar curvature etc. For operators on finite dimensional vector spaces or for compact operators the spectrum is just the set of
+    eigenvalues of the operator. However for more complicated objects, like Riemannian manifolds or when the operator acts on an infinite-dimensional vector space, the spectrum contains the eigenvalues and other values which are not eigenvalues.</p>
+  <p>The operator we are concerned with is that of the Dirac Operator which can be defined local on any spin manifold as <span class="math display">\[\slashed{D} = i e^{\mu}_a \gamma_a \nabla_\mu\]</span> where <span
+      class="math inline">\(e^{\mu}_a\)</span> are vielbeins<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> and <span class="math inline">\(\gamma^a\)</span> are the flat gamma matrices which generalise the Pauli matrices and Dirac
+    matrices to higher dimensions. The main motivation for studying the Dirac operator over other operators is because of the Reconstruction theorem by Alain Connes. This states that given a commutative real spectral triple you can recover a unique
+    compact manifold and Riemannian metric such that the algebra is the algebra of functions, the Hilbert space is the twice integrable spin sections and the self adjoint operator is the Dirac operator. This is a powerful spectral theorem, as such
+    statements for the laplace operator lack uniqueness due to isospectral laplacians <span class="citation" data-cites="Milnor:1964uv"></span>. From here onwards we will refer to a smooth compact Riemannian manifold as just a manifold. A method to
+    extract information about a manifold from its Dirac operator spectrum is by studying the spectral zeta functions. Traditionally the Laplace operator is the object studied via spectral zeta functions, however much of the theory is valid for
+    operators of Laplace-type. These are second order differential operators,<span class="math inline">\(P\)</span>, such that <span class="math inline">\(P = \Delta + E\)</span>, where <span class="math inline">\(E\)</span> is a zeroth order
+    differential operator. If we have a first order operator <span class="math inline">\(D\)</span> such that <span class="math inline">\(D^2\)</span> is of Laplace type then we say that <span class="math inline">\(D\)</span> is of Dirac-type. We
+    will be examining the spectral zeta function (SP<span class="math inline">\(\zeta\)</span>) of the Dirac operator squared, which can be see to be of Laplace-type from the Lichnerowicz formula <span class="citation"
+      data-cites="lichnerowicz1962laplacien LawsonJr:1989ub"></span>. Let <span class="math inline">\(\{ \lambda_i\}\)</span> be the set of non zero eigenvalues of a Dirac operator, <span class="math inline">\(D\)</span>. Then the spectral zeta
+    function of the Dirac operator is defined as<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>: <span class="math display">\[\begin{aligned}
+      \zeta_{D^2}(s) = \text{Tr}\left( {(D^2)}^{-s} \right) = \sum\limits_i {(\lambda_i^2) }^{-s} \;.
+      \label{eq:zeta1}\end{aligned}\]</span> To extract geometry from the SP<span class="math inline">\(\zeta\)</span> we need to draw on another spectral invariant called the Heat Kernel trace<a href="#fn7" class="footnote-ref"
+      id="fnref7"><sup>7</sup></a> which is defined as follows <span class="math display">\[K(t) = \text{Tr}(\exp(-tD^2)). \label{eq:HK}\]</span> We can then make use of the fact that the spectral zeta function is the inverse Mellin transform of the
+    spectral heat kernel: <span class="math display">\[\begin{aligned}
+      \zeta_{D^2}(s) &amp;= \frac{1}{\Gamma(s)}\int\limits_0^\infty t^{s-1} K(t) \mathrm{d}t \label{eq:zetaHK}\end{aligned}\]</span> This expression can be inverted to express the heat kernel in terms of the zeta function: <span
+      class="math display">\[\begin{aligned}
+      K(t) = \frac{1}{2 \pi i} \oint ds \ t^{-s} \Gamma(s) \zeta_{D^2}(s)
+      \label{eq:HKzeta}\end{aligned}\]</span> where the contour surrounds all the poles of the integrand. Note that these transforms work in the case of a finite spectral triple and then the poles in <a href="#eq:HKzeta" data-reference-type="eqref"
+      data-reference="eq:HKzeta">[eq:HKzeta]</a> are just those of the gamma function. The Heat Kernel for a Laplace type operator has an asymptoptic expansion as follows <span class="citation"
+      data-cites="Grubb:1974xt Seeley:1969fd Seeley:1966bl"></span>: <span class="math display">\[K(t) \simeq t^{-d/2}(a_0 +a_1 t + a_2 t^2 + a_3 t^3 + a_4 t^4 + \dots)\]</span> where <span class="math inline">\(d\)</span> is the dimension of the
+    underlying space. Using this expansion, we can relate the residues of the integrand of <a href="#eq:HKzeta" data-reference-type="eqref" data-reference="eq:HKzeta">[eq:HKzeta]</a> to the expansion coefficients <span
+      class="math inline">\(a_k\)</span>. We find that <span class="math display">\[\begin{aligned}
+      a_k = Res_{s=\frac{d-k}{2}}(\Gamma(s)\zeta_{D^2}(s))\label{E:coeffRes}\end{aligned}\]</span> where <span class="math inline">\(\Gamma(s)\)</span> is Euler’s gamma function. It is known that the expansion coefficients are only non zero for even
+    values of <span class="math inline">\(k\)</span> <span class="citation" data-cites="Seeley:1967ep"></span> and for even <span class="math inline">\(k\)</span> they can be expressed in terms of local geometrical invariants <span class="citation"
+      data-cites="Gilkey:1995mj Gilkey:1975iq"></span>. The first two coefficients take the following geometric form: <span class="math display">\[\begin{aligned}
+      a_0(D^2) &amp;= \frac{1}{(4\pi)^{\frac{d}{2}}} \text{Tr}(Id) \int_{M} \mathrm{d}^d x \sqrt{g} \label{Eq:a_0}\\
+      a_2(D^2) &amp;= - \frac{1}{(4\pi)^{\frac{d}{2}}} \frac{1}{12} \Tr(Id) \int_{M} \mathrm{d}^d x \sqrt{g} R \label{Eq:a_2}\end{aligned}\]</span> where here <span class="math inline">\(R\)</span> is the Ricci scalar and the trace is over the spinor
+    space. So we using equations <a href="#E:coeffRes" data-reference-type="eqref" data-reference="E:coeffRes">[E:coeffRes]</a>-<a href="#Eq:a_2" data-reference-type="eqref" data-reference="Eq:a_2">[Eq:a_2]</a> we can use the residues of the zeta
+    function to determine various quantities such as the volume and curvature. Explicitly <span class="math display">\[\begin{aligned}
+      Vol(M) &amp;= \frac{(4\pi)^{d/2}}{\Tr(Id)} Res_{s=\frac{d}{2}}(\Gamma(s)\zeta_{D^2}(s))\label{Eq:volRes}\\
+      \int_{M} \mathrm{d}^d x \sqrt{g} R &amp;= - 12 \frac{(4\pi)^{d/2}}{\Tr(Id)} Res_{s=\frac{d}{2}-1}(\Gamma(s)\zeta_{D^2}(s))\label{Eq:EHRes}\end{aligned}\]</span></p>
+  <p>For <span class="math inline">\(2\)</span>d manifolds, like the sphere which we use as a benchmark, the spinors are two dimensional, which gives<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> <span class="math inline">\(Vol(M) =
+      2\pi Res_{s=1}(\zeta_{D^2}(s))\)</span>. Also for <span class="math inline">\(2\)</span>d manifolds the Ricci scalar is twice the Gaussian curvature, and we can make use of the Gauss-Bonnet theorem to related the second heat kernel coefficient
+    to the Euler characteristic of the space. <span class="math display">\[\begin{aligned}
+      \chi(M) &amp;= - 6 Res_{s=0}(\Gamma(s)\zeta_{D^2}(s)) = - 6 \zeta_{D^2}(0)\end{aligned}\]</span> We will use these results from the spectral geometry of manifolds as a guideline for the investigations into the spectral geometry of finite
+    noncommutative geometries. For a manifold, the spectrum is infinite, and the resulting zeta function (specifically its analytic continuation) has poles at <span class="math inline">\(s= \frac{d}{2}- \nu\)</span> for <span
+      class="math inline">\(\nu \in \{0,1,2,\ldots, \lfloor d/2 \rfloor \}\)</span>.</p>
+  <p>An example of this is the continuum 2-sphere, for which the SP<span class="math inline">\(\zeta\)</span> is proportional to the Riemann <span class="math inline">\(\zeta\)</span> function with argument <span class="math inline">\(2s-1\)</span>,
+    and thus has a pole at <span class="math inline">\(s=1\)</span> (c.f. Figure <a href="#fig:ZetaS" data-reference-type="ref" data-reference="fig:ZetaS">[fig:ZetaS]</a>).</p>
+
+  <figure>
+    <embed src="https://pauldruce.github.io/assets/figures/ZetaS.pdf" style="width:50.0%" />
+    <figcaption><span id="fig:ZetaS" label="fig:ZetaS">[fig:ZetaS]</span>The SP<span class="math inline">\(\zeta\)</span> for the continuum <span class="math inline">\(2\)</span>-sphere. The pole at <span class="math inline">\(s=d/2=1\)</span>
+      indicates the dimension.</figcaption>
+  </figure>
+  <p>For a fuzzy space, such as those outlined in <span class="citation" data-cites="Barrett:2015hn"></span>, we have a finite number of eigenvalues, and hence the sum in <a href="#eq:zeta1" data-reference-type="eqref"
+      data-reference="eq:zeta1">[eq:zeta1]</a> is finite, which automatically regularises the poles at <span class="math inline">\(s=\frac{d}{2}, \cdots\)</span>. For a noncommutative analogue of a manifold, instead of a pole as <span
+      class="math inline">\(s=\frac{d}{2}\)</span> we expect to see the series grow logarithmically. This is due to the fact that on a <span class="math inline">\(d\)</span> dimensional manifold the <span class="math inline">\(n\)</span>-th
+    eigenvalue of the Dirac operator scales like <span class="math inline">\(\lambda_n \sim n^{1/d}\)</span> for large<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> <span class="math inline">\(n\)</span>, so at <span
+      class="math inline">\(s=\frac{d}{2}\)</span>, the zeta function is the sum of <span class="math inline">\(n^{-1}\)</span>, which diverges logarithmically. We expect fuzzy spaces to express this behaviour as we increase the size of the matrix
+    algebra. If we have <span class="math inline">\(N \gg 1\)</span> eigenvalues, then the series diverges ∼ <span class="math inline">\(\log(N)\)</span>. Using the fact that the zeta function series value at s = 0 precisely counts the number of
+    eigenvalues when dealing with finite spectra. We can scale the zeta function by <span class="math inline">\(\log(\zeta_{D^2}(0))^{−1}\)</span> and locate the value of s at which the zeta functions for various matrix sizes are equal, which would
+    indicate the location of a pole in the infinite <span class="math inline">\(N\)</span> limit. I.e the hypothesis is that the value of <span class="math inline">\(s\)</span> where we have <span
+      class="math display">\[\frac{\zeta_{D_n^2}(s)}{\log(\zeta_{D_n^2}(0))} = \frac{\zeta_{D_m^2}(s)}{\log(\zeta_{D_m^2}(0))}\]</span> will limit to the location of the pole of the continuum SP<span class="math inline">\(\zeta\)</span> which is at
+    <span class="math inline">\(\frac{d}{2}\)</span>.</p>
+  <p>We can test this for the fuzzy sphere, the SP<span class="math inline">\(\zeta\)</span> can be calculated as <span class="math display">\[\begin{aligned}
+      \zeta_{D_n^2}(s)&amp;=2 n {(n^2)}^{-s}+4 H_{n-1}^{(2s-1)}\end{aligned}\]</span> with <span class="math inline">\(H_{n}\)</span> the Harmonic numbers<span class="citation" data-cites="sondow2008harmonic"></span>, <span
+      class="math display">\[\begin{aligned}
+      H_n^{r}=\sum_{k=1}^{n} \frac{1}{k^r} \;.\end{aligned}\]</span> At <span class="math inline">\(s=1\)</span> this reduces to <span class="math display">\[\begin{aligned}
+      \zeta_D(2)&amp;=2 n^{-2}+4 H_{n-1} \;,\end{aligned}\]</span> which in the limit <span class="math inline">\(n \to \infty\)</span> behaves as <span class="math inline">\(\log{n}+ \gamma + O(1/n)\)</span>.</p>
+  <p><embed src="https://pauldruce.github.io/assets/figures/analytic/zeta/ZetaFuzzyS.pdf" title="fig:" style="width:45.0%" /> <embed src="https://pauldruce.github.io/assets/figures/analytic/zeta/ZetaFuzzyS_diff.pdf" title="fig:" style="width:45.0%" /></p>
+  <p>In the left hand plot of figure <a href="#fig:ZetaFuzzyS" data-reference-type="ref" data-reference="fig:ZetaFuzzyS">[fig:ZetaFuzzyS]</a> ww show the spectral zeta function for the fuzzy sphere divided by <span
+      class="math inline">\(\log{N}\)</span>. The point of intersection is where we expect to read of the dimension, so to make this move visible we plot the difference between consecutive <span class="math inline">\(N\)</span> values in the right
+    hand plot. The zeroes of this can then be used as dimension estimators.<br />
+    <br />
+    The fuzzy torus setup is very similar to that of the fuzzy sphere, except the Dirac operator is different. The Dirac operator is a combination of gamma matrices and commutators of the ‘clock’, <span class="math inline">\(C\)</span>, and ‘shift’
+    operators, <span class="math inline">\(S\)</span> which satisfy the relation <span class="math inline">\(CS = qSC\)</span>, where <span class="math inline">\(q^N=1\)</span> for some natural number <span class="math inline">\(N\)</span>. The
+    spectrum of the operator is a complicated expression involing the use of so-called ‘q-numbers’, all details for the fuzzy torus will be presented in <span class="citation" data-cites="barrett_gaunt"></span>. The important result involving the
+    fuzzy torus is that the above method still produces reasonable results for the dimension, shown in Figure <a href="#fig:ZetaFuzzyT" data-reference-type="ref" data-reference="fig:ZetaFuzzyT">[fig:ZetaFuzzyT]</a></p>
+  <p><embed src="https://pauldruce.github.io/assets/figures/fuzzyToruszeta.pdf" title="fig:" style="width:45.0%" /> <embed src="https://pauldruce.github.io/assets/figures/fuzzyToruszetadiff.pdf" title="fig:" style="width:45.0%" /></p>
+  <p>To understand why this is particularly interesting we need to explore the formalism in which all of the above theory for manifolds was built in.</p>
+  <h3 id="volumes">Volumes</h3>
+  <p>Using the Dixmier trace defined in Appendix <a href="#A:dix" data-reference-type="ref" data-reference="A:dix">9</a> we can see that the value of the SP<span class="math inline">\(\zeta\)</span> rescaled by <span
+      class="math inline">\(\log(N)\)</span> is precisely one of the terms in <span class="math inline">\(\Tr_\omega(D^{-2})\)</span>. For the fuzzy sphere, the terms <span class="math inline">\(a_N\)</span> are just finite selection of the continuum
+    spheres infinite series. However, the situation for the fuzzy torus is different Which using the famous result of Eqn <a href="#Eq:DixRes" data-reference-type="eqref" data-reference="Eq:DixRes">[Eq:DixRes]</a> we can relate the volume via Eq <a
+      href="#Eq:volRes" data-reference-type="eqref" data-reference="Eq:volRes">[Eq:volRes]</a>. The volumes of the fuzzy sphere are shown in Table <a href="#Table:SphereVol" data-reference-type="ref"
+      data-reference="Table:SphereVol">[Table:SphereVol]</a>.</p>
+  <p>The same process is done for the fuzzy torus and the volumes are shown in FigureZ<a href="#Fig:TorVol" data-reference-type="ref" data-reference="Fig:TorVol">[Fig:TorVol]</a>.The reason the fuzzy torus is particularly interesting is because the
+    spectrum of Dirac operator is distinctly different from that of the continuum torus. It is not just a subset of the continuum like in the sphere case but a seemingly unrelated sequence <span class="math inline">\(a_N\)</span> as we increase the
+    matrix size in the fuzzy torus spectral triple. Which agrees with the Torus spectrum in the continuum limit, so the Dixmier trace, will agree.</p>
+
+  <figure>
+    <embed src="https://pauldruce.github.io/assets/figures/torusvol.pdf" style="width:45.0%" />
+    <figcaption>Volume of the fuzzy torus vs the Flat Torus. Solid line = Flat Torus, data points = volume of fuzzy torus.</figcaption>
+  </figure>
+  <p> <span id="Fig:TorVol" label="Fig:TorVol">[Fig:TorVol]</span></p>
+  <p>We have also applied this to the random spectral triples generated in <span class="citation" data-cites="Barrett:2015hq"></span> which is currently being constructed in a paper with Lisa Glaser and John Barrett. Which makes use of the spectral
+    dimension and a new object called the spectral variance.</p>
+  <p>It is immediately clear that this definition of the dimension only works if we can examine the same type of fuzzy space at different matrix sizes. While this is a disadvantage in so far as it requires more computer power to examine, it is nice
+    in so far as it only recovers manifold dimension in the large matrix limit, hence giving a natural flow towards continuum physics. The techniques sued to examine the random geometries do not require a family of spectral triples, but what we can
+    determine from such techniques is less that the SP<span class="math inline">\(\zeta\)</span>.</p>
+
+  <p><span>Y Y Y Y Y Y Y Y</span><br />
+    <span class="math inline">\(n\)</span> &amp; 10 &amp; 100 &amp; 200 &amp; 300 &amp; 455 &amp; 1000 &amp; <span class="math inline">\(\infty\)</span><br />
+    <span class="math inline">\(\frac{\zeta_{D^2_n}(1)}{\log(N)}\)</span> &amp; 3.84409 &amp; 3.91247 &amp; 3.9226 &amp; 3.92751 &amp; 3.93194 &amp; 3.93899 &amp; 4<br />
+    Volume &amp; 1.922045 &amp; 1.956235 &amp; 1.9613 &amp; 1.963755 &amp; 1.96597 &amp; 2<br />
+  </p>
+  <p><span id="Table:SphereVol" label="Table:SphereVol">[Table:SphereVol]</span></p>
+  <h2 id="random-geometries">Random Geometries</h2>
+  <p>Barrett and Glaser <span class="citation" data-cites="Barrett:2015hq"></span> made use of the general form of a Dirac operator based on a matrix geometry spectral triple. The formula was presented in <span class="citation"
+      data-cites="Barrett:2015hn"></span> and the setup goes as follows</p>
+  <h3 id="fuzzy-spectral-triples">Fuzzy spectral triples</h3>
+  <p>To successfully describe a fuzzy spectral triple we have to deal with Clifford algebras over <span class="math inline">\(\mathbb{R}^n\)</span>. You can view these as the tensor algebra generated by a set of elements in <span
+      class="math inline">\(\mathbb{R}^n\)</span>, <span class="math inline">\(\{\gamma_a\}\)</span> which satisfy the relation: <span class="math display">\[\gamma_a \gamma_b + \gamma_b \gamma_a = 2 \eta_{ab}\]</span> where <span
+      class="math inline">\(\eta\)</span> is a diagonal matrix with <span class="math inline">\(\pm 1\)</span> in its entries. However, as we still require a Hilbert space in our spectral triple, which in turn requires us to have a positive definite
+    inner product. We require that all the <span class="math inline">\(\gamma_a\)</span>’s are unitary and we have the standard hermitian inner product <span class="math inline">\((u,v) = \sum_i \bar{u}_i v_i\)</span> on the Hilbert space. This
+    requirement doesn’t impose any restrictions on the <span class="math inline">\(\gamma_a\)</span> as they form a finite group and finite groups always have a unitary representation <span class="citation" data-cites="Hamermesh:1962wm"></span>.
+    Which just leaves us to choose a basis of the vector space these elements act on, <span class="math inline">\(V\)</span>, which will be the Hilbert space of our spectral triple, such that the hermitian form is the standard one. Thus, if <span
+      class="math inline">\(\gamma_a^2 = 1\)</span> then <span class="math inline">\(\gamma_a\)</span> is Hermitian and if <span class="math inline">\(\gamma_b^2 = -1\)</span> then <span class="math inline">\(\gamma_b\)</span> is anti-Hermitian. Note
+    that if <span class="math inline">\(\eta\)</span> has <span class="math inline">\(p\)</span> entries of <span class="math inline">\(+1\)</span> and <span class="math inline">\(q\)</span> entries of <span class="math inline">\(-1\)</span>, then we
+    say the Clifford module is of type <span class="math inline">\((p,q)\)</span>, and the number <span class="math inline">\(s = p-q\)</span> (mod 8), called the signature of the clifford module, determines much of the characteristics of the
+    Clifford module. The signature, <span class="math inline">\(s\)</span>, also coincides with the KO-dimension of the associated spectral triple. Representing this Clifford algebra as complex matrices<a href="#fn10" class="footnote-ref"
+      id="fnref10"><sup>10</sup></a>, which act on a vector space <span class="math inline">\(V\)</span>, provides us with the Clifford module we require to define a fuzzy space.</p>
+  <p>Now let us define a type <span class="math inline">\((0,0)\)</span> matrix geometry:</p>
+  <p>A type <span class="math inline">\((0,0)\)</span> matrix geometry<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a> is a real spectral triple of KO dimension <span class="math inline">\(s_0 = 0\)</span> and the following
+    objects: <span class="math inline">\((\mathcal{H}_0, \mathcal{A}_0, D_0=0; \gamma_0 = 1, J_0)\)</span></p>
+  <p>It can be shown (see <span class="citation" data-cites="Barrett:2015hn"></span>) that all type <span class="math inline">\((0,0)\)</span> matrix geometries are isomorphic to the case when <span class="math inline">\(\mathcal{H}_0\)</span> is a
+    <span class="math inline">\(\mathbb{C}\)</span>-linear vector subspace of <span class="math inline">\(M_n(\mathbb{C})\)</span> such that if <span class="math inline">\(\mathbb{C}^n\)</span> with its standard Hermitian inner product is a faithful
+    left module of the algebra <span class="math inline">\(\mathcal{A}_0\)</span>, we have that <span class="math inline">\(am \in \mathcal{H}_0\)</span> and also <span class="math inline">\(m^*\in \mathcal{H}_0\)</span>. If this is the case then the
+    representation of <span class="math inline">\(\mathcal{A}_0\)</span> on to <span class="math inline">\(\mathcal{H}_0\)</span> is just matrix multiplication, the real structure is just Hermitian conjugation <span class="math inline">\(J_0(\cdot) =
+      (\cdot)^\ast\)</span> and the inner product is just <span class="math inline">\((m_1,m_2) = \text{Tr}( m_1^\ast m_2)\)</span>. It can be shown that all the axioms for a type <span class="math inline">\((0,0)\)</span> matrix geometry are
+    satisfied by this collection of objects (see <span class="citation" data-cites="Barrett:2015hn"></span>).</p>
+  <p>We are now ready to define a fuzzy geometry. First we take all of the algebras in question to be <em>simple algebras</em>. Thats means <span class="math inline">\(\mathcal{A} = M_n(\mathbb{C}), M_n(\mathbb{R})\)</span> or <span
+      class="math inline">\(M_{n/2}(\mathbb{H})\)</span>. For the sake of brevity, the assumption that <span class="math inline">\(\mathcal{A} = M_N(\mathbb{C})\)</span> will be taken. Furthermore we impose that <span
+      class="math inline">\(\mathcal{H}_0 = M_n(\mathbb{C})\)</span>, where in the case of <span class="math inline">\(\mathcal{A} = M_{n/2}(\mathbb{H})\)</span> we express the quaternions as <span class="math inline">\(2\times 2\)</span> complex
+    matrices, such that <span class="math inline">\(M_{n/2}(\mathbb{H}) \subset M_n(\mathbb{C})\)</span></p>
+  <p>Let <span class="math inline">\(V\)</span> be a Clifford module of type <span class="math inline">\((p,q)\)</span> with chirality operator <span class="math inline">\(\gamma\)</span> and real structure <span class="math inline">\(C\)</span>. For
+    <span class="math inline">\(p+q\)</span> even let <span class="math inline">\(V\)</span> be irreducible and for <span class="math inline">\(p+q\)</span> odd let the chiral subspaces <span class="math inline">\(V_\pm\)</span> be irreducible. A
+    <em>fuzzy space</em> is a real spectral triple with the following objects</p>
+
+  <ul>
+    <li>
+      <p><span class="math inline">\(\mathcal{H} = V \otimes M_n(\mathbb{C})\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\mathcal{A} = M_n(\mathbb{C})\)</span></p>
+    </li>
+  </ul>
+  <p> </p>
+
+  <ul>
+    <li>
+      <p><span class="math inline">\(\Gamma = \gamma \otimes 1\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(J = C\otimes J_0\)</span></p>
+    </li>
+  </ul>
+
+  <p>where the inner product on <span class="math inline">\(\mathcal{H}\)</span> is defined by: <span class="math display">\[\langle v_1 \otimes m_1, v_2 \otimes m_2 \rangle = (v_1,v_2) \text{Tr}(m_1^\ast m_2)\]</span> and the action of the algebra
+    is just my multiplication on <span class="math inline">\(M_n(\mathbb{C})\)</span>, i.e. <span class="math inline">\(\rho(a)(v\otimes m) = v \otimes (am)\)</span>. The actions of <span class="math inline">\(\Gamma\)</span> and <span
+      class="math inline">\(J\)</span> on an element of <span class="math inline">\(\mathcal{H}\)</span> are as follows: <span class="math display">\[\Gamma(v\otimes m) = \gamma v \otimes m, \qquad J(v \otimes m) = Cv \otimes m^{\ast}\]</span> And
+    the final object is the Dirac operator, <span class="math inline">\(D\)</span>, where it can be shown (see <span class="citation" data-cites="Barrett:2015hn"></span>) that depending on the sign of <span
+      class="math inline">\(\epsilon^{\prime}\)</span>, takes the following forms:</p>
+
+  <p>For this case we have that <span class="math inline">\(J\)</span> and <span class="math inline">\(D\)</span> commute and that <span class="math inline">\(\langle D(v_1 \otimes m_1), v_2 \otimes m_2 \rangle= \langle v_1 \otimes m_1, D(v_2 \otimes
+      m_2 ) \rangle\)</span>, we have that the Dirac operator has to be of the form <span class="citation" data-cites="Barrett:2015hn"></span>: <span class="math display">\[D (v\otimes m ) = \sum_i \alpha^i v \otimes \left[ L_i, m \right] + \sum_j
+      \tau^{j} v \otimes \{H_j, m \}
+      \label{D1}\]</span> where <span class="math inline">\(\alpha^i\)</span> are products of gamma matrices and both <span class="math inline">\(\alpha^i\)</span> and <span class="math inline">\(L_i\)</span> are anti-Hermitian matrices, and where
+    <span class="math inline">\(\tau^j\)</span> are products of gamma matrices and both <span class="math inline">\(\tau^j\)</span> and <span class="math inline">\(H_j\)</span> are Hermitian matrices.</p>
+
+  <p>For this case, we have that <span class="math inline">\(J\)</span> and <span class="math inline">\(D\)</span> now anti-commute and also note that <span class="math inline">\(C\)</span> anti-commutes with the <span
+      class="math inline">\(\gamma_a\)</span> in such cases, so we need to split the sums into sums where we have a product of even or odd number of <span class="math inline">\(\gamma_a\)</span>. However we still require <span
+      class="math inline">\(D\)</span> to be self-adjoint, so we still require <span class="math inline">\(D\)</span> to have either entirely Hermitian or entirely anti-Hermitian entries. This leaves us with the following form <span class="citation"
+      data-cites="Barrett:2015hn"></span>: <span class="math display">\[\begin{aligned}
+      D (v\otimes m ) &amp;= \sum_i \alpha_-^i v \otimes \left[ L_i, m \right] + \sum_j \tau_-^{j} v \otimes \{ H_j, m \} \nonumber \\
+      &amp;+ \sum_k \alpha_+^k v \otimes \{L_k, m \} + \sum_l \tau_+^{l} v \otimes \left[H_l, m\right] \label{D-1}\end{aligned}\]</span> where the <span class="math inline">\(+\)</span> or <span class="math inline">\(-\)</span> subscript on <span
+      class="math inline">\(\alpha, \tau\)</span> indicates whether they are the product of an even number of <span class="math inline">\(\gamma_a\)</span>, indicated by <span class="math inline">\(+\)</span>, or by an odd number of <span
+      class="math inline">\(\gamma_a\)</span>, indicated by a <span class="math inline">\(-\)</span>.</p>
+  <p>This construction lends itself to Monte Carlo simulation <span class="citation" data-cites="Barrett:2015hq"></span>, where the entries <span class="math inline">\(L, H\)</span> in the Dirac operator are randomly generated, and the partition
+    function is <span class="math inline">\(Z = \int_{\mathcal{G}} S(D) \mathrm{d}D\)</span>. Where the action <span class="math inline">\(S(D)\)</span> that we will be using at is of the form <span class="math inline">\(S(D) = g_4 D^4 + g_2
+      D^2\)</span>, which under the scaling of the Dirac operator by some constant, can rescaled <span class="math inline">\(g_4=1\)</span> (assuming <span class="math inline">\(g_4 \neq 0\)</span> to begin with). A phase transition was found
+    in <span class="citation" data-cites="Barrett:2015hq"></span> and it is claimed that it is at this phase transition that manifold behaviour is expected to be observed. So some spectral measurements like those above for the sphere and torus were
+    tested.</p>
+  <p>Volumes for the different types presented in <span class="citation" data-cites="Barrett:2015hq"></span> have been calculated, however there is a choice here of scaling as the simulation restricts the eigenvalue range to a fix region about the
+    origin, with bigger matrix geometries just more densely packing the region. This artificial restriction is to do with the rescaling of the <span class="math inline">\(g_4\)</span> value. However, we can use the spectral dimension/variance to
+    determine the dimension of each random geometry. Then we can use this to scale the eigenvalues to be <span class="math inline">\(N^{1/d}\)</span>, where <span class="math inline">\(N\)</span> is the number of eigenvalues. This is the feature that
+    the SP<span class="math inline">\(\zeta\)</span> relies on. Testing with integer values of <span class="math inline">\(d\)</span> were tested, however, these are less desirable as the require <em>ad-hoc</em> assumptions. The volumes of this
+    geometries are should for the spectral variance scaling are shown in Figures <a href="#P:voltyp11" data-reference-type="ref" data-reference="P:voltyp11">[P:voltyp11]</a>-<a href="#P:voltyp13" data-reference-type="ref"
+      data-reference="P:voltyp13">[P:voltyp13]</a>.</p>
+
+
+
+  <p> <span id="P:voltyp11" label="P:voltyp11">[P:voltyp11]</span></p>
+
+  <figure>
+    <embed src="https://pauldruce.github.io/assets/figures/Volumes/Volumes_typ13_d=maxV.pdf" style="width:45.0%" />
+    <figcaption>Volume of type 13 with dimension determined by the maximum of the spectral variance. The phase transition value for type 13 is around 3.7</figcaption>
+  </figure>
+  <p> <span id="P:voltyp13" label="P:voltyp13">[P:voltyp13]</span></p>
+  <p>The volumes highlight the fact there are distinct behaviours that these geometries exhibit depending on the value of <span class="math inline">\(g_2\)</span>, and motivate further research into these geometries.</p>
+
+  <h1 id="a-brief-introduction-to-spectral-triples">A brief introduction to spectral triples</h1>
+  <p> <span id="Sec:SpecTrip" label="Sec:SpecTrip">[Sec:SpecTrip]</span></p>
+  <p>A <em>spectral triple</em> is a triple <span class="math inline">\(\left( \mathcal{H},\mathcal{A}, D\right)\)</span>, where:</p>
+  <ul>
+    <li>
+      <p><span class="math inline">\(\mathcal{H}\)</span> is a Hilbert space</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\mathcal{A}\)</span> is a <span class="math inline">\(\ast\)</span>-unital algebra represented as bounded operators on <span class="math inline">\(\mathcal{H}\)</span>.</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(D\)</span> is a self-adjoint operator on <span class="math inline">\(\mathcal{H}\)</span> such that the resolvent <span class="math inline">\({(i+D)}^{-1}\)</span> is a compact operator and <span
+          class="math inline">\(\left[ D, a \right]\)</span> is bounded for each <span class="math inline">\(a\in \mathcal{A}\)</span>.</p>
+    </li>
+  </ul>
+  <p>We often require additional structure to our noncommutative geometries if we require them to be appropriate generalisations of Riemannian spin geometries. The first is a <span class="math inline">\(\mathbb{Z}_2\)</span>-grading <span
+      class="math inline">\(\gamma\)</span> on the Hilbert space <span class="math inline">\(\mathcal{H}\)</span> such that: <span class="math display">\[\gamma a = a \gamma \quad (\forall a\in \mathcal{A}), \qquad \gamma D = -D \gamma\]</span> If
+    such a <span class="math inline">\(\gamma\)</span> exists then we the spectral triple is said to be <em>even</em>. The second is an anti-linear map <span class="math inline">\(J\colon \mathcal{H} \to \mathcal{H}\)</span> such that: <span
+      class="math display">\[J^2 = \epsilon, \qquad JD = \epsilon^\prime DJ, \qquad J\gamma = \epsilon^{\prime \prime} \gamma J \quad (\text{when \(\gamma \) exists})\]</span> where <span class="math inline">\(\epsilon, \epsilon^{\prime},
+      \epsilon^{\prime \prime}\)</span> take values from Table <a href="#epsilonval" data-reference-type="ref" data-reference="epsilonval">[epsilonval]</a>. We also require If such a <span class="math inline">\(J\)</span> exists then the spectral
+    triple is said to be <em>real</em> and <span class="math inline">\(J\)</span> is referred to the as the <em>real structure</em>.</p>
+
+  <p><span>Y Y Y Y Y Y Y Y Y </span><br />
+    <span class="math inline">\(n\)</span> &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7<br />
+    <span class="math inline">\(\epsilon\)</span> &amp; 1&amp; 1 &amp;-1 &amp;-1 &amp;-1 &amp;-1 &amp;1 &amp;1<br />
+    <span class="math inline">\(\epsilon^{\prime}\)</span> &amp; 1 &amp;-1 &amp;1 &amp;1 &amp;1 &amp;-1 &amp;1 &amp;1<br />
+    <span class="math inline">\(\epsilon^{\prime\prime}\)</span> &amp;1 &amp; 1 &amp;-1 &amp; 1 &amp;1 &amp; 1 &amp; -1 &amp; 1<br />
+  </p>
+  <p><span id="epsilonval" label="epsilonval">[epsilonval]</span></p>
+  <p>The values for <span class="math inline">\(\epsilon, \epsilon^{\prime}, \epsilon^{\prime\prime}\)</span> are determined by the <em>KO dimension</em> of the real spectral triple, which for the spectral triple of a Riemannian spin manifold will be
+    equal to the dimension of the manifold modulo 8.</p>
+  <h1 id="the-fuzzy-sphere">The Fuzzy Sphere</h1>
+  <p> <span id="A:fuzzysphere" label="A:fuzzysphere">[A:fuzzysphere]</span> The fuzzy sphere is described by the spectral triple, <span class="math inline">\((M_n(\mathbb{C}), V\otimes M_n(\mathbb{C}), D_{FS})\)</span>. Where the Dirac operator,
+    <span class="math inline">\(D_{FS}\)</span> is given by <span class="math display">\[D = \gamma_0 + \sum\limits_{i&lt;j=1}^3 \gamma_0 \gamma_i \gamma_j \otimes \left[L_{ij}, \cdot \right]
+      \label{FuzzSphDirac}\]</span> where <span class="math inline">\(L_{ij}\)</span> are n-dimensional representations of the generators for the Lie algebra <span class="math inline">\(\mathfrak{so}(3)\)</span> which satisfy <span
+      class="math inline">\(L_{ij} = - L_{jk}\)</span> and <span class="math display">\[\left[L_{ij}, L_{kl} \right] = \delta_{jk} L_{il} + \delta_{il} L_{jk} - \delta_{jl} L_{ik} - \delta_{ik} L_{jl}\]</span> with the fact that <span
+      class="math inline">\(L_{ij} = - L_{jk}\)</span>. This form of the fuzzy sphere is given by Barrett <span class="citation" data-cites="Barrett:2015hn"></span>, which differs slightly from the likes of Madore <span class="citation"
+      data-cites="Madore:1992ij"></span> in that its defined as a spectral triple whereas Madore does not present the Dirac operator. And it differs from Grosse-Prešnajder <span class="citation" data-cites="Grosse:1995gq"></span> in that the the
+    K<span class="math inline">\(0\)</span>-dimension of the spectral triple is equal to 2, whereas G-P K<span class="math inline">\(0\)</span>-dimension is equal to <span class="math inline">\(3\)</span>. And in the continuum limit (<span
+      class="math inline">\(n\to \infty\)</span>) is it though that the K<span class="math inline">\(0\)</span>-dimension should match that of the normal sphere which is equal to <span class="math inline">\(2\)</span>. It is possible to arrive back
+    at the Grosse-Prešnajder Dirac operator as done by Barrett in <span class="citation" data-cites="Barrett:2015hn"></span>, and for reference later on the form of the Grosse-Prešnajder Dirac operator is: <span class="math display">\[D_{\text{G-P}}
+      = 1 + \sum\limits_{i&lt;j=1}^{3}\sigma_i \sigma_j \otimes \left[L_{ij},\cdot \right]
+      \label{GPDirac}\]</span></p>
+  <p>The Dirac operators both yields the spectrum <span class="math display">\[Spec(D) = \pm 1, \pm 2, \pm 3, \dots \pm n-1, +n\]</span> with the difference taking form in a disagreement of multiplicities of the values<a href="#fn12"
+      class="footnote-ref" id="fnref12"><sup>12</sup></a>. So as we let the matrix size tend to infinity we retrieve the spectrum <span class="math inline">\(\pm\mathbb{Z}\)</span>, which is the spectrum for the Dirac operator on the commutative
+    2-sphere.</p>
+  <h1 id="pseudodifferential-operators">Pseudodifferential Operators</h1>
+  <p>Pseudo-differential operators are generalisations of differential operators in a specific way. So first lets define a differential operator. Note that there are equivalent definitions of differential and pseudodifferential operators that are
+    coordinate free which lends themselves to use in noncommutative geometry. Such definitions require the use of jets and jet bundles, which are construction to allow a coordinate free expression of taylor series however for simplicity we will stick
+    to definitions involving coordinates.</p>
+  <p>A differential operator, <span class="math inline">\(P\)</span>, is given by a linear combination of derivatives given locally as <span class="math display">\[P(x,D) = \sum\limits_{|\alpha|\leq m} a_{\alpha}(x) D^{\alpha}\]</span> where <span
+      class="math inline">\(\alpha = (\alpha_1, \dots, \alpha_n) \in \mathbb{Z_+}^n\)</span> is a multi-index. <span class="math inline">\(D^\alpha = D_1^{\alpha_1}D_2^{\alpha_2}\dots D_n^{\alpha_n}\)</span></p>
+  <p>This acts on smooth functions with compact support in <span class="math inline">\(\mathbb{R}^n\)</span>. However, by utilising Fourier transforms, one can view this as multiplication by <span class="math display">\[P(\xi) = \sum\limits_\alpha
+      a_\alpha \xi^\alpha\]</span> in Fourier space and then inverse Fourier transforming back. This can be expressed as <span class="math display">\[P(x,D)u(x) = \frac{1}{(2\pi)^n} \int\limits_{\mathbb{R}^n} \int\limits_{\mathbb{R}^n} e^{i(x-y)\xi}
+      P(\xi) u(y) \mathrm{d}y \mathrm{d}\xi .\]</span> We can now generalise to pseudo-differential operators</p>
+  <p>A pseudodifferential operator <span class="math inline">\(P(x,D)\)</span> on <span class="math inline">\(\mathbb{R}^n\)</span> is an operator whose value on the function <span class="math inline">\(u(x)\)</span> is <span
+      class="math display">\[P(x,D)u(x) = \frac{1}{(2\pi)^n} \int{\mathbb{R}^n} e^{i x \cdot \xi} P(x,\xi) \hat{u}(\xi) \mathrm{d}\xi\]</span> where <span class="math inline">\(\hat{u}(\xi)\)</span> is the Fourier transform of <span
+      class="math inline">\(u(x)\)</span> and <span class="math inline">\(P(x,\xi)\)</span> belongs to a certain <em>symbol class</em> <span class="math inline">\(S^m_{1,0}\)</span>. This equates to <span class="math inline">\(P(x,\xi)\)</span> being
+    infinitely differentiable on <span class="math inline">\(\mathbb{R}^n \times \mathbb{R}^n\)</span> and such that <span class="math display">\[|D_\xi^\alpha D_\xi^\beta P(x,\xi)| \leq C_{\alpha,\beta}(1+|\xi|)^{m-|\alpha|}\]</span> for all <span
+      class="math inline">\(x,\xi \in\mathbb{R}^n\)</span> and for all multi-indices <span class="math inline">\(\alpha,\beta\)</span>. <span class="math inline">\(C_{\alpha,\beta}\)</span> are some constants and <span
+      class="math inline">\(m\)</span> is just a real number.</p>
+  <p>We say then that the differential operator <span class="math inline">\(P(x,D)\)</span> belongs to the class <span class="math inline">\(\Psi^m_{1,0}\)</span></p>
+  <h1 id="A:dix">Dixmier Trace</h1>
+  <p>Let <span class="math inline">\(T\)</span> be a compact linear operator on a Hilber space <span class="math inline">\(\mathcal{H}\)</span> such that the following norm is finite <span class="math display">\[\| T\|_{1,\infty} = \sup_N
+      \frac{\sum_{i=1}^N \mu_i(T)}{\log(N)} &lt; \infty\]</span> where <span class="math inline">\(\mu_i(T)\)</span> are the eigenvalues of <span class="math inline">\(T\)</span> arranged in descreasing order. Let <span class="math display">\[a_N =
+      \frac{\sum_{i=1}^N \mu_i(T)}{\log(N)}\]</span> then the Dixmier trace is <span class="math display">\[Tr_\omega(T) = \lim_\omega(a_N) .\]</span> Where <span class="math inline">\(\lim_\omega\)</span> is a scaled invariant extension of the usual
+    notion of a limit such that:</p>
+  <ul>
+    <li>
+      <p><span class="math inline">\(\lim_\omega(a_N) \geq 0\)</span> if <span class="math inline">\(a_n \geq 0\)</span></p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\lim_\omega(a_N) = \lim(a_N)\)</span> when it exists in the normal sense</p>
+    </li>
+    <li>
+      <p><span class="math inline">\(\lim_\omega(a_1, a_1, a_2, a_2, \dots) = \lim_\omega(a_N)\)</span></p>
+    </li>
+  </ul>
+  <p>The famous result by Connes <span class="citation" data-cites="Connes:1988wo"></span> which states that <span class="math display">\[Tr_\omega(T) = \lim_{s\to 1_+} (s-1)\zeta_{T^{-1}}(s)\label{Eq:DixRes}\]</span> So substituting <span
+      class="math inline">\(T = D^{-2}\)</span>, yields the result that <span class="math display">\[\Tr_\omega (D^{-2}) = \lim_{s\to 1_+} (s-1) \zeta_{D^2}(s)\]</span></p>
+
+  <section class="footnotes">
+    <hr />
+    <ol>
+      <li id="fn1">
+        <p>See Appendix<a href="#Sec:SpecTrip" data-reference-type="ref" data-reference="Sec:SpecTrip">[Sec:SpecTrip]</a> for a the basics of spectral triples<a href="#fnref1" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn2">
+        <p>This is purposefully vague as you can’t recover all the behaviours of a manifold and still be dealing with noncommutative geometry, so there is a choice in which behaviours you want to exhibit<a href="#fnref2" class="footnote-back">↩</a>
+        </p>
+      </li>
+      <li id="fn3">
+        <p>These are matrix versions of the spherical harmonics, there precise construction can be found in <span class="citation" data-cites="Chan:2002kt"></span>.<a href="#fnref3" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn4">
+        <p>Note that the reason <span class="math inline">\(l&lt;n\)</span> not <span class="math inline">\(l&lt;n+1\)</span> is because the index <span class="math inline">\(l\)</span> starts at zero. So there are still <span
+            class="math inline">\(n+1\)</span> generators for <span class="math inline">\(M_{n+1}(\mathbb{C})\)</span><a href="#fnref4" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn5">
+        <p>These are sometimes refered to as frame fields in the context of general relativity and in general they are a local orthonormal basis for the tangent bundle.<a href="#fnref5" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn6">
+        <p>The conditions of the space in order for the zeta function to be expressed as a sum are that it’s compact in terms of manifolds. However, for the finite spectral triples we aim to explore, the sum is also well defined.<a href="#fnref6"
+            class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn7">
+        <p>Often shortened to just Heat Kernel<a href="#fnref7" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn8">
+        <p>The Gamma function is well defined at s=1, and thus all the residue lies in the zeta function. Also the value of the Gamma function at s=1 is 1.<a href="#fnref8" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn9">
+        <p>This comes from Weyl’s law for the Dirac operator.<a href="#fnref9" class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn10">
+        <p>A Clifford module can be viewed as just representing a Clifford algebra as matrices. Hence the colloquial term for the <span class="math inline">\(\gamma_a\)</span> discussed above as <em>gamma matrices</em>.<a href="#fnref10"
+            class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn11">
+        <p>The term matrix geometries arises from examples of this definiton being made by matrix contstructions. To see examples of how to construct some examples, see <span class="citation" data-cites="Barrett:2015hn"></span>.<a href="#fnref11"
+            class="footnote-back">↩</a></p>
+      </li>
+      <li id="fn12">
+        <p>The Barrett fuzzy sphere Dirac operator exhibits <em>fermion doubling</em>.<a href="#fnref12" class="footnote-back">↩</a></p>
+      </li>
+    </ol>
+  </section>
+</body>
+
+</html>
+  </div><!-- <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html';
+      this.page.identifier = 'https://pauldruce.github.io/research/2017/06/30/SecondYearReport.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://pauldruce-github-io.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/research/2017/06/30/SecondYearReport.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce&#39;s site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce&#39;s site</li><li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li><li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li><li><a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X"  target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class = "username">ORCID</span> </a> </li><li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
