@@ -10,6 +10,7 @@ tags: [post,questions,notes]
 When you first start learning about differentiation, intergration and calculus in general, we often stick to equations using the variables $x, y$ and $t$. The variable $t$ is often used to represent time, and $y$ and $x$ are related to the graphs of specific functions, i.e. $y = f(x)$, where $f$ can be any reasonable^[To find out what reasonable means requires a more in-depth knowledge of calculus.] function. However, there is nothing special about the letters $x,y$ or $t$. So in many cases we will choose different letters to represent important quantities^[Testing if footnotes overlap].
 
 For instance, consider a circle of radius^[There is nothing special about the letter r, it's just short for radius.] $r$. We then know how to calculate the circumference of the circle, $2\pi r$, or the area $\pi r^2$.
+
 The inquisitive of you might start to wonder how the circumference and area change as we increase or decrease the radius. How could we quantify such behaviour?
 Well this is where differentiation is particularly useful. Because when we compute the derivative ${dy\over dx}$, what we are really asking is how does the function $y$ change as we vary the variable $x$.
 
