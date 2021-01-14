@@ -7,16 +7,15 @@ category: tutoring
 tags: [post,questions,notes]
 ---
 
-When you first start learning about differentiation, intergration and calculus in general, we often stick to equations using the variables $x, y$ and $t$. The variable $t$ is often used to represent time, and $y$ and $x$ are related to the graphs of specific functions, i.e. $y = f(x)$, where $f$ can be any reasonable^[To find out what reasonable means requires a more in-depth knowledge of calculus.] function. However, there is nothing special about the letters $x,y$ or $t$. So in many cases we will choose different letters to represent important quantities^[Testing if footnotes overlap].
+When you first start learning about differentiation, integration and calculus in general, we often stick to equations that exclusively use the variables $x, y$ and $t$. The variable $t$ is often used to represent time, and $y$ and $x$ are related to the graphs of specific functions, i.e. $y = f(x)$, where $f$ can be any reasonable^[To find out what reasonable means requires a more in-depth knowledge of calculus.] function. However, there is nothing special about the letters $x,y$ or $t$. So in many cases we will choose different letters to represent important quantities.
 
 For instance, consider a circle of radius^[There is nothing special about the letter r, it's just short for radius.] $r$. We then know how to calculate the circumference of the circle, $2\pi r$, or the area $\pi r^2$.
 
-The inquisitive of you might start to wonder how the circumference and area change as we increase or decrease the radius. How could we quantify such behaviour?
+The inquisitive of you might start to wonder how the circumference and area of circles change as we increase or decrease the radius. How could we quantify such behaviour?
 Well this is where differentiation is particularly useful. Because when we compute the derivative ${dy\over dx}$, what we are really asking is how does the function $y$ change as we vary the variable $x$.
 
 So what if we define the circumference as a function of the radius as follows: Let $C$ be the circumference of a circle of radius $r$, so $C(r) = 2 \pi r$.
-
-Then what does ${dC\over dr}$ compute[^a]? Well it computes how the circumference changes as we vary the radius of the circle.
+Then what does ${dC\over dr}$ compute[^a]? Well it computes how the circumference changes as we vary the radius of the circle. 
 
 [^a]: Note that the derivative is really the following limit: $${dC \over dr} = \lim\limits_{\epsilon \to 0} {C(r+\epsilon) - C(r) \over \epsilon}$$
 
@@ -28,7 +27,9 @@ A drop of oil is placed on the surface of a still pool of water. The oil spreads
 
 <u>Solution</u>:<br>
 Given that ${dr\over dt} \propto t$ we can say that ${dr\over dt} = kt$, so (via integration) we have that $r = {1\over 2}kt^2 + C$. We then use the data that we have: At $t=0$, $r= {1\over 2}k (0\text{ s})^2 +C = C$, but we know that $r=1cm$ at $t=0$, so $C=1cm$. Then we need to have another piece of data to find the coefficient $k$, this is given to us as follows:
-At $t=1s$, we have that $r = {1\over 2}k (1\text{ s})^2 + 1 \text{ cm} = {1\over 2}\text{ s}^2 \times k + 1 \text{ cm}$, but we know that $r=2 \text{ cm}$ at $t=1s$, so we have that ${1 \over 2}\text{ s}^2 k + 1 cm = 2cm$.
+At $t=1s$, we have that:
+$$\begin{align}r &= {1\over 2}k (1\text{ s})^2 + 1 \text{ cm}\\ &= {1\over 2}\text{ s}^2 \times k + 1 \text{ cm},\end{align}$$
+but we know that $r=2 \text{ cm}$ at $t=1s$, so we have that ${1 \over 2}\text{ s}^2 k + 1 cm = 2cm$.
 So $k = 2\text{cm}/\text{s}^2$, where the units of $k$ are determined in order for the equation to make sense.
 
 So we have that
@@ -50,7 +51,7 @@ It is often harder to setup the mathematics than it is to solve to equations. Or
 Mathematicians also heavily rely on *context*. This is the idea that there is something *obvious* or inherent to the question. However, this is usually a barrier to understanding for those learning or anyone who is interested trying to understand.
 In regards to modelling with differentiation, this often shows itself when we start to discuss the *rate of change of $X$* where $X$ is some property of interest.
 
-The term **rate of change of** refers to a derivative as was discuss at the beginning of this note. However, what we are taking the derivative with respects to, is not always stated. You could argue that it should be. But my argument for why context is a natural and useful tool to rely on, is as follows. When ask someone "is it raining?" you don't usually have to tell them where you are inquiring about. It's hidden in context that you care about if it is raining *here*, where you are. You aren't asking if it is raining in Melbourne, Australia. You've relied on context.
+The term **rate of change of** refers to a derivative as was discuss at the beginning of this note. However, what we are taking the derivative with respects to is not always stated. You could argue that it should be. But my argument for why context is a natural and useful tool to rely on, is as follows. When ask someone "is it raining?" you don't usually have to tell them where you are inquiring about. It's hidden in context that you care about if it is raining *here*, where you are. You aren't asking if it is raining in Melbourne, Australia. You've relied on context.
 
 So, when we ask about the rate of change of velocity, we usually assume we are talking about the rate of change of velocity *with respects to time*. When we ask about the rate of change of sound intensity, we can assume we are talking about the rate of change of sound intensity with respects to distance from the source **or** with respects to time. Being able to read into the context usually requires some familiarity with the system or example in questions.
 
@@ -61,7 +62,7 @@ So, when we ask about the rate of change of velocity, we usually assume we are t
 <details>
 <summary>
 :::{.question}
-A person with a virus sneezes. The probability of contracting the virus from this person decreases exponentially decays with distance. The rate of decrease of the probability at a distance of $0\text{ m}$ is $17 \text{ m}^{-1}$.
+A person with a virus sneezes. The probability of contracting the virus from this person decreases exponentially as the distance between you is increased. The rate of decrease of the probability at a distance of $0\text{ m}$ is $17 \text{ m}^{-1}$.
 
 a. Write down the probability as a function of distance.
 b. Assuming that the probability of contraction is equal to $1$ at a distance of $0 \text{ m}$. Find the rate of change of the probability as a function of distance.   
