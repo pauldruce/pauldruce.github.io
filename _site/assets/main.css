@@ -387,9 +387,9 @@ body { counter-reset: definition theorem lemma example question; }
 
 body { counter-reset: sidenote-counter; }
 
-.sidenote::before, .marginnote::before { content: counter(sidenote-counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
+.marginnote::before, .sidenote::before { content: counter(sidenote-counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
 
-.sidenote, .marginnote { float: right; clear: right; width: 15vw; margin-right: -20vw; position: relative; vertical-align: baseline; padding-left: 30px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 14px; color: #828282; font-style: italic; }
+.marginnote, .sidenote { float: right; clear: right; width: 15vw; margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 14px; color: #828282; font-style: italic; }
 
 .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; }
 
@@ -397,7 +397,7 @@ body { counter-reset: sidenote-counter; }
 
 .sidenote-number { counter-increment: sidenote-counter; }
 
-.sidenote-number::after { content: counter(sidenote-counter) " "; font-size: 0.8rem; top: -0.5rem; left: 0.1rem; font-family: et-book-roman-old-style; position: relative; vertical-align: baseline; }
+.sidenote-number::after { content: counter(sidenote-counter) " "; font-size: 0.8rem; top: -0.5rem; font-family: et-book-roman-old-style; position: relative; vertical-align: baseline; }
 
 input.margin-toggle { display: none; }
 
@@ -405,6 +405,6 @@ label.sidenote-number { display: inline; }
 
 label.margin-toggle:not(.sidenote-number) { display: none; }
 
-@media (max-width: 1400px) { label.margin-toggle:not(.sidenote-number) { display: inline; } .sidenote, .marginnote { display: none; } .sidenote-number::after { content: counter(sidenote-counter) " "; color: #828282; } .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; } .sidenote-wrapper:hover .sidenote-number::after { color: #6DA6CC; border-color: #6DA6CC; } .margin-toggle:checked + .sidenote, .margin-toggle:checked + .marginnote { display: block; float: left; left: 1rem; clear: both; width: 95%; margin-left: 1rem; margin-right: 1rem; margin-top: 5px; margin-bottom: 5px; vertical-align: baseline; position: relative; } }
+@media (max-width: 1400px) { label.margin-toggle:not(.sidenote-number) { display: inline; } .marginnote, .sidenote { display: none; } .sidenote-number::after { content: counter(sidenote-counter) " "; color: #6DA6CC; } .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; } .sidenote-wrapper:hover .sidenote-number::after { color: #6DA6CC; border-color: #6DA6CC; } .margin-toggle:checked + .marginnote, .margin-toggle:checked + .sidenote { display: block; float: left; clear: both; width: 90vw; margin: 5px 1rem; vertical-align: baseline; } }
 
 /*# sourceMappingURL=main.css.map */
