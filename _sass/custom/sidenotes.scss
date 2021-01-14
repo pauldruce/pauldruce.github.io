@@ -18,8 +18,9 @@ body {
   margin-right: -20vw;
   position: relative;
   vertical-align: baseline;
-  padding-left: $spacing-unit;
+  padding-left: $spacing-unit*0.5;
   margin-bottom:0.25em;
+  // padding-bottom: 5px;
   border-left: 1px solid $grey-color-light;
 
   // text-align: left;
@@ -65,7 +66,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 
                             label.margin-toggle:not(.sidenote-number) { display: inline; }
                             .sidenote, .marginnote { display: none; }
-                            .sidenote-number::after { content: counter(sidenote-counter)" ";   color: $grey-color;}
+                            .sidenote-number::after { content: counter(sidenote-counter)" ";   color: $color-blue;}
                             // These don't currently work
                             .sidenote-wrapper:hover .sidenote{
                               color: $color-blue;
@@ -77,14 +78,15 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                             }
                             .margin-toggle:checked + .sidenote,
                             .margin-toggle:checked + .marginnote { display: block;
-                                                                   float: left;
+                                                                   float: center;
                                                                    left: 1rem;
                                                                    clear: both;
-                                                                   width: 95%;
+                                                                   width: 85vw;
+                                                                   padding-left:3vw;
                                                                    margin-left: 1rem;
                                                                    margin-right: 1rem;
                                                                    margin-top: 5px;
                                                                    margin-bottom: 5px;
                                                                    vertical-align: baseline;
-                                                                   position: relative; }
+                                                                   position: relative;}
                             }
