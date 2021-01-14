@@ -1,9 +1,11 @@
 // /* Sidenotes */
 
 body {
-  counter-reset:sidenote-counter;
+  counter-reset: sidenote-counter;
 }
-.sidenote::before, .marginnote::before{
+
+.marginnote::before,
+.sidenote::before {
   content: counter(sidenote-counter) " ";
   position: relative;
   top: -0.5em;
@@ -11,82 +13,142 @@ body {
   font-size: 0.8rem; // Font-size of the number in the sidenote
 }
 
-.sidenote, .marginnote {
+.marginnote,
+.sidenote {
   float: right;
   clear: right;
   width: 15vw;
-  margin-right: -20vw;
+  margin-right: -17.5vw;
   position: relative;
   vertical-align: baseline;
   padding-left: $spacing-unit*0.5;
-  margin-bottom:0.25em;
+  margin-bottom: 0.25em;
   // padding-bottom: 5px;
   border-left: 1px solid $grey-color-light;
-
   // text-align: left;
   font-size: $small-font-size;
   color: $grey-color;
   font-style: italic;
 }
-.sidenote::after, .marginnote::after{}
 
+.marginnote::after,
+.sidenote::after {}
 // These don't currently work
-.sidenote-wrapper:hover .sidenote{
+.sidenote-wrapper:hover .sidenote {
   color: $color-blue;
   border-color: $color-blue;
 }
-.sidenote-wrapper:hover .sidenote-number{
+
+.sidenote-wrapper:hover .sidenote-number {
   color: $color-blue;
-  border-color:$color-blue;
+  border-color: $color-blue;
 }
-
-
 // .sidenote.left {
 //     float: left;
 //     margin-left: -20vw;
 //     margin-bottom: $spacing-unit;
 //   }
-.sidenote-number::before{}
-.sidenote-number { counter-increment: sidenote-counter;}
-.sidenote-number::after { content: counter(sidenote-counter)" ";
-                         font-size: 0.8rem;
-                         top: -0.5rem;
-                         left: 0.1rem;
-                         font-family: et-book-roman-old-style;
-                         position: relative;
-                         vertical-align: baseline; }
 
+.sidenote-number::before {}
+
+.sidenote-number {
+  counter-increment: sidenote-counter;
+}
+
+.sidenote-number::after {
+  content: counter(sidenote-counter)" ";
+  font-size: 0.8rem;
+  top: -0.5rem;
+  left: 0.1rem;
+  font-family: et-book-roman-old-style;
+  position: relative;
+  vertical-align: baseline;
+}
 // .marginnote > code, .sidenote > code { font-size: 1rem; }
-input.margin-toggle { display: none; }
-label.sidenote-number { display: inline; }
-label.margin-toggle:not(.sidenote-number) { display: none; }
+input.margin-toggle {
+  display: none;
+}
 
+label.sidenote-number {
+  display: inline;
+}
 
-@media (max-width: 1400px) {
+label.margin-toggle:not(.sidenote-number) {
+  display: none;
+}
+@media(max-width: 1400px) {
+  label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
 
-                            label.margin-toggle:not(.sidenote-number) { display: inline; }
-                            .sidenote, .marginnote { display: none; }
-                            .sidenote-number::after { content: counter(sidenote-counter)" ";   color: $color-blue;}
-                            // These don't currently work
-                            .sidenote-wrapper:hover .sidenote{
-                              color: $color-blue;
-                              border-color: $color-blue;
-                            }
-                            .sidenote-wrapper:hover .sidenote-number::after{
-                              color: $color-blue;
-                              border-color:$color-blue;
-                            }
-                            .margin-toggle:checked + .sidenote,
-                            .margin-toggle:checked + .marginnote { display: block;
-                                                                   float: center;
-                                                                   left: 1rem;
-                                                                   clear: both;
-                                                                   width: 85vw;
-                                                                   padding-left:3vw;
-                                                                   margin-left: 1rem;
-                                                                   margin-right: 1rem;
-                                                                   margin-top: 5px;
-                                                                   margin-bottom: 5px;
-                                                                   vertical-align: baseline;
-                                                                   position: relative;}
-                            }
+  .marginnote,
+  .sidenote {
+    display: none;
+  }
+
+  .sidenote-number::after {
+    content: counter(sidenote-counter)" ";
+    color: $color-blue;
+  }
+
+  .sidenote-wrapper:hover .sidenote {
+    color: $color-blue;
+    border-color: $color-blue;
+  }
+
+  .sidenote-wrapper:hover .sidenote-number::after {
+    color: $color-blue;
+    border-color: $color-blue;
+  }
+
+  .margin-toggle:checked + .marginnote,
+  .margin-toggle:checked + .sidenote {
+    display: block;
+    float: left;
+    // left: 1rem;
+    clear: both;
+    width: 90vw;
+    // padding-left: 3vw;
+    margin: 5px 1rem;
+    vertical-align: baseline;
+    // position: relative;
+  }
+}
+// @media (max-width: 1000px) {
+//   label.margin-toggle:not(.sidenote-number) {
+//     display: inline;
+//   }
+//
+//   .marginnote,
+//   .sidenote {
+//     display: none;
+//   }
+//
+//   .sidenote-number::after {
+//     content: counter(sidenote-counter)" ";
+//     color: $color-blue;
+//   }
+//   // These don't currently work
+//   .sidenote-wrapper:hover .sidenote {
+//     color: $color-blue;
+//     border-color: $color-blue;
+//   }
+//
+//   .sidenote-wrapper:hover .sidenote-number::after {
+//     color: $color-blue;
+//     border-color: $color-blue;
+//   }
+//
+//   .margin-toggle:checked + .marginnote,
+//   .margin-toggle:checked + .sidenote {
+//     display: block;
+//     float: center;
+//     left: 1rem;
+//     clear: both;
+//     width: 85vw;
+//     padding-left: 3vw;
+//     margin: 5px 1rem;
+//     vertical-align: baseline;
+//     position: relative;
+//   }
+// }
