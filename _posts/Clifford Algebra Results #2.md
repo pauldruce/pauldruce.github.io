@@ -2,11 +2,10 @@
 
 The construction of fuzzy spaces heavily relies on Clifford algebras, so a detailed account of the objects needed is presented here.
 
-> **Definition**: Given a vector space $V$ (over $\mathbb{F} = \mathbb{R},\mathbb{C}$) and a quadratic form, $Q$ on $V$. The *Clifford Algebra* $\text{Cl}(V,Q)$ is defined as the algebra generated (over $\mathbb{F}$) by the vectors $v\in V $ and the multiplicative unit $1_F$ such that:
->$$
->v \cdot v= v^2 = -  Q(v) 1_F
->$$
-
+:::{.definition}
+Given a vector space $V$ (over $\mathbb{F} = \mathbb{R},\mathbb{C}$) and a quadratic form, $Q$ on $V$. The *Clifford Algebra* $\text{Cl}(V,Q)$ is defined as the algebra generated (over $\mathbb{F}$) by the vectors $v\in V $ and the multiplicative unit $1_F$ such that:
+$$v \cdot v= v^2 = -  Q(v) 1_F$$
+:::
 In this note, Clifford algebras are defined over $\mathbb{R}$ or $\mathbb{C}$ however, much of what follows is valid when the field has characteristic not equal to two. A Clifford algebra can also be defined by taking a bilinear form, $B$, instead of a quadratic form and defining the quadratic form by: $Q(v) = B(v,v)$. One can also construct a bilinear form from a quadratic form via *polarisation*: $B(u,v) = \frac{1}{2}\left( Q(u+v) - Q(u) - Q(v) \right)$. Using this polarisation it can be shown for $u,v \in V$ that:
 $$
 u v + v u = -2 B(u,v)

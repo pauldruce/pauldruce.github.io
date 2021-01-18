@@ -60,7 +60,7 @@ I became proficient in the programming language C and its use in high-performanc
 </details>
 
 - <details>
-<summary>**Official UKMT Volunteer Mentor**<span style="float:right;"> **<u>October 2020 - Current**</span></summary>
+<summary>**Official UKMT Volunteer Mentor**<span style="float:right;"><u> **October 2020 - Current** </u></span></summary>
 I am a volunteer for the UK Mathematics Trust. My role involves mentoring the students who are entering the advanced UKMT competitive mathematics exams. I am also involved in various outreach projects that the UKMT organise. I aid with the creation of appropriate questions and aid in the distribution of content via social media.
 </details>
 
