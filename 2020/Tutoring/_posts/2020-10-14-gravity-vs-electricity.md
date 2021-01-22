@@ -6,9 +6,10 @@ summary: An interactive animation between gravity and electrostatic forces aimed
 category: tutoring
 tags: [post,animation,physics,unfinished]
 images: "../assets/2020/electricity-vs-gravity/"
-csl: ./assets/bibtex/communications-in-mathematical-physics.csl
-bibliography: ../assets/2020/electricity-vs-gravity/electricity-vs-gravity.bib
 ---
+
+<!-- csl: ./assets/bibtex/communications-in-mathematical-physics.csl
+bibliography: ../assets/2020/electricity-vs-gravity/electricity-vs-gravity.bib -->
 
 At some point in your physics studies, you may have come across statements about gravity being very weak. Or electricity being a strong force when compared to gravity. I want to investigate these statements in a fun and interactive way. So first let us set the stage by quickly describing the AS/A level approach to gravity and electrostatic forces.
 

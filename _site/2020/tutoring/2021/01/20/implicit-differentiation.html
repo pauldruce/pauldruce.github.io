@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<!-- <script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-134367955-1', 'auto');
+  ga('send', 'pageview');
+}
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134367955-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134367955-1');
+</script>
+
+<!--- MathJax Configuration -->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Implicit Differentiation Questions | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Implicit Differentiation Questions" />
+<meta name="author" content="Paul Druce" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content=":::{.question}" />
+<meta property="og:description" content=":::{.question}" />
+<link rel="canonical" href="https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html" />
+<meta property="og:url" content="https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html" />
+<meta property="og:site_name" content="Paul J Druce’s site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Implicit Differentiation Questions" />
+<script type="application/ld+json">
+{"url":"https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html","headline":"Implicit Differentiation Questions","dateModified":"2021-01-20T00:00:00+00:00","datePublished":"2021-01-20T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html"},"author":{"@type":"Person","name":"Paul Druce"},"description":":::{.question}","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper"><a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="75px" width="75px" /></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce&#39;s site</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+          <a class="page-link" href="/CV"> CV </a>
+          
+          <a class="page-link" href="/research"> Research </a>
+          
+          <a class="page-link" href="/tutoring"> Tutoring </a>
+          
+          <a class="page-link" href="/posts"> All Posts </a>
+          
+          <a class="page-link" href="/aboutme"> About Me </a>
+          
+          <!---->
+        </div>
+      </nav></div>
+</header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Implicit Differentiation Questions</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-01-20T00:00:00+00:00" itemprop="datePublished">Jan 20, 2021
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <details>
+<summary>
+<div class="question">
+<p>Find <span class="math inline">\({dy\over dx}\)</span> when <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> satisfy:</p>
+<ol type="1">
+<li><span class="math inline">\(e^{xy} = e^{4y} - e^{5x}\)</span></li>
+<li><span class="math inline">\(\cos(xy)=\sin(x-y)\)</span></li>
+<li><span class="math inline">\(y\tan(x+y) = 4\)</span></li>
+<li><span class="math inline">\(e^{\cos(x)} + e^{\sin(y)} = {1\over 4}\)</span></li>
+<li><span class="math inline">\(e^{xy} + \ln(xy) = \text{cosec}(x) + 4\)</span></li>
+</ol>
+</div>
+</summary>
+<p><u>Solutions</u> We apply the derivative operator <span class="math inline">\({d\over dx}\)</span> to each equation and rearrange to get <span class="math inline">\({dy\over dx} = \dots\)</span>. The step-by-step solutions for 1. is provided, and the final solutions to the others only being provided.</p>
+<ol type="1">
+<li><p>The left-hand side is equal to <span class="math display">\[{d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) = e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.\]</span> And the right-hand side is equal to <span class="math display">\[{d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx(5x)} = 4e^{4y}{dy\over dx} - 5e^{5x}.\]</span> So we have that: <span class="math display">\[  
+  ye^{xy} + xe^{xy}{dy\over dx} = 4e^{4y}{dy\over dx} - 5e^{5x}
+  \]</span> which rearranges to: <span class="math display">\[
+  xe^{xy}{dy\over dx} - 4e^{4y}{dy\over dx} = -ye^{xy} -5 e^{5x}.
+  \]</span> So we have that <span class="math display">\[
+  (xe^{xy} - 4e^{4y}) {dy\over dx} = -ye^{xy} - 5e^{5x}
+  \]</span> and finally so: <span class="math display">\[
+  {dy\over dx} = \frac{-ye^{xy} - 5e^{5x}}{xe^{xy} - 4e^{4y}} = \frac{ye^{xy} + 5e^{5x}}{ 4e^{4y}- xe^{xy}}
+  \]</span> <br/></p></li>
+<li><p><span class="math display">\[ {dy\over dx} = \frac{\cos(x-y) + y\sin(xy)}{\cos(x-y) - x\sin(xy)} \]</span></p></li>
+<li><p><span class="math display">\[ {dy\over dx} =\frac{-y\sec^2(x+y)}{\tan(x+y) +y\sec^2(x+y)} \]</span></p></li>
+<li><p><span class="math display">\[{dy\over dx} = \frac{\sin(x)e^{\cos(x)}}{\cos(y)e^{\sin(y)}}\]</span></p></li>
+<li><p><span class="math display">\[{dy\over dx} = -1 - \frac{xy \text{cosec}(x)\cot(x)}{xye^{xy} + 1}\]</span></p></li>
+</ol>
+</details>
+<details>
+<summary>
+<div class="question">
+Find all the points <span class="math inline">\((x,y)\)</span> on the graph <span class="math inline">\((x^2+y^2)^2 = 2x^2 - 2y^2\)</span> where <span class="math inline">\(y’ = 0\)</span>.
+<center>
+<img src="/assets/2020/implicit-differentiation/Q-infinity.svg" />
+</center>
+</div>
+</summary>
+<ul>
+<li><p>Step 1: Find an expression for <span class="math inline">\({dy\over dx}\)</span> by taking the <span class="math inline">\(x\)</span> derivative of the equation: <span class="math display">\[\begin{align}
+  {d\over dx} (x^2+y^2)^2 &amp;= {d\over dx}(2x^2- 2y^2) \\
+  2(x^2 + y^2) {d\over dx}(x^2+y^2)&amp;=4x - 4y {dy\over dx} \\
+  2(x^2 + y^2)(2x +2y{dy\over dx})&amp;=4x - 4y {dy\over dx} \\
+  4y(x^2 + y^2){dy\over dx}+ 4y{dy\over dx}&amp;=4x-4x(x^2 + y^2)\\
+  {dy\over dx}&amp;= {x(1-(x^2 + y^2))\over y(1+(x^2 + y^2))}
+  \end{align}\]</span></p></li>
+<li><p>Step 2: Solve <span class="math inline">\({dy\over dx}=0\)</span>. This occurs when <span class="math inline">\(x = 0\)</span> and <span class="math inline">\(y\neq 0\)</span>. Substituing this into the equation for the curve, we have that <span class="math inline">\(y^4 = -2y^2\)</span>, which if <span class="math inline">\(y\neq 0\)</span>, leaves <span class="math inline">\(y^2 =-2\)</span>, which has no real solutions. So we are left with the requirement that <span class="math inline">\(1-(x^2 + y^2)=0\)</span>. So we have that the equation of the curve becomes <span class="math inline">\(1 = 2x^2 - 2y^2\)</span>. We can elimate either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> using the equation <span class="math inline">\(1 = x^2 + y^2\)</span> - I will choose to eliminate <span class="math inline">\(x^2\)</span>. Then we have that <span class="math inline">\(x^2 = 1-y^2\)</span>. So <span class="math display">\[1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.\]</span> So we have that <span class="math inline">\(4y^2 = 1\)</span>, which gives us solutions of <span class="math inline">\(y = \pm {1\over 2}\)</span>. Thus we have that <span class="math display">\[x^2 = 1-(\pm {1\over 2})^2 = 1-{1\over 4} = {3\over 4}.\]</span> Giving <span class="math inline">\(x = \pm {\sqrt{3}\over 2}\)</span>. So the final solutions are: <span class="math display">\[(x,y) = ({\sqrt{3}\over 2},{1\over 2}), \ (-{\sqrt{3}\over 2},{1\over 2}),\ ({\sqrt{3}\over 2},-{1\over 2}),\ (-{\sqrt{3}\over 2},-{1\over 2})  \]</span></p></li>
+</ul>
+</details>
+<details>
+<summary>
+<div class="question">
+<p>Find the equation of the tangent line to the curve: <span class="math inline">\(y^2 e^{2x}=3y + x^2\)</span> at the point <span class="math inline">\((0,3)\)</span></p>
+</div>
+</summary>
+<ul>
+<li>Step 1: Find an expression for <span class="math inline">\({dy\over dx}\)</span> in terms of <span class="math inline">\((x,y)\)</span>. <span class="math display">\[
+  \begin{align}
+  {d\over dx}(y^2 e^{2x}) &amp;= {d\over dx}(3y + x^2)\\
+ 2y{dy\over dx}e^{2x} + 2y^2e^{2x}&amp;=3{dy\over dx} + 2x.
+  \end{align}
+  \]</span> After rearranging we have that <span class="math display">\[
+ \begin{align}
+   (2ye^{2x} - 3){dy\over dx} &amp;= 2x - 2y^2 e^{2x}\\
+   {dy\over dx}&amp;= \frac{2x - 2y^2 e^{2x}}{(2ye^{2x} - 3)}.
+ \end{align}
+  \]</span> Thus we have that <span class="math inline">\({dy\over dx}\)</span> at the point <span class="math inline">\((x,y) = (0,3)\)</span> is equal to <span class="math inline">\({dy\over dx} = -{18\over 3} = -6\)</span>. So the tangent line would have equation <span class="math inline">\(y = -6x + c\)</span>, and intersects the original curve at the point <span class="math inline">\((0,3)\)</span>, thus <span class="math inline">\(3 = -6\cdot 0 + c \implies c = 3\)</span>. Thus the tangent line has equation <span class="math inline">\(y = -6x +3\)</span>.</li>
+</ul>
+</details>
+<details>
+<summary>
+<div class="question">
+<ol type="1">
+<li>Show that <span class="math inline">\({dy\over dx}\)</span> for the curve given by <span class="math inline">\((x+y)(x^2 - xy + y^2)=1\)</span> is:</li>
+</ol>
+<p><span class="math display">\[
+{dy\over dx} = - {x^2 \over y^2}
+\]</span></p>
+<ol start="2" type="1">
+<li>Find the equation of the normal when <span class="math inline">\(x=0\)</span>.</li>
+</ol>
+</div>
+</summary>
+<ol type="1">
+<li><p>To simplify the calculation we expand the brackets to get that <span class="math display">\[ \begin{align}
+(x+y)(x^2-xy+y^2) &amp;= x^3 - x^2y + xy^2 + yx^2 - xy^2 + y^3 \\
+&amp;= x^3 + y^2.
+  \end{align}
+  \]</span> So the equation is just <span class="math inline">\(x^3 + y^3 = 1\)</span>, we then take the <span class="math inline">\(x\)</span> derivative to give: <span class="math display">\[
+  {dy\over dx} = 3x^2 + 3y^2 {dy\over dx} = 0,
+  \]</span> which rearranges to the answer.</p></li>
+<li><p>At <span class="math inline">\(x=0\)</span>, we have that <span class="math inline">\(y^3 = 1\)</span>, which has solution <span class="math inline">\(y=1\)</span>, so the tangent line at <span class="math inline">\((x,y)=(0,1)\)</span> is given by <span class="math inline">\(y = 0\cdot x + c\)</span> as <span class="math inline">\({dy\over dx} = -\frac{0}{1} = 0\)</span> at <span class="math inline">\((x,y)=(0,1)\)</span>. Thus the tangent line is a constant line <span class="math inline">\(y = 1\)</span>. The normal equation <span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">If this is confusing to you, think about the graph <span class="math inline">\(y=1\)</span> and then construct a perpendicular line that goes through the point <span class="math inline">\((0,1)\)</span>)</span></span> is therefore just <span class="math inline">\(x=0\)</span>.</p></li>
+</ol>
+</details>
+<details>
+<summary>
+<div class="question">
+<p>Find the points <span class="math inline">\((x,y)\)</span> on the graph <span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span>, where <span class="math inline">\(y’ = 1\)</span>.</p>
+<p><img src="/assets/2020/implicit-differentiation/Q-diamond.svg" /></p>
+</div>
+</summary>
+Taking the <span class="math inline">\(x\)</span> derivative of the equation we have that: <span class="math display">\[ {2\over 3}x^{-1/3} + {2\over 3}y^{-1 /3}{dy\over dx} = 0.
+\]</span> Which rearranges to: <span class="math display">\[
+{dy\over dx} = - {x^{-1/3}\over y^{-1/3}} = - \frac{y^{1/3}}{x^{1/3}}.
+\]</span> This equals <span class="math inline">\(1\)</span>, when <span class="math inline">\(y^{1 /3} = - x^{1/3}\)</span>, and by cubing this equation we have that <span class="math inline">\(y = - x\)</span>. So we need to simultaneously satisfy the equations <span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span> and <span class="math inline">\(y = -x\)</span>. Notice that <span class="math inline">\((-x)^{2/3} = ((-x)^{1/3})^2 = ((-1)^{1/3}x^{1/3})^2\)</span>, assuming we are only interested in the real<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">There are also complex numbers which are the cube root of -1, but we will ignore those</span></span> solutions to this equation we have that <span class="math inline">\((-1)^2 x^{2/3}=x^{2/3}\)</span>. So we have that <span class="math inline">\(2x^{2/3} = 8\)</span>, thus <span class="math inline">\(x^2= 4^{3} = 64\)</span> and thus <span class="math inline">\(x=\pm 8\)</span>. So the points of the graph are <span class="math inline">\((x,y) = (8,-8),\ (-8,8)\)</span>.
+</details>
+<details>
+<summary>
+<div class="question">
+<p><img src="/assets/2020/implicit-differentiation/Q-3x2-2xy3.svg" /></p>
+<ol type="1">
+<li>The curve C is described by the equation <span class="math inline">\(3x^2 + 2xy^3 + 16 = 0\)</span>. Show that the normal to C at the point <span class="math inline">\(x=-4\)</span> is parallel to the normal to C at <span class="math inline">\(x=4\)</span>.</li>
+<li>Find the distance between the y-intercepts of these two normals.</li>
+</ol>
+</div>
+</summary>
+<ol type="1">
+<li><p>When <span class="math inline">\(x=+ 4\)</span> the equation simplifies to <span class="math inline">\(y^3= -8\)</span>, with <span class="math inline">\(y=-2\)</span> its solution. And when <span class="math inline">\(x=-4\)</span>, we have that <span class="math inline">\(y^3 = 8\)</span> and thus <span class="math inline">\(y=2\)</span>.</p>
+<p>The normal line to these points are then found by first finding the tangent line. To do this we need an expression for the gradient, <span class="math inline">\(dy \over dx\)</span>, which we get by taking the <span class="math inline">\(x\)</span>-derivative of the equation: <span class="math display">\[\begin{align}
+6x + 2y^3 + 6xy{dy\over dx} = 0\\
+{dy\over dx} = {-3x -y^3 \over 3xy}
+\end{align}
+\]</span></p>
+<p>Thus the gradient at <span class="math inline">\((x,y) = (4,-2)\)</span> is equal to <span class="math display">\[{dy \over dx} = {-12 + 8 \over -24 }=-{4\over 24} = -
+{1\over 6}.\]</span></p>
+<p>And the gradient at <span class="math inline">\((x,y) =(-4,2)\)</span> is equal to <span class="math display">\[{dy\over dx} = {12 - 8 \over -24} = - {1\over 6}.\]</span> As the tangents have the same gradient, the normal lines at these points will also have the same gradient, as the normal has the negative reciprocal gradient as the tangent, i.e. <span class="math inline">\(m= 6\)</span> for both normals.</p></li>
+<li><p>The equations of the normals are <span class="math inline">\(y = 6x+c\)</span>, where <span class="math inline">\(c\)</span> is the <span class="math inline">\(y\)</span>-intercept. The normal to the point <span class="math inline">\((x,y) = (4,-2)\)</span> needs to have <span class="math inline">\(c = y-6x = -2 - 6\cdot 4 = -26\)</span>. The normal to the point <span class="math inline">\((x,y) = (-4,2)\)</span> needs to have <span class="math inline">\(c = 2+6\cdot 4 = 26\)</span>. So the distance between the <span class="math inline">\(y\)</span>-intercepts is <span class="math inline">\(52\)</span>.</p></li>
+</ol>
+</details>
+<details>
+<summary>
+<div class="question">
+<p>Find the stationary points and determine their nature* for the curve with equation <span class="math inline">\(y^2 = 3x^2 -2xy + 3\)</span></p>
+<p>*are they maxima, minima or indeterminate.</p>
+</div>
+</summary>
+<ol type="1">
+<li><p>To find stationary points, we need to find the points where <span class="math inline">\({dy\over dx}=0\)</span>. So we take the <span class="math inline">\(x\)</span>-derivative of the equation to get: <span class="math display">\[
+2y{dy\over dx} = 6x -2y -2x{dy\over dx}.
+  \]</span> Which when rearranged gives: <span class="math display">\[
+   {dy\over dx} = \frac{3x-y}{y+x}.
+  \]</span> This equals zero when <span class="math inline">\(3x-y=0\)</span> and <span class="math inline">\(y+x\neq 0\)</span>. So when <span class="math inline">\(y=3x\)</span>. We need to then find solutions to <span class="math inline">\(y=3x\)</span> and <span class="math inline">\(y^2 = 3x^2-2xy+3\)</span>, which we can do by substituting <span class="math inline">\(y=3x\)</span> in the original equation: <span class="math display">\[\begin{align}
+  (3x)^2 &amp;= 3x^2 - 2x(3x) + 3\\
+  9x^2&amp;= 3x^3 - 6x^3 +3\\
+  12x^2 &amp;= 3\\
+  x^2 &amp;= {1\over 4}\\
+  x &amp;= \pm {1\over 2}.
+  \end{align}
+  \]</span> So we have that the stationary points are given by <span class="math display">\[
+  (x,y) = (+{1\over 2}, +{3\over 2}),\ (-\frac{1}{2},-{3\over 2}).
+  \]</span></p></li>
+<li><p>To determine whether these stationary points are maximums or miminums (or indeterminates). We need to do the second-derivative test. We need an expression for <span class="math inline">\({d^2y \over dx^2}\)</span>, which we can get by taking the derivative of the expression for <span class="math inline">\({dy\over dx}\)</span> using the quotient rule: <span class="math display">\[\begin{align}
+ {d^2y\over dx^2} &amp;= \frac{(3-{dy\over dx})(y+x) - (3x-y)(1+{dy\over dx})}{(y+x)^2} \\
+ &amp;= \frac{3y-3x -3x+y - {dy\over dx}(y+x -3x+y)}{(y+x)^2}\\
+ &amp;= \frac{4y-6x - {dy\over dx}(2y-2x)}{(y+x)^2}.
+ \end{align}
+  \]</span> Note that the points we are interested in have the property that <span class="math inline">\({dy\over dx}=0\)</span>. So we do not need to simplify this any further.</p></li>
+</ol>
+<p>For the point <span class="math inline">\((x,y) = ({1\over 2},{3\over 2})\)</span> we have that: <span class="math display">\[\begin{align}
+  {d^2y\over dx^2} &amp;= \frac{ \frac{12}{2}- \frac{6}{2} }{({3\over 2}+{1\over 2})^2} = \frac{6-4}{2^2}\\
+  &amp;= \frac{2}{4} =\frac{1}{2}&gt; 0.
+  \end{align}
+  \]</span> Meaning that the stationary point at <span class="math inline">\(({1\over 2},{3\over 2})\)</span> is a minimum.</p>
+For the point <span class="math inline">\((x,y) = (-{1\over 2},-{3\over 2})\)</span> we have that: <span class="math display">\[\begin{align}
+      {d^2y\over dx^2} = \frac{-6 + 4}{(-2)^2} = \frac{-2}{4} &lt;0.
+  \end{align}
+  \]</span> Making this stationary point a maximum.
+</details>
+<details open>
+<summary>
+<div class="question" name="Bonus Hard Question">
+<p>Show that <span class="math display">\[
+{d\over dx}a^{x^{k}} = k a^{x^k} x^{k-1}\ln(a)
+\]</span></p>
+</div>
+</summary>
+<p>Rewrite the expression as <span class="math inline">\(a^{x^k} = (e^{\ln(a)})^{^{x^k}} = e^{\ln(a)x^k}\)</span>. Now if we take the derivative we can use the fact that <span class="math inline">\({d\over dx}e^u = e^u{dx\over du}\)</span>.</p>
+<span class="math display">\[\begin{align}
+  {d\over dx}(a^{x^k}) &amp;= {d\over dx}(e^{\ln(a)x^k}) = e^{\ln(x)x^k} {d\over dx}(\ln(a)x^k) \\
+  &amp;= e^{\ln(a)x^k}\ln(a) kx^{k-1}
+\end{align}
+\]</span> Notice that <span class="math inline">\(a^{x^k} = e^{\ln(a)x^k}\)</span>, so we have the answer.
+</details>
+
+  </div><!-- <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html';
+      this.page.identifier = 'https://pauldruce.github.io/2020/tutoring/2021/01/20/implicit-differentiation.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript> -->
+
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://pauldruce-github-io.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/2020/tutoring/2021/01/20/implicit-differentiation.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce&#39;s site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce&#39;s site</li><li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li><li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li><li><a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X"  target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class = "username">ORCID</span> </a> </li><li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
