@@ -240,7 +240,7 @@ Find the stationary points and determine their nature* for the curve with equati
   Making this stationary point a maximum.
 </details>
 
-<details open>
+<details>
 <summary>
 :::{.question name="Bonus Hard Question"}
 
