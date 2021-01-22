@@ -137,7 +137,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </summary>
 <p><u>Solutions</u> We apply the derivative operator <span class="math inline">\({d\over dx}\)</span> to each equation and rearrange to get <span class="math inline">\({dy\over dx} = \dots\)</span>. The step-by-step solutions for 1. is provided, and the final solutions to the others only being provided.</p>
 <ol type="1">
-<li><p>The left-hand side is equal to <span class="math display">\[{d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) = e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.\]</span> And the right-hand side is equal to <span class="math display">\[{d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx(5x)} = 4e^{4y}{dy\over dx} - 5e^{5x}.\]</span> So we have that: <span class="math display">\[  
+<li><p>The left-hand side is equal to <span class="math display">\[{d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) = e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.\]</span> And the right-hand side is equal to <span class="math display">\[{d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx}(5x) = 4e^{4y}{dy\over dx} - 5e^{5x}.\]</span> So we have that: <span class="math display">\[  
   ye^{xy} + xe^{xy}{dy\over dx} = 4e^{4y}{dy\over dx} - 5e^{5x}
   \]</span> which rearranges to: <span class="math display">\[
   xe^{xy}{dy\over dx} - 4e^{4y}{dy\over dx} = -ye^{xy} -5 e^{5x}.
@@ -169,7 +169,7 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
   4y(x^2 + y^2){dy\over dx}+ 4y{dy\over dx}&amp;=4x-4x(x^2 + y^2)\\
   {dy\over dx}&amp;= {x(1-(x^2 + y^2))\over y(1+(x^2 + y^2))}
   \end{align}\]</span></p></li>
-<li><p>Step 2: Solve <span class="math inline">\({dy\over dx}=0\)</span>. This occurs when <span class="math inline">\(x = 0\)</span> and <span class="math inline">\(y\neq 0\)</span>. Substituing this into the equation for the curve, we have that <span class="math inline">\(y^4 = -2y^2\)</span>, which if <span class="math inline">\(y\neq 0\)</span>, leaves <span class="math inline">\(y^2 =-2\)</span>, which has no real solutions. So we are left with the requirement that <span class="math inline">\(1-(x^2 + y^2)=0\)</span>. So we have that the equation of the curve becomes <span class="math inline">\(1 = 2x^2 - 2y^2\)</span>. We can elimate either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> using the equation <span class="math inline">\(1 = x^2 + y^2\)</span> - I will choose to eliminate <span class="math inline">\(x^2\)</span>. Then we have that <span class="math inline">\(x^2 = 1-y^2\)</span>. So <span class="math display">\[1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.\]</span> So we have that <span class="math inline">\(4y^2 = 1\)</span>, which gives us solutions of <span class="math inline">\(y = \pm {1\over 2}\)</span>. Thus we have that <span class="math display">\[x^2 = 1-(\pm {1\over 2})^2 = 1-{1\over 4} = {3\over 4}.\]</span> Giving <span class="math inline">\(x = \pm {\sqrt{3}\over 2}\)</span>. So the final solutions are: <span class="math display">\[(x,y) = ({\sqrt{3}\over 2},{1\over 2}), \ (-{\sqrt{3}\over 2},{1\over 2}),\ ({\sqrt{3}\over 2},-{1\over 2}),\ (-{\sqrt{3}\over 2},-{1\over 2})  \]</span></p></li>
+<li><p>Step 2: Solve <span class="math inline">\({dy\over dx}=0\)</span>. This can occur when <span class="math inline">\(x = 0\)</span> and <span class="math inline">\(y\neq 0\)</span>, so let’s investigate possible solutions of this type. Substituting this into the equation for the curve, we have that <span class="math inline">\(y^4 = -2y^2\)</span>, which if <span class="math inline">\(y\neq 0\)</span>, leaves <span class="math inline">\(y^2 =-2\)</span>, which has no real solutions. So we are left with the requirement that <span class="math inline">\(1-(x^2 + y^2)=0\)</span>. So we have that the equation of the curve becomes <span class="math inline">\(1 = 2x^2 - 2y^2\)</span>. We can eliminate either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> using the equation <span class="math inline">\(1 = x^2 + y^2\)</span> - I will choose to eliminate <span class="math inline">\(x^2\)</span>. Then we have that <span class="math inline">\(x^2 = 1-y^2\)</span>. So <span class="math display">\[1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.\]</span> So we have that <span class="math inline">\(4y^2 = 1\)</span>, which gives us solutions of <span class="math inline">\(y = \pm {1\over 2}\)</span>. Thus we have that <span class="math display">\[x^2 = 1-(\pm {1\over 2})^2 = 1-{1\over 4} = {3\over 4}.\]</span> Giving <span class="math inline">\(x = \pm {\sqrt{3}\over 2}\)</span>. So the final solutions are: <span class="math display">\[(x,y) = ({\sqrt{3}\over 2},{1\over 2}), \ (-{\sqrt{3}\over 2},{1\over 2}),\ ({\sqrt{3}\over 2},-{1\over 2}),\ (-{\sqrt{3}\over 2},-{1\over 2})  \]</span></p></li>
 </ul>
 </details>
 <details>
@@ -179,7 +179,7 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
 </div>
 </summary>
 <ul>
-<li>Step 1: Find an expression for <span class="math inline">\({dy\over dx}\)</span> in terms of <span class="math inline">\((x,y)\)</span>. <span class="math display">\[
+<li>Step 1: Find an expression for <span class="math inline">\({dy\over dx}\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. We do this by taking the <span class="math inline">\(x\)</span>-derivative of the equation of the curve: <span class="math display">\[
   \begin{align}
   {d\over dx}(y^2 e^{2x}) &amp;= {d\over dx}(3y + x^2)\\
  2y{dy\over dx}e^{2x} + 2y^2e^{2x}&amp;=3{dy\over dx} + 2x.
@@ -200,7 +200,7 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
 </ol>
 <p><span class="math display">\[
 {dy\over dx} = - {x^2 \over y^2}
-\]</span></p>
+\]</span> whenever <span class="math inline">\(y\neq 0\)</span></p>
 <ol start="2" type="1">
 <li>Find the equation of the normal when <span class="math inline">\(x=0\)</span>.</li>
 </ol>
@@ -212,9 +212,9 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
 &amp;= x^3 + y^2.
   \end{align}
   \]</span> So the equation is just <span class="math inline">\(x^3 + y^3 = 1\)</span>, we then take the <span class="math inline">\(x\)</span> derivative to give: <span class="math display">\[
-  {dy\over dx} = 3x^2 + 3y^2 {dy\over dx} = 0,
+{d\over dx}(x^3 + y^3) = 3x^2 + 3y^2 {dy\over dx} = 0,
   \]</span> which rearranges to the answer.</p></li>
-<li><p>At <span class="math inline">\(x=0\)</span>, we have that <span class="math inline">\(y^3 = 1\)</span>, which has solution <span class="math inline">\(y=1\)</span>, so the tangent line at <span class="math inline">\((x,y)=(0,1)\)</span> is given by <span class="math inline">\(y = 0\cdot x + c\)</span> as <span class="math inline">\({dy\over dx} = -\frac{0}{1} = 0\)</span> at <span class="math inline">\((x,y)=(0,1)\)</span>. Thus the tangent line is a constant line <span class="math inline">\(y = 1\)</span>. The normal equation <span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">If this is confusing to you, think about the graph <span class="math inline">\(y=1\)</span> and then construct a perpendicular line that goes through the point <span class="math inline">\((0,1)\)</span>)</span></span> is therefore just <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p>At <span class="math inline">\(x=0\)</span>, we have that <span class="math inline">\(y^3 = 1\)</span>, which has real solution <span class="math inline">\(y=1\)</span>, so the tangent line at <span class="math inline">\((x,y)=(0,1)\)</span> is given by <span class="math inline">\(y = 0\cdot x + c\)</span> as <span class="math inline">\({dy\over dx} = -\frac{0}{1} = 0\)</span> at <span class="math inline">\((x,y)=(0,1)\)</span>. Thus the tangent line is a constant line <span class="math inline">\(y = 1\)</span>. The normal equation<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="sidenote">If this is confusing to you, think about the graph <span class="math inline">\(y=1\)</span> and then construct a perpendicular line that goes through the point <span class="math inline">\((0,1)\)</span></span></span> is therefore just <span class="math inline">\(x=0\)</span>.</p></li>
 </ol>
 </details>
 <details>

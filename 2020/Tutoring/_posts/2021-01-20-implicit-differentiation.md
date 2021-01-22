@@ -26,7 +26,7 @@ We apply the derivative operator ${d\over dx}$ to each equation and rearrange to
 1. The left-hand side is equal to
   $${d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) = e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.$$
   And the right-hand side is equal to
-  $${d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx(5x)} = 4e^{4y}{dy\over dx} - 5e^{5x}.$$
+  $${d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx}(5x) = 4e^{4y}{dy\over dx} - 5e^{5x}.$$
   So we have that:
   $$  
   ye^{xy} + xe^{xy}{dy\over dx} = 4e^{4y}{dy\over dx} - 5e^{5x}
@@ -70,7 +70,7 @@ Find all the points $(x,y)$ on the graph $(x^2+y^2)^2 = 2x^2 - 2y^2$ where $y’
   {dy\over dx}&= {x(1-(x^2 + y^2))\over y(1+(x^2 + y^2))}
   \end{align}$$
 
-  - Step 2: Solve ${dy\over dx}=0$. This occurs when $x = 0$ and $y\neq 0$. Substituing this into the equation for the curve, we have that $y^4 = -2y^2$, which if $y\neq 0$, leaves $y^2 =-2$, which has no real solutions. So we are left with the requirement that $1-(x^2 + y^2)=0$. So we have that the equation of the curve becomes $1 = 2x^2 - 2y^2$. We can elimate either $x$ or $y$ using the equation $1 = x^2 + y^2$ - I will choose to eliminate $x^2$. Then we have that $x^2 = 1-y^2$. So
+  - Step 2: Solve ${dy\over dx}=0$. This can occur when $x = 0$ and $y\neq 0$, so let's investigate possible solutions of this type. Substituting this into the equation for the curve, we have that $y^4 = -2y^2$, which if $y\neq 0$, leaves $y^2 =-2$, which has no real solutions. So we are left with the requirement that $1-(x^2 + y^2)=0$. So we have that the equation of the curve becomes $1 = 2x^2 - 2y^2$. We can eliminate either $x$ or $y$ using the equation $1 = x^2 + y^2$ - I will choose to eliminate $x^2$. Then we have that $x^2 = 1-y^2$. So
     $$1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.$$
     So we have that $4y^2 = 1$, which gives us solutions of $y = \pm {1\over 2}$. Thus we have that
     $$x^2 = 1-(\pm {1\over 2})^2 = 1-{1\over 4} = {3\over 4}.$$
@@ -86,7 +86,7 @@ Find all the points $(x,y)$ on the graph $(x^2+y^2)^2 = 2x^2 - 2y^2$ where $y’
 Find the equation of the tangent line to the curve: $y^2 e^{2x}=3y + x^2$ at the point $(0,3)$
 :::
 </summary>
- - Step 1: Find an expression for ${dy\over dx}$ in terms of $(x,y)$.
+ - Step 1: Find an expression for ${dy\over dx}$ in terms of $x$ and $y$. We do this by taking the $x$-derivative of the equation of the curve:
   $$
   \begin{align}
   {d\over dx}(y^2 e^{2x}) &= {d\over dx}(3y + x^2)\\
@@ -111,6 +111,7 @@ Find the equation of the tangent line to the curve: $y^2 e^{2x}=3y + x^2$ at the
 $$
 {dy\over dx} = - {x^2 \over y^2}
 $$
+whenever $y\neq 0$
 
 2. Find the equation of the normal when $x=0$.
 :::
@@ -123,13 +124,13 @@ $$
   $$
   So the equation is just $x^3 + y^3 = 1$, we then take the $x$ derivative to give:
   $$
-  {dy\over dx} = 3x^2 + 3y^2 {dy\over dx} = 0,
+{d\over dx}(x^3 + y^3) = 3x^2 + 3y^2 {dy\over dx} = 0,
   $$
   which rearranges to the answer.
 
-2. At $x=0$, we have that $y^3 = 1$, which has solution $y=1$, so the tangent line at $(x,y)=(0,1)$ is given by $y = 0\cdot x + c$ as ${dy\over dx} = -\frac{0}{1} = 0$ at $(x,y)=(0,1)$. Thus the tangent line is a constant line $y = 1$. The normal equation [^normal] is therefore just $x=0$.
+2. At $x=0$, we have that $y^3 = 1$, which has real solution $y=1$, so the tangent line at $(x,y)=(0,1)$ is given by $y = 0\cdot x + c$ as ${dy\over dx} = -\frac{0}{1} = 0$ at $(x,y)=(0,1)$. Thus the tangent line is a constant line $y = 1$. The normal equation[^normal] is therefore just $x=0$.
 
-[^normal]: If this is confusing to you, think about the graph $y=1$ and then construct a perpendicular line that goes through the point $(0,1)$)
+[^normal]: If this is confusing to you, think about the graph $y=1$ and then construct a perpendicular line that goes through the point $(0,1)$
 
 </details>
 

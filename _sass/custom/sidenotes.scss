@@ -1,12 +1,15 @@
 // /* Sidenotes */
+//
 
-body {
-  counter-reset: sidenote-counter;
-}
+// The following code is here for reference, It is needed, however in my setup, if it is placed here, it causes other counters to fail.
+// The counter sidenote_counter is reset in the theorem.scss file in the directory. 
+// body {
+//   counter-reset: sidenote_counter;
+// }
 
 .marginnote::before,
 .sidenote::before {
-  content: counter(sidenote-counter) " ";
+  content: counter(sidenote_counter) " ";
   position: relative;
   top: -0.5em;
   vertical-align: baseline;
@@ -52,11 +55,11 @@ body {
 .sidenote-number::before {}
 
 .sidenote-number {
-  counter-increment: sidenote-counter;
+  counter-increment: sidenote_counter;
 }
 
 .sidenote-number::after {
-  content: counter(sidenote-counter)" ";
+  content: counter(sidenote_counter)" ";
   font-size: 0.8rem;
   top: -0.5rem;
   // left: 0.1rem;
@@ -87,7 +90,7 @@ label.margin-toggle:not(.sidenote-number) {
   }
 
   .sidenote-number::after {
-    content: counter(sidenote-counter)" ";
+    content: counter(sidenote_counter)" ";
     color: $color-blue;
   }
 
@@ -114,41 +117,3 @@ label.margin-toggle:not(.sidenote-number) {
     // position: relative;
   }
 }
-// @media (max-width: 1000px) {
-//   label.margin-toggle:not(.sidenote-number) {
-//     display: inline;
-//   }
-//
-//   .marginnote,
-//   .sidenote {
-//     display: none;
-//   }
-//
-//   .sidenote-number::after {
-//     content: counter(sidenote-counter)" ";
-//     color: $color-blue;
-//   }
-//   // These don't currently work
-//   .sidenote-wrapper:hover .sidenote {
-//     color: $color-blue;
-//     border-color: $color-blue;
-//   }
-//
-//   .sidenote-wrapper:hover .sidenote-number::after {
-//     color: $color-blue;
-//     border-color: $color-blue;
-//   }
-//
-//   .margin-toggle:checked + .marginnote,
-//   .margin-toggle:checked + .sidenote {
-//     display: block;
-//     float: center;
-//     left: 1rem;
-//     clear: both;
-//     width: 85vw;
-//     padding-left: 3vw;
-//     margin: 5px 1rem;
-//     vertical-align: baseline;
-//     position: relative;
-//   }
-// }

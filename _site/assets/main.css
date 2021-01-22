@@ -349,17 +349,17 @@ summary::-webkit-details-marker { display: none; }
 
 summary p { margin: 0.5em; }
 
-body { counter-reset: definition theorem lemma example question; }
+body { counter-reset: definition theorem lemma example question sidenote_counter; }
 
 .definition, .theorem, .lemma, .example, .question { display: block; margin: 5px; margin-left: 15px; margin-right: 15px; padding-left: 10px; font-style: normal; }
 
-.question { border: 2px solid purple; display: block; font-style: normal; margin-left: 15px; margin-right: 15px; margin: 5px; padding-left: 10px; }
+.definition:before, .theorem:before, .lemma:before, .example:before, .question:before { font-weight: bold; font-style: normal; }
 
-.question:before { content: "Question " counter(question) "."; counter-increment: question; font-style: normal; font-weight: bold; }
+.question { border: 2px solid purple; }
+
+.question:before { content: "Question " counter(question) "."; counter-increment: question; }
 
 .question[name]:before { content: "Question " counter(question) ". (" attr(name) ") "; counter-increment: question; }
-
-.definition:before, .theorem:before, .lemma:before, .example:before { font-weight: bold; font-style: normal; }
 
 .example { border-left: 2px solid black; }
 
@@ -385,9 +385,7 @@ body { counter-reset: definition theorem lemma example question; }
 
 .lemma[name]:before { content: "Definition " counter(lemma) ". (" attr(name) ") "; counter-increment: lemma; }
 
-body { counter-reset: sidenote-counter; }
-
-.marginnote::before, .sidenote::before { content: counter(sidenote-counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
+.marginnote::before, .sidenote::before { content: counter(sidenote_counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
 
 .marginnote, .sidenote { float: right; clear: right; width: 15vw; margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 14px; color: #828282; font-style: italic; }
 
@@ -395,9 +393,9 @@ body { counter-reset: sidenote-counter; }
 
 .sidenote-wrapper:hover .sidenote-number { color: #6DA6CC; border-color: #6DA6CC; }
 
-.sidenote-number { counter-increment: sidenote-counter; }
+.sidenote-number { counter-increment: sidenote_counter; }
 
-.sidenote-number::after { content: counter(sidenote-counter) " "; font-size: 0.8rem; top: -0.5rem; font-family: et-book-roman-old-style; position: relative; vertical-align: baseline; }
+.sidenote-number::after { content: counter(sidenote_counter) " "; font-size: 0.8rem; top: -0.5rem; font-family: et-book-roman-old-style; position: relative; vertical-align: baseline; }
 
 input.margin-toggle { display: none; }
 
@@ -405,6 +403,6 @@ label.sidenote-number { display: inline; }
 
 label.margin-toggle:not(.sidenote-number) { display: none; }
 
-@media (max-width: 1400px) { label.margin-toggle:not(.sidenote-number) { display: inline; } .marginnote, .sidenote { display: none; } .sidenote-number::after { content: counter(sidenote-counter) " "; color: #6DA6CC; } .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; } .sidenote-wrapper:hover .sidenote-number::after { color: #6DA6CC; border-color: #6DA6CC; } .margin-toggle:checked + .marginnote, .margin-toggle:checked + .sidenote { display: block; float: left; clear: both; width: 90vw; margin: 5px 1rem; vertical-align: baseline; } }
+@media (max-width: 1400px) { label.margin-toggle:not(.sidenote-number) { display: inline; } .marginnote, .sidenote { display: none; } .sidenote-number::after { content: counter(sidenote_counter) " "; color: #6DA6CC; } .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; } .sidenote-wrapper:hover .sidenote-number::after { color: #6DA6CC; border-color: #6DA6CC; } .margin-toggle:checked + .marginnote, .margin-toggle:checked + .sidenote { display: block; float: left; clear: both; width: 90vw; margin: 5px 1rem; vertical-align: baseline; } }
 
 /*# sourceMappingURL=main.css.map */
