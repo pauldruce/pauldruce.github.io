@@ -139,8 +139,9 @@ whenever $y\neq 0$
 <summary>
 :::{.question}
 Find the points $(x,y)$ on the graph $x^{2/3} + y^{2/3} =8$, where $y’ = 1$.
-
+<center>
 ![](/assets/2020/implicit-differentiation/Q-diamond.svg)
+</center>
 :::
 </summary>
 Taking the $x$ derivative of the equation we have that:
@@ -157,9 +158,9 @@ This equals $1$, when $y^{1 /3} = - x^{1/3}$, and by cubing this equation we hav
 <details>
 <summary>
 :::{.question}
-
+<center>
 ![](/assets/2020/implicit-differentiation/Q-3x2-2xy3.svg)
-
+</center>
 1. The curve C is described by the equation $3x^2 + 2xy^3 + 16 = 0$. Show that the normal to C at the point $x=-4$ is parallel to the normal to C at $x=4$.
 2. Find the distance between the y-intercepts of these two normals.
 :::
