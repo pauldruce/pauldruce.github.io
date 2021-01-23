@@ -76,8 +76,8 @@ text-align: center;
 
 
 details {
-  margin: 1rem auto;
-  padding: 0 1rem;
+  margin: 2rem 0rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 1rem;
   // width: 35em;
   max-width: calc(100% - 1rem);
   position: relative;
@@ -108,7 +108,6 @@ details {
 
   &[open] {
     background-color: #FFF;
-
     &::before {
       opacity: .6;
     }
@@ -116,11 +115,11 @@ details {
 }
 
 summary {
-  padding: 0em 1em 0em 0;
+  // padding: 0.1rem 0rem 0rem 0.1rem;
   display: block;
   position: relative;
-  margin: 0em 0em 1em;
-  // left: -1em;
+  // margin: 0em 0em 1em;
+  left: -1em;
   // max-width: calc(100% - 2rem);
   @include relative-font-size(1)
   // font-weight: bold;

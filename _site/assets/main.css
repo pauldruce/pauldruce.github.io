@@ -327,7 +327,7 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .page-content .title_and_summary span { float: right; }
 
-details { margin: 1rem auto; padding: 0 1rem; max-width: calc(100% - 1rem); position: relative; border: 1px solid #78909C; border-radius: 6px; background-color: #FFF; color: #263238; transition: background-color .15s; }
+details { margin: 2rem 0rem 0rem 1rem; padding: 0rem 0rem 0rem 1rem; max-width: calc(100% - 1rem); position: relative; border: 1px solid #78909C; border-radius: 6px; background-color: #FFF; color: #263238; transition: background-color .15s; }
 
 details > :last-child { margin-bottom: 1em; }
 
@@ -337,7 +337,7 @@ details[open] { background-color: #FFF; }
 
 details[open]::before { opacity: .6; }
 
-summary { padding: 0em 1em 0em 0; display: block; position: relative; margin: 0em 0em 1em; font-size: 16px; cursor: pointer; }
+summary { display: block; position: relative; left: -1em; font-size: 16px; cursor: pointer; }
 
 summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; content: ''; background-color: currentColor; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
 
@@ -351,7 +351,7 @@ summary p { margin: 0.5em; }
 
 body { counter-reset: definition theorem lemma example question sidenote_counter; }
 
-.definition, .theorem, .lemma, .example, .question { display: block; margin: 5px; margin-left: 15px; margin-right: 15px; padding-left: 10px; font-style: normal; }
+.definition, .theorem, .lemma, .example, .question { display: block; margin: 5px; padding-left: 10px; padding-right: 10px; font-style: normal; }
 
 .definition:before, .theorem:before, .lemma:before, .example:before, .question:before { font-weight: bold; font-style: normal; }
 

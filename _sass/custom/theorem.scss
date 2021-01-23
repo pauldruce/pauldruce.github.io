@@ -15,9 +15,10 @@ body {
 .definition, .theorem, .lemma, .example, .question{
     display: block;
     margin: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    // margin-left: 15px;
+    // margin-right: 5px;
     padding-left: 10px;
+    padding-right:10px;
     font-style: normal;
 }
 .definition:before, .theorem:before, .lemma:before, .example:before, .question:before{
@@ -27,6 +28,7 @@ body {
 
 .question {
 	border: 2px solid rgb(255/2,0,255/2);
+  // margin:5px
 }
 .question:before{
   content: "Question " counter(question) ".";

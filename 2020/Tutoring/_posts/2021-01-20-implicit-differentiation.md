@@ -152,6 +152,7 @@ $$
 {dy\over dx} = - {x^{-1/3}\over y^{-1/3}} = - \frac{y^{1/3}}{x^{1/3}}.
 $$
 This equals $1$, when $y^{1 /3} = - x^{1/3}$, and by cubing this equation we have that $y = - x$. So we need to simultaneously satisfy the equations $x^{2/3} + y^{2/3} =8$ and $y = -x$. Notice that $(-x)^{2/3} = ((-x)^{1/3})^2 = ((-1)^{1/3}x^{1/3})^2$, assuming we are only interested in the real^[There are also complex numbers which are the cube root of -1, but we will ignore those] solutions to this equation we have that $(-1)^2 x^{2/3}=x^{2/3}$. So we have that $2x^{2/3} = 8$, thus $x^2= 4^{3} = 64$ and thus $x=\pm 8$. So the points of the graph are $(x,y) = (8,-8),\ (-8,8)$.  
+
 </details>
 
 
@@ -183,7 +184,8 @@ This equals $1$, when $y^{1 /3} = - x^{1/3}$, and by cubing this equation we hav
     $${dy\over dx} = {12 - 8 \over -24} = - {1\over 6}.$$
     As the tangents have the same gradient, the normal lines at these points will also have the same gradient, as the normal has the negative reciprocal gradient as the tangent, i.e. $m= 6$ for both normals.
 
-2. The equations of the normals are $y = 6x+c$, where $c$ is the $y$-intercept. The normal to the point $(x,y) = (4,-2)$ needs to have $c = y-6x = -2 - 6\cdot 4 = -26$. The normal to the point $(x,y) = (-4,2)$ needs to have $c = 2+6\cdot 4 = 26$. So the distance between the $y$-intercepts is  $52$.
+2. The equations of the normals are $y = 6x+c$, where $c$ is the $y$-intercept. The normal to the point $(x,y) = (4,-2)$ needs to have $c = y-6x = -2 - 6\cdot 4 = -26$. The normal to the point $(x,y) = (-4,2)$ needs to have $c = 2+6\cdot 4 = 26$. So the distance between the $y$-intercepts is  $52
+
 </details>
 
 <details>
@@ -225,7 +227,6 @@ Find the stationary points and determine their nature* for the curve with equati
     \end{align}
   $$
   Note that the points we are interested in have the property that ${dy\over dx}=0$. So we do not need to simplify this any further.
-
   For the point $(x,y) = ({1\over 2},{3\over 2})$ we have that:
   $$\begin{align}
   {d^2y\over dx^2} &= \frac{ \frac{12}{2}- \frac{6}{2} }{({3\over 2}+{1\over 2})^2} = \frac{6-4}{2^2}\\
@@ -233,13 +234,13 @@ Find the stationary points and determine their nature* for the curve with equati
   \end{align}
   $$
   Meaning that the stationary point at $({1\over 2},{3\over 2})$ is a minimum.
-
   For the point $(x,y) = (-{1\over 2},-{3\over 2})$ we have that:
   $$\begin{align}
       {d^2y\over dx^2} = \frac{-6 + 4}{(-2)^2} = \frac{-2}{4} <0.
   \end{align}
   $$
   Making this stationary point a maximum.
+
 </details>
 
 <details>
@@ -260,4 +261,5 @@ $$\begin{align}
 \end{align}
 $$
 Notice that $a^{x^k} = e^{\ln(a)x^k}$, so we have the answer.
+
 </details>
