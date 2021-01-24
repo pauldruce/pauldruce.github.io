@@ -52,6 +52,7 @@ plugins:
   - jekyll-feed
   - jekyll-pandoc
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 include:
   - _pages
