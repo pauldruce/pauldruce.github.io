@@ -18,7 +18,7 @@ custom_css: cv
 ## Education
 <details>
   <summary>
-**<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 - Passed Viva 13/11/2019*</u></span>
+**<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 -2020*</u></span>
 
   *Title: Spectral Geometry of Fuzzy Spaces*  <br>
   *Supervisor: Prof. John Barrett*
