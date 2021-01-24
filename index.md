@@ -19,7 +19,7 @@ I am also interested in the development of quantum technologies, and the role of
 
 The particle animation on this page is made using p5js - a JavaScript framework. I am investigating using animation software such as *p5js* and *manim* to improve my teaching.
 
-I'm also a self-employed GCSE and A Level tutor for Maths and Physics. See my other dedicated website [](www.pauljdruce.com) for details.
+I'm also a self-employed GCSE and A Level tutor for Maths and Physics.
 
 You can find links to various social media and other sites in the footer of every page.
 </center>
