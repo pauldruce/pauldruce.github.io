@@ -27,18 +27,23 @@ email: pjdruce@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A place to collect my notes on the maths of physics and anything related.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pauldruce.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.pauldruce.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: paulcannotthink
 github_username:  pauldruce
 orcid_id: 0000-0002-2774-964X
 arxiv_id: druce_p_1
 inspire: P.Druce.1
-# paginate: 5
+
+include:
+  - _pages
+# Google Analytics
+google_analytics: UA-134367955-1
+# Disqus Comments
+comments: true
 
 # Build settings
 markdown: Pandoc
 highlighter: rouge
-# markdown: kramdown
 pandoc:
   extensions:
     - mathjax
@@ -53,25 +58,44 @@ plugins:
   - jekyll-pandoc
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-spaceship
 
-include:
-  - _pages
-
-
-# Google Analytics
-google_analytics: UA-134367955-1
-
-# Disqus Comments
-comments: true
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+jekyll-spaceship:
+  processors:
+    # - plantuml-processor
+    # - mermaid-processor
+    # - polyfill-processor
+    - media-processor
+    - emoji-processor
+    # - element-processo
+  plantuml-processor:
+    mode: default  # mode value 'pre-fetch' for fetching image at building stage
+    css:
+      class: plantuml
+    syntax:
+      code: 'plantuml!'
+      custom: ['@startuml', '@enduml']
+    src: http://www.plantuml.com/plantuml/svg/
+  mermaid-processor:
+    mode: default  # mode value 'pre-fetch' for fetching image at building stage
+    css:
+      class: mermaid
+    syntax:
+      code: 'mermaid!'
+      custom: ['@startmermaid', '@endmermaid']
+    config:
+      theme: default
+    src: https://mermaid.ink/svg/
+  media-processor:
+    default:
+      id: 'media-{id}'
+      class: 'media'
+      width: '100%'
+      height: 350
+      frameborder: 0
+      style: 'max-width: 600px; outline: none;'
+      allow: 'encrypted-media; picture-in-picture'
+  emoji-processor:
+    css:
+      class: emoji
+    src: https://github.githubassets.com/images/icons/emoji/

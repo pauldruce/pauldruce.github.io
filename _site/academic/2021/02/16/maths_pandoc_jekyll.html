@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--- MathJax Configuration --><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="S_BlZ_QdzOao1JrXTJW9KQGHdgZV1Oh1Fa-KYtwOT-Q">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Pandoc + Jekyll + Github = :heart: | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.2.0">
+<meta property="og:title" content="Pandoc + Jekyll + Github = :heart:">
+<meta name="author" content="Paul Druce">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Plan">
+<meta property="og:description" content="Plan">
+<link rel="canonical" href="http://0.0.0.0:4000/academic/2021/02/16/maths_pandoc_jekyll.html">
+<meta property="og:url" content="http://0.0.0.0:4000/academic/2021/02/16/maths_pandoc_jekyll.html">
+<meta property="og:site_name" content="Paul J Druce’s site">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-02-16T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Pandoc + Jekyll + Github = :heart:">
+<script type="application/ld+json">
+{"url":"http://0.0.0.0:4000/academic/2021/02/16/maths_pandoc_jekyll.html","headline":"Pandoc + Jekyll + Github = :heart:","dateModified":"2021-02-16T00:00:00+00:00","datePublished":"2021-02-16T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/academic/2021/02/16/maths_pandoc_jekyll.html"},"author":{"@type":"Person","name":"Paul Druce"},"description":"Plan","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PL48TWK"></script>
+
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper">
+<a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="50px" width="50px"></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce's site</a><nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger">
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewbox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/CV"> CV </a>
+        
+        <a class="page-link" href="/research"> Research </a>
+        
+        <a class="page-link" href="/tutoring"> Tutoring </a>
+        
+        <a class="page-link" href="/posts"> All Posts </a>
+        
+        <a class="page-link" href="/aboutme"> About Me </a>
+        
+        <!---->
+      </div>
+    </nav>
+</div>
+</header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Pandoc + Jekyll + Github =<img class="emoji" title=":heart:" alt=":heart:" raw="❤️" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" style="vertical-align: middle; display: inline; max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.getAttribute('raw'))">
+</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-02-16T00:00:00+00:00" itemprop="datePublished">Feb 16, 2021
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <h2 id="plan">Plan</h2>
+<ul class="task-list">
+<li>
+<input type="checkbox" disabled checked>
+Writing mathematics on a computer, why I wanted to use Latex, the philosophy of this project</li>
+<li>
+<input type="checkbox" disabled>
+Github pages -&gt; free website hosting. BUT it’s static only so you can’t have complicated server operations. One exception is jekyll.</li>
+<li>
+<input type="checkbox" disabled>
+Jekyll. This is a piece of software that lets you create a static blog. Well that is the typical use case. It lets you write you posts in Markdown (a simple formatting language that makes writing the focus, not the formatting). It then takes your markdown and runs it through the software which creates the website (a series of html pages). You can control pretty much everything if you know enough.</li>
+<li>
+<input type="checkbox" disabled>
+I don’t know enough. I’m not experience creating websites or web content at all. What I am experienced with is Mathematics and writing mathematics. My main job is to tutor students in mathematics and physics, and I wanted a way to host questions that anyone can access and to write mathematics easily. I also wanted to take advantage of the web technology that I know exists such as interactivity and animations that don’t required a server. I am specifically taking about p5js and hosting manim animations as gifs/videos.</li>
+<li>
+<input type="checkbox" disabled>
+The problems with converting latex/document writing to web content. Footnotes.</li>
+</ul>
+<h1 id="how-the-hell-did-it-come-to-this">How the hell did it come to this?</h1>
+<p>Of all the countless nerds I’ve met during my life, I still get looked at like a weirdo sometimes. One of these times is when I was talking to someone about how I wanted to put some of my research notes on the web. “Who wants to read those? Why wouldn’t you just want the pdf”. It’s become apparent that in the academic and research community, trying to put your ideas out into the world, is only really accepted in a few mediums. In dense, hard to read, academic papers, that take months or years to write, take weeks/months/years to be peer reviewed and then get read by 10 people who stumbled upon them accidentally. Then when you have further ideas on the same topic, instead of it being really easy for others to find your most recent thoughts on the topics, then have to search the web for you name, find another long dense paper, with a ton of repetition in the introduction, just to gleam the important details.</p>
+<p>Some websites are trying to make this process much easier and have succeeded. Places like the Arxiv, which is a preprint server, where academics post papers before they have been peer reviewed and all of the papers by an author can be found in chronological order. ResearchGate and Academia.co and even Linkdin all try to make research a more interactive and collaborative space. Where people can comment and discuss ideas.</p>
+<p>But it’s not working. The Arxiv is overflowing with papers, to the point where no one knows whats going on. To post on the Arxiv, you still need to write a full fledged paper. And even then, the format of pdf do not allow for some of the best mediums of explanation. Animations and videos allow for much more freedom when trying to explain concepts.</p>
+<p>So what should every one do? Simultaneously learn web developments as well as the field of interest? Hire a web developer to create a web version of their content. Pfffft nahhh man. There must be some kind of easy way to convert my latex writing to web content, and learn a few ways to make animations. Then whack them up on a website. Learn as we go, you know?</p>
+<p>Well there is! It takes a little amount of time to get familiar with the pieces, but once you have the pieces you can whack out a blog post with some images, animations and even interactions. All for free, and using no more a few basic web tools.</p>
+<p>You also keep complete creative control, and develop some skills that you can pass on to others! So lets go!</p>
+<h1 id="writing-mathematics.">Writing mathematics.</h1>
+<p>I use LaTeX to write up my work - like any self respecting mathematician/physicist should.<img class="emoji" title=":wink:" alt=":wink:" raw="😉" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" style="vertical-align: middle; display: inline; max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.getAttribute('raw'))"></p>
+<p>This is the language most mathematics and physics papers are written in, so most researchers I know use LaTeX. It means to write something as complicated as: <span class="math display">\[
+\sqrt{\pi} = \int^{\infty}_{-\infty} e^{-x^2}\, dx
+\]</span> It is as easy as:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="sc">\sqrt</span><span class="ss">{</span><span class="sc">\pi</span><span class="ss">} = </span><span class="sc">\int</span><span class="ss">^{</span><span class="sc">\infty</span><span class="ss">}_{-</span><span class="sc">\infty</span><span class="ss">} e^{-x^2}</span><span class="sc">\,</span><span class="ss"> dx</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span></code></pre></div>
+<p>which, granted, if you haven’t seen LaTeX before, it may look daunting, but notice that is took me ~10 seconds to type it all. And can be instantaneously rendered by the software I’m about to demonstrate.</p>
+<p>But the fact that I don’t have to convert my mathematical typing knowledge from one form to another removes one barrier from getting maths on the web.</p>
+<p>Maths is not just about writing symbols, but there are specific structures I wanted to keep. I wanted the following things:</p>
+<ul>
+<li>Theorem boxes and proposition boxes</li>
+<li>Definition</li>
+<li>Examples/Questions at specific points.</li>
+<li>Equation numbering! (why this wasn’t a default of some methods is beyond me)</li>
+<li>Commutative diagrams.</li>
+</ul>
+<p>I still find the idea of having “chunks of results” a very useful way to convey information and also the easiest way to reference these results within the document. For instance:</p>
+<div class="theorem" name="A famous theorem">
+<p>An example theorem for this post: The catgeory of commutative <span class="math inline">\(C^*\)</span> algebras is equivalent to the category of Hausdorff topological spaces.</p>
+</div>
+<div class="proof">
+<p>This proof is left to the reader as an exercise</p>
+</div>
+<p>For proofs, I have taken to the following setup. You construct a theorem as above, but we encase it in a <code>&lt;details&gt;</code> environment. This is a html class, that allows for collapsible entries. For instance the following code:</p>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;
+:::{.theorem name="A famous theorem"}
+An example theorem for this post:
+The catgeory of commutative $C^*$ algebras is equivalent to the
+category of Hausdorff topological spaces.
+:::
+&lt;/summary&gt;
+:::{.proof}
+
+This proof is left to the reader as an exercise.
+:::
+&lt;/details&gt;</code></pre>
+Yields the following output:
+<details>
+<summary>
+<div class="theorem" name="A famous theorem">
+<p>An example theorem for this post: The catgeory of commutative <span class="math inline">\(C^*\)</span> algebras is equivalent to the category of Hausdorff topological spaces.</p>
+</div>
+</summary>
+<div class="proof">
+<p>This proof is left to the reader as an exercise.</p>
+</div>
+</details>
+<p>If you want the proof to be visible by default, then you just change the first line from <code>&lt;details&gt;</code> to <code>&lt;details open&gt;</code>, and produces:</p>
+<details open>
+<summary>
+<div class="theorem" name="A famous theorem">
+<p>An example theorem for this post: The catgeory of commutative <span class="math inline">\(C^*\)</span> algebras is equivalent to the category of Hausdorff topological spaces.</p>
+</div>
+</summary>
+<div class="proof">
+<p>This proof is left to the reader as an exercise.</p>
+</div>
+</details>
+<p>Getting definitions is done by the code block:</p>
+<pre><code>:::{.definition}
+A extremely useful definition...
+:::</code></pre>
+<p>which produces: :::{.definition} A extremely useful definition… :::</p>
+<p>By change the code from <code>:::{.definition}</code> to <code>:::{.example}</code> or similar produces different coloured boxes and changes the text. This is customizable with a little dabbling in CSS<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">I truly mean a little dabble. I know barely any CSS and I managed to hobble together enough to create this.</span></span></p>
+
+  </div>
+<a class="u-url" href="/academic/2021/02/16/maths_pandoc_jekyll.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce's site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce's site</li>
+<li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list">
+<li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li>
+<li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li>
+<li>
+<a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class="username">ORCID</span> </a> </li>
+<li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li>
+</ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>

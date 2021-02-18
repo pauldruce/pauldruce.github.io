@@ -3,31 +3,39 @@ var canvas;
 let contentWidth = 1000;
 let min_width = 1.3 * contentWidth;
 let epsilon = 1;
-let page_height = document.documentElement.scrollHeight;
+let page_height = document.body.scrollHeight;
+var body = document.body;
+var html = document.documentElement;
+
+
+var scroll_height = Math.max(body.scrollHeight, body.offsetHeight,
+  html.clientHeight, html.scrollHeight, html.offsetHeight);
 // let windowWidth = document.width;
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, scroll_height);
+  // canvas.parent("page-content");
   centerCanvas();
   canvas.style('z-index', '-1');
   createParticles(particles);
 }
 
 function createParticles(particles) {
-  const particlesLength = Math.floor(page_height / 10);
-  for (let i = 0; i < particlesLength; i++) {
+  const particlesNumber = Math.floor(scroll_height / 30);
+  for (let i = 0; i < particlesNumber; i++) {
     particles.push(new Particle());
   }
 }
 
 function centerCanvas() {
   var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
+  var y = (scroll_height - height) / 2 + 82;
+  resizeCanvas(windowWidth, scroll_height - 82);
   canvas.position(x, y);
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, page_height);
   centerCanvas();
 }
 

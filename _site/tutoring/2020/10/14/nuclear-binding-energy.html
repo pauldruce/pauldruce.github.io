@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--- MathJax Configuration --><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+          extensions: ['cancel.js','AMSmath.js','AMScd.js'],
+          Macros: {
+            slashed: ['\\cancel{#1}',1],
+            vcentcolon: [':'],
+            Tr: ['Tr #1',1]
+            // slashed: ['\\not{\\!#1}', 1]
+          }
+        },
+
+    });
+</script>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="S_BlZ_QdzOao1JrXTJW9KQGHdgZV1Oh1Fa-KYtwOT-Q">
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Nuclear Binding Energy Notes and Questions | Paul J Druce’s site</title>
+<meta name="generator" content="Jekyll v4.2.0">
+<meta property="og:title" content="Nuclear Binding Energy Notes and Questions">
+<meta name="author" content="Paul Druce">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Binding Energy and Mass defect">
+<meta property="og:description" content="Binding Energy and Mass defect">
+<link rel="canonical" href="http://0.0.0.0:4000/tutoring/2020/10/14/nuclear-binding-energy.html">
+<meta property="og:url" content="http://0.0.0.0:4000/tutoring/2020/10/14/nuclear-binding-energy.html">
+<meta property="og:site_name" content="Paul J Druce’s site">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-10-14T00:00:00+01:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Nuclear Binding Energy Notes and Questions">
+<script type="application/ld+json">
+{"url":"http://0.0.0.0:4000/tutoring/2020/10/14/nuclear-binding-energy.html","headline":"Nuclear Binding Energy Notes and Questions","dateModified":"2020-10-14T00:00:00+01:00","datePublished":"2020-10-14T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/tutoring/2020/10/14/nuclear-binding-energy.html"},"author":{"@type":"Person","name":"Paul Druce"},"description":"Binding Energy and Mass defect","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <!-- p5js  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  
+  <!-- <script src="/assets/js/jquery.min.js"></script> -->
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PL48TWK"></script>
+
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+
+  <div class="wrapper">
+<a href="/"><img class="profile-avatar" src="/assets/images/Portrait_square.jpg" height="50px" width="50px"></a>
+    <a class="site-title" rel="author" href="/">Paul J Druce's site</a><nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger">
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewbox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/CV"> CV </a>
+        
+        <a class="page-link" href="/research"> Research </a>
+        
+        <a class="page-link" href="/tutoring"> Tutoring </a>
+        
+        <a class="page-link" href="/posts"> All Posts </a>
+        
+        <a class="page-link" href="/aboutme"> About Me </a>
+        
+        <!---->
+      </div>
+    </nav>
+</div>
+</header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Nuclear Binding Energy Notes and Questions</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-10-14T00:00:00+01:00" itemprop="datePublished">Oct 14, 2020
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    
+    <h2 id="binding-energy-and-mass-defect">Binding Energy and Mass defect</h2>
+<p>The nuclear binding energy is the energy that is required to break apart a nucleus into its constituent nucleons (protons and neutrons). For example: it is the energy required to split a Helium nucleus (otherwise known as an <span class="math inline">\(\alpha\)</span> particle) into the two protons and two neutrons that it is made of.</p>
+<p>The fact that it requires energy to break apart a nucleus means there is a force keeping the neutrons and protons bound together, and as neutrons are not electrically charged, this force is not just the electromagnetic force alone. We collect the nuclear forces together to talk about the Nuclear force. We know today that there are in fact two different nuclear forces, the weak and strong nuclear forces, as well as the electromagnetic force, however we don’t distinguish them here.</p>
+<p>The notion of binding energy and the mass of a nucleus are very much intertwined. They are really just different ways to express the same physics, but the distinction is a useful one. This should hopefully be clear by the end of this set of notes.</p>
+<p>Taking the <span class="math inline">\(\alpha\)</span> particle example from above, we have that protons have a mass <span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">The values of the mass are take from the Wikipedia pages for Protons and Neutrons respectively on 19/4/2019.</span></span> of <span class="math inline">\(1.007276466879u\)</span> and a neutron has mass of <span class="math inline">\(1.00866491588u\)</span>, where <span class="math inline">\(u\)</span> is the atomic mass unit. The atomic mass unit, <span class="math inline">\(u\)</span>, is defined to be <span class="math inline">\(1/12\)</span>-th of the mass of carbon-12. This has the consequence that a carbon-12 nucleus has mass of exactly <span class="math inline">\(12 u\)</span>. In kilograms we have that <span class="math inline">\(u = 1.660539040(20)\times 10^{-27}\ kg\)</span>, which is incredibly tiny.</p>
+<p>So we have that the constituents of an <span class="math inline">\(\alpha\)</span> particle have a combined mass of</p>
+<p><span class="math display">\[
+\underbrace{(2\times 1.007276466879 u)}_{\text{protons}} + \underbrace{(2 \times 1.00866491588 u)}_{\text{neutrons}} = 4.031882766u
+\]</span></p>
+<p>Whereas the actual mass of an alpha particle is found to be <span class="math inline">\(4.001506179127u\)</span>. So there is a discrepancy between the masses. We seem to have lost mass when forming a nucleus. This is a process we don’t usually encounter in every day life. What is happening is that some of the mass of the constituents gets converted into a different type of energy. This is one of the great realisations by Einstein that mass is just another form of energy, and the exchange rate is given<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"><span class="sidenote">There is some subtlety in this equation, the mass here is what is called the rest mass. The mass of the object when it’s not moving. When an object is moving it actually gets heavier, another one of the bizarre realisations of Einstein.</span></span> by <span class="math inline">\(E = mc^2\)</span>.</p>
+<p>Well, where does this lost mass go? We have that <span class="math inline">\(\Delta m = m_{\text{before}} - m_{\text{after}} = 0.030376587 u\)</span>. So this <em>mass defect</em> has to be accounted for and it must be converted into another type of energy, for instance kinetic energy carried away by a photon. If the <em>mass defect energy</em> is large enough to create a particle, say an electron, it could cause an electron to be emitted with a smaller kinetic energy. But the energy must always be carried away.</p>
+<p>Okay so what does this have to do with binding energy? Well, binding energy is the energy required to reverse this process. To take an <span class="math inline">\(\alpha\)</span> nucleus and break it into it’s constituents. So we need to give enough energy to the system to account for the mass that is need to be created, as the nucleus has a smaller mass than its constituent protons and neutrons.</p>
+<p><span class="math display">\[
+^4_2He^{+2} + \text{energy} \to 2 p^+ + 2 n^0
+\]</span></p>
+<p>Well the <em>mass defect</em> for this equation is now <span class="math inline">\(\Delta m = m_{\text{before}} - m_{\text{after}} = - 0.030376587 u\)</span>. So for this process to ever have the chance of working, we need to give it enough energy to create this much mass. So the binding energy is just exactly the mass defect expressed as energy using <span class="math inline">\(E = mc^2\)</span>. For this case we have that the binding energy is <span class="math inline">\(E_{b} = 0.030376587 u \times c^2 =4.527297829\times 10^{-12}J = 28.295611429 \ MeV\)</span>.</p>
+<p>A useful expression for <span class="math inline">\(u\)</span> is that <span class="math inline">\(u = 931.4940954\ MeV/c^2\)</span>, so that <span class="math inline">\(u\times c^2 = 931.4940954\ MeV\)</span>.</p>
+<p>So what does it mean for a nucleus to have a larger binding energy than an <span class="math inline">\(\alpha\)</span> particle? Well, it means that we have to supply more energy to break it apart. Then that means that the mass defect has to be larger. Which means that when the nucleus is formed, it will emit a lot of energy (either as kinetic energy (photons) or as a particle if it has released enough energy to make one using <span class="math inline">\(E = mc^2\)</span>).</p>
+<div class="question" name="Question Set 1">
+<ol type="1">
+<li>The most common isotope of Uranium is <span class="math inline">\(^{238}_{92}U\)</span>, and has an atomic mass of <span class="math inline">\(238.050783u\)</span>. Calculate the mass defect, binding energy and the binding energy per nucleon.</li>
+<li>Calculate the total binding energy and the binding energy per nucleon of <span class="math inline">\(^{12}_{6}C\)</span> . What percentage of the rest mass of this nucleus is its total binding energy.<br>
+</li>
+<li>What is the maximum wavelength a <span class="math inline">\(\gamma\)</span>-ray that could break a deuteron (<span class="math inline">\(^2_1H^{+1}\)</span>) into a proton and neutron. This process is called photo-disintegration.</li>
+<li>A photon with wavelength of <span class="math inline">\(3.50\times 10^{-13}m\)</span> strikes a deuteron <span class="math inline">\(^2_1H^{+1}\)</span>, splitting it into a proton and neutron. Calculate the kinetic energy released in this interactions. Assuming that the particles share the kinetic energy equally, calculate their speeds.</li>
+</ol>
+</div>
+<h2 id="nuclear-fission">Nuclear Fission</h2>
+<p>The situation above has always been that it requires energy to break apart a nucleus, and that is true for small nuclei. However, for large nuclei such as uranium energy is actually released when it breaks apart into two smaller pieces. How can we understand this fact using the knowledge we developed above. To give us an example to work with, it is known that <span class="math inline">\(^{238}_{92}U\)</span> decays spontaneously/randomly via <span class="math inline">\(\alpha\)</span> radiation to <span class="math inline">\(^{234}_{90}Th\)</span> and releases energy via a photon. If we compare the mass before an afterwards we have that <span class="math inline">\(^{238}_{92}U\)</span> has an atomic mass of <span class="math inline">\(238.050788u\)</span> and <span class="math inline">\(^{234}_{90}Th\)</span> has an atomic mass of <span class="math inline">\(234.043601u\)</span>.</p>
+<p>So the mass before is just that of the uranium nucleus: <span class="math inline">\(238.050788u\)</span>. Afterwards we have a thorium nucleus and an alpha particle so the mass is: <span class="math inline">\(234.043601u + 4.001506u = 238.04510u\)</span>. So we have that <span class="math inline">\(\Delta m = m_{\text{before}} - m_{\text{after}} = 238.050788u - 238.045107u = 0.005681u\)</span>. So we have lost some mass, this must be converted into another form of energy, i.e. a photon for it to be carried away.</p>
+<p>Lets have a look at the binding energy of this process. Uranium-238 has a binding energy of <span class="math inline">\((m_{\text{constituents}} - m_{\text{actual}})\times c^2\)</span> which is:</p>
+<p><span class="math display">\[
+(\underbrace{(92\times 1.007 276 u}_{\text{protons}} + \underbrace{((238-92) \times 1.008 664 u)}_{\text{neutrons}} - 238.050788u)\times c^2 = 1.883548u \times c^2 = 1754.51384\ MeV
+\]</span></p>
+<p>Thorium-234 has a binding energy of:</p>
+<p><span class="math display">\[
+(\underbrace{(90\times 1.007 276 u}_{\text{protons}} + \underbrace{((234-90) \times 1.008 664 u)}_{\text{neutrons}} - 234.043601u)\times c^2 = 1.858855u \times c^2 = 1731.512457\ MeV
+\]</span></p>
+<p>and the <span class="math inline">\(\alpha\)</span> particle has a binding energy of: <span class="math inline">\(28.295 611 \ MeV\)</span> from above.</p>
+<p>So before we have a total binding energy of <span class="math inline">\(1754.51384\ MeV\)</span> and afterwards we have a total binding energy of <span class="math inline">\(1731.512457\ MeV +28.295 611 \ MeV = 1759.808068 \ MeV\)</span>. So the total binding energy as gone up.</p>
+<p>But we haven’t given the system any extra energy? How can we have more of an energy afterwards? This is the source of most of the confusion about binding energy.</p>
+<p>The binding energy should always increase with a spontaneous nuclear process. This is because the binding energy is the amount of energy <u><strong>we</strong></u> as the experimenter would have to put in to the system to break apart the nuclei. <u>This is not an energy that the nuclei themselves have</u>, but the energy we would need to put in to split them up into their individual protons and neutrons. So a larger binding energy afterwards, means it would take more energy to break the nucleus’ apart, which means that the system is in a <em>more stable</em> state.</p>
+<div class="question" name="Question Set 2">
+<ol type="1">
+<li>Calculate the total energy released in the spontaneous <span class="math inline">\(\alpha\)</span> decay of Uranium-238 to Thorium-234 described in the text above.</li>
+<li>Is the decay <span class="math inline">\(n^0 \to p^+ + \beta^- + \bar{\nu}_e\)</span> energetically possible? If it is not, explain why not. If it is, calculate the amount of energy released. Is the decay <span class="math inline">\(p^+ \to n^0 + \beta^+ + \nu_e\)</span> energetically possible, if not, explain why not. If it is calculate the total energy released.</li>
+<li>The atomic mass of Carbon-14 is <span class="math inline">\(14.003242u\)</span>, show that <span class="math inline">\(\beta^-\)</span> decay is energetically possible and calculate the energy released in the decay.</li>
+</ol>
+</div>
+
+  </div>
+<a class="u-url" href="/tutoring/2020/10/14/nuclear-binding-energy.html" hidden></a>
+</article>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Paul J Druce's site</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Paul J Druce's site</li>
+<li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list">
+<li><a href="https://github.com/pauldruce"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pauldruce</span></a></li>
+<li><a href="https://www.twitter.com/paulcannotthink"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">paulcannotthink</span></a></li>
+<li>
+<a content="https://orcid.org/0000-0002-2774-964X" href="https://orcid.org/0000-0002-2774-964X" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1.2em;margin-right:1em;" alt="ORCID iD icon"><span class="username">ORCID</span> </a> </li>
+<li><a href="https://arxiv.org/a/druce_p_1"><img src="/assets/images/logos/icon-arxiv.jpg" style="width:1.2em;margin-right:1em;" alt="arXiv iD icon"><span class="username">arXiv</span></a></li>
+</ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A place to collect my notes on the maths of physics and anything related.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>

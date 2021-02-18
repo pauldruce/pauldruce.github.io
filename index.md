@@ -4,6 +4,9 @@
 
 layout: home
 ---
+
+<br>
+
 <center>
 
 I have recently completed my PhD at the University of Nottingham, UK, working with Prof. John Barrett on Non-commutative Geometry and Quantum Gravity.

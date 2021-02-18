@@ -14,6 +14,7 @@ body {
 // Settings for all environments
 .definition, .theorem, .lemma, .example, .question{
     display: block;
+    clear:left;
     margin: 5px;
     // margin-left: 15px;
     // margin-right: 5px;
@@ -80,4 +81,30 @@ body {
 .lemma[name]:before{ // when the lemma has been given a name
   content: "Definition " counter(lemma) ". (" attr(name) ") ";
   counter-increment: lemma;
+}
+
+
+.proof{
+    display: block;
+    clear:left;
+    margin: 5px;
+    // margin-left: 15px;
+    // margin-right: 5px;
+    // padding-left: 10px;
+    // padding-right:10px;
+    font-style: normal;
+}
+
+.proof:before {
+    content: "Proof. ";
+    font-weight: bold;
+    font-size: normal;
+    // white-space: pre;
+}
+.proof:after{
+    content: "\25A1";
+    position:relative;
+    float:right;
+    top:-30px;
+    // white-space: nowrap;
 }
