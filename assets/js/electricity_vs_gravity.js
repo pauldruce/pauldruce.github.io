@@ -10,6 +10,9 @@ function setup() {
   let p5js_width = contentWidth;
   let p5js_height = contentWidth / 2;
 
+  let x_budge = width / 5;
+  // let y_budge = p5js_height;
+
   // Sliders are not constrained to be within the canvas. So we need to absolute position them. This is a little annoying really.
   let mass_1_slider = addSlider(createSlider(0, 100 * m_e, 1 * m_e, 1 * m_e), "Mass 1"); // Mass slider value is in units of kilograms
 
@@ -17,14 +20,14 @@ function setup() {
   canvas.parent("p5js-anim");
 
   let charge_1 = 1 * e_charge; // Charge is in units of Coulombs
-  let mass_1 = 1; //mass_1_slider.value(); // Mass is in units of kilograms
-  let pos_x_1 = p5js_width / 4;
+  let mass_1 = mass_1_slider.value(); // Mass is in units of kilograms
+  let pos_x_1 = p5js_width / 2 - x_budge;
   let pos_y_1 = p5js_height / 2;
 
 
   let charge_2 = -1 * e_charge; // Charge is in units of Coulombs
-  let mass_2 = 1 // * m_e; // Mass is in units of kilograms
-  let pos_x_2 = 3 * p5js_width / 4;
+  let mass_2 = 1; // * m_e; // Mass is in units of kilograms
+  let pos_x_2 = p5js_width / 2 + x_budge;
   let pos_y_2 = p5js_height / 2;
 
   // The plus one or minus one is to account for the radial unit vector for each particle.
@@ -52,7 +55,7 @@ class Particle {
   constructor(pos_x, pos_y, charge, mass, rad_dir) {
     // Position
     this.pos = createVector(pos_x, pos_y);
-    this.size = 15;
+    this.size = 20;
     // Velocity
     this.vel = createVector(0, 0);
     this.charge = charge;
@@ -62,7 +65,9 @@ class Particle {
   place() {
     noStroke();
     fill('rgba(0,0,0,0.5)');
+    fill('red')
     circle(this.pos.x, this.pos.y, this.size);
+    fill('black')
     textAlign(CENTER);
     text("m=" + str(this.mass.toPrecision(4)) + "kg\n v=" + str(this.vel.x.toPrecision(4)) + " ms^{-1}", this.pos.x, this.pos.y + 2 * this.size)
 
@@ -88,7 +93,7 @@ function addSlider(S, text) {
   S.parent(window.document.getElementById('sliders-holder'))
   S.attribute("value", S.value())
   S.attribute("text", text)
-  // S.input(updateSliders);
+  S.input(updateSliders);
   return S;
 }
 
