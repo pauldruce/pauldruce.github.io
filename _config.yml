@@ -46,9 +46,10 @@ markdown: Pandoc
 highlighter: rouge
 pandoc:
   extensions:
+    - citeproc
     - mathjax
     - toc
-    - csl: ./assets/bibtex/communications-in-mathematical-physics.csl
+    # - csl: ./assets/bibtex/communications-in-mathematical-physics.csl
     - bibliography: ./assets/bibtex/website_bib.bib
     - filter: '/Users/pauldruce/.local/bin/pandoc-sidenote'
 
