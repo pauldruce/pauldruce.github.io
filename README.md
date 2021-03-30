@@ -1,6 +1,6 @@
 # Paul Druce's Academic Website
 
-This is created using Jekyll. This repo contains the code for the website [pauldruce.github.io](pauldruce.github.io).
+This is created using Jekyll. This repo contains the code for the website [pauldruce.co.uk](https://www.pauldruce.co.uk).
 
 This site is built using Jekyll and pandoc/markdown. This a bit of an experiment of mine to find a good way to write maths on the internet, this setup seems to have promise but I am still learning, so if you have any issues please let me know.
 
