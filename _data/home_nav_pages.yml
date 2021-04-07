@@ -3,8 +3,14 @@ docs:
     url: CV
   - title: Research
     url: research
+    # sublinks:
+    #   - title: NCG Paper Timeline
+    #     url: ncg-papers
   - title: Tutoring
     url: tutoring
+    sublinks:
+      - title: Tutoring Schedule
+        url: tutoring-schedule
   - title: All Posts
     url: posts
   - title: About Me

@@ -53,10 +53,10 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-
+    padding: 12px 10px;
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 10px;
     }
   }
 
