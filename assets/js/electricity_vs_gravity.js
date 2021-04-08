@@ -3,7 +3,7 @@ var canvas;
 let contentWidth = 1000;
 let kappa_0 = 8.9875517923e9; // Nm^2 C^{-2} - value taken from Wikipedia Oct 2020
 let grav_const = 6.67e-11; // N m^2 kg^{-2} - value is well known
-let e_charge = 1e-19 // charge of an electron electron
+let e_charge = 1e-19 // magnitude of the charge of an electron
 let m_e = 9.11e-31 // mass of electron
 // Necessary function for p5js to work.
 function setup() {

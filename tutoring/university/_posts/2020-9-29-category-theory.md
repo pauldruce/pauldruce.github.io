@@ -130,7 +130,7 @@ This leads us to the notion of an isomorphism in category theory. We shall look 
 
 ### Isomorphisms in category theory
 
-We want to define a notion of isomorphism that captures all of the differing version that exist. Given the category $Set$, we need a definition that captures that bijections in $Set$ are the isomorphisms. In $Top$, we need it to spit out homeomorphisms. In $Grp$ we need it to spit out group isomorphisms. So on and so forth, every mathematical structure has some notion of 'isomorphic' which we want to generalise.
+We want to define a notion of isomorphism that captures all of the differing versions that exist. Given the category $Set$, we need a definition that captures that bijections in $Set$ are the isomorphisms. In $Top$, we need it to spit out homeomorphisms. In $Grp$ we need it to spit out group isomorphisms. So on and so forth, every mathematical structure has some notion of 'isomorphic' which we want to generalise.
 It turns out to be remarkably easy.
 
 :::{.definition name="Isomorphisms in Categories"}
@@ -143,32 +143,18 @@ So lets check that this definition does provide us with the correct notion of is
 
 :::
 
-Universal Properties: These are statements with are true for every example of the class and unique. For instxance the map from every set to the set with one element $1=\{x\}$ that maps each element to the one element in $1$. This is a unique map, and exists for every set.
-
-::: {.theorem}
-Let $a$ be a relatively simple object
-
-:::{.definition}
-
-A definition inside of a theorem
-
-:::
-
-:::
-
-::: {.definition}
-I am a definition
-:::
+Universal Properties: These are statements with are true for every example of the class and unique. For instance the map from every set to the set with one element $1=\{x\}$ that maps each element to the one element in $1$. This is a unique map, and exists for every set.
 
 
 
 
-$$
+
+<!-- $$
 \begin{CD}
 A @>a>>B \\
 @VbVV @VVcV\\
 C @>d>> D
 \end{CD}
-$$
+$$ -->
 
-# References
+## References

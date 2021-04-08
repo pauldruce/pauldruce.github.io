@@ -69,7 +69,7 @@ Find a counter example to the statement $\mathcal{P}(A) \cup \mathcal{P}(B) = \m
 What is a correct statement between the left and right side of the equality above?
 :::
 
-<details open>
+<details>
 <summary>
 :::{.question}
 You are making a multiplayer racing game. The players have a choice of the following characters: $\text{CHAR} = \{\text{pikachu, bulbasaur, charmander, venosaur} \}$.
