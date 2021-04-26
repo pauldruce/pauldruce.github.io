@@ -166,6 +166,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <li><a href="#isomorphisms-in-category-theory">Isomorphisms in category theory</a></li>
 </ul>
 </li>
+<li><a href="#references">References</a></li>
 </ul>
 
     </div>
@@ -254,7 +255,7 @@ So at this point we should think about some cases. If <span class="math inline">
 </div>
 <p>This leads us to the notion of an isomorphism in category theory. We shall look at isomorphism and where they are useful and where they need to have a bit of a rethink.</p>
 <h3 id="isomorphisms-in-category-theory">Isomorphisms in category theory</h3>
-<p>We want to define a notion of isomorphism that captures all of the differing version that exist. Given the category <span class="math inline">\(Set\)</span>, we need a definition that captures that bijections in <span class="math inline">\(Set\)</span> are the isomorphisms. In <span class="math inline">\(Top\)</span>, we need it to spit out homeomorphisms. In <span class="math inline">\(Grp\)</span> we need it to spit out group isomorphisms. So on and so forth, every mathematical structure has some notion of ‘isomorphic’ which we want to generalise. It turns out to be remarkably easy.</p>
+<p>We want to define a notion of isomorphism that captures all of the differing versions that exist. Given the category <span class="math inline">\(Set\)</span>, we need a definition that captures that bijections in <span class="math inline">\(Set\)</span> are the isomorphisms. In <span class="math inline">\(Top\)</span>, we need it to spit out homeomorphisms. In <span class="math inline">\(Grp\)</span> we need it to spit out group isomorphisms. So on and so forth, every mathematical structure has some notion of ‘isomorphic’ which we want to generalise. It turns out to be remarkably easy.</p>
 <div class="definition" name="Isomorphisms in Categories">
 <p>Given a category <span class="math inline">\(\mathcal{A}\)</span>, we that a map <span class="math inline">\(f:A\to B\)</span> between two objects in a category, <span class="math inline">\(A,B\in ob(\mathcal{A})\)</span>, is an isomorphism if there exists another map <span class="math inline">\(g:B\to A\)</span> such that <span class="math inline">\(f\circ g = 1_B\)</span> and <span class="math inline">\(g\circ f= 1_A\)</span>. Where <span class="math inline">\(1_A\)</span> is the identity map for the object <span class="math inline">\(A\)</span> and <span class="math inline">\(1_B\)</span> is the identity map for the object <span class="math inline">\(B\)</span>.</p>
 </div>
@@ -262,24 +263,15 @@ So at this point we should think about some cases. If <span class="math inline">
 <div class="example">
 
 </div>
-<p>Universal Properties: These are statements with are true for every example of the class and unique. For instxance the map from every set to the set with one element <span class="math inline">\(1=\{x\}\)</span> that maps each element to the one element in <span class="math inline">\(1\)</span>. This is a unique map, and exists for every set.</p>
-<div class="theorem">
-<p>Let <span class="math inline">\(a\)</span> be a relatively simple object</p>
-<div class="definition">
-<p>A definition inside of a theorem</p>
-</div>
-</div>
-<div class="definition">
-<p>I am a definition</p>
-</div>
-<p><span class="math display">\[
+<p>Universal Properties: These are statements with are true for every example of the class and unique. For instance the map from every set to the set with one element <span class="math inline">\(1=\{x\}\)</span> that maps each element to the one element in <span class="math inline">\(1\)</span>. This is a unique map, and exists for every set.</p>
+<!-- $$
 \begin{CD}
-A @&gt;a&gt;&gt;B \\
+A @>a>>B \\
 @VbVV @VVcV\\
-C @&gt;d&gt;&gt; D
+C @>d>> D
 \end{CD}
-\]</span></p>
-<h1 class="unnumbered" id="references">References</h1>
+$$ -->
+<h2 class="unnumbered" id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-Leinster2014" class="csl-entry" role="doc-biblioentry">
 Leinster, Tom. 2014. <em>Basic <span>Category Theory</span></em>. <span>Cambridge University Press</span>. <a href="https://doi.org/10.1017/CBO9781107360068">https://doi.org/10.1017/CBO9781107360068</a>.

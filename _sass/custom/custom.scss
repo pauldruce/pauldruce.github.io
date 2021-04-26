@@ -1,4 +1,85 @@
+// Options for Table of contents.
 
+.page-toc
+{
+  width: 100%;
+  text-align: center;
+
+  ul{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow:column;
+    gap: 0.5rem;
+    list-style: none;
+  }
+  ul> li {
+    @include relative-font-size(0.75);
+    border-radius: 25px;
+    border: 2px solid black;
+    display: grid;
+    height: 100%;
+    list-style: none;
+  }
+  ul> li a {
+    // height: 100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    color: black;
+    // flex: 1 1 0px;
+    background-color: $grey-color-light;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+  li a:hover {
+  background-color: white;
+  }
+}
+// .page-toc
+// {
+//   text-align: center;
+//   ul{
+//     display: flex;
+//     list-style: none;
+//     padding: 0;
+//     align-items: stretch; /* Default */
+//     justify-content: stretch;
+//     // justify-content: space-between;
+//     // flex: 0 1 auto; /* Default */
+//     overflow: hidden;
+//   }
+//   ul> li {
+//     @include relative-font-size(0.75);
+//     text-align: center;
+//     border-radius: 25px;
+//     border: 2px solid black;
+//     flex: 1 1 0px;
+//     height: 100%;
+//     // flex: 0 1 auto; /* Default */
+//     flex-basis: 100%;
+//     align-self: stretch;
+//     display: inline;
+//   }
+//   ul> li a {
+//     align-self: stretch;
+//     text-align: center;
+//     display: block;
+//     border-radius: 25px;
+//     color: black;
+//     height: 100%;
+//     flex: 1 1 0px;
+//     background-color: $grey-color-light;
+//     text-align: center;
+//     padding: 5px;
+//     text-decoration: none;
+//   }
+//   li a:hover {
+//   background-color: white;
+//   }
+// }
 
 
 // Options for NavBar Dropdown

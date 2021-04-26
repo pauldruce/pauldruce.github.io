@@ -85,16 +85,6 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .center-image { margin: 0 auto; display: block; }
 
-.page-toc { text-align: center; }
-
-.page-toc ul { list-style-type: none; padding: 0; display: flex; align-items: stretch; /* Default */ justify-content: space-between; overflow: hidden; }
-
-.page-toc li { font-size: 12px; text-align: center; border-radius: 25px; border: 2px solid black; flex: 1 1 0px; display: inline; }
-
-.page-toc li a { text-align: center; display: block; border-radius: 25px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
-
-.page-toc li a:hover { background-color: white; }
-
 /** Site header */
 .site-header { border-top: 3px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; text-align: center; vertical-align: middle; position: relative; }
 
@@ -294,6 +284,16 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .highlight .il { color: #099; }
 
+.page-toc { width: 100%; text-align: center; }
+
+.page-toc ul { display: grid; align-items: center; justify-items: center; grid-auto-flow: column; gap: 0.5rem; list-style: none; }
+
+.page-toc ul > li { font-size: 12px; border-radius: 25px; border: 2px solid black; display: grid; height: 100%; list-style: none; }
+
+.page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 25px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
+
+.page-toc li a:hover { background-color: white; }
+
 .dropbtn { overflow: hidden; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer; }
 
 /* The container <div> - needed to position the dropdown content */
@@ -310,7 +310,7 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 .dropdown-content a { color: #111; line-height: 1.5; padding: 12px 10px; color: black; text-decoration: none; display: block; float: none; }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover { background-color: #e8e8e8; }
+.dropdown-content a:hover { background-color: #e8e8e8; text-decoration: underline; }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content { display: block; }

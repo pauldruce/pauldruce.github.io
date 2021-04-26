@@ -11,7 +11,7 @@ custom_css: cv
 <center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/CV.pdf"> here</a></center>
 <!-- ##  Paul Druce -->
 
-​				pjdruce@gmail.com <span style="float:right;"> 07412503253			       	</span>
+<!-- ​				pjdruce@gmail.com <span style="float:right;">			       	</span> -->
 
 <!--- <center>Download a PDF version of my Academic CV <a href="{{site.url}}/assets/PDFs/CV.pdf"> here</a></center> -->
 
