@@ -8,7 +8,7 @@ permalink: /CV/
 toc: true
 custom_css: cv
 ---
-<center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/CV.pdf"> here</a></center>
+<center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/PaulDruceCV-full.pdf"> here</a></center>
 <!-- ##  Paul Druce -->
 
 <!-- ​				pjdruce@gmail.com <span style="float:right;">			       	</span> -->
