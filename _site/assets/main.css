@@ -284,9 +284,9 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .highlight .il { color: #099; }
 
-.page-toc { width: 100%; text-align: center; }
+.page-toc { text-align: center; }
 
-.page-toc ul { display: grid; align-items: center; justify-items: center; grid-auto-flow: column; gap: 0.5rem; list-style: none; }
+.page-toc ul { display: grid; margin-left: 0; align-items: center; justify-items: center; grid-auto-flow: column; gap: 0.5rem; list-style: none; }
 
 .page-toc ul > li { font-size: 12px; border-radius: 25px; border: 2px solid black; display: grid; height: 100%; list-style: none; }
 

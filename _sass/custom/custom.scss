@@ -2,11 +2,12 @@
 
 .page-toc
 {
-  width: 100%;
+  // width: 100%;
   text-align: center;
 
   ul{
     display: grid;
+    margin-left:0;
     align-items: center;
     justify-items: center;
     grid-auto-flow:column;
