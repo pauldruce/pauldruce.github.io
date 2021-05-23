@@ -23,12 +23,12 @@ published: false
 Of all the countless nerds I've met during my life, I still get looked at like a weirdo sometimes. One of these times is when I was talking to someone about how I wanted to put some of my research notes on the web. "Who wants to read those? Why wouldn't you just want the pdf". It's become apparent that in the academic and research community, trying to put your ideas out into the world, is only really accepted in a few mediums. In dense, hard to read, academic papers, that take months or years to write, take weeks/months/years to be peer reviewed and then get read by 10 people who stumbled upon them accidentally.
 Then when you have further ideas on the same topic, instead of it being really easy for others to find your most recent thoughts on the topics, they have to search the web for your name, find another long dense paper, with a ton of repetition in the introduction, just to gleam the important details. *Surely we can do better than that?*
 
-Some websites are trying to make this process much easier and have succeeded. Places like the Arxiv, which is a preprint server, where academics post papers before they have been peer reviewed and all of the papers by an author can be found in chronological order. ResearchGate and Academia.edu and even Linkdin all try to make research a more interactive and collaborative space. Where people can comment and discuss ideas.
+Some websites are trying to make this process much easier and have succeeded. Places like the *arXiv*, which is a preprint server where academics post papers before they have been peer reviewed and all of the papers by an author can be found in chronological order. ResearchGate and Academia.edu and even Linkdin all try to make research a more interactive and collaborative space. Where people can comment and discuss ideas.
 
-**But it's not working.** The Arxiv is overflowing with papers, to the point where no one knows whats going on. To post on the Arxiv, you still need to write a full fledged paper. And even then, the format of pdf does not allow for some of the best mediums of explanation. Animations and videos allow for much more freedom when trying to explain concepts.
+**But it's not working.** The arXiv is overflowing with papers, to the point where no one knows whats going on. To post on the arXiv, you still need to write a full fledged paper. And even then, the format of pdf does not allow for some of the best mediums of explanation. Animations and videos allow for much more freedom when trying to explain concepts.
 
-So what should every one do? Simultaneously learn web development as well as the field of interest?
-Hire a web developer to create a web version of their content. Pfffft nahhh man. There must be some kind of easy way to convert my latex writing to web content, and learn a few ways to make animations. Then whack them up on a website. Learn as we go, you know?
+> So what should every one do? Simultaneously learn web development as well as the field of interest?
+> Hire a web developer to create a web version of their content. Pfffft nahhh man. There must be some kind of easy way to convert my latex writing to web content, and learn a few ways to make animations. Then whack them up on a website. Learn as we go, you know?
 
 Well there is! It takes a little amount of time to get familiar with the pieces, but once you have the pieces you can whack out a blog post with some images, animations and even interactions. All for free, and using no more a few basic web tools.
 
@@ -61,12 +61,12 @@ $$
 which, granted, if you haven't seen LaTeX before, it may look daunting, but it took me ~10 seconds to type it all. And can be instantaneously rendered by the software I'm about to demonstrate.
 
 ![](/assets/2021/2021-02-16-maths_pandoc_jekyll/latex_demo.gif)
-
+<!--
 <center>
 <video width="640" height="480" loop autoplay>
 <source src ="/assets/2021/2021-02-16-maths_pandoc_jekyll/latex_demo.mov">
 </video>
-</center>
+</center> -->
 
 But the fact that I don't have to convert my mathematical typing knowledge from one form to another removes one barrier from getting maths on the web.
 
@@ -77,7 +77,7 @@ I wanted the following things:
 - Definition
 - Examples/Questions at specific points.
 - Equation numbering! (why this wasn't a default of some methods is beyond me)
-- Commutative diagrams.
+- Commutative diagrams and other diagrammatical means of communication.
 
 I still find the idea of having "chunks of results" a very useful way to convey information and also the easiest way to reference these results within the document. For instance:
 
@@ -143,7 +143,9 @@ Getting definitions is done by the code block:
 A extremely useful definition...
 :::
 ```
+
 which produces:
+
 :::{.definition}
 A extremely useful definition...
 :::
@@ -167,7 +169,7 @@ There are far better explanations of how to use Github. I'd really recommend lea
 
 - need to know how to "commit" push, pull and thats about it.
 - Need a basic index.html to get started (this is what we will be automatically producing using jekyll.)
-- No servers, so no NodeJS no on the fly server side computation (you can use Client side computation for animations though.)
+- No servers, so no NodeJS no on the fly server side computation (you can use Client side computation for animations though.) ^[we can get around this using Heroku, but that is a different post, for a later time]
 
 ### Jekyll
 
