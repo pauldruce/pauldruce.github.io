@@ -6,8 +6,8 @@ author: pjdruce@gmail.com
 date: Updated January 2020
 permalink: /CV/
 toc: true
-custom_css: cv
 ---
+
 <center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/PaulDruceCV-full.pdf"> here</a></center>
 <!-- ##  Paul Druce -->
 

@@ -286,11 +286,11 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .highlight .il { color: #099; }
 
-.page-toc { text-align: center; }
+.page-toc { width: 100%; }
 
 .page-toc ul { display: grid; margin-left: 0; align-items: center; justify-items: center; grid-auto-flow: column; gap: 0.5rem; list-style: none; }
 
-.page-toc ul > li { font-size: 15px; border-radius: 15px; border: 2px solid black; display: grid; height: 100%; width: 180px; list-style: none; }
+.page-toc ul > li { font-size: 15px; border-radius: 15px; border: 2px solid black; display: grid; height: 100%; list-style: none; }
 
 .page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 15px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
 
