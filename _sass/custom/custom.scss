@@ -16,10 +16,11 @@
   }
   ul> li {
     @include relative-font-size(0.75);
-    border-radius: 25px;
+    border-radius: 15px;
     border: 2px solid black;
     display: grid;
     height: 100%;
+    width: 180px;
     list-style: none;
   }
   ul> li a {
@@ -27,7 +28,7 @@
     display: grid;
     text-align: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 15px;
     color: black;
     // flex: 1 1 0px;
     background-color: $grey-color-light;
@@ -295,7 +296,7 @@ summary {
   display: block;
   position: relative;
   // margin: 0em 0em 1em;
-  left: -1em;
+  left: -0.5em;
   // max-width: calc(100% - 2rem);
   @include relative-font-size(1)
   // font-weight: bold;

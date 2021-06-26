@@ -8,11 +8,13 @@
   {% seo %}
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="shortcut icon" type="image/ico" href="{{ "assets/images/favicon.ico" | relative_url }}">
 
   {% if page.animation %}
   {% for libs in page.animation %}
   {% if libs == "p5js" %}
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js">
+  </script>
   {% endif %}
   {% if libs == "threejs" %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js">

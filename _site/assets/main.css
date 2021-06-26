@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 20px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -16,7 +16,7 @@ img { max-width: 100%; vertical-align: middle; }
 /** Figures */
 figure > img { display: block; }
 
-figcaption { font-size: 14px; }
+figcaption { font-size: 17.5px; }
 
 /** Lists */
 ul, ol { margin-left: 30px; }
@@ -42,12 +42,12 @@ a:hover { color: #111; text-decoration: underline; }
 .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #111; background-color: #e8e8e8; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: #111; background-color: #e8e8e8; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 22.5px; letter-spacing: -1px; font-style: italic; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+pre, code { font-size: 18.75px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
 code { padding: 1px 5px; }
 
@@ -88,13 +88,15 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 /** Site header */
 .site-header { border-top: 3px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; text-align: center; vertical-align: middle; position: relative; }
 
-.profile-avatar { border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px; -ms-border-radius: 150px; -o-border-radius: 150px; margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 5px; float: left; }
+.profile-avatar { height: 50px; width: 50px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; margin-left: auto; margin-right: -60px; margin-top: 10px; float: left; }
 
-.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; vertical-align: middle; }
+.profile-portrait { height: 120px; width: 120px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; margin-left: auto; margin-right: auto; margin-top: 5px; margin-bottom: 5px; float: right; }
+
+.site-title { font-size: 32.5px; font-weight: 300; line-height: 67.5px; letter-spacing: -1px; margin-bottom: 0; vertical-align: middle; }
 
 .site-title, .site-title:visited { color: #424242; }
 
-.site-nav { float: right; vertical-align: middle; line-height: 54px; }
+.site-nav { float: right; vertical-align: middle; line-height: 67.5px; }
 
 .site-nav .nav-trigger { display: none; }
 
@@ -109,55 +111,55 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 /** Site footer */
 .site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
 
-.footer-heading { font-size: 18px; margin-bottom: 15px; }
+.footer-heading { font-size: 22.5px; margin-bottom: 15px; }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
-.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+.footer-col-wrapper { font-size: 18.75px; color: #828282; margin-left: -15px; }
 
-.footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
+.footer-col { float: left; margin-bottom: 7.5px; padding-left: 15px; }
 
-.footer-col-1 { width: -webkit-calc(33% - (30px / 2)); width: calc(33% - (30px / 2)); }
+.footer-col-1 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); padding-right: calc(10% - (30px / 2)); }
 
-.footer-col-2 { width: -webkit-calc(33% - (30px / 2)); width: calc(33% - (30px / 2)); }
+.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
 
-.footer-col-3 { width: -webkit-calc(33% - (30px / 2)); width: calc(33% - (30px / 2)); }
+.footer-col-3 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
 
 @media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); } .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
 
 @media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
 
 /** Page content */
-.post-list-heading { font-size: 28px; }
+.post-list-heading { font-size: 35px; }
 
 .post-list { margin-left: 0; list-style: none; line-height: 200%; }
 
 .post-list > li { margin-bottom: 15px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 17.5px; color: #828282; }
 
-.post-link { font-size: 24px; }
+.post-link { font-size: 30px; }
 
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; margin-top: 10px; }
+.post-title { font-size: 52.5px; letter-spacing: -1px; line-height: 1; margin-top: 10px; }
 
-@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
+@media screen and (max-width: 800px) { .post-title { font-size: 45px; } }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h2 { font-size: 32px; }
+.post-content h2 { font-size: 40px; }
 
-@media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 35px; } }
 
-.post-content h3 { font-size: 20px; }
+.post-content h3 { font-size: 25px; }
 
-@media screen and (max-width: 800px) { .post-content h3 { font-size: 20px; } }
+@media screen and (max-width: 800px) { .post-content h3 { font-size: 25px; } }
 
-.post-content h4 { font-size: 20px; }
+.post-content h4 { font-size: 25px; }
 
-@media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+@media screen and (max-width: 800px) { .post-content h4 { font-size: 22.5px; } }
 
 .center-image { margin: 0 auto; display: block; }
 
@@ -288,9 +290,9 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .page-toc ul { display: grid; margin-left: 0; align-items: center; justify-items: center; grid-auto-flow: column; gap: 0.5rem; list-style: none; }
 
-.page-toc ul > li { font-size: 12px; border-radius: 25px; border: 2px solid black; display: grid; height: 100%; list-style: none; }
+.page-toc ul > li { font-size: 15px; border-radius: 15px; border: 2px solid black; display: grid; height: 100%; width: 180px; list-style: none; }
 
-.page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 25px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
+.page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 15px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
 
 .page-toc li a:hover { background-color: white; }
 
@@ -333,26 +335,26 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .image_block img { padding-right: 25px; padding-left: 25px; }
 
-.home-heading { font-size: 28px; }
+.home-heading { font-size: 35px; }
 
 /** Pages **/
-.page-title { font-size: 32px; letter-spacing: -1px; }
+.page-title { font-size: 40px; letter-spacing: -1px; }
 
-@media screen and (max-width: 800px) { .page-title { font-size: 32px; } }
+@media screen and (max-width: 800px) { .page-title { font-size: 40px; } }
 
 .page-content { flex: 1; }
 
-.page-content h2 { font-size: 24px; text-decoration: underline; }
+.page-content h2 { font-size: 30px; text-decoration: underline; }
 
-@media screen and (max-width: 800px) { .page-content h2 { font-size: 24px; } }
+@media screen and (max-width: 800px) { .page-content h2 { font-size: 30px; } }
 
-.page-content h3 { font-size: 20px; line-height: 1; text-decoration: underline; }
+.page-content h3 { font-size: 25px; line-height: 1; text-decoration: underline; }
 
-@media screen and (max-width: 800px) { .page-content h3 { font-size: 20px; line-height: 1; } }
+@media screen and (max-width: 800px) { .page-content h3 { font-size: 25px; line-height: 1; } }
 
-.page-content h4 { font-size: 17.6px; }
+.page-content h4 { font-size: 22px; }
 
-@media screen and (max-width: 800px) { .page-content h4 { font-size: 17.6px; } }
+@media screen and (max-width: 800px) { .page-content h4 { font-size: 22px; } }
 
 .page-content .title_and_summary h4 { display: inline; }
 
@@ -368,7 +370,7 @@ details[open] { background-color: #FFF; }
 
 details[open]::before { opacity: .6; }
 
-summary { display: block; position: relative; left: -1em; font-size: 16px; cursor: pointer; }
+summary { display: block; position: relative; left: -0.5em; font-size: 20px; cursor: pointer; }
 
 summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; content: ''; background-color: currentColor; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
 
@@ -424,7 +426,7 @@ body { counter-reset: definition theorem lemma example question sidenote_counter
 
 .marginnote::before, .sidenote::before { content: counter(sidenote_counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
 
-.marginnote, .sidenote { float: right; clear: right; width: 15vw; margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 14px; color: #828282; font-style: italic; }
+.marginnote, .sidenote { float: right; clear: right; width: 15vw; margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 17.5px; color: #828282; font-style: italic; }
 
 .sidenote-wrapper:hover .sidenote { color: #6DA6CC; border-color: #6DA6CC; }
 
