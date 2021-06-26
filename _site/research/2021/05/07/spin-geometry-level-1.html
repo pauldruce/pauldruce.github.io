@@ -29,21 +29,22 @@
   <meta name="google-site-verification" content="S_BlZ_QdzOao1JrXTJW9KQGHdgZV1Oh1Fa-KYtwOT-Q">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Nijmegen Talk Slides | Paul J Druce’s site</title>
+<title>Spin Geometry - Level 1 | Paul J Druce’s site</title>
 <meta name="generator" content="Jekyll v4.2.0">
-<meta property="og:title" content="Nijmegen Talk Slides">
+<meta property="og:title" content="Spin Geometry - Level 1">
+<meta name="author" content="Paul Druce">
 <meta property="og:locale" content="en_US">
-<meta name="description" content="Here are my slides from a talk I gave to the physics group at Nijmegen University in April 2017 - Slides">
-<meta property="og:description" content="Here are my slides from a talk I gave to the physics group at Nijmegen University in April 2017 - Slides">
-<link rel="canonical" href="http://0.0.0.0:4000/research/2017/04/24/Nijmegen-Slides.html">
-<meta property="og:url" content="http://0.0.0.0:4000/research/2017/04/24/Nijmegen-Slides.html">
+<meta name="description" content="My research is based in non-commutative geometry, for which, a detailed understanding of spinors and spin geometry is imperative.">
+<meta property="og:description" content="My research is based in non-commutative geometry, for which, a detailed understanding of spinors and spin geometry is imperative.">
+<link rel="canonical" href="http://0.0.0.0:4000/research/2021/05/07/spin-geometry-level-1.html">
+<meta property="og:url" content="http://0.0.0.0:4000/research/2021/05/07/spin-geometry-level-1.html">
 <meta property="og:site_name" content="Paul J Druce’s site">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-04-24T00:00:00+01:00">
+<meta property="article:published_time" content="2021-05-07T00:00:00+01:00">
 <meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Nijmegen Talk Slides">
+<meta property="twitter:title" content="Spin Geometry - Level 1">
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/research/2017/04/24/Nijmegen-Slides.html"},"url":"http://0.0.0.0:4000/research/2017/04/24/Nijmegen-Slides.html","description":"Here are my slides from a talk I gave to the physics group at Nijmegen University in April 2017 - Slides","headline":"Nijmegen Talk Slides","dateModified":"2017-04-24T00:00:00+01:00","datePublished":"2017-04-24T00:00:00+01:00","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/research/2021/05/07/spin-geometry-level-1.html"},"url":"http://0.0.0.0:4000/research/2021/05/07/spin-geometry-level-1.html","author":{"@type":"Person","name":"Paul Druce"},"description":"My research is based in non-commutative geometry, for which, a detailed understanding of spinors and spin geometry is imperative.","headline":"Spin Geometry - Level 1","dateModified":"2021-05-07T00:00:00+01:00","datePublished":"2021-05-07T00:00:00+01:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -109,19 +110,26 @@
     <div class="wrapper">
       <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Nijmegen Talk Slides</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Spin Geometry - Level 1</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2017-04-24T00:00:00+01:00" itemprop="datePublished">Apr 24, 2017
-      </time></p>
+      <time class="dt-published" datetime="2021-05-07T00:00:00+01:00" itemprop="datePublished">May 7, 2021
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Paul Druce</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     
-    <p>Here are my slides from a talk I gave to the physics group at Nijmegen University in April 2017 - <a href="http://0.0.0.0:4000/assets/PDFs/Slides_Nijmegen-2017-Fuzzy-Geometry-and-Spectral-Zeta-Funtions.pdf" download> Slides </a></p>
-<p>There has been significant progress since this talk, please see the following <del>preprint</del> publication: <a href="https://iopscience.iop.org/article/10.1088/1751-8121/ab22f8">paper</a>. The preprint version can be found <a href="https://arxiv.org/abs/1902.03590">Preprint version</a>.</p>
+    <p>My research is based in non-commutative geometry, for which, a detailed understanding of spinors and spin geometry is imperative.</p>
+<h1 id="spinors-in-physics">Spinors in physics</h1>
+<p>Spin is one of the first concepts in quantum theory that I remember confusing me. It simultaneously was easy enough to understand, but there was so much mystery surrounding the concept. You are essentially told that an atom’s spin is similar to its angular momentum but it’s not a real spin. The question then becomes “what does spin really mean?” and this questions leads you deep in to the rabbit hole. I eventually end up at the Dirac equations and quantum field theory - our current framework for understanding high energy particle physics. At which point I was still a little confused. I felt like I had a decent understanding of however spin interacts with the forces of nature. However, there was still some areas that confused me.</p>
+<p>For instance, the Pauli matrices <span class="math inline">\(\sigma^i\)</span> or the Dirac gamma matrices, <span class="math inline">\(\gamma^\mu\)</span> are essential in the description of spin. The matrices satisfy a set of equations that I’d not seen before in physics or maths: <span class="math display">\[\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2\eta^{\mu\nu} = diag(1,-1,-1,-1)\]</span></p>
+<p>These relations define Clifford algebras, which at first glance had no relation to anything physical. But the more I studied these objects, the more everything made sense. For instance, the relationship between spin and angular momentum became very clear.</p>
+<p>However, every question answered provided many more in its place.</p>
+<p>So to fully understand spin, spinors and “angular momentum” - whether it be orbital or spin - we will need to understand a few mathematical concepts.</p>
+<p>The most important being that of Clifford algebras, representations and fibre bundles.</p>
+<p># Clifford Algebras</p>
 
   </div>
-<a class="u-url" href="/research/2017/04/24/Nijmegen-Slides.html" hidden></a>
+<a class="u-url" href="/research/2021/05/07/spin-geometry-level-1.html" hidden></a>
 </article>
     </div>
   </main>
