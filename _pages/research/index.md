@@ -5,7 +5,6 @@ permalink: /research/
 ---
 <center>
 
-##### Research Overview
 My research is based on discretisations of spacetime to investigate quantum gravity effects.
 I have worked on *fuzzy spaces*, which are finite non-commutative geometries based upon matrix algebras.
 I am interested in how continuous symmetries affect these spaces.
