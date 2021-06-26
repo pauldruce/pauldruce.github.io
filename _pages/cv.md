@@ -15,6 +15,45 @@ custom_css: cv
 
 <!--- <center>Download a PDF version of my Academic CV <a href="{{site.url}}/assets/PDFs/CV.pdf"> here</a></center> -->
 
+## Current responsibilities
+
+<details>
+    <summary>**<u>Consulting Engineering at MachineWorks</u>** <span style="float:right;">**<u>May 2021 - Current</u>**</span>
+    <br>
+    I aide commercial 3D software developers implement and use MachineWorks software for a wide variety of applications. The software provides fast and efficient handling of polygon meshes.
+    </summary>
+    When Covid restrictions are eased sufficiently, I will be providing direct support to evaluating developers through on-site training and pair-programming to ensure new evaluations and integrations are rapid and successful.
+</details>
+
+<details>
+    <summary>**<u>Academic Tutor and Mentor</u>** <span style="float:right;">**<u>Aug 2017 - Current</u>** </span>
+    <br>
+    I am an experienced tutor in mathematics and physics at the levels of university, A level and GCSE. <br>
+    I also mentor students for various mathematical entrance exams and the UKMT mathematical competitions.
+    </span></summary>
+   I have vast experience in both face-to-face tutoring and online tutoring via shared online whiteboards.
+    I prepare lessons and question sheets at appropriate levels for my tutees. My role is to build the confidence and the abilities of my students and provide them with a comfortable environment to ask any questions they may have.
+    I also possess an Enhanced DBS check and I am trusted by schools to give one-to-one tutorials to their students via the company MyTutor. You can see student reviews and further details here: [https://www.mytutor.co.uk/tutors/58270](https://www.mytutor.co.uk/tutors/58270). </details>
+
+<details>
+ <summary>**<u> Official UKMT Volunteer Mentor</u>**<span style="float:right;"> **<u>October 2020 - Current**</u> </span>
+ <br>
+  I am a volunteer for the UK Mathematics Trust. My role involves mentoring the students who are entering the advanced UKMT competitive mathematics exams.
+</summary>
+ I am also involved in various outreach projects that the UKMT organise. I aid with the creation of appropriate questions and aid in the distribution of content via social media.
+</details>
+
+## Skills
+- Profficient in the following programming languages: C, Python, C++, HTML/CSS/JavaScript and Mathematica
+- High performance computing and commercial software in C.
+- Experienced using Git and Perforce for collaborative development.
+- Experience in data analysis using Python and Mathematica.
+- Web development, including animations; HTML/CSS/JavaScript.
+- Experienced using LaTex (including TikZ and beamer) and the Microsoft Office suite.
+- Experience using Linux, macOS and Windows environments.
+- Internet of Things development using ESP8266/ESP32 and other devices, i.e. Arduino framework, ESP-DF framework, micropython as well as how to use PlatformIO.
+- I have a valid First Aid Certificate (2017-2020) (planned to renew once COVID restrictions are eased). I also have a full drivers licence and motorcycle licence.
+
 ## Education
 <details>
   <summary>
@@ -55,19 +94,6 @@ I became proficient in the programming language C and its use in high-performanc
 9 A’s, 2 B’s and one C.
 
 ## Teaching Experience
-
-- <details>
-    <summary>**<u>Academic Tutor and Mentor</u>** <span style="float:right;">**<u>Aug 2017 - Current</u>**</span></summary>
-    I am an experienced tutor in mathematics and physics at the levels of university, A level and GCSE.
-    I also mentor students for various mathematical entrance exams and the UKMT mathematical competitions.
-   I have vast experience in both face-to-face tutoring and online tutoring via shared online whiteboards.
-    I prepare lessons and question sheets at appropriate levels for my tutees. My role is to build the confidence and the abilities of my students and provide them with a comfortable environment to ask any questions they may have.
-    I also possess an Enhanced DBS check and I am trusted by schools to give one-to-one tutorials to their students via the company MyTutor. You can see student reviews and further details here: [https://www.mytutor.co.uk/tutors/58270](https://www.mytutor.co.uk/tutors/58270). </details>
-
- - <details>
- <summary>**<u> Official UKMT Volunteer Mentor</u>**<span style="float:right;"> **<u>October 2020 - Current**</u></span></summary>
- I am a volunteer for the UK Mathematics Trust. My role involves mentoring the students who are entering the advanced UKMT competitive mathematics exams. I am also involved in various outreach projects that the UKMT organise. I aid with the creation of appropriate questions and aid in the distribution of content via social media.
- </details>
 - <details>
     <summary>**<u> PhD Demonstrating and Marking</u>** <span style="float:right;"> **<u>Oct 2015 - Jul 2019</u>**</span></summary>
   Alongside my PhD, I was employed to help students with their questions for various undergraduate mathematics modules for Engineering students, Physics students and Mathematics students. This includes courses such as Introduction to Mathematical Physics (2nd year), Differential Equations and Fourier Analysis (2nd year), Applied Mathematics (1st year) and more. I also mark the mid-term exams and coursework for various modules.
@@ -138,17 +164,6 @@ I was part of the team that unpackaged new deliveries of clothes and prepare clo
     <summary>**Voluntary Sale Assistant at British Heart Foundation** <span style="float:right;">  **<u>2010-2011</u>**</span></summary>
 My role at the British Heart Foundation included assisting customers in finding items, informing them about the charity and maintaining the store. As the British Heart Foundation has a wide range of customers and staff, I had to quickly learn to adapt my communication and sales approach to fit their needs and situation.
 </details>
-
-## Skills
-- Experienced using LaTex (including TikZ and beamer) and the Microsoft Office suite.
-- High performance computing in C
-- Data analysis in Python and Mathematica
-- Experience using Linux, macOS and Windows environments.
-- Experienced using Git and Github/Bitbuckets for collaborative development.
-- Basic knowledge of web development; HTML/CSS.
-- Internet of Things development using ESP8266/ESP32 and other devices, i.e. Arduino framework, ESP-IDF framework, micropython as well as how to use PlatformIO.
-
-I have a valid First Aid Certificate (2017-2020) and an Enhanced DBS check (2017-2020). I also have a full drivers licence and motorcycle licence.
 
 ## Academic Activities
 

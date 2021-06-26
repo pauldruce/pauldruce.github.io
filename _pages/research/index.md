@@ -4,6 +4,15 @@ title: Research
 permalink: /research/
 ---
 <center>
+
+##### Research Overview
+My research is based on discretisations of spacetime to investigate quantum gravity effects.
+I have worked on *fuzzy spaces*, which are finite non-commutative geometries based upon matrix algebras.
+I am interested in how continuous symmetries affect these spaces.
+Outside of non-commutative geometry, I am interested in exploring quantum geometries via numerical methods.
+
+I am also interested in the development of quantum technologies, and the role of mathematics in the description of quantum phases of matter. For instance, there is a description of the quantum hall effect based upon the non-commutative torus. As a finite version has been developed, called the fuzzy torus, I am interested in investigating the consequence using this description would have for physics.
+
 My research is primarily interested with discrete descriptions of quantum space-time and quantum gravity. I'm also very interested in the application of non-commutative geometry to other areas of physics such as condensed matter systems and topological phases of matter.
 </center>
 ### Publications
