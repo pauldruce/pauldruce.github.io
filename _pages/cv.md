@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Paul Druce's CV
+title: Curriculum Vitae 
 pdftitle: Paul Druce's CV
 author: pjdruce@gmail.com
 date: Updated January 2020
