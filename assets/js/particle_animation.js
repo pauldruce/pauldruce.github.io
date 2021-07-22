@@ -6,11 +6,12 @@ let epsilon = 1;
 let page_height = document.body.scrollHeight;
 var body = document.body;
 var html = document.documentElement;
-
+var particle_colour;
 
 var scroll_height = Math.max(body.scrollHeight, body.offsetHeight,
   html.clientHeight, html.scrollHeight, html.offsetHeight);
 // let windowWidth = document.width;
+var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 function setup() {
   canvas = createCanvas(windowWidth, scroll_height);
@@ -40,12 +41,12 @@ function windowResized() {
 }
 
 function draw() {
-  background('rgb (55,100,144)'); // The command "background" clears the canvas.
-
+  clear();
   /*
     This if statement then only draws the particles if the screen is large enough.
     This makes the website 'responsive to sizes'.
   */
+  matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (windowWidth >= min_width) {
     particles.forEach((p, index) => {
       p.update();
@@ -70,8 +71,15 @@ class Particle {
     this.vel = createVector(random(-1, 1), random(-1, 1));
   }
   place() {
-    noStroke();
-    fill('rgba(0,0,0,0.5)');
+    noStroke()
+
+    // Dark mode colour choosing.
+    if (matched) {
+      fill('rgba(255,255,255,0.6)');
+    } else {
+      fill('rgba(0,0,0,0.5)');
+    }
+
     circle(this.pos.x, this.pos.y, this.size);
   }
   update() {
@@ -94,7 +102,11 @@ class Particle {
   checkParticles(particles) {
     particles.forEach(particle => {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
-      stroke('rgba(0,0,0,0.4)');
+      if (matched) {
+        stroke('rgba(255,255,255,0.3)');
+      } else {
+        stroke('rgba(1,1,1,0.4)');
+      }
       strokeWeight(1);
       if (d < 120) {
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
