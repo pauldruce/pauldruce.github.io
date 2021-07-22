@@ -19,6 +19,7 @@ function setup() {
   centerCanvas();
   canvas.style('z-index', '-1');
   createParticles(particles);
+  setAttributes('antialias', true);
 }
 
 function createParticles(particles) {
