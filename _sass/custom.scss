@@ -38,7 +38,7 @@
     text-decoration: none;
   }
   li a:hover {
-  background-color: white;
+    @include theme("background-color", $page-link-hover-colour);
   }
 }
 
@@ -62,7 +62,7 @@
 }
 
 .page-link:hover, .dropdown:hover .dropbtn .dropdown-content {
-  background-color: $grey-color-light;
+  @include theme("background-color", $page-link-hover-colour);
 }
 
 /* Dropdown Content (Hidden by Default) */

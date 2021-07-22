@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-  border-top: 3px solid $grey-color-light;
-  border-bottom: 1px solid $grey-color-light;
+  // border-top: 3px solid $grey-color-light;
+  border-top: 3px solid $color-blue;
+  border-bottom: 1px solid $color-blue;
   min-height: $spacing-unit * 1.865;
   text-align: center;
   vertical-align: middle;
@@ -67,7 +68,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    @include theme("color", $text-color);
     line-height: $base-line-height;
     padding: 12px 10px;
     // Gaps between nav items, but not on the last one
@@ -136,7 +137,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $color-blue;
   padding: $spacing-unit 0;
 }
 

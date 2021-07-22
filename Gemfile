@@ -6,8 +6,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 
 gem "jekyll", github: "jekyll/jekyll"
-gem "minima"
 gem "jekyll-seo-tag"
+gem "jekyll-feed"
 gem "jekyll-pandoc"
 gem "rouge"
 gem "jekyll-sitemap"

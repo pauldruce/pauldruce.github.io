@@ -15,8 +15,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  @include theme("color", $text-color);
+  @include theme("background-color", $background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -107,15 +107,16 @@ h3 {
  * Links
  */
 a {
-  color: $brand-color;
+  @include theme("color", $link-color);
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    @include theme("color", $link-color-visited);
+
   }
 
   &:hover {
-    color: $text-color;
+    @include theme("color", $text-color);
     text-decoration: underline;
   }
 
@@ -237,22 +238,28 @@ table {
   width: auto;
   max-width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  @include theme("color", $table-text-color);
   border-collapse: collapse;
   border: 2px solid $grey-color-light;
   border-spacing: 0;
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+      @include theme("background-color", $table-background-colour-a);
     }
+    &:nth-child(odd){
+      @include theme("background-color", $table-background-colour-b);
+    }
+
   }
   th, td {
     padding: ($spacing-unit / 20) ($spacing-unit / 10);
   }
   th {
-    background-color: darken($grey-color-light, 6%);
+    @include theme("background-color", $table-background-colour-header);
     border: 2px solid darken($grey-color-light, 10%);
     border-bottom-color: darken($grey-color-light, 12%);
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
   }
   td {
     border: 1px solid $grey-color-light;
@@ -264,6 +271,13 @@ table tr > th[scope='col'] {
 table > tbody > tr:first-child > td,
 table > tbody > tr:first-child > th {
   border-top: 1.36px solid black;
+}
+
+
+.vertical-heading table td:nth-child(1){
+        @include theme("background-color", $table-background-colour-header);
+        padding-right: $spacing-unit;
+        font-weight: bold;
 }
 // /* Better tables */
 // table {

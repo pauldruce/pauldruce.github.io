@@ -1,0 +1,58 @@
+$dark-theme: "dark-theme";
+$light-theme: "light-theme";
+$background-color: "background-color";
+$text-color: "text-color";
+$table-text-color: "table-text-color";
+$link-color: "link-color";
+$link-color-visited: "link-color-visited";
+$table-background-colour-a: "table-background-colour-a";
+$table-background-colour-b: "table-background-colour-b";
+$table-background-colour-header: "table-background-colour-header";
+$page-link-hover-colour: "page-link-hover-colour";
+
+$grey-color-dark: "grey-color-dark";
+
+$themes: (
+        $light-theme: (
+                $background-color: #fdfdfd,
+                $text-color:#111,
+                $table-text-color: lighten(#111,18%),
+                $link-color: darken($color-blue,10%),
+                $link-color-visited: darken($color-blue,30%),
+                $grey-color-dark:  darken($grey-color, 25%),
+                $table-background-colour-a: lighten(#828282, 46%),
+                $table-background-colour-b: lighten(#828282, 36%),
+                $table-background-colour-header: lighten(#828282, 14%),
+                $page-link-hover-colour: lighten($color-blue,15%)
+        ),
+        $dark-theme: (
+                $background-color: #212124,
+                $text-color: darken(#fdfdfd,15%),
+                $table-text-color: darken(#fdfdfd,15%),
+                $link-color: lighten(#2a7ae2,10%),
+                $link-color-visited: #2a7ae2,
+                $grey-color-dark:  darken($grey-color, 25%),
+                $table-background-colour-a: #212124,
+                $table-background-colour-b: lighten(#212124, 7%),
+                $table-background-colour-header: darken(#212124,10%),
+                $page-link-hover-colour: darken(#2a7ae2,10%)
+        )
+);
+@mixin themeProperty($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
+  @if $additionalPropertiesPositionIsFront {
+    #{$property}: unquote($additionalProperties + ' ' + map-get($theme, $color));
+  } @else {
+    #{$property}: unquote(map-get($theme, $color) + ' ' + $additionalProperties);
+  }
+}
+
+@mixin theme($property, $color, $additionalPropertiesPositionIsFront: false, $additionalProperties: '') {
+  $light: map-get($themes, $light-theme);
+  $dark: map-get($themes, $dark-theme);
+
+  @include themeProperty($light, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+
+  @media (prefers-color-scheme: dark) {
+    @include themeProperty($dark, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+  }
+}

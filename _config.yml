@@ -54,7 +54,7 @@ pandoc:
     - csl: ./assets/bibtex/acm-sigchi-proceedings.csl
     - filter: '/Users/pauldruce/.local/bin/pandoc-sidenote'
 
-theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-pandoc
