@@ -30,9 +30,11 @@
     text-align: center;
     align-items: center;
     border-radius: 15px;
-    color: black;
+    @include theme("color", $text-color);
+    // color: black;
     // flex: 1 1 0px;
-    background-color: $grey-color-light;
+    @include theme("background-color", $grey-color-light);
+    // background-color: $grey-color-light;
     text-align: center;
     padding: 5px;
     text-decoration: none;
@@ -78,10 +80,12 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: $text-color;
+    // color: $text-color;
+    @include theme("color", $text-color);
     line-height: $base-line-height;
     padding: 12px 10px;
-  color: black;
+  // color: black;
+  @include theme("color", $text-color);
   text-decoration: none;
   display: block;
   float:none;
@@ -220,8 +224,11 @@ details {
   position: relative;
   border: 1px solid #78909C;
   border-radius: 6px;
-  background-color: #FFF;
-  color: #263238;
+  // background-color: #FFF;
+  @include theme("background-color", $grey-color-light);
+
+  // color: #263238;
+  @include theme("color", $text-color);
   transition: background-color .15s;
 
   > :last-child {
@@ -244,7 +251,9 @@ details {
   }
 
   &[open] {
-    background-color: #FFF;
+    @include theme("background-color", $grey-color-light);
+
+    // background-color: #FFF;
     &::before {
       opacity: .6;
     }
@@ -270,7 +279,8 @@ summary {
     top: 50%;
     right: -0.5em;
     content: '';
-    background-color: currentColor;
+    @include theme("background-color", $grey-color-light);
+    // background-color: currentColor;
     text-align: right;
     transform: translateY(-50%);
     transition: transform .2s ease-in-out;
@@ -290,4 +300,10 @@ summary {
   p {
     margin: 0.5em;
   }
+}
+
+
+.arrow-img{
+  @include theme("filter", $arrow-colour);
+  // filter: invert(100%);
 }

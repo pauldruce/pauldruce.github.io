@@ -37,7 +37,7 @@ The particle animation on this page is made using p5js - a JavaScript framework.
     {% if post.tags contains "unfinished" %}{%else%}
     <li>
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" alt="arrow" style="width:1.2em;margin-right:1em;"><br>
+      <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" alt="arrow" class='arrow-img' style="width:1.2em;margin-right:1em;"><br>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title}}</a> - {{ post.summary}}
    </li>

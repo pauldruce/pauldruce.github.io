@@ -2,7 +2,7 @@
 //
 
 // The following code is here for reference, It is needed, however in my setup, if it is placed here, it causes other counters to fail.
-// The counter sidenote_counter is reset in the theorem.scss file in the directory. 
+// The counter sidenote_counter is reset in the theorem.scss file in the directory.
 // body {
 //   counter-reset: sidenote_counter;
 // }
@@ -21,6 +21,8 @@
   float: right;
   clear: right;
   width: 15vw;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: -17.5vw;
   position: relative;
   vertical-align: baseline;
