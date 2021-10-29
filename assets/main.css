@@ -52,12 +52,16 @@ a:hover { color: #111 ; text-decoration: underline; }
 .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: "text-color"; background-color: #e8e8e8; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 22.5px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: "text-color"; background-color: #e8e8e8 ; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 22.5px; letter-spacing: -1px; font-style: italic; }
+
+@media (prefers-color-scheme: dark) { blockquote { background-color: #3e3e44 ; } }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 18.75px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
+pre, code { font-size: 18.75px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #e8e8e8 ; }
+
+@media (prefers-color-scheme: dark) { pre, code { background-color: #3e3e44 ; } }
 
 code { padding: 1px 5px; }
 
@@ -322,7 +326,11 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .page-toc ul > li { font-size: 15px; border-radius: 15px; border: 2px solid black; display: grid; height: 100%; list-style: none; }
 
-.page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 15px; color: black; background-color: #e8e8e8; text-align: center; padding: 5px; text-decoration: none; }
+.page-toc ul > li a { display: grid; text-align: center; align-items: center; border-radius: 15px; color: #111 ; background-color: #e8e8e8 ; text-align: center; padding: 5px; text-decoration: none; }
+
+@media (prefers-color-scheme: dark) { .page-toc ul > li a { color: #d7d7d7 ; } }
+
+@media (prefers-color-scheme: dark) { .page-toc ul > li a { background-color: #3e3e44 ; } }
 
 .page-toc li a:hover { background-color: #8fc0f0 ; }
 
@@ -343,7 +351,11 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
 
 /* Links inside the dropdown */
-.dropdown-content a { color: "text-color"; line-height: 1.5; padding: 12px 10px; color: black; text-decoration: none; display: block; float: none; }
+.dropdown-content a { color: #111 ; line-height: 1.5; padding: 12px 10px; color: #111 ; text-decoration: none; display: block; float: none; }
+
+@media (prefers-color-scheme: dark) { .dropdown-content a { color: #d7d7d7 ; } }
+
+@media (prefers-color-scheme: dark) { .dropdown-content a { color: #d7d7d7 ; } }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover { background-color: #e8e8e8; text-decoration: underline; }
@@ -394,19 +406,27 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .page-content .title_and_summary span { float: right; }
 
-details { margin: 1rem 0rem 1rem 0rem; padding: 0rem 0rem 0rem 1rem; max-width: calc(100% - 1rem); position: relative; border: 1px solid #78909C; border-radius: 6px; background-color: #FFF; color: #263238; transition: background-color .15s; }
+details { margin: 1rem 0rem 1rem 0rem; padding: 0rem 0rem 0rem 1rem; max-width: calc(100% - 1rem); position: relative; border: 1px solid #78909C; border-radius: 6px; background-color: #e8e8e8 ; color: #111 ; transition: background-color .15s; }
+
+@media (prefers-color-scheme: dark) { details { background-color: #3e3e44 ; } }
+
+@media (prefers-color-scheme: dark) { details { color: #d7d7d7 ; } }
 
 details > :last-child { margin-bottom: 1em; }
 
 details::before { width: 100%; height: 100%; content: ''; position: absolute; top: 0; left: 0; border-radius: inherit; opacity: .15; box-shadow: 0 .25em .5em #263238; pointer-events: none; transition: opacity .2s; z-index: -2; }
 
-details[open] { background-color: #FFF; }
+details[open] { background-color: #e8e8e8 ; }
+
+@media (prefers-color-scheme: dark) { details[open] { background-color: #3e3e44 ; } }
 
 details[open]::before { opacity: .6; }
 
 summary { display: block; position: relative; left: -0.5em; font-size: 20px; cursor: pointer; }
 
-summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; content: ''; background-color: currentColor; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
+summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; content: ''; background-color: #e8e8e8 ; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
+
+@media (prefers-color-scheme: dark) { summary::before, summary::after { background-color: #3e3e44 ; } }
 
 summary::after { transform: translateY(-50%) rotate(90deg); }
 
@@ -415,6 +435,10 @@ summary::after { transform: translateY(-50%) rotate(90deg); }
 summary::-webkit-details-marker { display: none; }
 
 summary p { margin: 0.5em; }
+
+.arrow-img { filter: invert(0%) ; }
+
+@media (prefers-color-scheme: dark) { .arrow-img { filter: invert(100%) ; } }
 
 body { counter-reset: definition theorem lemma example question sidenote_counter; }
 
@@ -460,7 +484,7 @@ body { counter-reset: definition theorem lemma example question sidenote_counter
 
 .marginnote::before, .sidenote::before { content: counter(sidenote_counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
 
-.marginnote, .sidenote { float: right; clear: right; width: 15vw; margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 17.5px; color: #828282; font-style: italic; }
+.marginnote, .sidenote { float: right; clear: right; width: 15vw; max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 17.5px; color: #828282; font-style: italic; }
 
 .sidenote-wrapper:hover .sidenote { color: #4B9AE7; border-color: #4B9AE7; }
 
