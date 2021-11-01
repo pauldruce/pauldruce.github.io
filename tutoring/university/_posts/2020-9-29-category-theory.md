@@ -92,9 +92,9 @@ So as the list of objects is simple, we can ask ourselves, what are the differen
 So at this point we should think about some cases. If $x$ is just an empty set $x=\{\}$ then the only map we can have is to map $x$ to $x$, i.e. we only have the identity map. However, what if $x$ is actually a general finite set? So there is $x=\{a_1, a_2,a_3,\dots \}$, well then we have the identity map that $1_x(a_i) = a_i$ for all $a_i \in x$. And any other map we can come up with. I've listed some bijective maps below.
 <center>
 <div class="image_block" id="fig:singleObjectMaps">
-![](/assets/2020/category-theory/singleObjectMaps.svg)
-![](/assets/2020/category-theory/singleObjectMaps1.svg)
-![](/assets/2020/category-theory/singleObjectMaps2.svg)
+![](/assets/2020/category-theory/singleObjectMaps.svg){.greyscale-img}
+![](/assets/2020/category-theory/singleObjectMaps1.svg){.greyscale-img}
+![](/assets/2020/category-theory/singleObjectMaps2.svg){.greyscale-img}
 
  Figure 1: A pictorial representation of a single object category and a description of potential morphisms. (Question: Given the definition of a category, what other maps must there be for our single object category $x$?)
 </div>

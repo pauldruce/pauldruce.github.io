@@ -375,11 +375,19 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .single-image { text-align: center; }
 
-.single-image img { width: 50%; padding-right: 10px; padding-left: 10px; }
+.single-image img { filter: invert(0%) ; width: 50%; padding-right: 10px; padding-left: 10px; }
 
-.image_block { text-align: center; }
+@media (prefers-color-scheme: dark) { .single-image img { filter: invert(100%) ; } }
+
+.image_block { color: #111 ; text-align: center; }
+
+@media (prefers-color-scheme: dark) { .image_block { color: #d7d7d7 ; } }
 
 .image_block img { padding-right: 25px; padding-left: 25px; }
+
+.image_block p { color: #111 ; }
+
+@media (prefers-color-scheme: dark) { .image_block p { color: #d7d7d7 ; } }
 
 .home-heading { font-size: 35px; }
 
@@ -439,6 +447,10 @@ summary p { margin: 0.5em; }
 .arrow-img { filter: invert(0%) ; }
 
 @media (prefers-color-scheme: dark) { .arrow-img { filter: invert(100%) ; } }
+
+.greyscale-img { filter: invert(0%) ; }
+
+@media (prefers-color-scheme: dark) { .greyscale-img { filter: invert(100%) ; } }
 
 body { counter-reset: definition theorem lemma example question sidenote_counter; }
 

@@ -9,7 +9,7 @@ permalink: /posts/
   {%- if post.tags contains "post" and post.category=="tutoring" -%}
 <li>
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" alt="arrow" style="width:1.2em;margin-right:1em;"><br>
+  <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" class='arrow-img' alt="arrow" style="width:1.2em;margin-right:1em;"><br>
     <a class="post-link" href="{{ post.url | relative_url }}">
       {{ post.title}}</a> - {{ post.summary}}
 </li>
@@ -23,7 +23,7 @@ permalink: /posts/
   {%- if post.category=="research" and post.tags contains "post" -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" alt="arrow" style="width:1.2em;margin-right:1em;"><br>
+    <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" class='arrow-img' alt="arrow" style="width:1.2em;margin-right:1em;"><br>
       <a class="post-link" href="{{ post.url | relative_url }}">
         {{ post.title}}</a> - {{ post.summary}}
   </li>
@@ -38,7 +38,7 @@ permalink: /posts/
   {%- if post.category!="research" and post.category!="tutoring" -%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" alt="arrow" style="width:1.2em;margin-right:1em;"><br>
+    <span class="post-meta">{{ post.date | date: date_format }} </span><img src="/assets/images/post-arrow.svg" class='arrow-img' alt="arrow" style="width:1.2em;margin-right:1em;"><br>
       <a class="post-link" href="{{ post.url | relative_url }}">
         {{ post.title}}</a> - {{ post.summary}}
   </li>

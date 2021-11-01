@@ -60,11 +60,11 @@ Time for the classic example:
 
 **Examples**: Take the manifold to be the total space of the cotangent bundle $M =T^*(Q)$ over some manifold $Q$? (I think we just treat $Q$ as a vector space, but I'm not sure where this becomes important if at all). So then points in this space are of the form $m = (q,p) \in M$ and we can form a bundle structure over $Q$ by taking projection onto the first coordinate $\pi:M \to Q$ (so we are just taking the cotangent bundle over $Q$). We need a map $\theta: TM \to \mathbb{R}$ (i.e. $\theta \in \Omega^1(M)$) such that the following diagram commutes
 
-![](/assets/image-20181113102905387.png){.center-image}
+![](/assets/image-20181113102905387.png){.greyscale-img .center-image}
 
 Where $p:TQ \to \mathbb{R}$ is what exactly? My notes from the time don't say, but lets figure this out. Given a point $m\in M = T^*Q$ we know that it gets mapped to $q$ under the map $\pi$. Alternatively we can view $m$ as a map from $T_qQ \to \mathbb{R}$ as its a one-form after all. Which in Axels notes must be the map $p$ above, alternatively I'll write it as $m$ below.
 
-![](/assets/image-20181223162905359.png){ .center-image}
+![](/assets/image-20181223162905359.png){.greyscale-img .center-image}
 
 
 

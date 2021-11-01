@@ -9,7 +9,7 @@ $table-background-colour-a: "table-background-colour-a";
 $table-background-colour-b: "table-background-colour-b";
 $table-background-colour-header: "table-background-colour-header";
 $page-link-hover-colour: "page-link-hover-colour";
-$arrow-colour: "arrow-colour";
+$invert-colour: "invert-colour";
 
 $grey-color-dark: "grey-color-dark";
 
@@ -26,7 +26,7 @@ $themes: (
                 $table-background-colour-b: lighten(#828282, 36%),
                 $table-background-colour-header: lighten(#828282, 14%),
                 $page-link-hover-colour: lighten($color-blue,15%),
-                $arrow-colour: invert(0%)
+                $invert-colour: invert(0%)
         ),
         $dark-theme: (
                 $background-color: #212124,
@@ -40,7 +40,7 @@ $themes: (
                 $table-background-colour-b: lighten(#212124, 7%),
                 $table-background-colour-header: darken(#212124,10%),
                 $page-link-hover-colour: darken(#2a7ae2,10%),
-                $arrow-colour: invert(100%)
+                $invert-colour: invert(100%)
 
         )
 );
