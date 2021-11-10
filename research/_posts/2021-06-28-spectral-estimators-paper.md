@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My first paper - Making sense of pointless geometry.
+title: Making sense of pointless geometry - A guide for my first paper.
 author: Paul Druce
-summary: If you smash quantum uncertainty and geometry together you get pointless geometry. All familiarity is lost, and we are left out it in the wild, without any supplies. My first paper aimed to provide us with flint and steel, but maybe it's just a handful of berries. Either way, it's a mechanism to recover a notion of 'dimension' and 'volume'.
+summary: If you smash together quantum uncertainty and geometry you get an unusual subject. The notion of a point disappears, hence it could be called pointless geometry. All familiarity with ordinary geometry is lost, and we are left out it in the wild. My first paper aimed to provide us with some useful tools and concepts. I had hoped to provide the mathematical equivalent of flint and steel for the subject, but maybe it's just a handful of berries. Either way, it's a mechanism to recover a notion of 'dimension' and 'volume' for these pointless geometries.
 category: research
 tags: [post]
 published: false
