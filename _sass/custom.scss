@@ -164,14 +164,15 @@
 .home-heading {
   @include relative-font-size(1.75);
 }
-.site-header {
-  // background-color: $color-blue;
-  // opcaity: 0.65;
-}
-/** Pages **/
-.page-header{
-  // margin-bottom: $spacing-unit
-}
+
+// .site-header {
+//   // background-color: $color-blue;
+//   // opcaity: 0.65;
+// }
+// /** Pages **/
+// .page-header{
+//   // margin-bottom: $spacing-unit
+// }
 
 .page-title{
   @include relative-font-size(2);
@@ -268,14 +269,14 @@ details {
 }
 
 summary {
-  // padding: 0.1rem 0rem 0rem 0.1rem;
+  padding: 0.1em 0.7em 0.1em 0.5em;
   display: block;
   position: relative;
-  // margin: 0em 0em 1em;
-  left: -0.5em;
+  margin: 0em 0em 1em 0.5em;
+  left: -1em;
+  // right: 0.5em
   // max-width: calc(100% - 2rem);
-  @include relative-font-size(1)
-  // font-weight: bold;
+  @include relative-font-size(1);
   cursor: pointer;
 
   &::before,
@@ -285,9 +286,9 @@ summary {
     position: absolute;
     top: 50%;
     right: -0.5em;
-    content: '';
-    @include theme("background-color", $grey-color-light);
-    // background-color: currentColor;
+    font-size: 1em;
+    content: ' ';
+    @include theme("background-color", $text-color);
     text-align: right;
     transform: translateY(-50%);
     transition: transform .2s ease-in-out;

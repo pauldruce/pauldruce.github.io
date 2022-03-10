@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-animation: p5js
+<!-- animation: p5js -->
 ---
 
 <br>

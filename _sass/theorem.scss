@@ -28,7 +28,7 @@ body {
 }
 
 .question {
-	border: 2px solid rgb(255/2,0,255/2);
+	border: 4px solid rgb(255/2,0,255/2);
   // margin:5px
 }
 .question:before{
@@ -41,7 +41,9 @@ body {
     counter-increment: question;
 }
 
-.example {border-left:2px solid black;}
+.example {
+  @include theme("border-left", $example-border);
+}
 .example:before{
   content: "Example " counter(example) ".";
   counter-increment: example;
@@ -51,7 +53,7 @@ body {
   counter-increment: example;
 }
 
-.definition{border: 2px solid $def-colour;}
+.definition{border: 4px solid $def-colour;}
 .definition:before { // The default environment
     content: "Definition " counter(definition) ".";
     counter-increment: definition;
@@ -62,7 +64,7 @@ body {
 }
 
 // Settings for the definition environment
-.theorem{border: 2px solid $thm-colour;}
+.theorem{border: 4px solid $thm-colour;}
 .theorem:before { // The default theorem environment
     content: "Theorem " counter(theorem) ".";
     counter-increment: theorem;
@@ -73,7 +75,7 @@ body {
 }
 
 // Settings for the lemma environment
-.lemma{border: 2px solid $lem-colour;}
+.lemma{border: 4px solid $lem-colour;}
 .lemma:before { // The default lemma environment
     content: "Lemma " counter(lemma) ".";
     counter-increment: lemma;

@@ -68,7 +68,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Notes on Category Theory - in progress">
 <script type="application/ld+json">
-{"url":"https://www.pauldruce.co.uk/tutoring/university/research/2020/09/29/category-theory.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Notes on Category Theory - in progress","dateModified":"2020-09-29T00:00:00+01:00","datePublished":"2020-09-29T00:00:00+01:00","description":"[]","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/university/research/2020/09/29/category-theory.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/university/research/2020/09/29/category-theory.html"},"url":"https://www.pauldruce.co.uk/tutoring/university/research/2020/09/29/category-theory.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Notes on Category Theory - in progress","dateModified":"2020-09-29T00:00:00+01:00","datePublished":"2020-09-29T00:00:00+01:00","description":"[]","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -150,8 +150,10 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <li>
 <a href="#the-beginning">The beginning</a>
 <ul>
-<li><a href="#categories-with-only-one-object">Categories with only one object</a></li>
-<li><a href="#isomorphisms-in-category-theory">Isomorphisms in category theory</a></li>
+<li><a href="#categories-with-only-one-object">Categories with only one
+object</a></li>
+<li><a href="#isomorphisms-in-category-theory">Isomorphisms in category
+theory</a></li>
 </ul>
 </li>
 <li><a href="#references">References</a></li>
@@ -160,98 +162,281 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     </div>
     
     <p><span class="math display">\[\require{amscd}\]</span></p>
-<p>This is my reluctant attempt to learn some category theory. I’ve run into category theory in most of the areas of mathematical research I’ve pursued. It’s seemingly inevitable that I (and everyone else) will have to understand what is so important about the category theory way of doing things. I remember asking other researchers that used category theory on a daily basis</p>
+<p>This is my reluctant attempt to learn some category theory. I’ve run
+into category theory in most of the areas of mathematical research I’ve
+pursued. It’s seemingly inevitable that I (and everyone else) will have
+to understand what is so important about the category theory way of
+doing things. I remember asking other researchers that used category
+theory on a daily basis</p>
 <blockquote>
-<p>“What exactly does category theory actually provide? How is it actually useful?”</p>
+<p>“What exactly does category theory actually provide? How is it
+actually useful?”</p>
 </blockquote>
 <p>to which I’d receive fairly unsatisfactory answers such as</p>
 <blockquote>
-<p>“It tells you what you should prove. It’s a good way to figure out what is trivial and what is not trivial.”</p>
+<p>“It tells you what you should prove. It’s a good way to figure out
+what is trivial and what is not trivial.”.</p>
 </blockquote>
-<p>All of these answers just didn’t really satisfy me. I essentially viewed category theory as a book-keeping framework. However, I believe this is a naive thought, but I’m still not particularly sure exactly what makes category theory so potent that almost every mathematician I know has used it.</p>
-<p>So to guide my adventures, I’m going to start simple and get more complicated. These notes will be constructed entirely for myself, but they might be useful for others too. I will be using a number of resources, but to start off I’m going to read “Basic Category Theory” by Tom Leinster <span class="citation" data-cites="Leinster2014">[1]</span> and hopefully complete the exercise within. My goal is to better understand the field of non-commutative geometry in terms of category theory.</p>
+<p>All of these answers just didn’t really satisfy me. I essentially
+viewed category theory as a book-keeping framework. However, I believe
+this is a naive thought, but I’m still not particularly sure exactly
+what makes category theory so potent that almost every mathematician I
+know has used it.</p>
+<p>So to guide my adventures, I’m going to start simple and get more
+complicated. These notes will be constructed entirely for myself, but
+they might be useful for others too. I will be using a number of
+resources, but to start off I’m going to read “Basic Category Theory” by
+Tom Leinster <span class="citation" data-cites="Leinster2014">[1]</span>
+and hopefully complete the exercise within. My goal is to better
+understand the field of non-commutative geometry in terms of category
+theory.</p>
 <h2 id="the-beginning">The beginning</h2>
-<p>Throughout my undergraduate degree, I studied many different areas of mathematics. Linear algebra, topology, group theory, Euclidean geometry, differential geometry, ring theory, Lie theory. In each of these topics, we learn about the properties of a basic object. In linear algebra, we study vector spaces, in topology we study topological spaces, in geometry we study manifolds with varying properties. Within each branch, even in each sub-branch, we learn of a map that tells us when two objects are the same. We say that these objects are ‘isomorphic’ or ‘homeomorphic.’ In linear algebra, two vector spaces are deemed ’the same’ if there is a <em>bilinear linear map</em> between them. In topology, two topological spaces are deemed ’the same’ if there is a map called a <em>homeomorphism</em>. In group theory, we have <em>group isomorphisms,</em> in ring theory we have <em>ring isomorphisms</em>. So on and so forth, we have different words for roughly the same concept. More over, the idea of ’sameness’ changes from situation to situation.</p>
+<p>Throughout my undergraduate degree, I studied many different areas of
+mathematics. Linear algebra, topology, group theory, Euclidean geometry,
+differential geometry, ring theory, Lie theory. In each of these topics,
+we learn about the properties of a basic object. In linear algebra, we
+study vector spaces, in topology we study topological spaces, in
+geometry we study manifolds with varying properties. Within each branch,
+even in each sub-branch, we learn of a map that tells us when two
+objects are the same. We say that these objects are ‘isomorphic’ or
+‘homeomorphic’. In linear algebra, two vector spaces are deemed ’the
+same’ if there is a <em>bilinear linear map</em> between them. In
+topology, two topological spaces are deemed ’the same’ if there is a map
+called a <em>homeomorphism</em>. In group theory, we have <em>group
+isomorphisms,</em> in ring theory we have <em>ring isomorphisms</em>. So
+on and so forth, we have different words for roughly the same concept.
+More over, the idea of ’sameness’ changes from situation to
+situation.</p>
 <blockquote>
-<p>Is there a way to abstract this idea of ’sameness’ from each field to a more general framework? This idea is where category theory makes sense to me. To understand concepts that hold true for many different fields from a more general viewpoint. There is more to category theory though, much more. So let us dive in.</p>
+<p>Is there a way to abstract this idea of ’sameness’ from each field to
+a more general framework? This idea is where category theory makes sense
+to me. To understand concepts that hold true for many different fields
+from a more general viewpoint. There is more to category theory though,
+much more. So let us dive in.</p>
 </blockquote>
-<p>So what is a category? It is a collection of certain mathematical objects, together with certain class of maps between these objects. These collections of objects and maps have to satisfy a number of properties that hold true for many of the above examples of fields. A question I want to know, is why the following definition of a category is <em>the right one</em>.</p>
+<p>So what is a category? It is a collection of certain mathematical
+objects, together with certain class of maps between these objects.
+These collections of objects and maps have to satisfy a number of
+properties that hold true for many of the above examples of fields. A
+question I want to know, is why the following definition of a category
+is <em>the right one</em>.</p>
 <div class="definition" name="A Category">
 <p>A category consists of the following data:</p>
 <ul>
 <li>A collection of objects, <span class="math inline">\(ob(\mathcal{C})\)</span>.</li>
 <li>The maps between any two objects <span class="math inline">\(Hom(A,B)\)</span> for <span class="math inline">\(A,B\in ob(\mathcal{C})\)</span>
 </li>
-<li>A rule/procedure that describes how we can compose maps, i.e. <span class="math inline">\(\circ\)</span>, such that for <span class="math inline">\(f\in Hom(A,B)\)</span> and <span class="math inline">\(g\in Hom(B,C)\)</span>, where <span class="math inline">\(A,B,C\in ob(\mathcal{C})\)</span>, we can define <span class="math inline">\(f\circ g\in Hom(A,C)\)</span>.</li>
+<li>A rule/procedure that describes how we can compose maps, i.e. <span class="math inline">\(\circ\)</span>, such that for <span class="math inline">\(f\in Hom(A,B)\)</span> and <span class="math inline">\(g\in Hom(B,C)\)</span>, where <span class="math inline">\(A,B,C\in ob(\mathcal{C})\)</span>, we can define
+<span class="math inline">\(f\circ g\in Hom(A,C)\)</span>.</li>
 </ul>
 <p>These objects must satisfy a number of relations:</p>
 <ul>
-<li>First: the composition must be associative, i.e <span class="math inline">\((f\circ g)\circ h =f \circ (g\circ h)\)</span> for all maps.</li>
-<li>For every <span class="math inline">\(A\in ob(\mathcal{C})\)</span> we must have an identity map, i.e. there exists a map <span class="math inline">\(1_A\in Hom(A,A)\)</span> such that <span class="math inline">\(f\circ 1_A = f=1_b \circ f\)</span> for every <span class="math inline">\(f\in Hom(A,B)\)</span>.</li>
+<li>First: the composition must be associative, i.e <span class="math inline">\((f\circ g)\circ h =f \circ (g\circ h)\)</span> for
+all maps.</li>
+<li>For every <span class="math inline">\(A\in ob(\mathcal{C})\)</span>
+we must have an identity map, i.e. there exists a map <span class="math inline">\(1_A\in Hom(A,A)\)</span> such that <span class="math inline">\(f\circ 1_A = f=1_b \circ f\)</span> for every
+<span class="math inline">\(f\in Hom(A,B)\)</span>.</li>
 </ul>
 </div>
-<p>Now why is this the right definition for a category? Well the collection of objects makes sense right? We want to study how construction for all <em>groups</em> are similar to the constructions for all <em>topological spaces</em>.</p>
-<p>What about the maps between objects? We haven’t put any conditions on what those maps must be. In fact, using the word <em>maps</em> might be misleading, because these do not need to be continuous or even functions, they are sometimes called <em>morphisms</em> or <em>arrows</em> to make this point absolutely clear. So we haven’t excluded any examples we know with this. So the maps are fine.</p>
-<p>So what about the composition law? The fact that we can compose maps is a very useful and fruitful idea. As every example you can probably think of has the composition of maps, this seems well suited? Well, why does it have to be associative? Granted the composition of functions is associative, the composition of isomorphisms and homeomorphisms, but are there really no objects that have a composition rule that isn’t associative? There are many mathematical operations that are not associative, subtraction is not an associative operation: <span class="math inline">\((5-3)-1\neq 5-(3-1)\)</span>. Neither is division or the Lie bracket for Lie algebras, so why does the composition of maps need to be associative in categories? I have no great argument for why we requiring associativity is <em>the right thing to do</em> except, that if we relax this condition, we need to replace it with something more general. This has been done, of course, mathematicians never fail to explore every avenue. These ’non-associative’ categories go by the name of <span class="math inline">\(A_\infty\)</span>-categories and are very advanced.</p>
+<p>Now why is this the right definition for a category? Well the
+collection of objects makes sense right? We want to study how
+construction for all <em>groups</em> are similar to the constructions
+for all <em>topological spaces</em>.</p>
+<p>What about the maps between objects? We haven’t put any conditions on
+what those maps must be. In fact, using the word <em>maps</em> might be
+misleading, because these do not need to be continuous or even
+functions, they are sometimes called <em>morphisms</em> or
+<em>arrows</em> to make this point absolutely clear. So we haven’t
+excluded any examples we know with this. So the maps are fine.</p>
+<p>So what about the composition law? The fact that we can compose maps
+is a very useful and fruitful idea. As every example you can probably
+think of has the composition of maps, this seems well suited? Well, why
+does it have to be associative? Granted the composition of functions is
+associative, the composition of isomorphisms and homeomorphisms, but are
+there really no objects that have a composition rule that isn’t
+associative? There are many mathematical operations that are not
+associative, subtraction is not an associative operation: <span class="math inline">\((5-3)-1\neq 5-(3-1)\)</span>. Neither is division
+or the Lie bracket for Lie algebras, so why does the composition of maps
+need to be associative in categories? I have no great argument for why
+we requiring associativity is <em>the right thing to do</em> except,
+that if we relax this condition, we need to replace it with something
+more general. This has been done, of course, mathematicians never fail
+to explore every avenue. These ’non-associative’ categories go by the
+name of <span class="math inline">\(A_\infty\)</span>-categories and are
+very advanced.</p>
 <blockquote>
-<p>So let us just say that associative is sufficient to capture every reasonable example.</p>
+<p>So let us just say that associative is sufficient to capture every
+reasonable example.</p>
 </blockquote>
-<p>Finally, the presence of an identity map is always there, it’s almost a non-sensical notion to not have an identity map. Think about it, I have an object, and I can’t do ’nothing’ to it - what does that even mean. So identities must exist I agree.</p>
-<p>So thats a category, so whats next? Well lets revisit some familiar friends, and see what categories we can form.</p>
+<p>Finally, the presence of an identity map is always there, it’s almost
+a non-sensical notion to not have an identity map. Think about it, I
+have an object, and I can’t do ’nothing’ to it - what does that even
+mean. So identities must exist I agree.</p>
+<p>So thats a category, so whats next? Well lets revisit some familiar
+friends, and see what categories we can form.</p>
 <div class="example" name="Category of topological spaces and continuous maps">
-<p>Let <span class="math inline">\(Top\)</span> be the following category: The objects are all topological spaces. The maps are the continuous maps between topological spaces. The composition of continuous maps is associative. The identity function exists.</p>
+<p>Let <span class="math inline">\(Top\)</span> be the following
+category: The objects are all topological spaces. The maps are the
+continuous maps between topological spaces. The composition of
+continuous maps is associative. The identity function exists.</p>
 </div>
 <div class="example" name="Category of groups and group homomorphisms">
-<p>Let <span class="math inline">\(Grp\)</span> be the following category: Let <span class="math inline">\(ob(Grp)\)</span> be all groups, let <span class="math inline">\(Hom(A,B\)</span> be the group homomorphisms from the group <span class="math inline">\(A\)</span> to group <span class="math inline">\(B\)</span>. We have that composition of group homomorphisms is associative and that the identity map is a group homomorphism, so it is in <span class="math inline">\(Hom(A,A)\)</span>.</p>
+<p>Let <span class="math inline">\(Grp\)</span> be the following
+category: Let <span class="math inline">\(ob(Grp)\)</span> be all
+groups, let <span class="math inline">\(Hom(A,B\)</span> be the group
+homomorphisms from the group <span class="math inline">\(A\)</span> to
+group <span class="math inline">\(B\)</span>. We have that composition
+of group homomorphisms is associative and that the identity map is a
+group homomorphism, so it is in <span class="math inline">\(Hom(A,A)\)</span>.</p>
 </div>
 <div class="example" name="Manifold categories">
-<p>Let <span class="math inline">\(Man^k\)</span> be the category of <span class="math inline">\(C^k\)</span>-manifolds and <span class="math inline">\(C^k\)</span> maps between them. We let <span class="math inline">\(Man^\infty\)</span> be the category of smooth manifolds and smooth maps between them. Let <span class="math inline">\(Man^\omega\)</span> be the category of analytic manifolds. Note that composition of functions is associative again and the identity map exists in all cases here.</p>
+<p>Let <span class="math inline">\(Man^k\)</span> be the category of
+<span class="math inline">\(C^k\)</span>-manifolds and <span class="math inline">\(C^k\)</span> maps between them. We let <span class="math inline">\(Man^\infty\)</span> be the category of smooth
+manifolds and smooth maps between them. Let <span class="math inline">\(Man^\omega\)</span> be the category of analytic
+manifolds. Note that composition of functions is associative again and
+the identity map exists in all cases here.</p>
 </div>
 <div class="example" name="Category of sets">
-<p>Let <span class="math inline">\(Set\)</span> denote the category of sets and maps between them. Map composition is associative again and the identity map exists.</p>
+<p>Let <span class="math inline">\(Set\)</span> denote the category of
+sets and maps between them. Map composition is associative again and the
+identity map exists.</p>
 </div>
-<p>The examples above are mainly to introduce some notation for some key players in category theory. However, we notice that most structures fit in a category. Geometry, algebra and set theory all fit there. There are many many more categories and we will investigate some in a little bit.</p>
-<p>It is clear at this point that defining a Category is not special. Category theory’s power is describing how different categories relate to each other. Just like defining a manifold is not particularly important. Understanding the properties of manifolds and how they relate to each other is powerful. The Whitney embedding theorem comes to mind here, that any smooth (real) <span class="math inline">\(m\)</span>-dimensional manifold can be embedding in <span class="math inline">\(\mathbb{R}^{2m}\)</span> (for <span class="math inline">\(m&gt;0\)</span>). This statement shows that results proved for embedded manifolds can hold true for any manifold.</p>
-<p>With that being said, I think that it is very insightful to look at some specific types of categories.</p>
-<h3 id="categories-with-only-one-object">Categories with only one object</h3>
-<p>Most of the examples of categories above contain many many objects. However, categories can be very interesting when they are much simpler/smaller as we shall now see. Let <span class="math inline">\(\mathcal{C}\)</span> a category with only one element, let us denote that element by <span class="math inline">\(x\)</span> (the letter is obviously not important), i.e. so <span class="math inline">\(ob(\mathcal{C}) = \{x\}\)</span>. I don’t know if this is taboo or not to write this as a set, but I think it’s pretty safe, but I’m always a little scared of the pedants.</p>
-<p>So as the list of objects is simple, we can ask ourselves, what are the different types of maps that we can require? Well all the maps have to start and end with the same space, i.e. <span class="math inline">\(Hom(x,x)\)</span>. So as the definition of a category requires us to have an identity map, that exists. We also require associativity, so if we have maps <span class="math inline">\(f,g\in Hom(x,x))\)</span> we have also <span class="math inline">\(f\circ g\)</span> <strong>and</strong> <span class="math inline">\(g\circ f\)</span>. We then also have <span class="math inline">\(f\circ(f\circ g)\)</span> and <span class="math inline">\(g\circ(f\circ g)\)</span> etc.</p>
-So at this point we should think about some cases. If <span class="math inline">\(x\)</span> is just an empty set <span class="math inline">\(x=\{\}\)</span> then the only map we can have is to map <span class="math inline">\(x\)</span> to <span class="math inline">\(x\)</span>, i.e. we only have the identity map. However, what if <span class="math inline">\(x\)</span> is actually a general finite set? So there is <span class="math inline">\(x=\{a_1, a_2,a_3,\dots \}\)</span>, well then we have the identity map that <span class="math inline">\(1_x(a_i) = a_i\)</span> for all <span class="math inline">\(a_i \in x\)</span>. And any other map we can come up with. I’ve listed some bijective maps below.
+<p>The examples above are mainly to introduce some notation for some key
+players in category theory. However, we notice that most structures fit
+in a category. Geometry, algebra and set theory all fit there. There are
+many many more categories and we will investigate some in a little
+bit.</p>
+<p>It is clear at this point that defining a Category is not special.
+Category theory’s power is describing how different categories relate to
+each other. Just like defining a manifold is not particularly important.
+Understanding the properties of manifolds and how they relate to each
+other is powerful. The Whitney embedding theorem comes to mind here,
+that any smooth (real) <span class="math inline">\(m\)</span>-dimensional manifold can be embedding
+in <span class="math inline">\(\mathbb{R}^{2m}\)</span> (for <span class="math inline">\(m&gt;0\)</span>). This statement shows that
+results proved for embedded manifolds can hold true for any
+manifold.</p>
+<p>With that being said, I think that it is very insightful to look at
+some specific types of categories.</p>
+<h3 id="categories-with-only-one-object">Categories with only one
+object</h3>
+<p>Most of the examples of categories above contain many many objects.
+However, categories can be very interesting when they are much
+simpler/smaller as we shall now see. Let <span class="math inline">\(\mathcal{C}\)</span> a category with only one
+element, let us denote that element by <span class="math inline">\(x\)</span> (the letter is obviously not
+important), i.e. so <span class="math inline">\(ob(\mathcal{C}) =
+\{x\}\)</span>. I don’t know if this is taboo or not to write this as a
+set, but I think it’s pretty safe, but I’m always a little scared of the
+pedants.</p>
+<p>So as the list of objects is simple, we can ask ourselves, what are
+the different types of maps that we can require? Well all the maps have
+to start and end with the same space, i.e. <span class="math inline">\(Hom(x,x)\)</span>. So as the definition of a
+category requires us to have an identity map, that exists. We also
+require associativity, so if we have maps <span class="math inline">\(f,g\in Hom(x,x))\)</span> we have also <span class="math inline">\(f\circ g\)</span> <strong>and</strong> <span class="math inline">\(g\circ f\)</span>. We then also have <span class="math inline">\(f\circ(f\circ g)\)</span> and <span class="math inline">\(g\circ(f\circ g)\)</span> etc.</p>
+<p>So at this point we should think about some cases. If <span class="math inline">\(x\)</span> is just an empty set <span class="math inline">\(x=\{\}\)</span> then the only map we can have is
+to map <span class="math inline">\(x\)</span> to <span class="math inline">\(x\)</span>, i.e. we only have the identity map.
+However, what if <span class="math inline">\(x\)</span> is actually a
+general finite set? So there is <span class="math inline">\(x=\{a_1,
+a_2,a_3,\dots \}\)</span>, well then we have the identity map that <span class="math inline">\(1_x(a_i) = a_i\)</span> for all <span class="math inline">\(a_i \in x\)</span>. And any other map we can come
+up with. I’ve listed some bijective maps below.</p>
 <center>
 <div id="fig:singleObjectMaps" class="image_block">
 <p><img src="/assets/2020/category-theory/singleObjectMaps.svg" class="greyscale-img"> <img src="/assets/2020/category-theory/singleObjectMaps1.svg" class="greyscale-img"> <img src="/assets/2020/category-theory/singleObjectMaps2.svg" class="greyscale-img"></p>
-<p>Figure 1: A pictorial representation of a single object category and a description of potential morphisms. (Question: Given the definition of a category, what other maps must there be for our single object category <span class="math inline">\(x\)</span>?)</p>
+<p>Figure 1: A pictorial representation of a single object category and
+a description of potential morphisms. (Question: Given the definition of
+a category, what other maps must there be for our single object category
+<span class="math inline">\(x\)</span>?)</p>
 </div>
 </center>
-<p>But we’ve already made a rather larger blunder here. We don’t need to specific what <span class="math inline">\(x\)</span> <strong>is</strong> to define a category. We just have to define an <strong>object</strong>. It doesn’t need to be a set or anything really. We then have maps from <span class="math inline">\(x\)</span> to itself.</p>
+<p>But we’ve already made a rather larger blunder here. We don’t need to
+specific what <span class="math inline">\(x\)</span> <strong>is</strong>
+to define a category. We just have to define an <strong>object</strong>.
+It doesn’t need to be a set or anything really. We then have maps from
+<span class="math inline">\(x\)</span> to itself.</p>
 <div class="example" name="Monoid">
-<p>Let <span class="math inline">\(M\)</span> be a category with one object. Let the maps have no conditions on them other than those required by a definition of a category. We call such a category a monoid. This does agree with the definition of a monoid in abstract algebra.</p>
+<p>Let <span class="math inline">\(M\)</span> be a category with one
+object. Let the maps have no conditions on them other than those
+required by a definition of a category. We call such a category a
+monoid. This does agree with the definition of a monoid in abstract
+algebra.</p>
 </div>
-<p>This example is seemingly unimportant, but you will find (or have found already in your mathematical endeavours) that monoids are important. Specifically, I keep coming across the term ‘monoidal category’ which I want to have a good understanding of. It turns out that a ‘monoidal category’ is more difficult to define, however one of the key properties of a ‘monoidal category’ is that you can always find a monoid for that category, i.e. <span class="math inline">\(Set\)</span> is a monoidal category and we can always find a monoid, within the category of sets. But we will have to wait to see this formal definition.</p>
-<p>Another very interesting example of a one object category is that of a group. Yes a group can be viewed as a one category.</p>
+<p>This example is seemingly unimportant, but you will find (or have
+found already in your mathematical endeavours) that monoids are
+important. Specifically, I keep coming across the term ‘monoidal
+category’ which I want to have a good understanding of. It turns out
+that a ‘monoidal category’ is more difficult to define, however one of
+the key properties of a ‘monoidal category’ is that you can always find
+a monoid for that category, i.e. <span class="math inline">\(Set\)</span> is a monoidal category and we can
+always find a monoid, within the category of sets. But we will have to
+wait to see this formal definition.</p>
+<p>Another very interesting example of a one object category is that of
+a group. Yes a group can be viewed as a one category.</p>
 <div class="example" name="Group as a Category">
-<p>Let <span class="math inline">\(G\)</span> be a group, then elements of the group <span class="math inline">\(G\)</span> are defined as maps for a one object category. Where the object of the category is then what? Well does it matter? No, not at all. The entire property of a group is capture in the elements and how they behave. Here we are viewing them as maps, it doesn’t matter what we are mapping from and to.</p>
-<p>Groups require that the elements satisfy a number of axioms, which boil down to the following:</p>
+<p>Let <span class="math inline">\(G\)</span> be a group, then elements
+of the group <span class="math inline">\(G\)</span> are defined as maps
+for a one object category. Where the object of the category is then
+what? Well does it matter? No, not at all. The entire property of a
+group is capture in the elements and how they behave. Here we are
+viewing them as maps, it doesn’t matter what we are mapping from and
+to.</p>
+<p>Groups require that the elements satisfy a number of axioms, which
+boil down to the following:</p>
 <ul>
 <li>the existence of an identity (which has to exist in a category <span class="math inline">\(\checkmark\)</span>)</li>
-<li>given two elements <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> there composition has to exists (again literally in the definition of a category <span class="math inline">\(\checkmark\)</span>). Let this composition be denoted by <span class="math inline">\(\cdot\)</span>. So we have to have <span class="math inline">\(x\cdot y\)</span> exists.</li>
-<li>The composition of elements is associative (again the definition of a category <span class="math inline">\(\checkmark\)</span>).</li>
-<li>if <span class="math inline">\(x\)</span> exists, then the inverse exists <span class="math inline">\(x^{-1}\)</span>. More concretely, given <span class="math inline">\(x\)</span> we require that there exists an element <span class="math inline">\(x^{-1}\)</span> such that <span class="math inline">\(x\cdot x^{-1} = x^{-1} \cdot x = 1_G\)</span>, where <span class="math inline">\(1_G\)</span> is the identity.</li>
+<li>given two elements <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> there composition has to exists (again
+literally in the definition of a category <span class="math inline">\(\checkmark\)</span>). Let this composition be
+denoted by <span class="math inline">\(\cdot\)</span>. So we have to
+have <span class="math inline">\(x\cdot y\)</span> exists.</li>
+<li>The composition of elements is associative (again the definition of
+a category <span class="math inline">\(\checkmark\)</span>).</li>
+<li>if <span class="math inline">\(x\)</span> exists, then the inverse
+exists <span class="math inline">\(x^{-1}\)</span>. More concretely,
+given <span class="math inline">\(x\)</span> we require that there
+exists an element <span class="math inline">\(x^{-1}\)</span> such that
+<span class="math inline">\(x\cdot x^{-1} = x^{-1} \cdot x =
+1_G\)</span>, where <span class="math inline">\(1_G\)</span> is the
+identity.</li>
 </ul>
-<p>What does this last condition mean in terms of category theory perspective? Well given a map <span class="math inline">\(f\)</span> (which corresponds to an element <span class="math inline">\(x\)</span> say) we require another map to exists such that <span class="math inline">\(f\circ g = g\circ f = 1_\bullet\)</span>, where <span class="math inline">\(1_\bullet\)</span> is the identity map. Thus we require that the maps in the category are invertible!</p>
-<p>So any single object category where the maps all have two-sided inverses, we can view as a group!</p>
+<p>What does this last condition mean in terms of category theory
+perspective? Well given a map <span class="math inline">\(f\)</span>
+(which corresponds to an element <span class="math inline">\(x\)</span>
+say) we require another map to exists such that <span class="math inline">\(f\circ g = g\circ f = 1_\bullet\)</span>, where
+<span class="math inline">\(1_\bullet\)</span> is the identity map. Thus
+we require that the maps in the category are invertible!</p>
+<p>So any single object category where the maps all have two-sided
+inverses, we can view as a group!</p>
 </div>
-<p>This leads us to the notion of an isomorphism in category theory. We shall look at isomorphism and where they are useful and where they need to have a bit of a rethink.</p>
-<h3 id="isomorphisms-in-category-theory">Isomorphisms in category theory</h3>
-<p>We want to define a notion of isomorphism that captures all of the differing versions that exist. Given the category <span class="math inline">\(Set\)</span>, we need a definition that captures that bijections in <span class="math inline">\(Set\)</span> are the isomorphisms. In <span class="math inline">\(Top\)</span>, we need it to spit out homeomorphisms. In <span class="math inline">\(Grp\)</span> we need it to spit out group isomorphisms. So on and so forth, every mathematical structure has some notion of ‘isomorphic’ which we want to generalise. It turns out to be remarkably easy.</p>
+<p>This leads us to the notion of an isomorphism in category theory. We
+shall look at isomorphism and where they are useful and where they need
+to have a bit of a rethink.</p>
+<h3 id="isomorphisms-in-category-theory">Isomorphisms in category
+theory</h3>
+<p>We want to define a notion of isomorphism that captures all of the
+differing versions that exist. Given the category <span class="math inline">\(Set\)</span>, we need a definition that captures
+that bijections in <span class="math inline">\(Set\)</span> are the
+isomorphisms. In <span class="math inline">\(Top\)</span>, we need it to
+spit out homeomorphisms. In <span class="math inline">\(Grp\)</span> we
+need it to spit out group isomorphisms. So on and so forth, every
+mathematical structure has some notion of ‘isomorphic’ which we want to
+generalise. It turns out to be remarkably easy.</p>
 <div class="definition" name="Isomorphisms in Categories">
-<p>Given a category <span class="math inline">\(\mathcal{A}\)</span>, we that a map <span class="math inline">\(f:A\to B\)</span> between two objects in a category, <span class="math inline">\(A,B\in ob(\mathcal{A})\)</span>, is an isomorphism if there exists another map <span class="math inline">\(g:B\to A\)</span> such that <span class="math inline">\(f\circ g = 1_B\)</span> and <span class="math inline">\(g\circ f= 1_A\)</span>. Where <span class="math inline">\(1_A\)</span> is the identity map for the object <span class="math inline">\(A\)</span> and <span class="math inline">\(1_B\)</span> is the identity map for the object <span class="math inline">\(B\)</span>.</p>
+<p>Given a category <span class="math inline">\(\mathcal{A}\)</span>, we
+that a map <span class="math inline">\(f:A\to B\)</span> between two
+objects in a category, <span class="math inline">\(A,B\in
+ob(\mathcal{A})\)</span>, is an isomorphism if there exists another map
+<span class="math inline">\(g:B\to A\)</span> such that <span class="math inline">\(f\circ g = 1_B\)</span> and <span class="math inline">\(g\circ f= 1_A\)</span>. Where <span class="math inline">\(1_A\)</span> is the identity map for the object
+<span class="math inline">\(A\)</span> and <span class="math inline">\(1_B\)</span> is the identity map for the object
+<span class="math inline">\(B\)</span>.</p>
 </div>
-<p>So lets check that this definition does provide us with the correct notion of isomorphism for the a handful of examples:</p>
+<p>So lets check that this definition does provide us with the correct
+notion of isomorphism for the a handful of examples:</p>
 <div class="example">
 
 </div>
-<p>Universal Properties: These are statements with are true for every example of the class and unique. For instance the map from every set to the set with one element <span class="math inline">\(1=\{x\}\)</span> that maps each element to the one element in <span class="math inline">\(1\)</span>. This is a unique map, and exists for every set.</p>
+<p>Universal Properties: These are statements with are true for every
+example of the class and unique. For instance the map from every set to
+the set with one element <span class="math inline">\(1=\{x\}\)</span>
+that maps each element to the one element in <span class="math inline">\(1\)</span>. This is a unique map, and exists for
+every set.</p>
 <!-- $$
 \begin{CD}
 A @>a>>B \\
@@ -262,7 +447,8 @@ $$ -->
 <h2 class="unnumbered" id="references">References</h2>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-Leinster2014" class="csl-entry" role="doc-biblioentry">
-[1] Tom Leinster. (2014). <em>Basic <span>Category Theory</span></em>. <span>Cambridge University Press</span>. <a href="https://doi.org/10.1017/CBO9781107360068">https://doi.org/10.1017/CBO9781107360068</a>
+[1] Tom Leinster. (2014). <em>Basic <span>Category Theory</span></em>.
+<span>Cambridge University Press</span>. <a href="https://doi.org/10.1017/CBO9781107360068">https://doi.org/10.1017/CBO9781107360068</a>
 </div>
 </div>
 
@@ -327,7 +513,7 @@ $$ -->
           <li class="p-name">Paul J Druce's site</li>
 <li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
 <li>
-            <p>A place to collect my notes on the maths of physics and anything related.</p>
+            <p></p>
           </li>
         </ul>
       </div>
@@ -343,7 +529,7 @@ $$ -->
 </div>
 
       <div class="footer-col footer-col-3">
-        <!-- <p>A place to collect my notes on the maths of physics and anything related.</p> -->
+        <!-- <p></p> -->
         <a href="/"><img class="profile-portrait" src="/assets/images/Portrait_square.jpg"></a>
       </div>
     </div>

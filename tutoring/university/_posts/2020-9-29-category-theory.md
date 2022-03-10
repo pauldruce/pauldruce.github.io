@@ -5,9 +5,9 @@ author: Paul Druce
 date: 2020-9-29
 summary: Introductory notes on category theory
 category: research
-tags: [post, notes,unfinished]
-csl: ./assets/bibtex/communications-in-mathematical-physics.csl
-bibliography: ../assets/bibtex/website_bib.bib
+tags: [post, notes, unfinished]
+csl: ../../../assets/bibtex/communications-in-mathematical-physics.csl
+bibliography: ../../../assets/bibtex/website_bib.bib
 link-citations: true
 toc: true
 ---
@@ -28,33 +28,33 @@ So to guide my adventures, I’m going to start simple and get more complicated.
 
 ## The beginning
 
-Throughout my undergraduate degree, I studied many different areas of mathematics. Linear algebra, topology, group theory, Euclidean geometry, differential geometry, ring theory, Lie theory. In each of these topics, we learn about the properties of a basic object. In linear algebra, we study vector spaces, in topology we study topological spaces, in geometry we study manifolds with varying properties. Within each branch, even in each sub-branch, we learn of a map that tells us when two objects are the same. We say that these objects are ‘isomorphic’ or ‘homeomorphic’. In linear algebra, two vector spaces are deemed ’the same’ if there is a *bilinear linear map* between them. In topology, two topological spaces are deemed ’the same’ if there is a map called a *homeomorphism*. In group theory, we have *group isomorphisms,* in ring theory we have *ring isomorphisms*. So on and so forth, we have different words for roughly the same concept. More over, the idea of ’sameness’ changes from situation to situation.
+Throughout my undergraduate degree, I studied many different areas of mathematics. Linear algebra, topology, group theory, Euclidean geometry, differential geometry, ring theory, Lie theory. In each of these topics, we learn about the properties of a basic object. In linear algebra, we study vector spaces, in topology we study topological spaces, in geometry we study manifolds with varying properties. Within each branch, even in each sub-branch, we learn of a map that tells us when two objects are the same. We say that these objects are ‘isomorphic’ or ‘homeomorphic’. In linear algebra, two vector spaces are deemed ’the same’ if there is a _bilinear linear map_ between them. In topology, two topological spaces are deemed ’the same’ if there is a map called a _homeomorphism_. In group theory, we have _group isomorphisms,_ in ring theory we have _ring isomorphisms_. So on and so forth, we have different words for roughly the same concept. More over, the idea of ’sameness’ changes from situation to situation.
 
->Is there a way to abstract this idea of ’sameness’ from each field to a more general framework? This idea is where category theory makes sense to me. To understand concepts that hold true for many different fields from a more general viewpoint. There is more to category theory though, much more. So let us dive in.
+> Is there a way to abstract this idea of ’sameness’ from each field to a more general framework? This idea is where category theory makes sense to me. To understand concepts that hold true for many different fields from a more general viewpoint. There is more to category theory though, much more. So let us dive in.
 
-So what is a category? It is a collection of certain mathematical objects, together with certain class of maps between these objects. These collections of objects and maps have to satisfy a number of properties that hold true for many of the above examples of fields. A question I want to know, is why the following definition of a category is *the right one*.
+So what is a category? It is a collection of certain mathematical objects, together with certain class of maps between these objects. These collections of objects and maps have to satisfy a number of properties that hold true for many of the above examples of fields. A question I want to know, is why the following definition of a category is _the right one_.
 
 ::: { .definition name="A Category"}
 A category consists of the following data:
 
-  - A collection of objects, $ob(\mathcal{C})$.
-  - The maps between any two objects $Hom(A,B)$ for $A,B\in ob(\mathcal{C})$
-  - A rule/procedure that describes how we can compose maps, i.e. $\circ$, such that for $f\in Hom(A,B)$ and $g\in Hom(B,C)$, where $A,B,C\in ob(\mathcal{C})$, we can define $f\circ g\in Hom(A,C)$.
+- A collection of objects, $ob(\mathcal{C})$.
+- The maps between any two objects $Hom(A,B)$ for $A,B\in ob(\mathcal{C})$
+- A rule/procedure that describes how we can compose maps, i.e. $\circ$, such that for $f\in Hom(A,B)$ and $g\in Hom(B,C)$, where $A,B,C\in ob(\mathcal{C})$, we can define $f\circ g\in Hom(A,C)$.
 
 These objects must satisfy a number of relations:
 
-+ First: the composition must be associative, i.e $(f\circ g)\circ h =f \circ (g\circ h)$ for all maps.
-+ For every $A\in ob(\mathcal{C})$ we must have an identity map, i.e. there exists a map $1_A\in Hom(A,A)$ such that $f\circ 1_A = f=1_b \circ f$ for every $f\in Hom(A,B)$.
+- First: the composition must be associative, i.e $(f\circ g)\circ h =f \circ (g\circ h)$ for all maps.
+- For every $A\in ob(\mathcal{C})$ we must have an identity map, i.e. there exists a map $1_A\in Hom(A,A)$ such that $f\circ 1_A = f=1_b \circ f$ for every $f\in Hom(A,B)$.
 
 :::
 
-Now why is this the right definition for a category? Well the collection of objects makes sense right? We want to study how construction for all *groups* are similar to the constructions for all *topological spaces*.
+Now why is this the right definition for a category? Well the collection of objects makes sense right? We want to study how construction for all _groups_ are similar to the constructions for all _topological spaces_.
 
-What about the maps between objects? We haven’t put any conditions on what those maps must be. In fact, using the word *maps* might be misleading, because these do not need to be continuous or even functions, they are sometimes called *morphisms* or *arrows* to make this point absolutely clear. So we haven’t excluded any examples we know with this. So the maps are fine.
+What about the maps between objects? We haven’t put any conditions on what those maps must be. In fact, using the word _maps_ might be misleading, because these do not need to be continuous or even functions, they are sometimes called _morphisms_ or _arrows_ to make this point absolutely clear. So we haven’t excluded any examples we know with this. So the maps are fine.
 
-So what about the composition law? The fact that we can compose maps is a very useful and fruitful idea. As every example you can probably think of has the composition of maps, this seems well suited? Well, why does it have to be associative? Granted the composition of functions is associative, the composition of isomorphisms and homeomorphisms, but are there really no objects that have a composition rule that isn’t associative? There are many mathematical operations that are not associative, subtraction is not an associative operation: $(5-3)-1\neq 5-(3-1)$. Neither is division or the Lie bracket for Lie algebras, so why does the composition of maps need to be associative in categories? I have no great argument for why we requiring associativity is *the right thing to do* except, that if we relax this condition, we need to replace it with something more general. This has been done, of course, mathematicians never fail to explore every avenue. These ’non-associative’ categories go by the name of $A_\infty$-categories and are very advanced.
+So what about the composition law? The fact that we can compose maps is a very useful and fruitful idea. As every example you can probably think of has the composition of maps, this seems well suited? Well, why does it have to be associative? Granted the composition of functions is associative, the composition of isomorphisms and homeomorphisms, but are there really no objects that have a composition rule that isn’t associative? There are many mathematical operations that are not associative, subtraction is not an associative operation: $(5-3)-1\neq 5-(3-1)$. Neither is division or the Lie bracket for Lie algebras, so why does the composition of maps need to be associative in categories? I have no great argument for why we requiring associativity is _the right thing to do_ except, that if we relax this condition, we need to replace it with something more general. This has been done, of course, mathematicians never fail to explore every avenue. These ’non-associative’ categories go by the name of $A_\infty$-categories and are very advanced.
 
->  So let us just say that associative is sufficient to capture every reasonable example.
+> So let us just say that associative is sufficient to capture every reasonable example.
 
 Finally, the presence of an identity map is always there, it’s almost a non-sensical notion to not have an identity map. Think about it, I have an object, and I can’t do ’nothing’ to it - what does that even mean. So identities must exist I agree.
 
@@ -76,7 +76,6 @@ Let $Man^k$ be the category of $C^k$-manifolds and $C^k$ maps between them. We l
 Let $Set$ denote the category of sets and maps between them. Map composition is associative again and the identity map exists.
 :::
 
-
 The examples above are mainly to introduce some notation for some key players in category theory. However, we notice that most structures fit in a category. Geometry, algebra and set theory all fit there. There are many many more categories and we will investigate some in a little bit.
 
 It is clear at this point that defining a Category is not special. Category theory's power is describing how different categories relate to each other. Just like defining a manifold is not particularly important. Understanding the properties of manifolds and how they relate to each other is powerful. The Whitney embedding theorem comes to mind here, that any smooth (real) $m$-dimensional manifold can be embedding in $\mathbb{R}^{2m}$ (for $m>0$). This statement shows that results proved for embedded manifolds can hold true for any manifold.
@@ -90,13 +89,15 @@ Most of the examples of categories above contain many many objects. However, cat
 So as the list of objects is simple, we can ask ourselves, what are the different types of maps that we can require? Well all the maps have to start and end with the same space, i.e. $Hom(x,x)$. So as the definition of a category requires us to have an identity map, that exists. We also require associativity, so if we have maps $f,g\in Hom(x,x))$ we have also $f\circ g$ **and** $g\circ f$. We then also have $f\circ(f\circ g)$ and $g\circ(f\circ g)$ etc.
 
 So at this point we should think about some cases. If $x$ is just an empty set $x=\{\}$ then the only map we can have is to map $x$ to $x$, i.e. we only have the identity map. However, what if $x$ is actually a general finite set? So there is $x=\{a_1, a_2,a_3,\dots \}$, well then we have the identity map that $1_x(a_i) = a_i$ for all $a_i \in x$. And any other map we can come up with. I've listed some bijective maps below.
+
 <center>
 <div class="image_block" id="fig:singleObjectMaps">
 ![](/assets/2020/category-theory/singleObjectMaps.svg){.greyscale-img}
 ![](/assets/2020/category-theory/singleObjectMaps1.svg){.greyscale-img}
 ![](/assets/2020/category-theory/singleObjectMaps2.svg){.greyscale-img}
 
- Figure 1: A pictorial representation of a single object category and a description of potential morphisms. (Question: Given the definition of a category, what other maps must there be for our single object category $x$?)
+Figure 1: A pictorial representation of a single object category and a description of potential morphisms. (Question: Given the definition of a category, what other maps must there be for our single object category $x$?)
+
 </div>
 </center>
 
@@ -120,8 +121,7 @@ Groups require that the elements satisfy a number of axioms, which boil down to 
 - The composition of elements is associative (again the definition of a category $\checkmark$).
 - if $x$ exists, then the inverse exists $x^{-1}$. More concretely, given $x$ we require that there exists an element $x^{-1}$ such that $x\cdot x^{-1} = x^{-1} \cdot x = 1_G$, where $1_G$ is the identity.
 
-What does this last condition mean in terms of category theory perspective? Well given a map $f$ (which corresponds to an element $x$ say) we require another map to exists such that $f\circ g = g\circ f = 1_\bullet$, where $1_\bullet$ is the identity map. Thus we require that the maps in the category are invertible!  
-
+What does this last condition mean in terms of category theory perspective? Well given a map $f$ (which corresponds to an element $x$ say) we require another map to exists such that $f\circ g = g\circ f = 1_\bullet$, where $1_\bullet$ is the identity map. Thus we require that the maps in the category are invertible!
 
 So any single object category where the maps all have two-sided inverses, we can view as a group!
 :::
@@ -144,10 +144,6 @@ So lets check that this definition does provide us with the correct notion of is
 :::
 
 Universal Properties: These are statements with are true for every example of the class and unique. For instance the map from every set to the set with one element $1=\{x\}$ that maps each element to the one element in $1$. This is a unique map, and exists for every set.
-
-
-
-
 
 <!-- $$
 \begin{CD}

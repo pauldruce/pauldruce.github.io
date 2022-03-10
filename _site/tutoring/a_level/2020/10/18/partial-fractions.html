@@ -68,7 +68,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Partial Fractions - Unfinished">
 <script type="application/ld+json">
-{"url":"https://www.pauldruce.co.uk/tutoring/a_level/2020/10/18/partial-fractions.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Partial Fractions - Unfinished","dateModified":"2020-10-18T00:00:00+01:00","datePublished":"2020-10-18T00:00:00+01:00","description":"A guide for A level mathematics students about partial fractions. An explanation of why the procedures work is given along with easy, medium and difficult questions.","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2020/10/18/partial-fractions.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2020/10/18/partial-fractions.html"},"url":"https://www.pauldruce.co.uk/tutoring/a_level/2020/10/18/partial-fractions.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Partial Fractions - Unfinished","dateModified":"2020-10-18T00:00:00+01:00","datePublished":"2020-10-18T00:00:00+01:00","description":"A guide for A level mathematics students about partial fractions. An explanation of why the procedures work is given along with easy, medium and difficult questions.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -143,8 +143,12 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   <div class="post-content" itemprop="articleBody">
     
     <h1 id="summary">Summary</h1>
-<p>For those looking for the tl;dr here is a summary of the techniques:</p>
-<p>The coefficients <span class="math inline">\(a,b,c,A,B,C, \alpha,\beta\)</span> in the table below can be any real number, which need to be found. A polynomial <span class="math inline">\(a_ix^2 + b_ix + c_i\)</span> is said to be irreducible if it has no real roots.</p>
+<p>For those looking for the tl;dr here is a summary of the
+techniques:</p>
+<p>The coefficients <span class="math inline">\(a,b,c,A,B,C,
+\alpha,\beta\)</span> in the table below can be any real number, which
+need to be found. A polynomial <span class="math inline">\(a_ix^2 + b_ix
++ c_i\)</span> is said to be irreducible if it has no real roots.</p>
 <center>
 <table>
 <table>
@@ -154,75 +158,136 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><span class="math display">\[P(x)\over Q(x)\]</span></th>
+<th style="text-align: center;"><span class="math display">\[P(x)\over
+Q(x)\]</span></th>
 <th style="text-align: center;">Partial Fraction</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math display">\[{ax+b \over (x-r_1)(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{ax+b \over
+(x-r_1)(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
 <td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_2)}\]</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><span class="math display">\[{ax+b \over (x-r)^2}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{ax+b \over
+(x-r)^2}\]</span></td>
 <td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {B\over (x-r)^2}\]</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><span class="math display">\[{ax^2+bx +c \over (x-r_1)(x-r_2)(x-r_3)} \text{ where } r_1 \neq r_2\neq r_3\]</span></td>
-<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_2)} + {C\over (x-r_3)}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx +c
+\over (x-r_1)(x-r_2)(x-r_3)} \text{ where } r_1 \neq r_2\neq
+r_3\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_2)} + {C\over
+(x-r_3)}\]</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c \over (x-r_1)^2(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
-<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_1)^2} + {C\over (x-r_2)}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c
+\over (x-r_1)^2(x-r_2)} \text{ where } r_1 \neq r_2\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r_1)} + {B\over (x-r_1)^2} + {C\over
+(x-r_2)}\]</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c \over (x-r)^3}\]</span></td>
-<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {B\over (x-r)^2} + {C\over (x-r)^3}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{ax^2+bx+c
+\over (x-r)^3}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {B\over (x-r)^2} + {C\over
+(x-r)^3}\]</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><span class="math display">\[{\alpha x+\beta \over (ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{ is irreducible}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{\alpha
+x+\beta \over (ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{ is
+irreducible}\]</span></td>
 <td style="text-align: center;">No simplification</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"><span class="math display">\[{\alpha x+\beta \over (x-r)(ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{ is irreducible}\]</span></td>
-<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {Bx+C\over(ax^2 + bx +c ) }\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{\alpha
+x+\beta \over (x-r)(ax^2 + bx +c )} \text{ where } ax^2 + bx +c \text{
+is irreducible}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[{A\over(x-r)} + {Bx+C\over(ax^2 + bx +c )
+}\]</span></td>
 </tr>
 </tbody>
 </table>
 </table>
 </center>
-<p>In general if we have two polynomials <span class="math inline">\(P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x + a_0\)</span> and <span class="math inline">\(Q(x) = b_m x^m + b_{m-1} x^{m-1} + \dots b_1 x + b_0\)</span>, where <span class="math inline">\(n,m\)</span> are both integers such that <span class="math inline">\(n&lt;m\)</span> and all of the coefficients <span class="math inline">\(a_i, b_i\)</span> are real numbers.</p>
-<p>Then by the fundamental theorem of algebra we can rewrite <span class="math inline">\(Q(x)\)</span> as the product of it’s linear factors <span class="math inline">\((x-r_i)\)</span> and irreducible quadratic factors <span class="math inline">\((a_i x^2 + b_i x +c_i)\)</span>, so we have that <span class="math display">\[Q(x) = (x-r_1)^{j_1} (x-r_2)^{j_2} \cdots(x-r_{m_1})^{j_{m_1}}(a_1 x^2+ b_1x +c_1 )^{k_1}\cdots (a_{m_2} x^2+ b_{m_2}x +c_{m_2} )^{k_{m_2}}\]</span> where <span class="math inline">\(m_1+m_2 = m\)</span>, <span class="math inline">\(j_i\)</span> is the number of times <span class="math inline">\(r_i\)</span> is a root of <span class="math inline">\(Q(x)\)</span> and <span class="math inline">\(k_m\)</span> are positive integers<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">The factors <span class="math inline">\(a_i x^2 + b_ix +c_i\)</span> actually correspond to a pair of complex roots which are conjugate to each other. So <span class="math inline">\(k_i\)</span> is the number of times that these roots are repeated.</span></span>.</p>
-<p>We have that the expression <span class="math inline">\({P(x)/ Q(x)}\)</span> can be written a sum of terms of the form <span class="math display">\[
-{P(x)\over Q(x)} = \sum\limits_{i=1}^{m_1} \sum\limits_{l=1}^{j_i} {A_{il}\over (x-r_i)^l} +  \sum\limits_{i=1}^{m_2} \sum\limits_{l=1}^{k_i} {B_{il}x + C_{il}\over a_i x^2 + b_ix+c_i}
+<p>In general if we have two polynomials <span class="math inline">\(P(x) = a_n x^n + a_{n-1} x^{n-1} + \dots a_1 x +
+a_0\)</span> and <span class="math inline">\(Q(x) = b_m x^m + b_{m-1}
+x^{m-1} + \dots b_1 x + b_0\)</span>, where <span class="math inline">\(n,m\)</span> are both integers such that <span class="math inline">\(n&lt;m\)</span> and all of the coefficients <span class="math inline">\(a_i, b_i\)</span> are real numbers.</p>
+<p>Then by the fundamental theorem of algebra we can rewrite <span class="math inline">\(Q(x)\)</span> as the product of it’s linear
+factors <span class="math inline">\((x-r_i)\)</span> and irreducible
+quadratic factors <span class="math inline">\((a_i x^2 + b_i x
++c_i)\)</span>, so we have that <span class="math display">\[Q(x) =
+(x-r_1)^{j_1} (x-r_2)^{j_2} \cdots(x-r_{m_1})^{j_{m_1}}(a_1 x^2+ b_1x
++c_1 )^{k_1}\cdots (a_{m_2} x^2+ b_{m_2}x +c_{m_2} )^{k_{m_2}}\]</span>
+where <span class="math inline">\(m_1+m_2 = m\)</span>, <span class="math inline">\(j_i\)</span> is the number of times <span class="math inline">\(r_i\)</span> is a root of <span class="math inline">\(Q(x)\)</span> and <span class="math inline">\(k_m\)</span> are positive integers<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">The factors <span class="math inline">\(a_i x^2 + b_ix
++c_i\)</span> actually correspond to a pair of complex roots which are
+conjugate to each other. So <span class="math inline">\(k_i\)</span> is
+the number of times that these roots are repeated.</span></span>.</p>
+<p>We have that the expression <span class="math inline">\({P(x)/
+Q(x)}\)</span> can be written a sum of terms of the form <span class="math display">\[
+{P(x)\over Q(x)} = \sum\limits_{i=1}^{m_1} \sum\limits_{l=1}^{j_i}
+{A_{il}\over (x-r_i)^l} +  \sum\limits_{i=1}^{m_2}
+\sum\limits_{l=1}^{k_i} {B_{il}x + C_{il}\over a_i x^2 + b_ix+c_i}
 \]</span></p>
-<h1 id="why-do-we-care-about-partial-fractions">Why do we care about partial fractions?</h1>
-<p>The first question I always ask myself before learning something new, is to ask myself:</p>
+<h1 id="why-do-we-care-about-partial-fractions">Why do we care about
+partial fractions?</h1>
+<p>The first question I always ask myself before learning something new,
+is to ask myself:</p>
 <center>
 <blockquote>
 <p>Why do people care about this? How is it useful?</p>
 </blockquote>
 </center>
-<p>There isn’t a bad answer to this question. I’m not looking for some ground breaking revelation as an answer. I’m looking for the motivation, why people study this, what are the problems they are trying to solve? What is the situation where this topic is involved? If people study an area of mathematics because it is useful for predicting the stock market, that is a valid answer. If people study an area of mathematics because it is ‘elegant,’ then that is also perfectly fine. I just want to understand <strong>why</strong> it is useful for stock markets, and <strong>why</strong> they think it is elegant.</p>
-<p>Why do I do this? Well because it helps me. I find myself more motivated to learning something, if I know why I’m doing it, and what it is all about.</p>
+<p>There isn’t a bad answer to this question. I’m not looking for some
+ground breaking revelation as an answer. I’m looking for the motivation,
+why people study this, what are the problems they are trying to solve?
+What is the situation where this topic is involved? If people study an
+area of mathematics because it is useful for predicting the stock
+market, that is a valid answer. If people study an area of mathematics
+because it is ‘elegant’, then that is also perfectly fine. I just want
+to understand <strong>why</strong> it is useful for stock markets, and
+<strong>why</strong> they think it is elegant.</p>
+<p>Why do I do this? Well because it helps me. I find myself more
+motivated to learning something, if I know why I’m doing it, and what it
+is all about.</p>
 <p>So with that said, let’s look at partial fractions:</p>
 <center>
 <blockquote>
-<p>what are they? why do we care? and how do we solve questions about them?</p>
+<p>what are they? why do we care? and how do we solve questions about
+them?</p>
 </blockquote>
 </center>
 <h2 id="what-are-partial-fractions">What are partial fractions?</h2>
-<p>Partial fractions, or more formally “the method of partial fractions for rational polynomials” is a procedure to write a complicated fraction of polynomials into a sum of simpler ones. It is the reverse process of ‘combining fractions’ when we have multiple fractions with polynomials in the numerator and denominator. For instance take the polynomial: <span class="math display">\[
+<p>Partial fractions, or more formally “the method of partial fractions
+for rational polynomials” is a procedure to write a complicated fraction
+of polynomials into a sum of simpler ones. It is the reverse process of
+‘combining fractions’ when we have multiple fractions with polynomials
+in the numerator and denominator. For instance take the polynomial:
+<span class="math display">\[
 {13x + 18 \over 10x^2 + 27x +18}
-\]</span> Can this be written as a sum of simpler polynomials? If it can, how do we find the simple? Well it turns out that it can be written in the following way: <span class="math display">\[
+\]</span> Can this be written as a sum of simpler polynomials? If it
+can, how do we find the simple? Well it turns out that it can be written
+in the following way: <span class="math display">\[
 \begin{align}
-{1 \over 2x + 3} + {4\over 5x+6} &amp;= {5x + 6 + 4\cdot(2x+3)\over (2x+3)(5x+6)}\\
+{1 \over 2x + 3} + {4\over 5x+6} &amp;= {5x + 6 + 4\cdot(2x+3)\over
+(2x+3)(5x+6)}\\
 &amp;={13x + 18 \over 10x^2 + 27x +18}
 \end{align}
 \]</span></p>
-<p>This was entirely un-obvious from the initial fraction, so how do we do this in general? That is what the method of partial fractions provides us.</p>
-<p>Now you might be wondering, why would you want to split a single (but complicated) fraction into multiple (but simpler) fractions? Well that depends who you are, and what you are trying to do. Are you an electrical engineer trying to analyse a complicated circuit? If you are, you may want to switch to the so-called ‘frequency-domain’ from the ‘time-domain,’ solve you problems in the frequency domain and then switch back at the very end. Well the process of doing this requires you to integrate rational polynomial expressions, which is far easier if we express them in polynomial form.</p>
-<p>In general the method of partial fractions is useful because it is a lot easier to integrate <span class="math display">\[
+<p>This was entirely un-obvious from the initial fraction, so how do we
+do this in general? That is what the method of partial fractions
+provides us.</p>
+<p>Now you might be wondering, why would you want to split a single (but
+complicated) fraction into multiple (but simpler) fractions? Well that
+depends who you are, and what you are trying to do. Are you an
+electrical engineer trying to analyse a complicated circuit? If you are,
+you may want to switch to the so-called ‘frequency-domain’ from the
+‘time-domain’, solve you problems in the frequency domain and then
+switch back at the very end. Well the process of doing this requires you
+to integrate rational polynomial expressions, which is far easier if we
+express them in polynomial form.</p>
+<p>In general the method of partial fractions is useful because it is a
+lot easier to integrate <span class="math display">\[
 {1 \over 2x + 3} + {4\over 5x+6}
 \]</span> than it is to integrate <span class="math display">\[
 {13x + 18 \over 10x^2 + 27x +18}.
@@ -290,7 +355,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
           <li class="p-name">Paul J Druce's site</li>
 <li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
 <li>
-            <p>A place to collect my notes on the maths of physics and anything related.</p>
+            <p></p>
           </li>
         </ul>
       </div>
@@ -306,7 +371,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </div>
 
       <div class="footer-col footer-col-3">
-        <!-- <p>A place to collect my notes on the maths of physics and anything related.</p> -->
+        <!-- <p></p> -->
         <a href="/"><img class="profile-portrait" src="/assets/images/Portrait_square.jpg"></a>
       </div>
     </div>

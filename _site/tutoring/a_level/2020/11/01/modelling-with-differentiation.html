@@ -68,7 +68,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Modelling with Differentiation">
 <script type="application/ld+json">
-{"url":"https://www.pauldruce.co.uk/tutoring/a_level/2020/11/01/modelling-with-differentiation.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Modelling with Differentiation","dateModified":"2020-11-01T00:00:00+00:00","datePublished":"2020-11-01T00:00:00+00:00","description":"When you first start learning about differentiation, integration and calculus in general, we often stick to equations that exclusively use the variables (x, y) and (t). The variable (t) is often used to represent time, and (y) and (x) are related to the graphs of specific functions, i.e. (y = f(x)), where (f) can be any reasonableTo find out what reasonable means requires a more in-depth knowledge of calculus. function. However, there is nothing special about the letters (x,y) or (t). So in many cases we will choose different letters to represent important quantities.","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2020/11/01/modelling-with-differentiation.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2020/11/01/modelling-with-differentiation.html"},"url":"https://www.pauldruce.co.uk/tutoring/a_level/2020/11/01/modelling-with-differentiation.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Modelling with Differentiation","dateModified":"2020-11-01T00:00:00+00:00","datePublished":"2020-11-01T00:00:00+00:00","description":"When you first start learning about differentiation, integration and calculus in general, we often stick to equations that exclusively use the variables (x, y) and (t). The variable (t) is often used to represent time, and (y) and (x) are related to the graphs of specific functions, i.e. (y = f(x)), where (f) can be any reasonableTo find out what reasonable means requires a more in-depth knowledge of calculus. function. However, there is nothing special about the letters (x,y) or (t). So in many cases we will choose different letters to represent important quantities.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -142,20 +142,66 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
   <div class="post-content" itemprop="articleBody">
     
-    <p>When you first start learning about differentiation, integration and calculus in general, we often stick to equations that exclusively use the variables <span class="math inline">\(x, y\)</span> and <span class="math inline">\(t\)</span>. The variable <span class="math inline">\(t\)</span> is often used to represent time, and <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span> are related to the graphs of specific functions, i.e. <span class="math inline">\(y = f(x)\)</span>, where <span class="math inline">\(f\)</span> can be any reasonable<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">To find out what reasonable means requires a more in-depth knowledge of calculus.</span></span> function. However, there is nothing special about the letters <span class="math inline">\(x,y\)</span> or <span class="math inline">\(t\)</span>. So in many cases we will choose different letters to represent important quantities.</p>
-<p>For instance, consider a circle of radius<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"><span class="sidenote">There is nothing special about the letter r, it’s just short for radius.</span></span> <span class="math inline">\(r\)</span>. We then know how to calculate the circumference of the circle, <span class="math inline">\(2\pi r\)</span>, or the area <span class="math inline">\(\pi r^2\)</span>.</p>
-<p>The inquisitive of you might start to wonder how the circumference and area of circles change as we increase or decrease the radius. How could we quantify such behaviour? Well this is where differentiation is particularly useful. Because when we compute the derivative <span class="math inline">\({dy\over dx}\)</span>, what we are really asking is how does the function <span class="math inline">\(y\)</span> change as we vary the variable <span class="math inline">\(x\)</span>.</p>
-<p>So what if we define the circumference as a function of the radius as follows: Let <span class="math inline">\(C\)</span> be the circumference of a circle of radius <span class="math inline">\(r\)</span>, so <span class="math inline">\(C(r) = 2 \pi r\)</span>. Then what does <span class="math inline">\({dC\over dr}\)</span> compute<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"><span class="sidenote">Note that the derivative is really the following limit: <span class="math display">\[{dC \over dr} = \lim\limits_{\epsilon \to 0} {C(r+\epsilon) - C(r) \over \epsilon}\]</span></span></span>? Well it computes how the circumference changes as we vary the radius of the circle.</p>
+    <p>When you first start learning about differentiation, integration and
+calculus in general, we often stick to equations that exclusively use
+the variables <span class="math inline">\(x, y\)</span> and <span class="math inline">\(t\)</span>. The variable <span class="math inline">\(t\)</span> is often used to represent time, and
+<span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span> are related to the graphs of specific
+functions, i.e. <span class="math inline">\(y = f(x)\)</span>, where
+<span class="math inline">\(f\)</span> can be any reasonable<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">To find out what reasonable means requires a more
+in-depth knowledge of calculus.</span></span> function. However, there
+is nothing special about the letters <span class="math inline">\(x,y\)</span> or <span class="math inline">\(t\)</span>. So in many cases we will choose
+different letters to represent important quantities.</p>
+<p>For instance, consider a circle of radius<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"><span class="sidenote">There is nothing special about the letter r, it’s just
+short for radius.</span></span> <span class="math inline">\(r\)</span>.
+We then know how to calculate the circumference of the circle, <span class="math inline">\(2\pi r\)</span>, or the area <span class="math inline">\(\pi r^2\)</span>.</p>
+<p>The inquisitive of you might start to wonder how the circumference
+and area of circles change as we increase or decrease the radius. How
+could we quantify such behaviour? Well this is where differentiation is
+particularly useful. Because when we compute the derivative <span class="math inline">\({dy\over dx}\)</span>, what we are really asking
+is how does the function <span class="math inline">\(y\)</span> change
+as we vary the variable <span class="math inline">\(x\)</span>.</p>
+<p>So what if we define the circumference as a function of the radius as
+follows: Let <span class="math inline">\(C\)</span> be the circumference
+of a circle of radius <span class="math inline">\(r\)</span>, so <span class="math inline">\(C(r) = 2 \pi r\)</span>. Then what does <span class="math inline">\({dC\over dr}\)</span> compute<span class="sidenote-wrapper"><label for="sn-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-2" class="margin-toggle"><span class="sidenote">Note that the derivative is really the following limit:
+<span class="math display">\[{dC \over dr} = \lim\limits_{\epsilon \to
+0} {C(r+\epsilon) - C(r) \over \epsilon}\]</span></span></span>? Well it
+computes how the circumference changes as we vary the radius of the
+circle.</p>
 <div class="example">
-A drop of oil is placed on the surface of a still pool of water. The oil spreads out over time in a circular manner. The rate of increase of the radius of the circle the oil forms is proportional to the time since it was dropped. At time <span class="math inline">\(t=0s\)</span>, the radius of the circle is <span class="math inline">\(r=1cm\)</span> and at <span class="math inline">\(t=1s\)</span>, the radius is <span class="math inline">\(r=2cm\)</span>. Find it’s radius after 10 seconds.
+A drop of oil is placed on the surface of a still pool of water. The oil
+spreads out over time in a circular manner. The rate of increase of the
+radius of the circle the oil forms is proportional to the time since it
+was dropped. At time <span class="math inline">\(t=0s\)</span>, the
+radius of the circle is <span class="math inline">\(r=1cm\)</span> and
+at <span class="math inline">\(t=1s\)</span>, the radius is <span class="math inline">\(r=2cm\)</span>. Find it’s radius after 10 seconds.
 <div class="single-image">
 <p><img src="/assets/2020/tutoring/modelling_with_differentiation.svg"></p>
 </div>
-<p><u>Solution</u>:<br> Given that <span class="math inline">\({dr\over dt} \propto t\)</span> we can say that <span class="math inline">\({dr\over dt} = kt\)</span>, so (via integration) we have that <span class="math inline">\(r = {1\over 2}kt^2 + C\)</span>. We then use the data that we have: At <span class="math inline">\(t=0\)</span>, <span class="math inline">\(r= {1\over 2}k (0\text{ s})^2 +C = C\)</span>, but we know that <span class="math inline">\(r=1cm\)</span> at <span class="math inline">\(t=0\)</span>, so <span class="math inline">\(C=1cm\)</span>. Then we need to have another piece of data to find the coefficient <span class="math inline">\(k\)</span>, this is given to us as follows: At <span class="math inline">\(t=1s\)</span>, we have that: <span class="math display">\[\begin{align}r &amp;= {1\over 2}k (1\text{ s})^2 + 1 \text{ cm}\\ &amp;= {1\over 2}\text{ s}^2 \times k + 1 \text{ cm},\end{align}\]</span> but we know that <span class="math inline">\(r=2 \text{ cm}\)</span> at <span class="math inline">\(t=1s\)</span>, so we have that <span class="math inline">\({1 \over 2}\text{ s}^2 k + 1 cm = 2cm\)</span>. So <span class="math inline">\(k = 2\text{cm}/\text{s}^2\)</span>, where the units of <span class="math inline">\(k\)</span> are determined in order for the equation to make sense.</p>
-<p>So we have that <span class="math display">\[r = (t^2 + 1)\text{ cm.}\]</span> So we have that at <span class="math inline">\(t=10 \text{s}\)</span>, then we have that <span class="math inline">\(r = 100+1 \text{ cm} = 101 \text{cm}\)</span>.</p>
+<p><u>Solution</u>:<br> Given that <span class="math inline">\({dr\over
+dt} \propto t\)</span> we can say that <span class="math inline">\({dr\over dt} = kt\)</span>, so (via integration)
+we have that <span class="math inline">\(r = {1\over 2}kt^2 +
+C\)</span>. We then use the data that we have: At <span class="math inline">\(t=0\)</span>, <span class="math inline">\(r=
+{1\over 2}k (0\text{ s})^2 +C = C\)</span>, but we know that <span class="math inline">\(r=1cm\)</span> at <span class="math inline">\(t=0\)</span>, so <span class="math inline">\(C=1cm\)</span>. Then we need to have another piece
+of data to find the coefficient <span class="math inline">\(k\)</span>,
+this is given to us as follows: At <span class="math inline">\(t=1s\)</span>, we have that: <span class="math display">\[\begin{align}r &amp;= {1\over 2}k (1\text{ s})^2
++ 1 \text{ cm}\\ &amp;= {1\over 2}\text{ s}^2 \times k + 1 \text{
+cm},\end{align}\]</span> but we know that <span class="math inline">\(r=2 \text{ cm}\)</span> at <span class="math inline">\(t=1s\)</span>, so we have that <span class="math inline">\({1 \over 2}\text{ s}^2 k + 1 cm = 2cm\)</span>. So
+<span class="math inline">\(k = 2\text{cm}/\text{s}^2\)</span>, where
+the units of <span class="math inline">\(k\)</span> are determined in
+order for the equation to make sense.</p>
+<p>So we have that <span class="math display">\[r = (t^2 + 1)\text{
+cm.}\]</span> So we have that at <span class="math inline">\(t=10
+\text{s}\)</span>, then we have that <span class="math inline">\(r =
+100+1 \text{ cm} = 101 \text{cm}\)</span>.</p>
 </div>
-<h2 id="converting-words-to-mathematics-terminology">Converting words to mathematics = Terminology</h2>
-<p>It is often harder to setup the mathematics than it is to solve to equations. Or at-least, we get very good at using the specific mathematical tools, but converting paragraphs to mathematics is difficult. Mathematicians use very specific words to mean very specific mathematical operations. Here are a few phrases that often turn up in these style of questions.</p>
+<h2 id="converting-words-to-mathematics-terminology">Converting words to
+mathematics = Terminology</h2>
+<p>It is often harder to setup the mathematics than it is to solve to
+equations. Or at-least, we get very good at using the specific
+mathematical tools, but converting paragraphs to mathematics is
+difficult. Mathematicians use very specific words to mean very specific
+mathematical operations. Here are a few phrases that often turn up in
+these style of questions.</p>
 <table>
 <colgroup>
 <col style="width: 53%">
@@ -170,57 +216,108 @@ A drop of oil is placed on the surface of a still pool of water. The oil spreads
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">
-<span class="math inline">\(X\)</span> is proportional to <span class="math inline">\(Y\)</span>
+<span class="math inline">\(X\)</span>
+is proportional to <span class="math inline">\(Y\)</span>
 </td>
 <td style="text-align: center;">
-<span class="math inline">\(X\propto Y\)</span> which is equivalent to <span class="math inline">\(X = k Y\)</span> for some unknown constant <span class="math inline">\(k\)</span>
+<span class="math inline">\(X\propto
+Y\)</span> which is equivalent to <span class="math inline">\(X = k
+Y\)</span> for some unknown constant <span class="math inline">\(k\)</span>
 </td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">
-<span class="math inline">\(X\)</span> is inversely proportional to <span class="math inline">\(Y\)</span>
+<span class="math inline">\(X\)</span>
+is inversely proportional to <span class="math inline">\(Y\)</span>
 </td>
 <td style="text-align: center;">
-<span class="math inline">\(X \propto {1\over Y}\)</span> or <span class="math inline">\(X = {k \over Y}\)</span> for some unknown constant <span class="math inline">\(k\)</span>
+<span class="math inline">\(X \propto
+{1\over Y}\)</span> or <span class="math inline">\(X = {k \over
+Y}\)</span> for some unknown constant <span class="math inline">\(k\)</span>
 </td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">
-<span class="math inline">\(X\)</span> exponentially grows with respect to <span class="math inline">\(Y\)</span>
+<span class="math inline">\(X\)</span>
+exponentially grows with respect to <span class="math inline">\(Y\)</span>
 </td>
 <td style="text-align: center;">
-<span class="math inline">\(A \propto e^{kY}\)</span> or <span class="math inline">\(X=\alpha e^{k Y}\)</span> for two unknown constants <span class="math inline">\(k\)</span> and <span class="math inline">\(\alpha\)</span>.</td>
+<span class="math inline">\(A \propto
+e^{kY}\)</span> or <span class="math inline">\(X=\alpha e^{k Y}\)</span>
+for two unknown constants <span class="math inline">\(k\)</span> and
+<span class="math inline">\(\alpha\)</span>.</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">
-<span class="math inline">\(X\)</span> exponentially decays with respect to <span class="math inline">\(Y\)</span>
+<span class="math inline">\(X\)</span>
+exponentially decays with respect to <span class="math inline">\(Y\)</span>
 </td>
 <td style="text-align: center;">
-<span class="math inline">\(X \propto e^{-kY}\)</span> or <span class="math inline">\(X = \alpha e^{-kY}\)</span> for two unknown constants <span class="math inline">\(k\)</span> and <span class="math inline">\(\alpha\)</span>.</td>
+<span class="math inline">\(X \propto
+e^{-kY}\)</span> or <span class="math inline">\(X = \alpha
+e^{-kY}\)</span> for two unknown constants <span class="math inline">\(k\)</span> and <span class="math inline">\(\alpha\)</span>.</td>
 </tr>
 </tbody>
 </table>
-<p>Mathematicians also heavily rely on <em>context</em>. This is the idea that there is something <em>obvious</em> or inherent to the question. However, this is usually a barrier to understanding for those learning or anyone who is interested trying to understand. In regards to modelling with differentiation, this often shows itself when we start to discuss the <em>rate of change of <span class="math inline">\(X\)</span></em> where <span class="math inline">\(X\)</span> is some property of interest.</p>
-<p>The term <strong>rate of change of</strong> refers to a derivative as was discuss at the beginning of this note. However, what we are taking the derivative with respects to is not always stated. You could argue that it should be. But my argument for why context is a natural and useful tool to rely on, is as follows. When ask someone “is it raining?” you don’t usually have to tell them where you are inquiring about. It’s hidden in context that you care about if it is raining <em>here</em>, where you are. You aren’t asking if it is raining in Melbourne, Australia. You’ve relied on context.</p>
-<p>So, when we ask about the rate of change of velocity, we usually assume we are talking about the rate of change of velocity <em>with respects to time</em>. When we ask about the rate of change of sound intensity, we can assume we are talking about the rate of change of sound intensity with respects to distance from the source <strong>or</strong> with respects to time. Being able to read into the context usually requires some familiarity with the system or example in questions.</p>
+<p>Mathematicians also heavily rely on <em>context</em>. This is the
+idea that there is something <em>obvious</em> or inherent to the
+question. However, this is usually a barrier to understanding for those
+learning or anyone who is interested trying to understand. In regards to
+modelling with differentiation, this often shows itself when we start to
+discuss the <em>rate of change of <span class="math inline">\(X\)</span></em> where <span class="math inline">\(X\)</span> is some property of interest.</p>
+<p>The term <strong>rate of change of</strong> refers to a derivative as
+was discuss at the beginning of this note. However, what we are taking
+the derivative with respects to is not always stated. You could argue
+that it should be. But my argument for why context is a natural and
+useful tool to rely on, is as follows. When ask someone “is it raining?”
+you don’t usually have to tell them where you are inquiring about. It’s
+hidden in context that you care about if it is raining <em>here</em>,
+where you are. You aren’t asking if it is raining in Melbourne,
+Australia. You’ve relied on context.</p>
+<p>So, when we ask about the rate of change of velocity, we usually
+assume we are talking about the rate of change of velocity <em>with
+respects to time</em>. When we ask about the rate of change of sound
+intensity, we can assume we are talking about the rate of change of
+sound intensity with respects to distance from the source
+<strong>or</strong> with respects to time. Being able to read into the
+context usually requires some familiarity with the system or example in
+questions.</p>
 <h2 id="questions">Questions</h2>
 <details>
 <summary>
 <div class="question">
-<p>A person with a virus sneezes. The probability of contracting the virus from this person decreases exponentially as the distance between you is increased. The rate of decrease of the probability at a distance of <span class="math inline">\(0\text{ m}\)</span> is <span class="math inline">\(17 \text{ m}^{-1}\)</span>.</p>
+<p>A person with a virus sneezes. The probability of contracting the
+virus from this person decreases exponentially as the distance between
+you is increased. The rate of decrease of the probability at a distance
+of <span class="math inline">\(0\text{ m}\)</span> is <span class="math inline">\(17 \text{ m}^{-1}\)</span>.</p>
 <ol type="a">
 <li>Write down the probability as a function of distance.</li>
-<li>Assuming that the probability of contraction is equal to <span class="math inline">\(1\)</span> at a distance of <span class="math inline">\(0 \text{ m}\)</span>. Find the rate of change of the probability as a function of distance.<br>
+<li>Assuming that the probability of contraction is equal to <span class="math inline">\(1\)</span> at a distance of <span class="math inline">\(0 \text{ m}\)</span>. Find the rate of change of
+the probability as a function of distance.<br>
 </li>
-<li>What is the probability of contraction at <span class="math inline">\(2\text{ m}\)</span> to three significant figures?</li>
+<li>What is the probability of contraction at <span class="math inline">\(2\text{ m}\)</span> to three significant
+figures?</li>
 </ol>
 </div>
 </summary>
 <p><u> Solution </u></p>
 <ol type="a">
-<li><p>The probability, <span class="math inline">\(P\)</span>, is modelled by the following function <span class="math inline">\(P = A e^{-k x}\)</span>, where <span class="math inline">\(x\)</span> is the distance from the person.</p></li>
-<li><p>As the probability is equal to <span class="math inline">\(1\)</span> at <span class="math inline">\(0 \text{ m}\)</span>, we have that <span class="math inline">\(P(x=0) = A e^{-k\cdot 0} = A\)</span>, so we have that <span class="math inline">\(A=1\)</span>. So we have that <span class="math inline">\(P(x) = e^{-kx}\)</span>. The rate of change of the probability with respects to the distance is given by <span class="math display">\[{dP\over dx} = -k e^{-k x}.\]</span> Using the data that the rate of <strong>decrease</strong> of the probability at <span class="math inline">\(x=0 \text{ m}\)</span> is equal to <span class="math inline">\(17 \text{ m}^{-1}\)</span>, we have that: <span class="math display">\[{dP\over dx}(x=0) = - ke^{-k \cdot 0}=-k = -17.\]</span> So we have that <span class="math inline">\(k=17\text{ m}^{-1}\)</span>.</p></li>
-<li><p>The probability at <span class="math inline">\(x=2 \text{ m}\)</span> is <span class="math inline">\(P(x=2) = e^{-17\cdot 2} =e^{-34}=1.71 \times 10^{-15}\)</span> or $0.000000000000171 % $</p></li>
+<li><p>The probability, <span class="math inline">\(P\)</span>, is
+modelled by the following function <span class="math inline">\(P = A
+e^{-k x}\)</span>, where <span class="math inline">\(x\)</span> is the
+distance from the person.</p></li>
+<li><p>As the probability is equal to <span class="math inline">\(1\)</span> at <span class="math inline">\(0 \text{
+m}\)</span>, we have that <span class="math inline">\(P(x=0) = A
+e^{-k\cdot 0} = A\)</span>, so we have that <span class="math inline">\(A=1\)</span>. So we have that <span class="math inline">\(P(x) = e^{-kx}\)</span>. The rate of change of the
+probability with respects to the distance is given by <span class="math display">\[{dP\over dx} = -k e^{-k x}.\]</span> Using the
+data that the rate of <strong>decrease</strong> of the probability at
+<span class="math inline">\(x=0 \text{ m}\)</span> is equal to <span class="math inline">\(17 \text{ m}^{-1}\)</span>, we have that: <span class="math display">\[{dP\over dx}(x=0) = - ke^{-k \cdot 0}=-k =
+-17.\]</span> So we have that <span class="math inline">\(k=17\text{
+m}^{-1}\)</span>.</p></li>
+<li><p>The probability at <span class="math inline">\(x=2 \text{
+m}\)</span> is <span class="math inline">\(P(x=2) = e^{-17\cdot 2}
+=e^{-34}=1.71 \times 10^{-15}\)</span> or $0.000000000000171 %
+$</p></li>
 </ol>
 </details>
 <details>
@@ -232,7 +329,8 @@ A drop of oil is placed on the surface of a still pool of water. The oil spreads
 <li>What is the rate-of-change of it’s perimeter as a function of <span class="math inline">\(l\)</span>?</li>
 <li>What is the area of the regular hexagon as a function of <span class="math inline">\(l\)</span>? (tricky)</li>
 <li>What is the rate-of-change of the area as a function of <span class="math inline">\(l\)</span>?</li>
-<li>What is the value of <span class="math inline">\(l\)</span> when the rate of change of the area is equal to <span class="math inline">\(\sqrt{675}\)</span>?</li>
+<li>What is the value of <span class="math inline">\(l\)</span> when the
+rate of change of the area is equal to <span class="math inline">\(\sqrt{675}\)</span>?</li>
 </ol>
 </div>
 </summary>
@@ -240,39 +338,83 @@ A drop of oil is placed on the surface of a still pool of water. The oil spreads
 <ol type="a">
 <li>The perimeter, <span class="math inline">\(P\)</span> is <span class="math inline">\(6l\)</span>.</li>
 <li>The rate of change of the perimeter as a function of <span class="math inline">\(l\)</span> is <span class="math display">\[{dP\over dl} = 6\]</span>.</li>
-<li>To solve this questions, cut up the hexagon into 6 equilateral triangles with side length <span class="math inline">\(l\)</span>. This is done by connecting the center of the hexagon to the vertices. The area of these triangles is then <span class="math display">\[\frac{1}{2}\cdot b \cdot h = \frac{1}{2} \cdot l \cdot {\sqrt{3}\over 2} l = {\sqrt{3}\over 4} l^2,\]</span> where the height <span class="math inline">\(h\)</span> can be calculate used Pythogoras. We then know that the total area of a hexagon is <span class="math inline">\(6\)</span> times the area of one of these triangles. So the area is <span class="math inline">\(A = {3\sqrt{3}\over 2} l^2\)</span>
+<li>To solve this questions, cut up the hexagon into 6 equilateral
+triangles with side length <span class="math inline">\(l\)</span>. This
+is done by connecting the center of the hexagon to the vertices. The
+area of these triangles is then <span class="math display">\[\frac{1}{2}\cdot b \cdot h = \frac{1}{2} \cdot l
+\cdot {\sqrt{3}\over 2} l = {\sqrt{3}\over 4} l^2,\]</span> where the
+height <span class="math inline">\(h\)</span> can be calculate used
+Pythogoras. We then know that the total area of a hexagon is <span class="math inline">\(6\)</span> times the area of one of these
+triangles. So the area is <span class="math inline">\(A =
+{3\sqrt{3}\over 2} l^2\)</span>
 </li>
 <li>The rate of change of the area is given by <span class="math display">\[{dA\over dl} = 3\sqrt{3} l\]</span>
 </li>
-<li>Firstly, we note that <span class="math inline">\(l\)</span> can not be negative, as a negative side length is not a reasonable quantity. We can solve this by rewriting <span class="math inline">\(3 = \sqrt{9}\)</span> and <span class="math inline">\(l = \sqrt{l^2}\)</span>, so that <span class="math inline">\({dA\over dl}= \sqrt{9 \cdot 3 \cdot l^2} = \sqrt{27\cdot l^2}\)</span> which equals <span class="math inline">\(\sqrt{675}\)</span>. As <span class="math inline">\(675\div 27 = 25\)</span> this yields that <span class="math inline">\(l=5\)</span>.</li>
+<li>Firstly, we note that <span class="math inline">\(l\)</span> can not
+be negative, as a negative side length is not a reasonable quantity. We
+can solve this by rewriting <span class="math inline">\(3 =
+\sqrt{9}\)</span> and <span class="math inline">\(l =
+\sqrt{l^2}\)</span>, so that <span class="math inline">\({dA\over dl}=
+\sqrt{9 \cdot 3 \cdot l^2} = \sqrt{27\cdot l^2}\)</span> which equals
+<span class="math inline">\(\sqrt{675}\)</span>. As <span class="math inline">\(675\div 27 = 25\)</span> this yields that <span class="math inline">\(l=5\)</span>.</li>
 </ol>
 </details>
 <details>
 <summary>
 <div class="question" name="Hard">
-<p>A town council planted a tree in the centre of a roundabout 5 years ago. When they planted the tree, it was <span class="math inline">\(1\text{ m}\)</span> tall. Today it is <span class="math inline">\(3.5\text{ m}\)</span> tall. This species of tree has a maximum height of <span class="math inline">\(12\)</span> m. They employ you, a mathematician, to estimate how long it will be before the tree is <span class="math inline">\(10\text{ m}\)</span> tall.</p>
+<p>A town council planted a tree in the centre of a roundabout 5 years
+ago. When they planted the tree, it was <span class="math inline">\(1\text{ m}\)</span> tall. Today it is <span class="math inline">\(3.5\text{ m}\)</span> tall. This species of tree
+has a maximum height of <span class="math inline">\(12\)</span> m. They
+employ you, a mathematician, to estimate how long it will be before the
+tree is <span class="math inline">\(10\text{ m}\)</span> tall.</p>
 <ol type="a">
-<li>Supposing that the tree’s height is rate of increase of the tree’s height is constant. How many years does it take?</li>
-<li>Supposing now that the rate of increase of the tree’s height exponentially decreases with respects to the number of years since it was planted. How long does it take?</li>
-<li>Compare the two models. Which is the most reasonable? Justify your answer.</li>
+<li>Supposing that the tree’s height is rate of increase of the tree’s
+height is constant. How many years does it take?</li>
+<li>Supposing now that the rate of increase of the tree’s height
+exponentially decreases with respects to the number of years since it
+was planted. How long does it take?</li>
+<li>Compare the two models. Which is the most reasonable? Justify your
+answer.</li>
 </ol>
 </div>
 </summary>
 <p><u> Solution </u></p>
 <ol type="a">
 <li>
-<p>As the rate of increase of the tree is constant, we have that <span class="math display">\[{dh\over dt} = k,\]</span> so by integrating this expression we can model the height of the tree as: <span class="math inline">\(h = k\cdot t +c\)</span>. As the tree was planted at a height of <span class="math inline">\(1\)</span> m at <span class="math inline">\(t=0\)</span>, we have that <span class="math inline">\(c=1\)</span>.</p>
-<p>We are then told after <span class="math inline">\(5\)</span> years, the tree is now <span class="math inline">\(3.5m\)</span> tall. We then have that <span class="math inline">\(3.5 = h = k\cdot 5 + 1\)</span> so we have that <span class="math inline">\(k = (3.5-1)/5 = 2.5/5 = 0.5\)</span>. The units of the constant <span class="math inline">\(k\)</span> convert time (seconds) to distance (metres) so <span class="math inline">\(k = 0.5 \text{ m s}^{-1}\)</span>. So we have that <span class="math display">\[h = 0.5 t + 1.\]</span></p>
-<p>So when is <span class="math inline">\(h=10\)</span> m? Well <span class="math inline">\(10 = 0.5 t + 1\)</span> so we have that <span class="math display">\[t = {10-1 \over 0.5} = 18.\]</span> This is the time since the tree was planted, so from the present time that is <span class="math inline">\(18 -5 = 13\)</span> years.</p>
+<p>As the rate of increase of the tree is constant, we have that
+<span class="math display">\[{dh\over dt} = k,\]</span> so by
+integrating this expression we can model the height of the tree as:
+<span class="math inline">\(h = k\cdot t +c\)</span>. As the tree was
+planted at a height of <span class="math inline">\(1\)</span> m at <span class="math inline">\(t=0\)</span>, we have that <span class="math inline">\(c=1\)</span>.</p>
+<p>We are then told after <span class="math inline">\(5\)</span> years,
+the tree is now <span class="math inline">\(3.5m\)</span> tall. We then
+have that <span class="math inline">\(3.5 = h = k\cdot 5 + 1\)</span> so
+we have that <span class="math inline">\(k = (3.5-1)/5 = 2.5/5 =
+0.5\)</span>. The units of the constant <span class="math inline">\(k\)</span> convert time (seconds) to distance
+(metres) so <span class="math inline">\(k = 0.5 \text{ m
+s}^{-1}\)</span>. So we have that <span class="math display">\[h = 0.5 t
++ 1.\]</span></p>
+<p>So when is <span class="math inline">\(h=10\)</span> m? Well <span class="math inline">\(10 = 0.5 t + 1\)</span> so we have that <span class="math display">\[t = {10-1 \over 0.5} = 18.\]</span> This is the
+time since the tree was planted, so from the present time that is <span class="math inline">\(18 -5 = 13\)</span> years.</p>
 </li>
 <li>
-<p>Now we suppose that the rate of increase is given by: <span class="math display">\[{dh\over dt} = Ae^{-k t},\]</span> so by integrating we have that <span class="math inline">\(h= -{A\over k} e^{-k t} + c\)</span>. Now we use the data from the question.</p>
+<p>Now we suppose that the rate of increase is given by: <span class="math display">\[{dh\over dt} = Ae^{-k t},\]</span> so by
+integrating we have that <span class="math inline">\(h= -{A\over k}
+e^{-k t} + c\)</span>. Now we use the data from the question.</p>
 <ul>
-<li>At <span class="math inline">\(t=0\)</span> the height of the tree is <span class="math inline">\(1\)</span> m tall, so we have that <span class="math display">\[1=h = -{A/k} e^{0} + c = c- {A\over k}.\]</span>
+<li>At <span class="math inline">\(t=0\)</span> the height of the tree
+is <span class="math inline">\(1\)</span> m tall, so we have that <span class="math display">\[1=h = -{A/k} e^{0} + c = c- {A\over
+k}.\]</span>
 </li>
-<li>We also have that at <span class="math inline">\(t=5\)</span> the tree is <span class="math inline">\(3.5\)</span> tall. So we have that <span class="math display">\[3.5 = -{A\over k} e^{-5k} + c.\]</span>
+<li>We also have that at <span class="math inline">\(t=5\)</span> the
+tree is <span class="math inline">\(3.5\)</span> tall. So we have that
+<span class="math display">\[3.5 = -{A\over k} e^{-5k} +
+c.\]</span>
 </li>
-<li>Finally, the fact the tree has a maximum height of <span class="math inline">\(12\text{ m}\)</span>, means that at <span class="math inline">\(t=\infty\)</span> the height of the tree should be <span class="math inline">\(12\)</span> m. Implementing this ins the equation we have that <span class="math inline">\(c = 12\)</span> m, as <span class="math inline">\(e^{-kt} \to 0\)</span> as <span class="math inline">\(t\to \infty\)</span>.</li>
+<li>Finally, the fact the tree has a maximum height of <span class="math inline">\(12\text{ m}\)</span>, means that at <span class="math inline">\(t=\infty\)</span> the height of the tree should be
+<span class="math inline">\(12\)</span> m. Implementing this ins the
+equation we have that <span class="math inline">\(c = 12\)</span> m, as
+<span class="math inline">\(e^{-kt} \to 0\)</span> as <span class="math inline">\(t\to \infty\)</span>.</li>
 </ul>
 <p>So we have the following equations: <span class="math display">\[
 \begin{align}
@@ -280,37 +422,90 @@ c &amp;= 12, \\
 {A\over k} &amp;= c-1 = 11 \implies A = 11 k, \\
 {A\over k} e^{-5k}&amp;= c-3.5 = 8.5.
 \end{align}
-\]</span> Using that <span class="math inline">\({A\over k} = 11\)</span>, we have that <span class="math inline">\(e^{-5k} = {8.5\over 11}\)</span>, taking the natural logarithm of this equation gives: <span class="math display">\[
+\]</span> Using that <span class="math inline">\({A\over k} =
+11\)</span>, we have that <span class="math inline">\(e^{-5k} =
+{8.5\over 11}\)</span>, taking the natural logarithm of this equation
+gives: <span class="math display">\[
 -5k = \ln({8.5\over 11})
-\]</span> Which tells us that <span class="math inline">\(k = {1\over 5}\ln({11 \over 8.5})\)</span>, which makes <span class="math inline">\(A = 11k = {11\over 5} \ln({11\over 8.5})\)</span>. We now have a complete equation for the height of the tree as a function of time: <span class="math display">\[h = 12 -11 e^{-\ln({11\over 8.5}) {t\over 5}}.\]</span> Complicated! You can see why the council hired a mathematician! So when does the height of the tree reach <span class="math inline">\(10\)</span> m in this model?</p>
+\]</span> Which tells us that <span class="math inline">\(k = {1\over
+5}\ln({11 \over 8.5})\)</span>, which makes <span class="math inline">\(A = 11k = {11\over 5} \ln({11\over 8.5})\)</span>.
+We now have a complete equation for the height of the tree as a function
+of time: <span class="math display">\[h = 12 -11 e^{-\ln({11\over 8.5})
+{t\over 5}}.\]</span> Complicated! You can see why the council hired a
+mathematician! So when does the height of the tree reach <span class="math inline">\(10\)</span> m in this model?</p>
 <p><span class="math display">\[
 \begin{align}
 10 &amp;=  12 -11 e^{-\ln({11\over 8.5}) {t\over 5}} \\
 -2 &amp;= -11 e^{-\ln({11\over 8.5}) {t\over 5}}\\
 {2\over 11} &amp;= e^{-\ln({11\over 8.5}) {t\over 5}}
 \end{align}
-\]</span> taking the natural logarithm of this we get that: <span class="math display">\[ -\ln({11\over 8.5}) {t\over 5} = \ln ({2\over 11})\]</span> This gives the time: <span class="math display">\[t = 5 {\ln(11/2) \over \ln(11/8.5)} = 33.0597... \]</span> So the tree will reach <span class="math inline">\(10\)</span> m tall <span class="math inline">\(33.06\)</span> years after it was planted, which is <span class="math inline">\(33.06-5 = 28.06\)</span> years from now.</p>
+\]</span> taking the natural logarithm of this we get that: <span class="math display">\[ -\ln({11\over 8.5}) {t\over 5} = \ln ({2\over
+11})\]</span> This gives the time: <span class="math display">\[t = 5
+{\ln(11/2) \over \ln(11/8.5)} = 33.0597... \]</span> So the tree will
+reach <span class="math inline">\(10\)</span> m tall <span class="math inline">\(33.06\)</span> years after it was planted, which
+is <span class="math inline">\(33.06-5 = 28.06\)</span> years from
+now.</p>
 </li>
-<li><p>The first model doesn’t restrict the growth of the tree to <span class="math inline">\(12\text{ m}\)</span>. After <span class="math inline">\(22\)</span> years the tree will exceed this maximum height. The second model however means the tree will always be below this maximum height. However, it is not necessarily a good model, it’s just better than the first. The second model also starts with the tree growing rapidly to begin with and the growth slowing down as the tree ages, much like a real tree would. However, these models don’t encode how trees grow rapidly in the spring and then don’t grow in the winter. But if we treat this as the average growth per year, this makes sense. But that means the parameter <span class="math inline">\(t\)</span> needs to take values in the natural numbers <span class="math inline">\(\mathbb{N} = \{0,1,2,3,4,\dots\}\)</span>.</p></li>
+<li><p>The first model doesn’t restrict the growth of the tree to <span class="math inline">\(12\text{ m}\)</span>. After <span class="math inline">\(22\)</span> years the tree will exceed this
+maximum height. The second model however means the tree will always be
+below this maximum height. However, it is not necessarily a good model,
+it’s just better than the first. The second model also starts with the
+tree growing rapidly to begin with and the growth slowing down as the
+tree ages, much like a real tree would. However, these models don’t
+encode how trees grow rapidly in the spring and then don’t grow in the
+winter. But if we treat this as the average growth per year, this makes
+sense. But that means the parameter <span class="math inline">\(t\)</span> needs to take values in the natural
+numbers <span class="math inline">\(\mathbb{N} =
+\{0,1,2,3,4,\dots\}\)</span>.</p></li>
 </ol>
 </details>
 <details>
 <summary>
 <div class="question" name="The values and data in this question are completely made up. ">
-<p>A country is keenly monitoring the spread of a virus. To stop the virus from overloading the country’s healthcare system, the government will strategically implement a “national lockdown.” The country monitors the situation by measuring the virus’ reproduction value, i.e. it’s <span class="math inline">\(R\)</span> value. This is the average number of people an infected person will pass the virus on to. If the rate of change of the <span class="math inline">\(R\)</span> value exceeds <span class="math inline">\(0.9\)</span> per week. The country will implement a national lockdown to slow the spread of the virus.</p>
+<p>A country is keenly monitoring the spread of a virus. To stop the
+virus from overloading the country’s healthcare system, the government
+will strategically implement a “national lockdown”. The country monitors
+the situation by measuring the virus’ reproduction value, i.e. it’s
+<span class="math inline">\(R\)</span> value. This is the average number
+of people an infected person will pass the virus on to. If the rate of
+change of the <span class="math inline">\(R\)</span> value exceeds <span class="math inline">\(0.9\)</span> per week. The country will implement
+a national lockdown to slow the spread of the virus.</p>
 <ol type="a">
-<li>Without any “social distancing,” the <span class="math inline">\(R\)</span> value is modelled as <span class="math inline">\(R = \exp(1.4 t)\)</span>, where <span class="math inline">\(t\)</span> is the time measured in weeks. How long is it before the rate of change of the <span class="math inline">\(R\)</span> value exceeds the threshold for a national lockdown?</li>
-<li>With the social distancing measures in place the <span class="math inline">\(R\)</span> value is modelled as <span class="math inline">\(R = \exp(0.8 t)\)</span>. How long is it before the rate of change of the <span class="math inline">\(R\)</span> value exceeds the threshold?</li>
-<li>The government apply a series of city-lockdowns, to try and combat the local “hot-spots” of the virus and to prevent a nationwide lock down. These measures cause the <span class="math inline">\(R\)</span> value to be modelled by <span class="math inline">\(R = \exp(0.08 t)\)</span>. How long is it before the rate of change of the <span class="math inline">\(R\)</span> value exceeds the threshold?</li>
+<li>Without any “social distancing”, the <span class="math inline">\(R\)</span> value is modelled as <span class="math inline">\(R = \exp(1.4 t)\)</span>, where <span class="math inline">\(t\)</span> is the time measured in weeks. How long
+is it before the rate of change of the <span class="math inline">\(R\)</span> value exceeds the threshold for a
+national lockdown?</li>
+<li>With the social distancing measures in place the <span class="math inline">\(R\)</span> value is modelled as <span class="math inline">\(R = \exp(0.8 t)\)</span>. How long is it before
+the rate of change of the <span class="math inline">\(R\)</span> value
+exceeds the threshold?</li>
+<li>The government apply a series of city-lockdowns, to try and combat
+the local “hot-spots” of the virus and to prevent a nationwide lock
+down. These measures cause the <span class="math inline">\(R\)</span>
+value to be modelled by <span class="math inline">\(R = \exp(0.08
+t)\)</span>. How long is it before the rate of change of the <span class="math inline">\(R\)</span> value exceeds the threshold?</li>
 </ol>
 </div>
 </summary>
 <p><u> Solution </u></p>
-<p>The rate of change of the <span class="math inline">\(R\)</span> value is given by the derivative of the <span class="math display">\[{dR\over dt}.\]</span></p>
+<p>The rate of change of the <span class="math inline">\(R\)</span>
+value is given by the derivative of the <span class="math display">\[{dR\over dt}.\]</span></p>
 <ol type="a">
-<li>If we model the <span class="math inline">\(R\)</span> value as <span class="math inline">\(R = \exp(1.4 t)\)</span>, then we find the derivative to be: <span class="math display">\[{dR\over dt} = 1.4 \exp(1.4t).\]</span> The question asks when does this value exceed the threshold of <span class="math inline">\(0.9\)</span>. So for zero weeks the rate of change of the <span class="math inline">\(R\)</span> value is larger than the threshold.</li>
-<li>Now <span class="math inline">\(dR/dt = 0.8\exp(0.8 t)\)</span> so for when is <span class="math inline">\(0.8 \exp(0.8 t) &gt;0.9\)</span> is when <span class="math inline">\(\exp(0.8 t) &gt;0.9/0.8 = 1.125\)</span>, so <span class="math inline">\(t&gt; \ln(1.125)/0.8 = 0.147...\)</span>, which is still within a week.</li>
-<li>Now <span class="math inline">\(dR/dt = 0.08\exp(0.8)t\)</span>, which exceeds <span class="math inline">\(0.9\)</span> when <span class="math inline">\(\exp(0.8 t)&gt;0.9/0.08=11.25\)</span>. By taking the natural logarithm again, we have that <span class="math inline">\(t &gt;\ln(11.25)/0.08 = 30.25\)</span>. Which is now a much longer time period before a national lockdown is required.</li>
+<li>If we model the <span class="math inline">\(R\)</span> value as
+<span class="math inline">\(R = \exp(1.4 t)\)</span>, then we find the
+derivative to be: <span class="math display">\[{dR\over dt} = 1.4
+\exp(1.4t).\]</span> The question asks when does this value exceed the
+threshold of <span class="math inline">\(0.9\)</span>. So for zero weeks
+the rate of change of the <span class="math inline">\(R\)</span> value
+is larger than the threshold.</li>
+<li>Now <span class="math inline">\(dR/dt = 0.8\exp(0.8 t)\)</span> so
+for when is <span class="math inline">\(0.8 \exp(0.8 t) &gt;0.9\)</span>
+is when <span class="math inline">\(\exp(0.8 t) &gt;0.9/0.8 =
+1.125\)</span>, so <span class="math inline">\(t&gt; \ln(1.125)/0.8 =
+0.147...\)</span>, which is still within a week.</li>
+<li>Now <span class="math inline">\(dR/dt = 0.08\exp(0.8)t\)</span>,
+which exceeds <span class="math inline">\(0.9\)</span> when <span class="math inline">\(\exp(0.8 t)&gt;0.9/0.08=11.25\)</span>. By taking
+the natural logarithm again, we have that <span class="math inline">\(t
+&gt;\ln(11.25)/0.08 = 30.25\)</span>. Which is now a much longer time
+period before a national lockdown is required.</li>
 </ol>
 </details>
 
@@ -375,7 +570,7 @@ c &amp;= 12, \\
           <li class="p-name">Paul J Druce's site</li>
 <li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
 <li>
-            <p>A place to collect my notes on the maths of physics and anything related.</p>
+            <p></p>
           </li>
         </ul>
       </div>
@@ -391,7 +586,7 @@ c &amp;= 12, \\
 </div>
 
       <div class="footer-col footer-col-3">
-        <!-- <p>A place to collect my notes on the maths of physics and anything related.</p> -->
+        <!-- <p></p> -->
         <a href="/"><img class="profile-portrait" src="/assets/images/Portrait_square.jpg"></a>
       </div>
     </div>

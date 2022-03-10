@@ -1,6 +1,7 @@
 const particles = [];
 var canvas;
-let contentWidth = 1000;
+
+let contentWidth = document.getElementsByClassName("wrapper")[0].clientWidth;
 let min_width = 1.3 * contentWidth;
 let epsilon = 1;
 let page_height = document.body.scrollHeight;

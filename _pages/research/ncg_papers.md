@@ -5,6 +5,6 @@ author: Paul Druce
 summary: A list of research papers in non-commutatve geometry and physics, with a brief summary of each.
 category: research
 tags: [papers,research]
-permalink: /ncg-papers
+permalink: /ncg-papers/
 published: false
 ---
