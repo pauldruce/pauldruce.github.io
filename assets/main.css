@@ -70,9 +70,9 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(1000px - (30px * 2)); max-width: calc(1000px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+.wrapper { max-width: -webkit-calc(1200px - (30px * 2)); max-width: calc(1200px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); padding-right: 15px; padding-left: 15px; } }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(1200px - (30px)); max-width: calc(1200px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .footer-col-wrapper:after, .wrapper:after { content: ""; display: table; clear: both; }
@@ -391,7 +391,6 @@ table > tbody > tr:first-child > td, table > tbody > tr:first-child > th { borde
 
 .home-heading { font-size: 35px; }
 
-/** Pages **/
 .page-title { font-size: 40px; letter-spacing: -1px; }
 
 @media screen and (max-width: 800px) { .page-title { font-size: 40px; } }
@@ -430,11 +429,11 @@ details[open] { background-color: #e8e8e8 ; }
 
 details[open]::before { opacity: .6; }
 
-summary { display: block; position: relative; left: -0.5em; font-size: 20px; cursor: pointer; }
+summary { padding: 0.1em 0.7em 0.1em 0.5em; display: block; position: relative; margin: 0em 0em 1em 0.5em; left: -1em; font-size: 20px; cursor: pointer; }
 
-summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; content: ''; background-color: #e8e8e8 ; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
+summary::before, summary::after { width: .75em; height: 2px; position: absolute; top: 50%; right: -0.5em; font-size: 1em; content: ' '; background-color: #111 ; text-align: right; transform: translateY(-50%); transition: transform .2s ease-in-out; }
 
-@media (prefers-color-scheme: dark) { summary::before, summary::after { background-color: #3e3e44 ; } }
+@media (prefers-color-scheme: dark) { summary::before, summary::after { background-color: #d7d7d7 ; } }
 
 summary::after { transform: translateY(-50%) rotate(90deg); }
 
@@ -458,31 +457,33 @@ body { counter-reset: definition theorem lemma example question sidenote_counter
 
 .definition:before, .theorem:before, .lemma:before, .example:before, .question:before { font-weight: bold; font-style: normal; }
 
-.question { border: 2px solid purple; }
+.question { border: 4px solid purple; }
 
 .question:before { content: "Question " counter(question) "."; counter-increment: question; }
 
 .question[name]:before { content: "Question " counter(question) ". (" attr(name) ") "; counter-increment: question; }
 
-.example { border-left: 2px solid black; }
+.example { border-left: 4px solid black ; }
+
+@media (prefers-color-scheme: dark) { .example { border-left: 4px solid white ; } }
 
 .example:before { content: "Example " counter(example) "."; counter-increment: example; }
 
 .example[name]:before { content: "Example " counter(example) ". (" attr(name) ") "; counter-increment: example; }
 
-.definition { border: 2px solid #918dfb; }
+.definition { border: 4px solid #918dfb; }
 
 .definition:before { content: "Definition " counter(definition) "."; counter-increment: definition; }
 
 .definition[name]:before { content: "Definition " counter(definition) ". (" attr(name) ") "; counter-increment: definition; }
 
-.theorem { border: 2px solid #ff6869; }
+.theorem { border: 4px solid #ff6869; }
 
 .theorem:before { content: "Theorem " counter(theorem) "."; counter-increment: theorem; }
 
 .theorem[name]:before { content: "Theorem " counter(theorem) ". (" attr(name) ") "; counter-increment: theorem; }
 
-.lemma { border: 2px solid #627e6e; }
+.lemma { border: 4px solid #627e6e; }
 
 .lemma:before { content: "Lemma " counter(lemma) "."; counter-increment: lemma; }
 
@@ -496,7 +497,7 @@ body { counter-reset: definition theorem lemma example question sidenote_counter
 
 .marginnote::before, .sidenote::before { content: counter(sidenote_counter) " "; position: relative; top: -0.5em; vertical-align: baseline; font-size: 0.8rem; }
 
-.marginnote, .sidenote { float: right; clear: right; width: 15vw; max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 17.5px; color: #828282; font-style: italic; }
+.marginnote, .sidenote { float: right; clear: right; width: 15vw; max-width: -webkit-calc(1200px - (30px)); max-width: calc(1200px - (30px)); margin-right: -17.5vw; position: relative; vertical-align: baseline; padding-left: 15px; margin-bottom: 0.25em; border-left: 1px solid #e8e8e8; font-size: 17.5px; color: #828282; font-style: italic; }
 
 .sidenote-wrapper:hover .sidenote { color: #4B9AE7; border-color: #4B9AE7; }
 

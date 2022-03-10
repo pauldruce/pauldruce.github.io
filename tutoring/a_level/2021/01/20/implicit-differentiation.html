@@ -68,7 +68,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Implicit Differentiation Questions">
 <script type="application/ld+json">
-{"url":"https://www.pauldruce.co.uk/tutoring/a_level/2021/01/20/implicit-differentiation.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Implicit Differentiation Questions","dateModified":"2021-01-20T00:00:00+00:00","datePublished":"2021-01-20T00:00:00+00:00","description":":::{.question}","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2021/01/20/implicit-differentiation.html"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.pauldruce.co.uk/tutoring/a_level/2021/01/20/implicit-differentiation.html"},"url":"https://www.pauldruce.co.uk/tutoring/a_level/2021/01/20/implicit-differentiation.html","author":{"@type":"Person","name":"Paul Druce"},"headline":"Implicit Differentiation Questions","dateModified":"2021-01-20T00:00:00+00:00","datePublished":"2021-01-20T00:00:00+00:00","description":":::{.question}","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -150,32 +150,48 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <li><span class="math inline">\(e^{xy} = e^{4y} - e^{5x}\)</span></li>
 <li><span class="math inline">\(\cos(xy)=\sin(x-y)\)</span></li>
 <li><span class="math inline">\(y\tan(x+y) = 4\)</span></li>
-<li><span class="math inline">\(e^{\cos(x)} + e^{\sin(y)} = {1\over 4}\)</span></li>
-<li><span class="math inline">\(e^{xy} + \ln(xy) = \text{cosec}(x) + 4\)</span></li>
+<li><span class="math inline">\(e^{\cos(x)} + e^{\sin(y)} = {1\over
+4}\)</span></li>
+<li><span class="math inline">\(e^{xy} + \ln(xy) = \text{cosec}(x) +
+4\)</span></li>
 </ol>
 </div>
 </summary>
-<p><u>Solutions</u> We apply the derivative operator <span class="math inline">\({d\over dx}\)</span> to each equation and rearrange to get <span class="math inline">\({dy\over dx} = \dots\)</span>. The step-by-step solutions for 1. is provided, and the final solutions to the others only being provided.</p>
+<p><u>Solutions</u> We apply the derivative operator <span class="math inline">\({d\over dx}\)</span> to each equation and
+rearrange to get <span class="math inline">\({dy\over dx} =
+\dots\)</span>. The step-by-step solutions for 1. is provided, and the
+final solutions to the others only being provided.</p>
 <ol type="1">
-<li><p>The left-hand side is equal to <span class="math display">\[{d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) = e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.\]</span> And the right-hand side is equal to <span class="math display">\[{d \over dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx}(5x) = 4e^{4y}{dy\over dx} - 5e^{5x}.\]</span> So we have that: <span class="math display">\[  
+<li><p>The left-hand side is equal to <span class="math display">\[{d\over dx}e^{xy} = e^{xy}\cdot {d\over dx}(xy) =
+e^{xy}(y+ x{dy\over dx}) = ye^{xy} + xe^{xy} {dy\over dx}.\]</span> And
+the right-hand side is equal to <span class="math display">\[{d \over
+dx}(e^{4y} - e^{5x}) = e^{4y}{d\over dx}(4y) - e^{5x}{d\over dx}(5x) =
+4e^{4y}{dy\over dx} - 5e^{5x}.\]</span> So we have that: <span class="math display">\[  
   ye^{xy} + xe^{xy}{dy\over dx} = 4e^{4y}{dy\over dx} - 5e^{5x}
   \]</span> which rearranges to: <span class="math display">\[
   xe^{xy}{dy\over dx} - 4e^{4y}{dy\over dx} = -ye^{xy} -5 e^{5x}.
   \]</span> So we have that <span class="math display">\[
   (xe^{xy} - 4e^{4y}) {dy\over dx} = -ye^{xy} - 5e^{5x}
   \]</span> and finally so: <span class="math display">\[
-  {dy\over dx} = \frac{-ye^{xy} - 5e^{5x}}{xe^{xy} - 4e^{4y}} = \frac{ye^{xy} + 5e^{5x}}{ 4e^{4y}- xe^{xy}}
+  {dy\over dx} = \frac{-ye^{xy} - 5e^{5x}}{xe^{xy} - 4e^{4y}} =
+\frac{ye^{xy} + 5e^{5x}}{ 4e^{4y}- xe^{xy}}
   \]</span> <br></p></li>
-<li><p><span class="math display">\[ {dy\over dx} = \frac{\cos(x-y) + y\sin(xy)}{\cos(x-y) - x\sin(xy)} \]</span></p></li>
-<li><p><span class="math display">\[ {dy\over dx} =\frac{-y\sec^2(x+y)}{\tan(x+y) +y\sec^2(x+y)} \]</span></p></li>
-<li><p><span class="math display">\[{dy\over dx} = \frac{\sin(x)e^{\cos(x)}}{\cos(y)e^{\sin(y)}}\]</span></p></li>
-<li><p><span class="math display">\[{dy\over dx} = -1 - \frac{xy \text{cosec}(x)\cot(x)}{xye^{xy} + 1}\]</span></p></li>
+<li><p><span class="math display">\[ {dy\over dx} = \frac{\cos(x-y) +
+y\sin(xy)}{\cos(x-y) - x\sin(xy)} \]</span></p></li>
+<li><p><span class="math display">\[ {dy\over dx}
+=\frac{-y\sec^2(x+y)}{\tan(x+y) +y\sec^2(x+y)} \]</span></p></li>
+<li><p><span class="math display">\[{dy\over dx} =
+\frac{\sin(x)e^{\cos(x)}}{\cos(y)e^{\sin(y)}}\]</span></p></li>
+<li><p><span class="math display">\[{dy\over dx} = -1 - \frac{xy
+\text{cosec}(x)\cot(x)}{xye^{xy} + 1}\]</span></p></li>
 </ol>
 </details>
 <details>
 <summary>
 <div class="question">
-Find all the points <span class="math inline">\((x,y)\)</span> on the graph <span class="math inline">\((x^2+y^2)^2 = 2x^2 - 2y^2\)</span> where <span class="math inline">\(y’ = 0\)</span>.
+Find all the points <span class="math inline">\((x,y)\)</span> on the
+graph <span class="math inline">\((x^2+y^2)^2 = 2x^2 - 2y^2\)</span>
+where <span class="math inline">\(y’ = 0\)</span>.
 <center>
 <img src="/assets/2020/implicit-differentiation/Q-infinity.jpg">
 </center>
@@ -189,7 +205,25 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
   4y(x^2 + y^2){dy\over dx}+ 4y{dy\over dx}&amp;=4x-4x(x^2 + y^2)\\
   {dy\over dx}&amp;= {x(1-(x^2 + y^2))\over y(1+(x^2 + y^2))}
   \end{align}\]</span></p></li>
-<li><p>Step 2: Solve <span class="math inline">\({dy\over dx}=0\)</span>. This can occur when <span class="math inline">\(x = 0\)</span> and <span class="math inline">\(y\neq 0\)</span>, so let’s investigate possible solutions of this type. Substituting this into the equation for the curve, we have that <span class="math inline">\(y^4 = -2y^2\)</span>, which if <span class="math inline">\(y\neq 0\)</span>, leaves <span class="math inline">\(y^2 =-2\)</span>, which has no real solutions. So we are left with the requirement that <span class="math inline">\(1-(x^2 + y^2)=0\)</span>. So we have that the equation of the curve becomes <span class="math inline">\(1 = 2x^2 - 2y^2\)</span>. We can eliminate either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> using the equation <span class="math inline">\(1 = x^2 + y^2\)</span> - I will choose to eliminate <span class="math inline">\(x^2\)</span>. Then we have that <span class="math inline">\(x^2 = 1-y^2\)</span>. So <span class="math display">\[1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.\]</span> So we have that <span class="math inline">\(4y^2 = 1\)</span>, which gives us solutions of <span class="math inline">\(y = \pm {1\over 2}\)</span>. Thus we have that <span class="math display">\[x^2 = 1-(\pm {1\over 2})^2 = 1-{1\over 4} = {3\over 4}.\]</span> Giving <span class="math inline">\(x = \pm {\sqrt{3}\over 2}\)</span>. So the final solutions are: <span class="math display">\[(x,y) = ({\sqrt{3}\over 2},{1\over 2}), \ (-{\sqrt{3}\over 2},{1\over 2}),\ ({\sqrt{3}\over 2},-{1\over 2}),\ (-{\sqrt{3}\over 2},-{1\over 2})  \]</span></p></li>
+<li><p>Step 2: Solve <span class="math inline">\({dy\over
+dx}=0\)</span>. This can occur when <span class="math inline">\(x =
+0\)</span> and <span class="math inline">\(y\neq 0\)</span>, so let’s
+investigate possible solutions of this type. Substituting this into the
+equation for the curve, we have that <span class="math inline">\(y^4 =
+-2y^2\)</span>, which if <span class="math inline">\(y\neq 0\)</span>,
+leaves <span class="math inline">\(y^2 =-2\)</span>, which has no real
+solutions. So we are left with the requirement that <span class="math inline">\(1-(x^2 + y^2)=0\)</span>. So we have that the
+equation of the curve becomes <span class="math inline">\(1 = 2x^2 -
+2y^2\)</span>. We can eliminate either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> using the equation <span class="math inline">\(1 = x^2 + y^2\)</span> - I will choose to
+eliminate <span class="math inline">\(x^2\)</span>. Then we have that
+<span class="math inline">\(x^2 = 1-y^2\)</span>. So <span class="math display">\[1=2x^2 -2y^2 = 2(1-y^2)-2y^2 = 2-4y^2.\]</span>
+So we have that <span class="math inline">\(4y^2 = 1\)</span>, which
+gives us solutions of <span class="math inline">\(y = \pm {1\over
+2}\)</span>. Thus we have that <span class="math display">\[x^2 = 1-(\pm
+{1\over 2})^2 = 1-{1\over 4} = {3\over 4}.\]</span> Giving <span class="math inline">\(x = \pm {\sqrt{3}\over 2}\)</span>. So the final
+solutions are: <span class="math display">\[(x,y) = ({\sqrt{3}\over
+2},{1\over 2}), \ (-{\sqrt{3}\over 2},{1\over 2}),\ ({\sqrt{3}\over
+2},-{1\over 2}),\ (-{\sqrt{3}\over 2},-{1\over 2})  \]</span></p></li>
 </ul>
 </details>
 <details>
@@ -199,24 +233,36 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
 </div>
 </summary>
 <ul>
-<li>Step 1: Find an expression for <span class="math inline">\({dy\over dx}\)</span> in terms of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. We do this by taking the <span class="math inline">\(x\)</span>-derivative of the equation of the curve: <span class="math display">\[
+<li>Step 1: Find an expression for <span class="math inline">\({dy\over
+dx}\)</span> in terms of <span class="math inline">\(x\)</span> and
+<span class="math inline">\(y\)</span>. We do this by taking the <span class="math inline">\(x\)</span>-derivative of the equation of the
+curve: <span class="math display">\[
   \begin{align}
   {d\over dx}(y^2 e^{2x}) &amp;= {d\over dx}(3y + x^2)\\
- 2y{dy\over dx}e^{2x} + 2y^2e^{2x}&amp;=3{dy\over dx} + 2x.
+2y{dy\over dx}e^{2x} + 2y^2e^{2x}&amp;=3{dy\over dx} + 2x.
   \end{align}
   \]</span> After rearranging we have that <span class="math display">\[
- \begin{align}
+\begin{align}
    (2ye^{2x} - 3){dy\over dx} &amp;= 2x - 2y^2 e^{2x}\\
    {dy\over dx}&amp;= \frac{2x - 2y^2 e^{2x}}{(2ye^{2x} - 3)}.
- \end{align}
-  \]</span> Thus we have that <span class="math inline">\({dy\over dx}\)</span> at the point <span class="math inline">\((x,y) = (0,3)\)</span> is equal to <span class="math inline">\({dy\over dx} = -{18\over 3} = -6\)</span>. So the tangent line would have equation <span class="math inline">\(y = -6x + c\)</span>, and intersects the original curve at the point <span class="math inline">\((0,3)\)</span>, thus <span class="math inline">\(3 = -6\cdot 0 + c \implies c = 3\)</span>. Thus the tangent line has equation <span class="math inline">\(y = -6x +3\)</span>.</li>
+\end{align}
+  \]</span> Thus we have that <span class="math inline">\({dy\over
+dx}\)</span> at the point <span class="math inline">\((x,y) =
+(0,3)\)</span> is equal to <span class="math inline">\({dy\over dx} =
+-{18\over 3} = -6\)</span>. So the tangent line would have equation
+<span class="math inline">\(y = -6x + c\)</span>, and intersects the
+original curve at the point <span class="math inline">\((0,3)\)</span>,
+thus <span class="math inline">\(3 = -6\cdot 0 + c \implies c =
+3\)</span>. Thus the tangent line has equation <span class="math inline">\(y = -6x +3\)</span>.</li>
 </ul>
 </details>
 <details>
 <summary>
 <div class="question">
 <ol type="1">
-<li>Show that <span class="math inline">\({dy\over dx}\)</span> for the curve given by <span class="math inline">\((x+y)(x^2 - xy + y^2)=1\)</span> is:</li>
+<li>Show that <span class="math inline">\({dy\over dx}\)</span> for the
+curve given by <span class="math inline">\((x+y)(x^2 - xy +
+y^2)=1\)</span> is:</li>
 </ol>
 <p><span class="math display">\[
 {dy\over dx} = - {x^2 \over y^2}
@@ -227,29 +273,47 @@ Find all the points <span class="math inline">\((x,y)\)</span> on the graph <spa
 </div>
 </summary>
 <ol type="1">
-<li><p>To simplify the calculation we expand the brackets to get that <span class="math display">\[ \begin{align}
+<li><p>To simplify the calculation we expand the brackets to get that
+<span class="math display">\[ \begin{align}
 (x+y)(x^2-xy+y^2) &amp;= x^3 - x^2y + xy^2 + yx^2 - xy^2 + y^3 \\
 &amp;= x^3 + y^2.
   \end{align}
-  \]</span> So the equation is just <span class="math inline">\(x^3 + y^3 = 1\)</span>, we then take the <span class="math inline">\(x\)</span> derivative to give: <span class="math display">\[
+  \]</span> So the equation is just <span class="math inline">\(x^3 +
+y^3 = 1\)</span>, we then take the <span class="math inline">\(x\)</span> derivative to give: <span class="math display">\[
 {d\over dx}(x^3 + y^3) = 3x^2 + 3y^2 {dy\over dx} = 0,
   \]</span> which rearranges to the answer.</p></li>
-<li><p>At <span class="math inline">\(x=0\)</span>, we have that <span class="math inline">\(y^3 = 1\)</span>, which has real solution <span class="math inline">\(y=1\)</span>, so the tangent line at <span class="math inline">\((x,y)=(0,1)\)</span> is given by <span class="math inline">\(y = 0\cdot x + c\)</span> as <span class="math inline">\({dy\over dx} = -\frac{0}{1} = 0\)</span> at <span class="math inline">\((x,y)=(0,1)\)</span>. Thus the tangent line is a constant line <span class="math inline">\(y = 1\)</span>. The normal equation<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">If this is confusing to you, think about the graph <span class="math inline">\(y=1\)</span> and then construct a perpendicular line that goes through the point <span class="math inline">\((0,1)\)</span></span></span> is therefore just <span class="math inline">\(x=0\)</span>.</p></li>
+<li><p>At <span class="math inline">\(x=0\)</span>, we have that <span class="math inline">\(y^3 = 1\)</span>, which has real solution <span class="math inline">\(y=1\)</span>, so the tangent line at <span class="math inline">\((x,y)=(0,1)\)</span> is given by <span class="math inline">\(y = 0\cdot x + c\)</span> as <span class="math inline">\({dy\over dx} = -\frac{0}{1} = 0\)</span> at <span class="math inline">\((x,y)=(0,1)\)</span>. Thus the tangent line is a
+constant line <span class="math inline">\(y = 1\)</span>. The normal
+equation<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-0" class="margin-toggle"><span class="sidenote">If this is confusing to you, think about the graph
+<span class="math inline">\(y=1\)</span> and then construct a
+perpendicular line that goes through the point <span class="math inline">\((0,1)\)</span></span></span> is therefore just
+<span class="math inline">\(x=0\)</span>.</p></li>
 </ol>
 </details>
 <details>
 <summary>
 <div class="question">
-Find the points <span class="math inline">\((x,y)\)</span> on the graph <span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span>, where <span class="math inline">\(y’ = 1\)</span>.
+Find the points <span class="math inline">\((x,y)\)</span> on the graph
+<span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span>, where <span class="math inline">\(y’ = 1\)</span>.
 <center>
 <img src="/assets/2020/implicit-differentiation/Q-diamond.jpg">
 </center>
 </div>
 </summary>
-<p>Taking the <span class="math inline">\(x\)</span> derivative of the equation we have that: <span class="math display">\[ {2\over 3}x^{-1/3} + {2\over 3}y^{-1 /3}{dy\over dx} = 0.
+<p>Taking the <span class="math inline">\(x\)</span> derivative of the
+equation we have that: <span class="math display">\[ {2\over 3}x^{-1/3}
++ {2\over 3}y^{-1 /3}{dy\over dx} = 0.
 \]</span> Which rearranges to: <span class="math display">\[
 {dy\over dx} = - {x^{-1/3}\over y^{-1/3}} = - \frac{y^{1/3}}{x^{1/3}}.
-\]</span> This equals <span class="math inline">\(1\)</span>, when <span class="math inline">\(y^{1 /3} = - x^{1/3}\)</span>, and by cubing this equation we have that <span class="math inline">\(y = - x\)</span>. So we need to simultaneously satisfy the equations <span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span> and <span class="math inline">\(y = -x\)</span>. Notice that <span class="math inline">\((-x)^{2/3} = ((-x)^{1/3})^2 = ((-1)^{1/3}x^{1/3})^2\)</span>, assuming we are only interested in the real<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"><span class="sidenote">There are also complex numbers which are the cube root of -1, but we will ignore those</span></span> solutions to this equation we have that <span class="math inline">\((-1)^2 x^{2/3}=x^{2/3}\)</span>. So we have that <span class="math inline">\(2x^{2/3} = 8\)</span>, thus <span class="math inline">\(x^2= 4^{3} = 64\)</span> and thus <span class="math inline">\(x=\pm 8\)</span>. So the points of the graph are <span class="math inline">\((x,y) = (8,-8),\ (-8,8)\)</span>.</p>
+\]</span> This equals <span class="math inline">\(1\)</span>, when <span class="math inline">\(y^{1 /3} = - x^{1/3}\)</span>, and by cubing this
+equation we have that <span class="math inline">\(y = - x\)</span>. So
+we need to simultaneously satisfy the equations <span class="math inline">\(x^{2/3} + y^{2/3} =8\)</span> and <span class="math inline">\(y = -x\)</span>. Notice that <span class="math inline">\((-x)^{2/3} = ((-x)^{1/3})^2 =
+((-1)^{1/3}x^{1/3})^2\)</span>, assuming we are only interested in the
+real<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"><span class="sidenote">There are also complex numbers which are the cube root
+of -1, but we will ignore those</span></span> solutions to this equation
+we have that <span class="math inline">\((-1)^2
+x^{2/3}=x^{2/3}\)</span>. So we have that <span class="math inline">\(2x^{2/3} = 8\)</span>, thus <span class="math inline">\(x^2= 4^{3} = 64\)</span> and thus <span class="math inline">\(x=\pm 8\)</span>. So the points of the graph are
+<span class="math inline">\((x,y) = (8,-8),\ (-8,8)\)</span>.</p>
 </details>
 <details>
 <summary>
@@ -258,39 +322,64 @@ Find the points <span class="math inline">\((x,y)\)</span> on the graph <span cl
 <img src="/assets/2020/implicit-differentiation/Q-3x2-2xy3.jpg">
 </center>
 <ol type="1">
-<li>The curve C is described by the equation <span class="math inline">\(3x^2 + 2xy^3 + 16 = 0\)</span>. Show that the normal to C at the point <span class="math inline">\(x=-4\)</span> is parallel to the normal to C at <span class="math inline">\(x=4\)</span>.</li>
-<li>Find the distance between the y-intercepts of these two normals.</li>
+<li>The curve C is described by the equation <span class="math inline">\(3x^2 + 2xy^3 + 16 = 0\)</span>. Show that the
+normal to C at the point <span class="math inline">\(x=-4\)</span> is
+parallel to the normal to C at <span class="math inline">\(x=4\)</span>.</li>
+<li>Find the distance between the y-intercepts of these two
+normals.</li>
 </ol>
 </div>
 </summary>
 <ol type="1">
 <li>
-<p>When <span class="math inline">\(x=+ 4\)</span> the equation simplifies to <span class="math inline">\(y^3= -8\)</span>, with <span class="math inline">\(y=-2\)</span> its solution. And when <span class="math inline">\(x=-4\)</span>, we have that <span class="math inline">\(y^3 = 8\)</span> and thus <span class="math inline">\(y=2\)</span>.</p>
-<p>The normal line to these points are then found by first finding the tangent line. To do this we need an expression for the gradient, <span class="math inline">\(dy \over dx\)</span>, which we get by taking the <span class="math inline">\(x\)</span>-derivative of the equation: <span class="math display">\[\begin{align}
+<p>When <span class="math inline">\(x=+ 4\)</span> the equation
+simplifies to <span class="math inline">\(y^3= -8\)</span>, with <span class="math inline">\(y=-2\)</span> its solution. And when <span class="math inline">\(x=-4\)</span>, we have that <span class="math inline">\(y^3 = 8\)</span> and thus <span class="math inline">\(y=2\)</span>.</p>
+<p>The normal line to these points are then found by first finding the
+tangent line. To do this we need an expression for the gradient, <span class="math inline">\(dy \over dx\)</span>, which we get by taking the
+<span class="math inline">\(x\)</span>-derivative of the equation: <span class="math display">\[\begin{align}
 6x + 2y^3 + 6xy{dy\over dx} = 0\\
 {dy\over dx} = {-3x -y^3 \over 3xy}
 \end{align}
 \]</span></p>
-<p>Thus the gradient at <span class="math inline">\((x,y) = (4,-2)\)</span> is equal to <span class="math display">\[{dy \over dx} = {-12 + 8 \over -24 }=-{4\over 24} = -
+<p>Thus the gradient at <span class="math inline">\((x,y) =
+(4,-2)\)</span> is equal to <span class="math display">\[{dy \over dx} =
+{-12 + 8 \over -24 }=-{4\over 24} = -
 {1\over 6}.\]</span></p>
-<p>And the gradient at <span class="math inline">\((x,y) =(-4,2)\)</span> is equal to <span class="math display">\[{dy\over dx} = {12 - 8 \over -24} = - {1\over 6}.\]</span> As the tangents have the same gradient, the normal lines at these points will also have the same gradient, as the normal has the negative reciprocal gradient as the tangent, i.e. <span class="math inline">\(m= 6\)</span> for both normals.</p>
+<p>And the gradient at <span class="math inline">\((x,y)
+=(-4,2)\)</span> is equal to <span class="math display">\[{dy\over dx} =
+{12 - 8 \over -24} = - {1\over 6}.\]</span> As the tangents have the
+same gradient, the normal lines at these points will also have the same
+gradient, as the normal has the negative reciprocal gradient as the
+tangent, i.e. <span class="math inline">\(m= 6\)</span> for both
+normals.</p>
 </li>
-<li><p>The equations of the normals are <span class="math inline">\(y = 6x+c\)</span>, where <span class="math inline">\(c\)</span> is the <span class="math inline">\(y\)</span>-intercept. The normal to the point <span class="math inline">\((x,y) = (4,-2)\)</span> needs to have <span class="math inline">\(c = y-6x = -2 - 6\cdot 4 = -26\)</span>. The normal to the point <span class="math inline">\((x,y) = (-4,2)\)</span> needs to have <span class="math inline">\(c = 2+6\cdot 4 = 26\)</span>. So the distance between the <span class="math inline">\(y\)</span>-intercepts is $52</p></li>
+<li><p>The equations of the normals are <span class="math inline">\(y =
+6x+c\)</span>, where <span class="math inline">\(c\)</span> is the <span class="math inline">\(y\)</span>-intercept. The normal to the point
+<span class="math inline">\((x,y) = (4,-2)\)</span> needs to have <span class="math inline">\(c = y-6x = -2 - 6\cdot 4 = -26\)</span>. The
+normal to the point <span class="math inline">\((x,y) = (-4,2)\)</span>
+needs to have <span class="math inline">\(c = 2+6\cdot 4 = 26\)</span>.
+So the distance between the <span class="math inline">\(y\)</span>-intercepts is $52</p></li>
 </ol>
 </details>
 <details>
 <summary>
 <div class="question">
-<p>Find the stationary points and determine their nature* for the curve with equation <span class="math inline">\(y^2 = 3x^2 -2xy + 3\)</span></p>
+<p>Find the stationary points and determine their nature* for the curve
+with equation <span class="math inline">\(y^2 = 3x^2 -2xy +
+3\)</span></p>
 <p>*are they maxima, minima or indeterminate.</p>
 </div>
 </summary>
 <ol type="1">
-<li><p>To find stationary points, we need to find the points where <span class="math inline">\({dy\over dx}=0\)</span>. So we take the <span class="math inline">\(x\)</span>-derivative of the equation to get: <span class="math display">\[
+<li><p>To find stationary points, we need to find the points where <span class="math inline">\({dy\over dx}=0\)</span>. So we take the <span class="math inline">\(x\)</span>-derivative of the equation to get:
+<span class="math display">\[
 2y{dy\over dx} = 6x -2y -2x{dy\over dx}.
   \]</span> Which when rearranged gives: <span class="math display">\[
    {dy\over dx} = \frac{3x-y}{y+x}.
-  \]</span> This equals zero when <span class="math inline">\(3x-y=0\)</span> and <span class="math inline">\(y+x\neq 0\)</span>. So when <span class="math inline">\(y=3x\)</span>. We need to then find solutions to <span class="math inline">\(y=3x\)</span> and <span class="math inline">\(y^2 = 3x^2-2xy+3\)</span>, which we can do by substituting <span class="math inline">\(y=3x\)</span> in the original equation: <span class="math display">\[\begin{align}
+  \]</span> This equals zero when <span class="math inline">\(3x-y=0\)</span> and <span class="math inline">\(y+x\neq 0\)</span>. So when <span class="math inline">\(y=3x\)</span>. We need to then find solutions to
+<span class="math inline">\(y=3x\)</span> and <span class="math inline">\(y^2 = 3x^2-2xy+3\)</span>, which we can do by
+substituting <span class="math inline">\(y=3x\)</span> in the original
+equation: <span class="math display">\[\begin{align}
   (3x)^2 &amp;= 3x^2 - 2x(3x) + 3\\
   9x^2&amp;= 3x^3 - 6x^3 +3\\
   12x^2 &amp;= 3\\
@@ -300,16 +389,28 @@ Find the points <span class="math inline">\((x,y)\)</span> on the graph <span cl
   \]</span> So we have that the stationary points are given by <span class="math display">\[
   (x,y) = (+{1\over 2}, +{3\over 2}),\ (-\frac{1}{2},-{3\over 2}).
   \]</span></p></li>
-<li><p>To determine whether these stationary points are maximums or miminums (or indeterminates). We need to do the second-derivative test. We need an expression for <span class="math inline">\({d^2y \over dx^2}\)</span>, which we can get by taking the derivative of the expression for <span class="math inline">\({dy\over dx}\)</span> using the quotient rule: <span class="math display">\[\begin{align}
- {d^2y\over dx^2} &amp;= \frac{(3-{dy\over dx})(y+x) - (3x-y)(1+{dy\over dx})}{(y+x)^2} \\
- &amp;= \frac{3y-3x -3x+y - {dy\over dx}(y+x -3x+y)}{(y+x)^2}\\
- &amp;= \frac{4y-6x - {dy\over dx}(2y-2x)}{(y+x)^2}.
- \end{align}
-  \]</span> Note that the points we are interested in have the property that <span class="math inline">\({dy\over dx}=0\)</span>. So we do not need to simplify this any further. For the point <span class="math inline">\((x,y) = ({1\over 2},{3\over 2})\)</span> we have that: <span class="math display">\[\begin{align}
-  {d^2y\over dx^2} &amp;= \frac{ \frac{12}{2}- \frac{6}{2} }{({3\over 2}+{1\over 2})^2} = \frac{6-4}{2^2}\\
+<li><p>To determine whether these stationary points are maximums or
+miminums (or indeterminates). We need to do the second-derivative test.
+We need an expression for <span class="math inline">\({d^2y \over
+dx^2}\)</span>, which we can get by taking the derivative of the
+expression for <span class="math inline">\({dy\over dx}\)</span> using
+the quotient rule: <span class="math display">\[\begin{align}
+{d^2y\over dx^2} &amp;= \frac{(3-{dy\over dx})(y+x) - (3x-y)(1+{dy\over
+dx})}{(y+x)^2} \\
+&amp;= \frac{3y-3x -3x+y - {dy\over dx}(y+x -3x+y)}{(y+x)^2}\\
+&amp;= \frac{4y-6x - {dy\over dx}(2y-2x)}{(y+x)^2}.
+\end{align}
+  \]</span> Note that the points we are interested in have the property
+that <span class="math inline">\({dy\over dx}=0\)</span>. So we do not
+need to simplify this any further. For the point <span class="math inline">\((x,y) = ({1\over 2},{3\over 2})\)</span> we have
+that: <span class="math display">\[\begin{align}
+  {d^2y\over dx^2} &amp;= \frac{ \frac{12}{2}- \frac{6}{2} }{({3\over
+2}+{1\over 2})^2} = \frac{6-4}{2^2}\\
   &amp;= \frac{2}{4} =\frac{1}{2}&gt; 0.
   \end{align}
-  \]</span> Meaning that the stationary point at <span class="math inline">\(({1\over 2},{3\over 2})\)</span> is a minimum. For the point <span class="math inline">\((x,y) = (-{1\over 2},-{3\over 2})\)</span> we have that: <span class="math display">\[\begin{align}
+  \]</span> Meaning that the stationary point at <span class="math inline">\(({1\over 2},{3\over 2})\)</span> is a minimum. For
+the point <span class="math inline">\((x,y) = (-{1\over 2},-{3\over
+2})\)</span> we have that: <span class="math display">\[\begin{align}
    {d^2y\over dx^2} = \frac{-6 + 4}{(-2)^2} = \frac{-2}{4} &lt;0.
   \end{align}
   \]</span> Making this stationary point a maximum.</p></li>
@@ -323,12 +424,17 @@ Find the points <span class="math inline">\((x,y)\)</span> on the graph <span cl
 \]</span></p>
 </div>
 </summary>
-<p>Rewrite the expression as <span class="math inline">\(a^{x^k} = (e^{\ln(a)})^{^{x^k}} = e^{\ln(a)x^k}\)</span>. Now if we take the derivative we can use the fact that <span class="math inline">\({d\over dx}e^u = e^u{dx\over du}\)</span>.</p>
+<p>Rewrite the expression as <span class="math inline">\(a^{x^k} =
+(e^{\ln(a)})^{^{x^k}} = e^{\ln(a)x^k}\)</span>. Now if we take the
+derivative we can use the fact that <span class="math inline">\({d\over
+dx}e^u = e^u{dx\over du}\)</span>.</p>
 <p><span class="math display">\[\begin{align}
-  {d\over dx}(a^{x^k}) &amp;= {d\over dx}(e^{\ln(a)x^k}) = e^{\ln(x)x^k} {d\over dx}(\ln(a)x^k) \\
+  {d\over dx}(a^{x^k}) &amp;= {d\over dx}(e^{\ln(a)x^k}) = e^{\ln(x)x^k}
+{d\over dx}(\ln(a)x^k) \\
   &amp;= e^{\ln(a)x^k}\ln(a) kx^{k-1}
 \end{align}
-\]</span> Notice that <span class="math inline">\(a^{x^k} = e^{\ln(a)x^k}\)</span>, so we have the answer.</p>
+\]</span> Notice that <span class="math inline">\(a^{x^k} =
+e^{\ln(a)x^k}\)</span>, so we have the answer.</p>
 </details>
 
   </div>
@@ -392,7 +498,7 @@ Find the points <span class="math inline">\((x,y)\)</span> on the graph <span cl
           <li class="p-name">Paul J Druce's site</li>
 <li><a class="u-email" href="mailto:pjdruce@gmail.com">pjdruce@gmail.com</a></li>
 <li>
-            <p>A place to collect my notes on the maths of physics and anything related.</p>
+            <p></p>
           </li>
         </ul>
       </div>
@@ -408,7 +514,7 @@ Find the points <span class="math inline">\((x,y)\)</span> on the graph <span cl
 </div>
 
       <div class="footer-col footer-col-3">
-        <!-- <p>A place to collect my notes on the maths of physics and anything related.</p> -->
+        <!-- <p></p> -->
         <a href="/"><img class="profile-portrait" src="/assets/images/Portrait_square.jpg"></a>
       </div>
     </div>
