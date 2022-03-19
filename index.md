@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-<!-- animation: p5js -->
+animation: p5js
 ---
 
 <br>
@@ -12,7 +12,6 @@ layout: home
 Hi, how’s it going? I’m Paul, this is my site.
 
 It's a bit of an experiment of mine and many parts are not polished or even remotely close to finished. Its mainly a place for me to experiment with web technologies and store the resources I've created.
-
 
 I’ve recently (July 2020) graduated with my PhD from the University of Nottingham, UK. I worked with Prof. John Barrett on Non-commutative Geometry and Quantum Gravity. If you are interested finding out more about this topic I suggest that you look at the documents in in: [Research]({{ site.url}}/research). My PhD thesis contains a thorough introduction to the subject of non-commutative geometry via finite spectral triples.
 
@@ -26,7 +25,7 @@ I can also offer tutoring outside of MyTutor which is cheaper that what is state
 
 Feel free to contact me about tutoring or any other aspect of my site by sending me an email. [Click here to send me an email](mailto:pjdruce+website@gmail.com).
 
-The particle animation on this page is made using p5js - a JavaScript framework. I am investigating using animation software such as *p5js* and *manim* to improve my teaching.
+The particle animation on this page is made using p5js - a JavaScript framework. I am investigating using animation software such as _p5js_ and _manim_ to improve my teaching.
 
 </center>
 
@@ -62,8 +61,6 @@ The particle animation on this page is made using p5js - a JavaScript framework.
 {%- endfor -%}
 </ul>
 <a href="{{site.urla}}/posts">see more </a>
-
-
 
 <!-- p5js for the particle effect on the home screen -->
 <script src="{{ base.url }}/assets/js/particle_animation.js"></script>
