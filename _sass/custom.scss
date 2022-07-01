@@ -2,20 +2,20 @@
 
 
 
-.page-toc
-{
+.page-toc {
   width: 100%;
 
-  ul{
+  ul {
     display: grid;
-    margin-left:0;
+    margin-left: 0;
     align-items: center;
     justify-items: center;
-    grid-auto-flow:column;
+    grid-auto-flow: column;
     gap: 0.5rem;
     list-style: none;
   }
-  ul> li {
+
+  ul>li {
     @include relative-font-size(0.75);
     border-radius: 15px;
     border: 2px solid black;
@@ -24,7 +24,8 @@
     // width: 180px;
     list-style: none;
   }
-  ul> li a {
+
+  ul>li a {
     // height: 100%;
     display: grid;
     text-align: center;
@@ -39,6 +40,7 @@
     padding: 5px;
     text-decoration: none;
   }
+
   li a:hover {
     @include theme("background-color", $page-link-hover-colour);
   }
@@ -60,10 +62,14 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  page-link{ padding: 0px 0px;}
+
+  page-link {
+    padding: 0px 0px;
+  }
 }
 
-.page-link:hover, .dropdown:hover .dropbtn .dropdown-content {
+.page-link:hover,
+.dropdown:hover .dropbtn .dropdown-content {
   @include theme("background-color", $page-link-hover-colour);
 }
 
@@ -73,22 +79,22 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    // color: $text-color;
-    @include theme("color", $text-color);
-    line-height: $base-line-height;
-    padding: 12px 10px;
+  // color: $text-color;
+  @include theme("color", $text-color);
+  line-height: $base-line-height;
+  padding: 12px 10px;
   // color: black;
   @include theme("color", $text-color);
   text-decoration: none;
   display: block;
-  float:none;
+  float: none;
 
 }
 
@@ -134,13 +140,14 @@
 }
 
 .down {
-  margin-bottom:3px;
+  margin-bottom: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-.single-image{
+.single-image {
   text-align: center;
+
   img {
     @include theme("filter", $invert-colour);
     width: 50%;
@@ -152,15 +159,18 @@
 .image_block {
   @include theme("color", $text-color);
   text-align: center;
+
   img {
-    padding-right:25px;
-    padding-left:25px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
-  p{
+
+  p {
     @include theme("color", $text-color);
-    
+
   }
 }
+
 .home-heading {
   @include relative-font-size(1.75);
 }
@@ -174,7 +184,7 @@
 //   // margin-bottom: $spacing-unit
 // }
 
-.page-title{
+.page-title {
   @include relative-font-size(2);
   letter-spacing: -1px;
   // line-height: 1;
@@ -183,15 +193,18 @@
     @include relative-font-size(2);
   }
 }
+
 .page-content {
   // padding: $spacing-unit 0;
   flex: 1;
+
   // h1 {
   //   text-align: center;
   // }
   h2 {
     @include relative-font-size(1.5);
     text-decoration: underline;
+
     @include media-query($on-laptop) {
       @include relative-font-size(1.5);
     }
@@ -201,6 +214,7 @@
     @include relative-font-size(1.25);
     line-height: 1;
     text-decoration: underline;
+
     @include media-query($on-laptop) {
       @include relative-font-size(1.25);
       // text-decoration: underline;
@@ -215,10 +229,12 @@
       @include relative-font-size(1.1);
     }
   }
-  .title_and_summary h4{
+
+  .title_and_summary h4 {
     display: inline;
   }
-  .title_and_summary span{
+
+  .title_and_summary span {
     float: right;
   }
 }
@@ -305,13 +321,14 @@ summary {
   &::-webkit-details-marker {
     display: none;
   }
+
   p {
     margin: 0.5em;
   }
 }
 
 
-.arrow-img{
+.arrow-img {
   @include theme("filter", $invert-colour);
   // filter: invert(100%);
 }
