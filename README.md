@@ -10,9 +10,6 @@ I use macOS to build this, but I'm sure for Linux systems it is no more difficul
 
 ## Instructions to myself
 
-
-
-
 To build locally I navigate my terminal to the directory and enter the following commands:
 
 - "bundle exec jekyll serve --livereload --host 0.0.0.0" - this runs a local version of my website, any changes I make in the directory are automatically (if slowly, currently ~30s) on the local site. This allows me to test any edits before committing them to the main website directory. This version doesnt include the google analytics and other web only features to include those we need to use:
