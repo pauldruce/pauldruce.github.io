@@ -64,8 +64,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.8.0)
-    nokogiri (1.13.6)
+    mini_portile2 (2.8.1)
+    nokogiri (1.14.2)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pandoc-ruby (2.1.6)
@@ -73,7 +73,7 @@ GEM
       forwardable-extended (~> 2.6)
     psych (3.3.2)
     public_suffix (4.0.7)
-    racc (1.6.0)
+    racc (1.6.2)
     rainbow (3.1.1)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
@@ -98,8 +98,8 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-spaceship
-  nokogiri (>= 1.13.6)
+  nokogiri (>= 1.13.9)
   rouge
 
 BUNDLED WITH
-   2.1.4
+   2.4.8
