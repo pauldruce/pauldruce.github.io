@@ -13,19 +13,14 @@ Hi, how’s it going? I’m Paul, this is my site.
 
 It's a bit of an experiment of mine and many parts are not polished or even remotely close to finished. Its mainly a place for me to experiment with web technologies and store the resources I've created.
 
-I’ve recently (July 2020) graduated with my PhD from the University of Nottingham, UK. I worked with Prof. John Barrett on Non-commutative Geometry and Quantum Gravity. If you are interested finding out more about this topic I suggest that you look at the documents in in: [Research]({{ site.url}}/research). My PhD thesis contains a thorough introduction to the subject of non-commutative geometry via finite spectral triples.
+I’ve recently (July 2020) graduated with my PhD from the University of Nottingham, UK.
+I worked with Prof. John Barrett on Non-commutative Geometry and Quantum Gravity.
+If you are interested finding out more about this topic I suggest that you look at the documents in in: [Research]({{ site.url}}/research).
+My PhD thesis contains a thorough introduction to the subject of non-commutative geometry via finite spectral triples.
 
-I've recently joined a software company based in Sheffield, UK, called [MachineWorks](https://www.machineworks.com). They specialise in creating software to handle 3D mesh geometry for manufacturing, for instance see [Polygonica](https://www.polygonica.com).
-
-I am an experienced academic tutor for mathematics and physics. I tutor all levels ranging from GCSE, A level to University level. I have experience as a course demonstrator for university level course also.
-I use this site to host notes and questions that I make for my students so that others may benefit from them also.
-
-I have a profile at [https://www.mytutor.co.uk/tutors/58270/](https://www.mytutor.co.uk/tutors/58270/) if you’d like an easy and safe way to contact me about online tutoring.
-I can also offer tutoring outside of MyTutor which is cheaper that what is stated on my profile for MyTutor. This is due to the overheads that MyTutor charge for using there service.
+I've recently joined The MathWorks, the software company that makes MATLAB and Simulink.
 
 Feel free to contact me about tutoring or any other aspect of my site by sending me an email. [Click here to send me an email](mailto:pjdruce+website@gmail.com).
-
-The particle animation on this page is made using p5js - a JavaScript framework. I am investigating using animation software such as _p5js_ and _manim_ to improve my teaching.
 
 </center>
 

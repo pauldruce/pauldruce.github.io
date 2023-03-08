@@ -1,40 +1,50 @@
-const particles = [];
-var canvas;
+const leftParticles = [];
+const rightParticles = [];
+const html = document.documentElement;
+const body = document.body;
+const contentWidth = document.getElementsByClassName("wrapper")[0].clientWidth;
+const epsilon = 1;
+const page_height = document.body.scrollHeight;
+const min_width = 1.3 * contentWidth;
 
-let contentWidth = document.getElementsByClassName("wrapper")[0].clientWidth;
-let min_width = 1.3 * contentWidth;
-let epsilon = 1;
-let page_height = document.body.scrollHeight;
-var body = document.body;
-var html = document.documentElement;
-var particle_colour;
-
-var scroll_height = Math.max(body.scrollHeight, body.offsetHeight,
+let scroll_height = Math.max(body.scrollHeight, body.offsetHeight,
   html.clientHeight, html.scrollHeight, html.offsetHeight);
-// let windowWidth = document.width;
-var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+let particlesNumber = Math.floor(scroll_height / 50);
+particlesNumber = particlesNumber > 10 ? particlesNumber : 10;
+let particle_colour;
+let line_colour;
+
+
+let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+p5.disableFriendlyErrors = true;
 
 function setup() {
-  canvas = createCanvas(windowWidth, scroll_height);
-  // canvas.parent("page-content");
-  centerCanvas();
+  const canvas = createCanvas(windowWidth, scroll_height);
+  centerCanvas(canvas);
   canvas.style('z-index', '-1');
-  createParticles(particles);
+  createParticles();
   smooth();
+  // frameRate(60);
+
+  dark_mode_active = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  particle_colour = dark_mode_active ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.5)';
+  line_colour = dark_mode_active ? 'rgba(255,255,255,0.3)' : 'rgba(1,1,1,0.4)';
 }
 
-function createParticles(particles) {
-  const particlesNumber = Math.floor(scroll_height / 30);
-  for (let i = 0; i < particlesNumber; i++) {
-    particles.push(new Particle());
-  }
-}
-
-function centerCanvas() {
+function centerCanvas(canvas) {
   var x = (windowWidth - width) / 2;
   var y = (scroll_height - height) / 2 + 82;
   resizeCanvas(windowWidth, scroll_height - 82);
   canvas.position(x, y);
+}
+
+
+function createParticles() {
+  particlesNumber = Math.floor(scroll_height / 50);
+  for (let i = 0; i < particlesNumber / 2; i++) {
+    leftParticles.push(new Particle('Left'));
+    rightParticles.push(new Particle('Right'));
+  }
 }
 
 function windowResized() {
@@ -44,26 +54,28 @@ function windowResized() {
 
 function draw() {
   clear();
-  /*
-    This if statement then only draws the particles if the screen is large enough.
-    This makes the website 'responsive to sizes'.
-  */
-  matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (windowWidth >= min_width) {
-    particles.forEach((p, index) => {
+    leftParticles.forEach((p, index) => {
       p.update();
       p.place();
-      p.checkParticles(particles.slice(index));
+      p.addConnectingLines(leftParticles.slice(index));
       p.relocateParticles();
-    })
+    });
+    rightParticles.forEach((p, index) => {
+      p.update();
+      p.place();
+      p.addConnectingLines(rightParticles.slice(index));
+      p.relocateParticles();
+    });
   }
-}
+};
+
 
 class Particle {
-  constructor() {
+  constructor(leftOrRight) {
     // Position
-    let plusOrMinus = random() < 0.5 ? -1 : 1;
-    if (plusOrMinus < 0) {
+    this.side = leftOrRight;
+    if (this.side == 'Left') {
       this.pos = createVector(random((window.innerWidth - contentWidth) / 2), random(height));
     } else {
       this.pos = createVector(window.innerWidth - random((window.innerWidth - contentWidth) / 2), random(height));
@@ -72,23 +84,19 @@ class Particle {
     // Velocity
     this.vel = createVector(random(-1, 1), random(-1, 1));
   }
+
   place() {
     noStroke()
-
-    // Dark mode colour choosing.
-    if (matched) {
-      fill('rgba(255,255,255,0.6)');
-    } else {
-      fill('rgba(0,0,0,0.5)');
-    }
-
+    fill(particle_colour);
     circle(this.pos.x, this.pos.y, this.size);
   }
+
   update() {
     this.pos.add(this.vel);
-    this.edges();
+    this.reflectAtEdges();
   }
-  edges() {
+
+  reflectAtEdges() {
     if (this.pos.x < width / 2) {
       if (this.pos.x < 0 || this.pos.x > (window.innerWidth - contentWidth) / 2) {
         this.vel.x *= -1;
@@ -101,16 +109,13 @@ class Particle {
       this.vel.y *= -1;
     }
   }
-  checkParticles(particles) {
+
+  addConnectingLines(particles) {
     particles.forEach(particle => {
       const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
-      if (matched) {
-        stroke('rgba(255,255,255,0.3)');
-      } else {
-        stroke('rgba(1,1,1,0.4)');
-      }
       strokeWeight(1);
-      if (d < 120) {
+      stroke(line_colour);
+      if (d < 60) {
         line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
       }
     });

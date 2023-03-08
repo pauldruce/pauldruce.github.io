@@ -52,7 +52,7 @@ pandoc:
     - toc
     - bibliography: ./assets/bibtex/website_bib.bib
     - csl: ./assets/bibtex/acm-sigchi-proceedings.csl
-    - filter: '/Users/pauldruce/.local/bin/pandoc-sidenote'
+    - filter: '/Users/paul/.local/bin/pandoc-sidenote'
 
 
 plugins:
