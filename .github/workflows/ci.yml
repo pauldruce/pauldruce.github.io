@@ -9,6 +9,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Haskell/Cabal
+        id: setup
         uses: haskell-actions/setup@v2
 
       - name: Install dependencies
@@ -20,9 +21,29 @@ jobs:
             ruby \
             ruby-dev
 
+      - name: Restore cached dependencies
+        uses: actions/cache/restore@v3
+        id: cache
+        env:
+          key: ${{ runner.os }}-ghc-${{ steps.setup.outputs.ghc-version }}-cabal-${{ steps.setup.outputs.cabal-version }}
+        with:
+          path: ${{ steps.setup.outputs.cabal-store }}
+          key: ${{ env.key }}-plan-${{ hashFiles('**/plan.json') }}
+          restore-keys: ${{ env.key }}-
+
       - name: Install Pandoc and pandoc-sidenote
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          cabal install pandoc pandoc-sidenote
+          cabal install pandoc-cli pandoc-sidenote
+
+      # Cache dependencies already here, so that we do not have to rebuild them should the subsequent steps fail.
+      - name: Save cached dependencies
+        uses: actions/cache/save@v3
+        # If we had an exact cache hit, trying to save the cache would error because of key clash.
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          path: ${{ steps.setup.outputs.cabal-store }}
+          key: ${{ steps.cache.outputs.cache-primary-key }}
 
       - name: Install Ruby Gems
         run: |
