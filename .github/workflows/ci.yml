@@ -1,0 +1,34 @@
+name: CI Checks
+on: pull_request
+
+jobs:
+  build-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Haskell/Cabal
+        uses: haskell-actions/setup@v2
+
+      - name: Install dependencies
+        run: |
+          apt-get update
+          apt-get install -y \
+            gcc \
+            make \
+            ruby \
+            ruby-dev
+
+      - name: Install Pandoc and pandoc-sidenote
+        run: |
+          cabal install pandoc pandoc-sidenote
+
+      - name: Install Ruby Gems
+        run: |
+          gem install bundler
+          bundle update --bundler
+          bundle install
+
+      - name: Build
+        run: bundle exec jekyll build

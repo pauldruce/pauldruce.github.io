@@ -24,7 +24,6 @@
 title: Paul J Druce's site
 portrait_url: /assets/images/Portrait_square.jpg
 avatar_url: /assets/images/favicon.ico
-email: pjdruce@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -52,7 +51,7 @@ pandoc:
     - toc
     - bibliography: ./assets/bibtex/website_bib.bib
     - csl: ./assets/bibtex/acm-sigchi-proceedings.csl
-    - filter: '/Users/paul/.local/bin/pandoc-sidenote'
+    - filter: pandoc-sidenote
 
 
 plugins:

@@ -28,7 +28,7 @@ body {
 }
 
 .question {
-	border: 4px solid rgb(255/2,0,255/2);
+	border: 4px solid rgb(calc(255/2),0,calc(255/2));
   // margin:5px
 }
 .question:before{
