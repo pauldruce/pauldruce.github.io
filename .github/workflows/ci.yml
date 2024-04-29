@@ -49,4 +49,4 @@ jobs:
           key: ${{ steps.cache.outputs.cache-primary-key }}
 
       - name: Build
-        run: bundle exec jekyll build
+        run: make production
