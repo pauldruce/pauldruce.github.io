@@ -57,8 +57,9 @@ jobs:
 
       - name: Check if there are any changes
         run: |
-          git diff --quiet
-          if [ $? ]; then
+          diff_output=$(git diff --quiet)
+          diff_return_value=$?
+          if [ $diff_return_value -ne 0 ]; then
             echo "There are changes after building the website."
             echo "Make sure you have an up-to-date production build of the website commited"
             return 1
