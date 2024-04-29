@@ -8,6 +8,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Is haskell/cabal already available?
+        run: |
+          cabal update
+          cabal install pandoc-cli
+
       - name: Setup Haskell/Cabal
         id: setup
         uses: haskell-actions/setup@v2
