@@ -48,7 +48,7 @@ jobs:
       - name: Install Ruby Gems
         run: |
           sudo gem install bundler
-          bundle update --bundler
+          sudo bundle update --bundler
           bundle install
 
       - name: Build
