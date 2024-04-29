@@ -50,3 +50,12 @@ jobs:
 
       - name: Build
         run: make production
+
+      - name: Check if there are any changes
+        run: |
+          git diff --quiet
+          if [ $? ]; then
+            echo "There are changes after building the website."
+            echo "Make sure you have an up-to-date production build of the website commited"
+            return 1
+          fi
