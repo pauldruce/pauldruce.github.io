@@ -55,10 +55,12 @@ jobs:
 
       - name: Check if there are any changes
         run: |
-          diff_output=$(git diff --quiet)
+          diff_output=$(git HEAD diff --quiet)
           diff_return_value=$?
           if [ $diff_return_value -ne 0 ]; then
             echo "There are changes after building the website."
             echo "Make sure you have an up-to-date production build of the website commited"
-            return 1
+            echo "Git diff output: "
+            echo "diff_output"
+            exit 1
           fi
