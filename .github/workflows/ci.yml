@@ -12,14 +12,17 @@ jobs:
         id: setup
         uses: haskell-actions/setup@v2
 
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             gcc \
-            make \
-            ruby \
-            ruby-dev
+            make
 
       - name: Restore cached dependencies
         uses: actions/cache/restore@v3
@@ -44,12 +47,6 @@ jobs:
         with:
           path: ${{ steps.setup.outputs.cabal-store }}
           key: ${{ steps.cache.outputs.cache-primary-key }}
-
-      - name: Install Ruby Gems
-        run: |
-          sudo gem install bundler
-          sudo bundle update --bundler
-          bundle install
 
       - name: Build
         run: bundle exec jekyll build
