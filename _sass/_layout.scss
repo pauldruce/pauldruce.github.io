@@ -13,33 +13,34 @@
 }
 
 .profile-avatar {
-    height: $avatar-height;
-    width: $avatar-width;
-    border-radius: $avatar-radius;
-    -webkit-border-radius: $avatar-radius;
-    -moz-border-radius: $avatar-radius;
-    -ms-border-radius: $avatar-radius;
-    -o-border-radius: $avatar-radius;
-    margin-left: auto;
-    margin-right: -60px;
-    margin-top: 10px;
-    // margin-bottom: 5px;
-    float: left;
-  }
+  height: $avatar-height;
+  width: $avatar-width;
+  -webkit-border-radius: $avatar-radius;
+  -moz-border-radius: $avatar-radius;
+  -ms-border-radius: $avatar-radius;
+  -o-border-radius: $avatar-radius;
+  border-radius: $avatar-radius;
+  margin-left: auto;
+  margin-right: -60px;
+  margin-top: 10px;
+  // margin-bottom: 5px;
+  float: left;
+}
+
 .profile-portrait {
-    height: $portrait-height;
-    width: $portrait-width;
-    border-radius: $portrait-radius;
-    -webkit-border-radius: $portrait-radius;
-    -moz-border-radius: $portrait-radius;
-    -ms-border-radius: $portrait-radius;
-    -o-border-radius: $portrait-radius;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    float: right;
-  }
+  height: $portrait-height;
+  width: $portrait-width;
+  -webkit-border-radius: $portrait-radius;
+  -moz-border-radius: $portrait-radius;
+  -ms-border-radius: $portrait-radius;
+  -o-border-radius: $portrait-radius;
+  border-radius: $portrait-radius;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: right;
+}
 
 .site-title {
   @include relative-font-size(1.625);
@@ -48,6 +49,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   vertical-align: middle;
+
   &,
   &:visited {
     color: $grey-color-dark;
@@ -60,7 +62,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -71,6 +73,7 @@
     @include theme("color", $text-color);
     line-height: $base-line-height;
     padding: 12px 10px;
+
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 10px;
@@ -104,17 +107,17 @@
       padding-top: 10px;
       text-align: center;
 
-      > svg {
+      >svg {
         @include theme("fill", $grey-color-dark);
       }
     }
 
-    input ~ .trigger {
+    input~.trigger {
       clear: both;
       display: none;
     }
 
-    input:checked ~ .trigger {
+    input:checked~.trigger {
       display: block;
       padding-bottom: 5px;
     }
@@ -126,6 +129,7 @@
       &:not(:last-child) {
         margin-right: 0;
       }
+
       margin-left: 20px;
     }
   }
@@ -167,31 +171,32 @@
 
 .footer-col-1 {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
-  padding-right:         calc(10% - (#{$spacing-unit} / 2));
+  width: calc(50% - (#{$spacing-unit} / 2));
+  padding-right: calc(10% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
   // text-align: center;
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
+
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+    width: calc(50% - (#{$spacing-unit} / 2));
   }
 
   .footer-col-3 {
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
@@ -199,7 +204,7 @@
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    width: calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
@@ -218,7 +223,8 @@
   margin-left: 0;
   list-style: none;
   line-height: 200%;
-  > li {
+
+  >li {
     margin-bottom: $spacing-unit-list;
   }
 }
@@ -282,8 +288,7 @@
 }
 
 
-.center-image
-{
-    margin: 0 auto;
-    display: block;
+.center-image {
+  margin: 0 auto;
+  display: block;
 }
