@@ -27,13 +27,11 @@ jobs:
       - name: Restore cached dependencies
         uses: actions/cache/restore@v4
         id: cache
-        env:
-          key: ${{ runner.os }}-ghc-${{ steps.setup.outputs.ghc-version }}-cabal-${{ steps.setup.outputs.cabal-version }}
         with:
           path: ${{ steps.setup.outputs.cabal-store }}
-          key: ${{ env.key }}-${{ hashFiles('cabal.project', 'cabal.project.freeze') }}
+          key: ${{ runner.os }}-ghc-${{ steps.setup.outputs.ghc-version }}-cabal-${{ steps.setup.outputs.cabal-version }}
           restore-keys: |
-            ${{ env.key }}-cabal-
+            ${{ runner.os }}-ghc-${{ steps.setup.outputs.ghc-version }}-cabal-
 
       - name: Install Pandoc and pandoc-sidenote
         if: steps.cache.outputs.cache-hit != 'true'
@@ -48,7 +46,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         with:
           path: ${{ steps.setup.outputs.cabal-store }}
-          key: ${{ steps.cache.outputs.cache-primary-key }}
+          key: ${{ runner.os }}-ghc-${{ steps.setup.outputs.ghc-version }}-cabal-${{ steps.setup.outputs.cabal-version }}
 
       - name: Build
         run: |
