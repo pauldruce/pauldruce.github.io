@@ -51,12 +51,12 @@ jobs:
 
       - name: Build
         run: |
-          which pandoc
           make production
 
       - name: Check if there are any changes
         run: |
           set +e
+          git status
           diff_output=$(git diff --quiet)
           diff_return_value=$?
           if [ $diff_return_value -ne 0 ]; then
