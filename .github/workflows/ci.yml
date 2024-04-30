@@ -13,6 +13,9 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
+      - uses: haskell-actions/setup@v2s
+        id: haskell-setup
+
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -24,14 +27,15 @@ jobs:
         uses: actions/cache/restore@v4
         id: cache
         with:
-          path: ~/.cabal/store
-          key: ${{ runner.os }}-cabal-${{ hashFiles('cabal.project', 'cabal.project.freeze') }}
+          path: ${{ steps.haskell-setup.outputs.cabal-store }}
+          key: ${{ runner.os }}-cabal
           restore-keys: |
             ${{ runner.os }}-cabal-
 
       - name: Install Pandoc and pandoc-sidenote
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
+          which cabal
           cabal update
           cabal install pandoc-cli pandoc-sidenote
 
@@ -41,8 +45,8 @@ jobs:
         # If we had an exact cache hit, trying to save the cache would error because of key clash.
         if: steps.cache.outputs.cache-hit != 'true'
         with:
-          path: ~/.cabal/store
-          key: ${{ runner.os }}-cabal-${{ hashFiles('cabal.project', 'cabal.project.freeze') }}
+          path: ${{ steps.haskell-setup.outputs.cabal-store }}
+          key: ${{ runner.os }}-cabal
 
       - name: Build
         run: |
@@ -51,7 +55,7 @@ jobs:
 
       - name: Check if there are any changes
         run: |
-          diff_output=$(git HEAD diff --quiet)
+          diff_output=$(git diff HEAD --quiet)
           diff_return_value=$?
           if [ $diff_return_value -ne 0 ]; then
             echo "There are changes after building the website."
