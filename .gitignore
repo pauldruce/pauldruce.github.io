@@ -1,3 +1,5 @@
 .jekyll-cache
 .DS_Store
 .vscode
+.bundle/
+vendor/

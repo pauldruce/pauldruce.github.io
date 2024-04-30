@@ -36,7 +36,6 @@ jobs:
 
       - name: Install Pandoc and pandoc-sidenote
         run: |
-          which cabal
           cabal update
           cabal install pandoc-cli pandoc-sidenote
 
@@ -55,14 +54,11 @@ jobs:
 
       - name: Check if there are any changes
         run: |
-          set +e
-          git status
-          diff_output=$(git diff --quiet)
-          diff_return_value=$?
-          if [ $diff_return_value -ne 0 ]; then
+          diff_output=$(git status --porcelain)
+          if [ -n "$diff_output" ]; then
             echo "There are changes after building the website."
             echo "Make sure you have an up-to-date production build of the website commited"
             echo "Git diff output: "
-            git diff --color | cat
+            echo "$diff_output"
             exit 1
           fi
