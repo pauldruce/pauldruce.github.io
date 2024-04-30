@@ -13,7 +13,7 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - uses: haskell-actions/setup@v2s
+      - uses: haskell-actions/setup@v2
         id: haskell-setup
 
       - name: Install dependencies
