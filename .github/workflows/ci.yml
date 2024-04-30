@@ -55,6 +55,7 @@ jobs:
 
       - name: Check if there are any changes
         run: |
+          set +e
           diff_output=$(git diff HEAD --quiet)
           diff_return_value=$?
           if [ $diff_return_value -ne 0 ]; then
