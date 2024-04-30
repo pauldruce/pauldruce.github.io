@@ -61,6 +61,6 @@ jobs:
             echo "There are changes after building the website."
             echo "Make sure you have an up-to-date production build of the website commited"
             echo "Git diff output: "
-            echo "$diff_output"
+            git diff --color | cat
             exit 1
           fi
