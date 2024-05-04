@@ -1,6 +1,10 @@
 name: CI Checks
 on: pull_request
 
+concurrency:
+  group: "ci"
+  cancel-in-progress: true
+
 jobs:
   build-website:
     runs-on: ubuntu-latest
