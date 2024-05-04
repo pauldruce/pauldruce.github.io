@@ -13,22 +13,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
       - uses: haskell-actions/setup@v2
         id: haskell-setup
-
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
             gcc \
             make
-
       - name: Restore cached dependencies
         uses: actions/cache/restore@v4
         id: cache
@@ -37,12 +33,10 @@ jobs:
           key: ${{ runner.os }}-cabal
           restore-keys: |
             ${{ runner.os }}-cabal-
-
       - name: Install Pandoc and pandoc-sidenote
         run: |
           cabal update
           cabal install pandoc-cli pandoc-sidenote
-
       # Cache dependencies already here, so that we do not have to rebuild them should the subsequent steps fail.
       - name: Save cached dependencies
         uses: actions/cache/save@v4
@@ -51,7 +45,6 @@ jobs:
         with:
           path: ${{ steps.haskell-setup.outputs.cabal-store }}
           key: ${{ runner.os }}-cabal
-
       - name: Build
         run: |
           make production
