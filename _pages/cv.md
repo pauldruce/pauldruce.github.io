@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: cv
 title: Paul Druce's Curriculum Vitae
 pdftitle: Paul Druce
 author: pjdruce@gmail.com
@@ -9,8 +9,6 @@ output:
   pdf_document:
     includes: ../CV_files/CV_header.tex
 ---
-
-<center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/PaulDruceCV-full.pdf"> here</a></center>
 
 ## Current responsibilities
 
