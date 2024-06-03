@@ -19,6 +19,9 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - uses: haskell-actions/setup@v2
         id: haskell-setup
+        with:
+          ghc-version: "9.9"
+
       - name: Install dependencies
         run: |
           sudo apt-get update
