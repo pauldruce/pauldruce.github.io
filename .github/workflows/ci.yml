@@ -20,7 +20,7 @@ jobs:
       - uses: haskell-actions/setup@v2
         id: haskell-setup
         with:
-          ghc-version: "8.8"
+          ghc-version: 9.10.0
 
       - name: Install dependencies
         run: |
