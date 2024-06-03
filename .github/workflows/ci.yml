@@ -36,7 +36,8 @@ jobs:
       - name: Install Pandoc and pandoc-sidenote
         run: |
           cabal update
-          cabal install pandoc-cli pandoc-sidenote
+          cabal install pandoc-cli
+          cabal install pandoc-sidenote
       # Cache dependencies already here, so that we do not have to rebuild them should the subsequent steps fail.
       - name: Save cached dependencies
         uses: actions/cache/save@v4
