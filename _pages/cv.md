@@ -1,13 +1,11 @@
 ---
 layout: cv
 title: Paul Druce's Curriculum Vitae
-pdftitle: Paul Druce
+name: Paul Druce
 author: pjdruce@gmail.com
 permalink: /CV/
 toc: true
-output:
-  pdf_document:
-    includes: ../CV_files/CV_header.tex
+last_updated: 3rd June 2024
 ---
 
 ## Current responsibilities
@@ -15,8 +13,7 @@ output:
 <details>
 <summary>**<u>Senior Software Engineer in Test, The MathWorks</u>** <span style="float:right;">**<u>May 2023 - Current</u>**</span>
 <br>
-Help my teams (Cloud Platform Integrations and Modelscape) to implement comprehensive CI pipelines.
-
+I work with multiple teams to implement comprehensive CI pipelines and help design software to make it testable, scalable and cloud ready.
 </summary>
 Skills learnt:
 
@@ -30,8 +27,8 @@ Skills learnt:
 <details>
 <summary>**<u>Software Engineer in Test, The MathWorks</u>** <span style="float:right;">**<u>May 2022 - May 2023</u>**</span>
 <br>
-As part of the Cloud Platform Integrations team at MathWorks, I worked on integrating MATLAB in Jupyter notebooks.\
-Also worked on Modelscape - a new offering from The MathWorks aimed at helping financial institutions manage their models. \
+As part of the Cloud Platform Integrations team at MathWorks, I worked on integrating MATLAB in Jupyter notebooks.
+Also worked on Modelscape - a new offering from The MathWorks aimed at helping financial institutions manage their models.
 </summary>
 Skills learnt:
 
@@ -85,7 +82,7 @@ Skills learnt:
 
 <details>
 <summary>
-    **<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 -2020*</u></span>
+    **<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 -2020*</u></span><br>
     *Title: Spectral Geometry of Fuzzy Spaces*  <br>
     *Supervisor: Prof. John Barrett*
 </summary>
@@ -111,7 +108,7 @@ topic I am very interested in pursuing further.
 
 <details>
   <summary>
-**<u>First Class Masters in Mathematics and Physics, University of Warwick, UK</u>**: <span style="float:right;"><u>*2011-2015*</u></span>
+**<u>First Class Masters in Mathematics and Physics, University of Warwick, UK</u>**: <span style="float:right;"><u>*2011-2015*</u></span><br>
 *Masters Dissertation: Multiferroicity Emerging from Frustrated Spin Interactions* <br>
 *Supervisors: Prof J. Staunton and Dr J. Lloyd-Hughes*<br>
 
@@ -124,11 +121,11 @@ I became proficient in the programming language C and its use in high-performanc
 </details>
 
 **<u>A Levels, King Edward Vi Sixth Form, Sheffield, UK:</u>** <span
-style="float:right;"> <u>_2009 - 2011_</u> </span>Maths: A\*, Physics: A,
+style="float:right;"> <u>_2009 - 2011_</u> </span><br>Maths: A\*, Physics: A,
 Chemistry: A.
 
 **<u>GCSEs, Birley Community College, Sheffield, UK:</u>** <span
-style="float:right;"> <u>_2004 - 2009_</u> </span> 9 A's, 2 B's and one C.
+style="float:right;"> <u>_2004 - 2009_</u> </span><br> 9 A's, 2 B's and one C.
 
 ## Teaching Experience
 
