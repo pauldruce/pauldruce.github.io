@@ -2,7 +2,7 @@ name: CI Checks
 on: pull_request
 
 concurrency:
-  group: "ci"
+  group: "ci-${{github.head_ref}}"
   cancel-in-progress: true
 
 jobs:
