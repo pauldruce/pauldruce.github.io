@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
+  <div class="page-content">
+    {% if page.toc %}
+    <div class="page-toc">
+      <h2>Table Of Contents</h2>
+      {% include toc.html html=content h_min=1 h_max=2 %}
+    </div>
+    {% endif %}
+    <center>
+      Last updated: {{page.last_updated}}<br />
+      Download a PDF version of my CV
+      <a href="{{site.url}}/assets/PaulDruceCV.pdf"> here</a>
+    </center>
+    {{ content }}
+  </div>
+</article>

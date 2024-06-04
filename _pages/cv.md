@@ -1,74 +1,90 @@
 ---
-layout: page
+layout: cv
 title: Paul Druce's Curriculum Vitae
-pdftitle: Paul Druce
+name: Paul Druce
 author: pjdruce@gmail.com
 permalink: /CV/
 toc: true
-output:
-  pdf_document:
-    includes: ../CV_files/CV_header.tex
+last_updated: 3rd June 2024
 ---
-
-<center>Download a PDF version of my CV <a href="{{site.url}}/assets/PDFs/PaulDruceCV-full.pdf"> here</a></center>
-<!-- ##  Paul Druce -->
-
-<!-- ​				pjdruce@gmail.com <span style="float:right;">			       	</span> -->
-
-<!--- <center>Download a PDF version of my Academic CV <a href="{{site.url}}/assets/PDFs/CV.pdf"> here</a></center> -->
 
 ## Current responsibilities
 
 <details>
-    <summary>**<u>Consulting Engineering at MachineWorks</u>** <span style="float:right;">**<u>May 2021 - Current</u>**</span>
-    <br>
-    I aide commercial 3D software developers implement and use MachineWorks software for a wide variety of applications, using the languages C, C++ and C#. 
-    </summary>
-    I also create demonstrative applications to show case MachineWorks software in new markets.\
-    This includes the creation of new workflows and GUI applications. \
-    I also develop algorithms and create example code for customers to use in their products to facilitate their products to market faster.
+<summary>**<u>Senior Software Engineer in Test, The MathWorks</u>** <span style="float:right;">**<u>May 2023 - Current</u>**</span>
+<br>
+I work with multiple teams to implement comprehensive CI pipelines and help design software to make it testable, scalable and cloud ready.
+</summary>
+Skills learnt:
 
-    When Covid restrictions are eased sufficiently, I will be providing direct support to evaluating developers through on-site training to ensure new evaluations and integrations are rapid and successful.
-
+- Kubernetes based web app development.
+- Deployment of modern web app on Azure and AWS.
+- Managing software release pipelines.
+- Golang development and testing.
+- Refactoring existing codebases to align with best practices
 </details>
 
 <details>
-    <summary>**<u>Academic Tutor and Mentor</u>** <span style="float:right;">**<u>Aug 2017 - Current</u>** </span>
-    <br>
-    I am an experienced tutor in mathematics and physics at the levels of university, A level and GCSE. <br>
-    I also mentor students for various mathematical entrance exams and the UKMT mathematical competitions.
-    </span></summary>
-   I have vast experience in both face-to-face tutoring and online tutoring via shared online whiteboards.
-    I prepare lessons and question sheets at appropriate levels for my tutees. My role is to build the confidence and the abilities of my students and provide them with a comfortable environment to ask any questions they may have.
-    I also possess an Enhanced DBS check and I am trusted by schools to give one-to-one tutorials to their students via the company MyTutor. You can see student reviews and further details here: [https://www.mytutor.co.uk/tutors/58270](https://www.mytutor.co.uk/tutors/58270). </details>
-
-<details>
- <summary>**<u> Official UKMT Volunteer Mentor</u>**<span style="float:right;"> **<u>October 2020 - Current**</u> </span>
- <br>
-  I am a volunteer for the UK Mathematics Trust. My role involves mentoring the students who are entering the advanced UKMT competitive mathematics exams.
+<summary>**<u>Software Engineer in Test, The MathWorks</u>** <span style="float:right;">**<u>May 2022 - May 2023</u>**</span>
+<br>
+As part of the Cloud Platform Integrations team at MathWorks, I worked on integrating MATLAB in Jupyter notebooks.
+Also worked on Modelscape - a new offering from The MathWorks aimed at helping financial institutions manage their models.
 </summary>
- I am also involved in various outreach projects that the UKMT organise. I aid with the creation of appropriate questions and aid in the distribution of content via social media.
+Skills learnt:
+
+- JavaScript and TypeScript development and testing.
+- Python development and testing.
+- Build and test pipelines in TeamCity and GitHub Actions
+- Docker for environment reproducibility and testing.
+- Automated GUI testing using Playwright framework.
 </details>
 
 ## Skills
 
-- Experienced in high performance computing and commercial software in C and C++.
+- Experienced in high performance computing and commercial software in C and
+  C++.
+- Fluent in the following programming languages: C, C++, JavaScript/TypeScript,
+  Golang, Python and Bash.
 - Experienced using Git and Perforce for collaborative development.
+- Experienced setting up CI pipelines using GitHub Actions and TeamCity.
+- Experience using Linux, macOS and Windows development environments.
+- Internet of Things development using ESP8266/ESP32 and other devices, i.e.,
+  Arduino framework, ESP-DF framework, micropython as well as how to use
+  PlatformIO.
 - Experience in data analysis using Python and Mathematica.
+- Experienced using LaTex (including TikZ and beamer) and the Microsoft Office
+  suite.
 - Web development, including animations; HTML/CSS/JavaScript.
-- Experienced using LaTex (including TikZ and beamer) and the Microsoft Office suite.
-- Experience using Linux, macOS and Windows environments.
-- Proficient in the following programming languages: C, C++, C#, Python, HTML/CSS/JavaScript and Mathematica.
-- Internet of Things development using ESP8266/ESP32 and other devices, i.e., Arduino framework, ESP-DF framework, micropython as well as how to use PlatformIO.
-- I have a valid First Aid Certificate (2017-2020) (planned to renew once COVID restrictions are eased). I also have a full drivers licence and motorcycle licence.
+
+## Previous Professional Experience
+
+<details>
+    <summary>**<u>Consulting Engineering at MachineWorks</u>** <span style="float:right;">**<u>May 2021 - April 2022</u>**</span>
+    <br>
+    I aided commercial 3D software developers to implement and use MachineWorks software for a wide variety of applications, using the languages C, C++ and C#.
+    </summary>
+    I also create demonstrative applications to show case MachineWorks software in new markets.\
+    This includes the creation of new workflows and GUI applications. \
+    I also develop algorithms and create example code for customers to use in their products to facilitate their products to market faster.
+</details>
+
+<details>
+    <summary>**<u>Academic Tutor and Mentor</u>** <span style="float:right;">**<u>Aug 2017 - May 2023</u>** </span>
+    <br>
+    I am an experienced tutor in mathematics and physics at the levels of university, A level and GCSE. <br>
+    I also mentored students for various mathematical entrance exams and the UKMT mathematical competitions.
+    </span></summary>
+    I have vast experience in both face-to-face tutoring and online tutoring via shared online whiteboards.
+    I prepared lessons and question sheets at appropriate levels for my tutees. My role was to build the confidence and the abilities of my students and provide them with a comfortable environment to ask any questions they may have.
+</details>
 
 ## Education
 
 <details>
-  <summary>
-**<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 -2020*</u></span>
-  *Title: Spectral Geometry of Fuzzy Spaces*  <br>
-  *Supervisor: Prof. John Barrett*
+<summary>
+    **<u>PhD in Mathematical Sciences, University of Nottingham, UK:</u>** <span style="float:right;"><u>*2015 -2020*</u></span><br>
+    *Title: Spectral Geometry of Fuzzy Spaces*  <br>
+    *Supervisor: Prof. John Barrett*
 </summary>
 I developed the understanding of finite non-commutative geometries and how they might be useful in the theory of quantum gravity.
 <br>
@@ -76,15 +92,23 @@ I developed the understanding of finite non-commutative geometries and how they 
 <br>
 **Key skills developed:** independent working, public speaking, data analysis using Python, knowledge of Monte Carlo simulations
 
-For my PhD I worked on an area of mathematics called non-commutative geometry and how it might be useful in the theory of quantum gravity. My research was to investigate the use of called _fuzzy spaces_ as candidates for quantum spacetimes. I investigated the dimension and volume of these spaces by analysing the spectrum of the Dirac operator. I also investigated the role of Lie group symmetries in restricting the possible fuzzy spaces possible.
+For my PhD I worked on an area of mathematics called non-commutative geometry
+and how it might be useful in the theory of quantum gravity. My research was to
+investigate the use of called _fuzzy spaces_ as candidates for quantum
+spacetimes. I investigated the dimension and volume of these spaces by analysing
+the spectrum of the Dirac operator. I also investigated the role of Lie group
+symmetries in restricting the fuzzy spaces possible.
 
-In pursuit of my research I developed my knowledge of data analysis using the language Python. I also became familiar with the workings of Monte Carlo simulations and the application of machine learning to physical problems. A topic I am very interested in pursuing further.
+In pursuit of my research I developed my knowledge of data analysis using the
+language Python. I also became familiar with the workings of Monte Carlo
+simulations and the application of machine learning to physical problems. A
+topic I am very interested in pursuing further.
 
 </details>
 
 <details>
   <summary>
-**<u>First Class Masters in Mathematics and Physics, University of Warwick, UK</u>**: <span style="float:right;"><u>*2011-2015*</u></span>
+**<u>First Class Masters in Mathematics and Physics, University of Warwick, UK</u>**: <span style="float:right;"><u>*2011-2015*</u></span><br>
 *Masters Dissertation: Multiferroicity Emerging from Frustrated Spin Interactions* <br>
 *Supervisors: Prof J. Staunton and Dr J. Lloyd-Hughes*<br>
 
@@ -96,12 +120,19 @@ During my time at Warwick, I studied a wide range of mathematics and physics top
 I became proficient in the programming language C and its use in high-performance computing. I learnt how to implement parallel computing by making us of OpenMP and MPI frameworks.
 </details>
 
-**<u>A Levels, King Edward Vi Sixth Form, Sheffield, UK:</u>** <span style="float:right;"> <u>_2009 - 2011_</u> </span>Maths: A\*, Physics: A, Chemistry: A.
+**<u>A Levels, King Edward Vi Sixth Form, Sheffield, UK:</u>** <span
+style="float:right;"> <u>_2009 - 2011_</u> </span><br>Maths: A\*, Physics: A,
+Chemistry: A.
 
-**<u>GCSEs, Birley Community College, Sheffield, UK:</u>** <span style="float:right;"> <u>_2004 - 2009_</u> </span>
-9 A’s, 2 B’s and one C.
+**<u>GCSEs, Birley Community College, Sheffield, UK:</u>** <span
+style="float:right;"> <u>_2004 - 2009_</u> </span><br> 9 A's, 2 B's and one C.
 
 ## Teaching Experience
+
+- <details>
+  <summary>**UKMT Volunteer Mentor**<span style="float:right;"><u> **October 2020 - May 2022** </u></span></summary>
+  I was a volunteer for the UK Mathematics Trust. My role involved mentoring the students who are entering the advanced UKMT competitive mathematics exams. I was also involved in various outreach projects that the UKMT organise. I aided with the creation of appropriate questions and aided in the distribution of content via social media.
+  </details>
 
 - <details>
   <summary>
@@ -150,27 +181,111 @@ I became proficient in the programming language C and its use in high-performanc
 
 **<u>Undergraduate Revision Classes</u>** (2012-2015): As part of Warwick Physics Society, I organised and ran revision lectures on various topics including first year Classical Mechanics, Waves, Electricity and Magnetism courses. As well as the 2nd-year Quantum Mechanics, Electromagnetic Theory and Optics and Physics of Fluids courses. For the 2nd year Physics course in C programming, I  provided workshops to help, generally, first time programmers,  get started with the language and the general programming mentality. I also updated and maintained the revision guides the society had and created a revision guide for the second year physics module Thermal Physics II.  (see <a href="{{ site.url}}/assets/PDFs/Thermal Physics II Revision Guide-2013.pdf"> here </a> here). -->
 
-## Other Professional Experience
+## Academic Activities
 
-<!---
-- <details>
-    <summary>**Academic Tutor and Mentor** <span style="float:right;">**<u>August 2017-Current</u>**</span> </summary>
-    I am an experienced tutor in mathematics and physics at the levels of university, A level and GCSE.
-    I also mentor students for various mathematical entrance exams and the UKMT mathematical competitions.
-   I have vast experience in both face-to-face tutoring and online tutoring via shared online whiteboards.
-    I prepare lessons and question sheets at appropriate levels for my tutees. My role is to build the confidence and the abilities of my students and provide them with a comfortable environment to ask any questions they may have.
-    </details>
+### Research Interests
 
-- <details>
-<summary>**Official UKMT Volunteer Mentor**<span style="float:right;"><u> **October 2020 - Current** </u></span></summary>
-I am a volunteer for the UK Mathematics Trust. My role involves mentoring the students who are entering the advanced UKMT competitive mathematics exams. I am also involved in various outreach projects that the UKMT organise. I aid with the creation of appropriate questions and aid in the distribution of content via social media.
-</details>
+My research interests span a wide area within Mathematical Physics. I am deeply
+interested in the mathematical description of the universe with emphasis on the
+precise nature of spacetime. With my recent work investigating the use of
+noncommutative geometry to model spacetimes with a high energy cutoff. I also
+interested in any novel use of mathematics in physical situations, such as the
+use of topology and algebraic methods in condensed matter studies.
 
-- <details>
-    <summary>**Postgraduate Demonstrator at the University of Nottingham** <span style="float:right;">**<u>September 2015 - July 2019</u>**</span> </summary>
-    Throughout my PhD I was an assistant in many of the courses ran by the School of Mathematical Sciences. I was entrusted to run small group tutorials (typically around 10 people) for courses in mathematical physics as well as aiding in the running of problems classes for many of the courses. I also helped mark coursework for the courses as well as marking the end of year exams of some of the courses.
-    </details>
-    --->
+### Outreach
+
+I am an enthusiastic advocate for mathematics and science. I was on the
+organisational committee for the international festival Pint of Science 2019. I
+helped organise the Nottingham branch where academics from the University of
+Nottingham go to the pubs of Nottingham to explain their current research to the
+public in an understandable manner. I am always looking for ways to bring
+mathematics and science out of the universities and into public view.
+
+### Past Research Projects
+
+**<u>PhD Research Project - Spectral Geometry of Fuzzy Spaces</u>** <span
+style="float:right;">**<u>2015-2019</u>**</span>
+
+<center>*Keywords:* Noncommutative geometry, Monte Carlo simulations, spectral geometry, quantum gravity, symmetries in physics</center>
+My PhD research was concerned with the use of finite noncommutative geometries as candidates for quantum spacetimes. These so-called *fuzzy spaces* possess an energy cutoff whilst retaining Lie group symmetries. My PhD research was to investigate the dimension and volume of these spaces by analysing the spectrum of the Dirac operator. I also investigated the role of Lie group symmetries in restricting the possible fuzzy spaces possible.
+
+**<u>Masters Research Project - Multiferroicity Emerging from Frustrated Spin
+Interactions</u>** <span style="float:right;">**<u>2014-2015</u>**</span>
+
+<center> *Keywords:*
+Solid-state physics, Theoretical physics, mathematical modelling, frustrated systems, quantum mechanics.</center>
+During the Masters’ year of my undergraduate degree, I undertook a research project, supervised by Prof. J. Staunton and Dr. J. Lloyd-Hughes, in which we investigated the various spin configurations of materials with a multiferroic phase. We aimed to identify what was special about these materials spin configurations that caused them to possess a multiferroic phase. This project was conducted with the aim of aiding the design of high temperature multiferroic devices. We specifically studied Cupric Oxide (CuO) which has a multiferroic phase between
+213K and 230K, primarily by using mean field model. This project resulted in a functional model which predicted a multiferroic phase at a temperature which is in reasonable agreement with the experimental values.
+
+**<u>Undergraduate Summer Research - Knotted Nematics</u>** <span
+style="float:right;">**<u>August 2014-September 2014</u>**</span>
+
+<center> *Keywords:* Condensed Matter, Mathematical Physics, Liquid Crystals, statistical physics</center>
+This was funded under the Undergraduate Research Scholarship Scheme and was supervised under G. P. Alexander at The University of Warwick.
+The main aim of this research was to develop a construction for describing knotted liquid crystals, specifically knotted nematics.
+We improved upon existing ideas that used Milnor's Fibration Theorem and developed a method to construct the necessary complex polynomial for Milnor's theorem, for a given knot.
+
+### Publications
+
+_Spectral estimators for finite non-commutative geometries_. Barrett, J., Druce,
+P., Glaser, L.: J Phys Math Theor. 52, 275203 (2019). doi:<a
+href="https://doi.org/10.1088/1751-8121/ab22f8">10.1088/1751-8121/ab22f8 </a>
+
+### Grants and Awards
+
+- _Non-commutative Geometry and Quantum Gravity_ EPSRC Studentship, funding my
+  PhD studies, hosted by the University of Nottingham (September 2015 -
+  September 2018)
+- _Knotted Nematics_ - funded as an Undergraduate Research Scholarship Scheme by
+  the University of Warwick, and supervised by Dr G. P. Alexander
+  (August-September 2014).
+
+### Talks
+
+- _Noncommutative Geometry and Gravity Models_ Talk given at Collabor8.2 meeting
+  at Lancaster University, UK, May 2018. <a
+  href="{{site.url}}/assets/PDFs/Presentation__NCG_and_Gravity_Models.pdf">Slides
+  here</a>. <br>
+- _Fuzzy Geometries and Spectral Zeta Functions._ Invited by Lisa Glaser at
+  Radboud University, Netherlands, April 2017. <a
+  href="{{site.url}}/assets/PDFs/Slides_Nijmegen-2017-Fuzzy-Geometry-and-Spectral-Zeta-Funtions.pdf">Slides
+  here</a>. <br>
+- _Algebraic Knots and Liquid Crystals_. At the Warwick Imperial Autumn Meeting,
+  2014 (University of Warwick, UK, November 2014). <a
+  href="{{site.url}}/assets/PDFs/Knot, Fibrations and Physics.pdf">Slides
+  here</a>. <br>
+- Poster presented at Quantum Gravity on the Computer conference March 2018. <a
+  href="{{site.url}}/assets/PDFs/PaulDrucePoster-QGotC18.pdf">PDF here</a>.
+
+### Conferences Attended
+
+- Gauge Theories and Noncommutative Geometry - Nijmegen, April 2016,
+  [http://www.noncommutativegeometry.nl/ncg2016/](http://www.noncommutativegeometry.nl/ncg2016/)
+- Quantum Structure of Spacetime - Belgrade, August 2016,
+  [http://qssg16.ipb.ac.rs/](http://qssg16.ipb.ac.rs/)
+- Quantum Spacetime - Porto, January 2017,
+  [https://www.fc.up.pt/quantumspacetime17/](https://www.fc.up.pt/quantumspacetime17/)
+- Talking Maths in Public - Bath, September 2017,
+  [http://talkingmathsinpublic.uk/](http://talkingmathsinpublic.uk/)
+- Quantum Spacetime and Physics Models - Corfu, September 2017,
+  [http://www.physics.ntua.gr/corfu2017/qg.html](http://www.physics.ntua.gr/corfu2017/qg.html)
+- Quantum Structure of Spacetime - Sofia, February 2018,
+  [http://theo2.inrne.bas.bg/~dobrev/QST-18.htm](http://theo2.inrne.bas.bg/~dobrev/QST-18.htm)
+- Quantum Gravity on the Computer - Stockholm, March 2018,
+  [https://agenda.albanova.se/conferenceDisplay.py?confId=6242](https://agenda.albanova.se/conferenceDisplay.py?confId=6242)
+- Collabor8.2 - Lancaster, May 2018,
+  [http://www.collabor8research.com/](http://www.collabor8research.com/)
+- Physical Applications of Fuzzy Spaces - Brussels, January 2019
+
+<!--
+## Qualifications and Skills
+
+I am fluent in the programming languages Python and C, and very familiar with the software Mathematica. I know how to use Linux, macOS and Windows systems to a high level. I am currently learning basic web development including HTML/CSS and I use Markdown and LaTeX extensively for my note taking. My hobbies include rock climbing and photography/videography usually combining the two. I therefore know how to use photo and video editing software.
+
+I have a valid First Aid Certificate (2017-2020) and an Enhanced DBS check (2017-2020). I also have a clean full drivers licence and motorcycle licence.
+'' -->
+
+## Other professional experiences
 
 - <details>
     <summary>**Open Day Assistant at the University of Warwick**  <span style="float:right;">**<u>September 2012 - July 2015</u>**</span></summary>
@@ -188,70 +303,3 @@ I am a volunteer for the UK Mathematics Trust. My role involves mentoring the st
     <summary>**Voluntary Sale Assistant at British Heart Foundation** <span style="float:right;">  **<u>2010-2011</u>**</span></summary>
     My role at the British Heart Foundation included assisting customers in finding items, informing them about the charity and maintaining the store. As the British Heart Foundation has a wide range of customers and staff, I had to quickly learn to adapt my communication and sales approach to fit their needs and situation.
     </details>
-
-## Academic Activities
-
-### Research Interests
-
-My research interests span a wide area within Mathematical Physics. I am deeply interested in the mathematical description of the universe with emphasis on the precise nature of spacetime. With my recent work investigating the use of noncommutative geometry to model spacetimes with a high energy cutoff. I also interested in any novel use of mathematics in physical situations, such as the use of topology and algebraic methods in condensed matter studies.
-
-### Outreach
-
-I am an enthusiastic advocate for mathematics and science. I was on the organisational committee for the international festival Pint of Science 2019. I helped organise the Nottingham branch where academics from the University of Nottingham go to the pubs of Nottingham to explain their current research to the public in an understandable manner. I am always looking for ways to bring mathematics and science out of the universities and into public view.
-
-### Past Research Projects
-
-**<u>PhD Research Project - Spectral Geometry of Fuzzy Spaces</u>** <span style="float:right;">**<u>2015-2019</u>**</span>
-
-<center>*Keywords:* Noncommutative geometry, Monte Carlo simulations, spectral geometry, quantum gravity, symmetries in physics</center>
-My PhD research was concerned with the use of finite noncommutative geometries as candidates for quantum spacetimes. These so-called *fuzzy spaces* possess an energy cutoff whilst retaining Lie group symmetries. My PhD research was to investigate the dimension and volume of these spaces by analysing the spectrum of the Dirac operator. I also investigated the role of Lie group symmetries in restricting the possible fuzzy spaces possible.
-
-**<u>Masters Research Project - Multiferroicity Emerging from Frustrated Spin Interactions</u>** <span style="float:right;">**<u>2014-2015</u>**</span>
-
-<center> *Keywords:*
-Solid-state physics, Theoretical physics, mathematical modelling, frustrated systems, quantum mechanics.</center>
-During the Masters’ year of my undergraduate degree, I undertook a research project, supervised by Prof. J. Staunton and Dr. J. Lloyd-Hughes, in which we investigated the various spin configurations of materials with a multiferroic phase. We aimed to identify what was special about these materials spin configurations that caused them to possess a multiferroic phase. This project was conducted with the aim of aiding the design of high temperature multiferroic devices. We specifically studied Cupric Oxide (CuO) which has a multiferroic phase between
-213K and 230K, primarily by using mean field model. This project resulted in a functional model which predicted a multiferroic phase at a temperature which is in reasonable agreement with the experimental values.
-
-**<u>Undergraduate Summer Research - Knotted Nematics</u>** <span style="float:right;">**<u>August 2014-September 2014</u>**</span>
-
-<center> *Keywords:* Condensed Matter, Mathematical Physics, Liquid Crystals, statistical physics</center>
-This was funded under the Undergraduate Research Scholarship Scheme and was supervised under G. P. Alexander at The University of Warwick.
-The main aim of this research was to develop a construction for describing knotted liquid crystals, specifically knotted nematics.
-We improved upon existing ideas that used Milnor's Fibration Theorem and developed a method to construct the necessary complex polynomial for Milnor's theorem, for a given knot.
-
-### Publications
-
-_Spectral estimators for finite non-commutative geometries_. Barrett, J., Druce, P., Glaser, L.: J Phys Math Theor. 52, 275203 (2019). doi:<a href="https://doi.org/10.1088/1751-8121/ab22f8">10.1088/1751-8121/ab22f8 </a>
-
-### Grants and Awards
-
-- _Non-commutative Geometry and Quantum Gravity_ EPSRC Studentship, funding my PhD studies, hosted by the University of Nottingham (September 2015 - September 2018)
-- _Knotted Nematics_ - funded as an Undergraduate Research Scholarship Scheme by the University of Warwick, and supervised by Dr G. P. Alexander (August-September 2014).
-
-### Talks
-
-- _Noncommutative Geometry and Gravity Models_ Talk given at Collabor8.2 meeting at Lancaster University, UK, May 2018. <a href="{{site.url}}/assets/PDFs/Presentation__NCG_and_Gravity_Models.pdf">Slides here</a>. <br>
-- _Fuzzy Geometries and Spectral Zeta Functions._ Invited by Lisa Glaser at Radboud University, Netherlands, April 2017. <a href="{{site.url}}/assets/PDFs/Slides_Nijmegen-2017-Fuzzy-Geometry-and-Spectral-Zeta-Funtions.pdf">Slides here</a>. <br>
-- _Algebraic Knots and Liquid Crystals_. At the Warwick Imperial Autumn Meeting, 2014 (University of Warwick, UK, November 2014). <a href="{{site.url}}/assets/PDFs/Knot, Fibrations and Physics.pdf">Slides here</a>. <br>
-- Poster presented at Quantum Gravity on the Computer conference March 2018. <a href="{{site.url}}/assets/PDFs/PaulDrucePoster-QGotC18.pdf">PDF here</a>.
-
-### Conferences Attended
-
-- Gauge Theories and Noncommutative Geometry - Nijmegen, April 2016, [http://www.noncommutativegeometry.nl/ncg2016/](http://www.noncommutativegeometry.nl/ncg2016/)
-- Quantum Structure of Spacetime - Belgrade, August 2016, [http://qssg16.ipb.ac.rs/](http://qssg16.ipb.ac.rs/)
-- Quantum Spacetime - Porto, January 2017, [https://www.fc.up.pt/quantumspacetime17/](https://www.fc.up.pt/quantumspacetime17/)
-- Talking Maths in Public - Bath, September 2017, [http://talkingmathsinpublic.uk/](http://talkingmathsinpublic.uk/)
-- Quantum Spacetime and Physics Models - Corfu, September 2017, [http://www.physics.ntua.gr/corfu2017/qg.html](http://www.physics.ntua.gr/corfu2017/qg.html)
-- Quantum Structure of Spacetime - Sofia, February 2018, [http://theo2.inrne.bas.bg/~dobrev/QST-18.htm](http://theo2.inrne.bas.bg/~dobrev/QST-18.htm)
-- Quantum Gravity on the Computer - Stockholm, March 2018, [https://agenda.albanova.se/conferenceDisplay.py?confId=6242](https://agenda.albanova.se/conferenceDisplay.py?confId=6242)
-- Collabor8.2 - Lancaster, May 2018, [http://www.collabor8research.com/](http://www.collabor8research.com/)
-- Physical Applications of Fuzzy Spaces - Brussels, January 2019
-
-<!--
-## Qualifications and Skills
-
-I am fluent in the programming languages Python and C, and very familiar with the software Mathematica. I know how to use Linux, macOS and Windows systems to a high level. I am currently learning basic web development including HTML/CSS and I use Markdown and LaTeX extensively for my note taking. My hobbies include rock climbing and photography/videography usually combining the two. I therefore know how to use photo and video editing software.
-
-I have a valid First Aid Certificate (2017-2020) and an Enhanced DBS check (2017-2020). I also have a clean full drivers licence and motorcycle licence.
-'' -->
