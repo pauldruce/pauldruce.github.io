@@ -2,7 +2,7 @@ name: CI Checks
 on: pull_request
 
 concurrency:
-  group: "ci"
+  group: "ci-${{github.head_ref}}"
   cancel-in-progress: true
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
           path: ${{ steps.haskell-setup.outputs.cabal-store }}
           key: ${{ runner.os }}-cabal
           restore-keys: |
-            ${{ runner.os }}-cabal-
+            ${{ runner.os }}-cabal
       - name: Install Pandoc and pandoc-sidenote
         run: |
           cabal update
