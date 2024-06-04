@@ -28,6 +28,8 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - uses: haskell-actions/setup@v2
         id: haskell-setup
+        with:
+          ghc-version: 9.8
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -41,7 +43,7 @@ jobs:
           path: ${{ steps.haskell-setup.outputs.cabal-store }}
           key: ${{ runner.os }}-cabal
           restore-keys: |
-            ${{ runner.os }}-cabal-
+            ${{ runner.os }}-cabal
       - name: Install Pandoc and pandoc-sidenote
         run: |
           cabal update
