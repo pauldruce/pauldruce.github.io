@@ -35,7 +35,7 @@ jobs:
           path: ${{ steps.haskell-setup.outputs.cabal-store }}
           key: ${{ runner.os }}-cabal
           restore-keys: |
-            ${{ runner.os }}-cabal-
+            ${{ runner.os }}-cabal
       - name: Install Pandoc and pandoc-sidenote
         run: |
           cabal update
