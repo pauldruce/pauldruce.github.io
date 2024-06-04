@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\def\name{$name$}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Define colors
+\definecolor{sectioncolor}{RGB}{0, 0, 128}  % Dark blue
+\definecolor{linkcolor}{RGB}{0, 102, 204}   % Bright blue
+
+% Hyperref settings
+\hypersetup{
+  colorlinks = true,
+  urlcolor = $if(urlcolor)$$urlcolor$$else$linkcolor$endif$,
+  linkcolor = $if(linkcolor)$$linkcolor$$else$linkcolor$endif$,
+  pdfauthor = {\name},
+  pdfkeywords = {$keywords$},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Disable numbers on sections.
+\setcounter{secnumdepth}{0}
+
+% Section formatting
+\titleformat{\section}{\color{sectioncolor}\normalfont\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\color{sectioncolor}\normalfont\large\bfseries}{}{0em}{}
+
+
+\begin{document}
+
+{\huge \name} \hfill {Last updated: $last_updated$}
+
+$body$
+
+\end{document}
