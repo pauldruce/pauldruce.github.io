@@ -16,3 +16,7 @@ gem "nokogiri", ">= 1.13.9"
 gem "webrick", "~> 1.7"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1"
+
+group :jekyll_plugins do
+    gem "jekyll-last-modified-at"
+end

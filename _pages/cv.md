@@ -5,7 +5,6 @@ name: Paul Druce
 author: pjdruce@gmail.com
 permalink: /CV/
 toc: true
-last_updated: 3rd June 2024
 contact_details: false
 ---
 

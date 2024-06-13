@@ -60,6 +60,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-spaceship
+  - jekyll-last-modified-at
 
 jekyll-spaceship:
   processors:
