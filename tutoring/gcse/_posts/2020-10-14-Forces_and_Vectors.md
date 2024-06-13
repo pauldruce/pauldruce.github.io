@@ -19,5 +19,5 @@ A certain hot air balloon is capable of producing an upwards force of 5000 Newto
 ​270 kilograms. Given that the average person has a mass of 80 kilograms. What is the maximum number of people that hot air balloon can support in flight?
 
 <u> A Level Extension </u><br>
-A hot air balloon is flying over the country side with the maximum number of people it can support. A gust of wind hits the balloon and results in a horiztonal force on the balloon of 200N. Calculate the magnitude of the result force on the balloon. And express the resultant force as a vector.
+A hot air balloon is flying over the countryside with the maximum number of people it can support. A gust of wind hits the balloon and results in a horizontal force on the balloon of 200N. Calculate the magnitude of the result force on the balloon. And express the resultant force as a vector.
 :::

@@ -10,7 +10,7 @@ def handle_span(elem):
         match = re.sub(r"<.*?>", "", inside_span)
         if match:
             # Wrap right-aligned content in a LaTeX command
-            latex_output = pf.RawInline(f"\\hfill \\textbf{{{match}}}", format="latex")
+            latex_output = pf.RawInline(f"\\hfill {match}", format="latex")
             return latex_output
 
 

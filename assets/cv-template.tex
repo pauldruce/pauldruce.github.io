@@ -43,12 +43,33 @@
 
 % Section formatting
 \titleformat{\section}{\color{sectioncolor}\normalfont\Large\bfseries}{}{0em}{}
-\titleformat{\subsection}{\color{sectioncolor}\normalfont\large\bfseries}{}{0em}{}
+\titleformat{\subsection}
+  {\color{sectioncolor}\normalfont\bfseries} % Format for subsection
+  {} % Label
+  {} % Separation between label and title
+  {}  % After code with a colon and a space
 
+\newcommand{\contactinfo}[0]{
+\begin{flushright}
+  $if(contact_details)$
+  \textcolor{sectioncolor}{\textbf{Contact Information}} \\
+  % Create a .tex file with the contact details in.
+  \input{assets/cv-contact-details}
+  $endif$
+  Last updated: \today
+\end{flushright}
+}
 
 \begin{document}
 
-{\huge \name} \hfill {Last updated: $last_updated$}
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+  {\huge \name}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  \contactinfo{}
+\end{minipage}
+
 
 $body$
 

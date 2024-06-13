@@ -1,32 +1,25 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="S_BlZ_QdzOao1JrXTJW9KQGHdgZV1Oh1Fa-KYtwOT-Q" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width," />
+  <meta
+    name="google-site-verification"
+    content="S_BlZ_QdzOao1JrXTJW9KQGHdgZV1Oh1Fa-KYtwOT-Q"
+  />
 
-  {% seo %}
-
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/ico" href="{{ "assets/images/favicon.ico" | relative_url }}">
-
-  {% if page.animation %}
-  {% for libs in page.animation %}
-  {% if libs == "p5js" %}
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js">
-  </script>
-  {% endif %}
-  {% if libs == "threejs" %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js">
-  </script>
-  {% endif %}
-  {% endfor %}
-  {% endif %}
-
-  {% if page.custom_css %}
-  {%for stylesheet in page.custom_css %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
-  {% endfor %}
-  {% endif %}
+  {% seo %} <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url
+  }}"> <link rel="shortcut icon" type="image/ico" href="{{
+  "assets/images/favicon.ico" | relative_url }}"> {% if page.animation %} {% for
+  libs in page.animation %} {% if libs == "p5js" %}
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+  {% endif %} {% if libs == "threejs" %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+  {% endif %} {% endfor %} {% endif %} {% if page.custom_css %} {%for stylesheet
+  in page.custom_css %}
+  <link
+    rel="stylesheet"
+    href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css"
+  />
+  {% endfor %} {% endif %}
   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PL48TWK"></script>
 </head>

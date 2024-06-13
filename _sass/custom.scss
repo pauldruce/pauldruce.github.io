@@ -282,6 +282,11 @@ details {
       opacity: .6;
     }
   }
+
+  pre,
+  code {
+    border: none
+  }
 }
 
 summary {
@@ -324,6 +329,11 @@ summary {
 
   p {
     margin: 0.5em;
+  }
+
+  pre,
+  code {
+    border: none;
   }
 }
 

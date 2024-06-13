@@ -3,12 +3,13 @@ layout: page
 title: Research
 permalink: /research/
 ---
+
 <center>
 
-My research is based on discretisations of spacetime to investigate quantum gravity effects.
-I have worked on *fuzzy spaces*, which are finite non-commutative geometries based upon matrix algebras.
+My research is based on the discretisation of spacetime to investigate quantum gravity effects.
+I have worked on _fuzzy spaces_, which are finite non-commutative geometries based upon matrix algebras.
 I am interested in how continuous symmetries affect these spaces.
-Outside of non-commutative geometry, I am interested in exploring quantum geometries via numerical methods.
+Outside non-commutative geometry, I am interested in exploring quantum geometries via numerical methods.
 
 I am also interested in the development of quantum technologies, and the role of mathematics in the description of quantum phases of matter. For instance, there is a description of the quantum hall effect based upon the non-commutative torus. As a finite version has been developed, called the fuzzy torus, I am interested in investigating the consequence using this description would have for physics.
 
@@ -19,12 +20,11 @@ I am also interested in the development of quantum technologies, and the role of
 
 <a href="https://scholar.google.co.uk/citations?user=Jo77IVsAAAAJ&hl=en"> Google Scholar</a>, <a href="http://inspirehep.net/author/profile/P.Druce.1">INSPIRE-HEP</a>, <a href = "https://orcid.org/0000-0002-2774-964X">ORCID</a>
 
-
-
-
 ### Research notes and documents
+
 {% for post in site.categories.research  %}
-  {% if post.tags contains "notes" or post.tags contains "document" %}
+{% if post.tags contains "notes" or post.tags contains "document" %}
+
   <ul>
       <li> {{post.summary}}: <a href="{{post.url}}">  {{post.title}} </a></li>
   </ul>
@@ -33,11 +33,13 @@ I am also interested in the development of quantum technologies, and the role of
 
 ### Notes for fun
 
-- A poster I made for the conference Quantum Gravity on the Computer,  <a href="{{site.url}}/assets/PDFs/PaulDrucePoster-QGotC18.pdf">here </a>
+- A poster I made for the conference Quantum Gravity on the Computer, <a href="{{site.url}}/assets/PDFs/PaulDrucePoster-QGotC18.pdf">here </a>
 - Revision guide made for Thermal Physics II for the University of Warwick Physics Society <a href="{{site.url}}/assets/PDFs/Thermal Physics II Revision Guide-2013.pdf"> here</a>
 
 ### Research Blog Posts
+
 {% for post in site.categories.research  %}
+
   <ul>
     {% if post.tags contains "post" -%}
       <li> {{post.summary}}: <a href="{{post.url}}">  {{post.title}} </a> </li>
