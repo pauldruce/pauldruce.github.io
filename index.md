@@ -11,14 +11,22 @@ animation: p5js
 <center>
 Hi, how's it going? I'm Paul, this is my site.
 
-It's a bit of an experiment of mine and many parts are not polished or even remotely close to finished. It's mainly a place for me to experiment with web technologies and store the resources I've created.
+It's a bit of an experiment of mine and many parts are not polished or even
+remotely close to finished. It's mainly a place for me to experiment with web
+technologies and store the resources I've created.
 
-I've recently (July 2020) graduated with my PhD from the University of Nottingham, UK.
+I'm a software engineer in test (SDET) at The MathWorks, the creators of MATLAB
+and Simulink.
+I work in the Cloud Platforms team - making MATLAB feel at home in the cloud.
+
+I graduated with my PhD from the University of Nottingham, UK in 2020.
 I worked with Prof. John Barrett on Non-commutative Geometry and Quantum Gravity.
 If you are interested finding out more about this topic I suggest that you look at the documents in: [Research]({{ site.url}}/research).
-My PhD thesis contains a thorough introduction to the subject of non-commutative geometry via finite spectral triples.
 
-I've recently joined The MathWorks, the software company that makes MATLAB and Simulink.
+Between 2020-2022 I worked as a tutor and I needed a place to easily share my
+timetable and any content I created with my students.
+This is what drove me to create this website.
+You can find my tutoring content here: [Tutoring]({{_site.url}}/tutoring).
 
 </center>
 

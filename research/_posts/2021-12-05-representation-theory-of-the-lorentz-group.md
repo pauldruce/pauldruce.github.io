@@ -13,17 +13,17 @@ published: false
 One of Einstein's great insights about the fundamental workings of nature is that of special relativity. The key assumptions of special relativity are reffered to as the two postulates.
 
 - The first postulate states that the laws of physics are identical in all inertial frames of reference, regardless of their relative motion.
-- The second postulate is that the speed of light is the same constant value in all inetial frames.
+- The second postulate is that the speed of light is the same constant value in all inertial frames.
 
-A new era of physics was spawned from these two concepts. The discovery of relavitistic physics was only rivalled in revolutionary ideas by that of quantum theory.
+A new era of physics was spawned from these two concepts. The discovery of relativistic physics was only rivalled in revolutionary ideas by that of quantum theory.
 
 One of the most fundamental conclusions from the two postulates of special relativity is that of Lorentz invariance. The constancy of the speed of light in all frames of reference required a new type of transformation between reference frames.
 
-There are a number of ways to arrive at the Lorentz transformations. Each method differs in rigour and ease of understanding. 
+There are a number of ways to arrive at the Lorentz transformations. Each method differs in rigour and ease of understanding.
 
 ## Why is the space-time interval an invariant?
 
-Consider two events, the emission of a photon and the absorption of the photon. If we choose (or are in) a particular frame of reference, then we can give these two events coordinates, a particular position where they occured in space, and a specific time at which they occured. These are space-time coordinates (usually written down as time-space coordinates), $(t_i, x_i, y_i, z_i)$, where $i = 1$ is the emission of the photon, and $i=2$ is the absorption of the photon.
+Consider two events, the emission of a photon and the absorption of the photon. If we choose (or are in) a particular frame of reference, then we can give these two events coordinates, a particular position where they occurred in space, and a specific time at which they occurred. These are space-time coordinates (usually written down as time-space coordinates), $(t_i, x_i, y_i, z_i)$, where $i = 1$ is the emission of the photon, and $i=2$ is the absorption of the photon.
 
 Regardless of the frame of reference we are in (or choose to work in), we expect that the emission occurs first, then the absorption afters wards.
 This requires that the time coordinate of the first event ($t_1$) is less than that of the second $(t_2)$. This is the idea of causality, which is a fundamental assumption of physics.

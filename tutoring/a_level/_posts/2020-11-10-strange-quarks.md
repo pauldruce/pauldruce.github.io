@@ -4,18 +4,17 @@ title: Strange Quarks Explained for A Level Students
 author: Paul Druce
 summary: Exploring the properties of strange quarks in detail for A-level students.
 category: tutoring
-tags: [post,notes,questions]
-published: false
+tags: [post,notes,questions, unfinished]
 ---
 
 The story of strange quarks starts before the idea of quarks was really invented. It starts with the idea of **strangeness**. This is the property given to certain particles that took an *unusually* long time to decay.
 
-In the middle of the 20th century, physicists across the globe were busy creating particles. So many different particles were created that the term "zoo of particles" was thrown around, and it was an appropriate name. Particles that differed wildly in mass and in charge, that were rarely stable, and often decayed into the more familiar particles were found. What was strange however, is that there was no particular pattern to how fast or slow these particles might decay.
+In the middle of the 20th century, physicists across the globe were busy creating particles. So many particles were created that the term "zoo of particles" was thrown around, and it was an appropriate name. Particles that differed wildly in mass and in charge, that were rarely stable, and often decayed into the more familiar particles were found. What was strange however, is that there was no particular pattern to how fast or slow these particles might decay.
 
 Some particles with nothing particularly special about their mass or charge, took much longer to decay[^kaons]. Whilst similarly charged and massive particles decayed rapidly.
 How could we explain this feature? Well first it was quantified, each particle was described by a certain amount of "strangeness" based off of how long it took to decay.
 
-[^kaons]: Kaons, for instance, are particularly heavy particles and *should* decay quickly, but they are surprisingly stable.  
+[^kaons]: Kaons, for instance, are particularly heavy particles and *should* decay quickly, but they are surprisingly stable.
 
 In 1964, a simple model of **just 3** fundamental particles was proposed (along with their anti-particles), which could explain the existence of the zoo of particles. This was the birth of the quark-model of particle physics. A point of view that changed our understanding of nature at the most fundamental level.
 
