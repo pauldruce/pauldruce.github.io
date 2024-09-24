@@ -5,7 +5,7 @@ production:
 	JEKYLL_ENV=production bundle exec jekyll build
 
 dev:
-	bundle exec jekyll serve --unpublished --livereload --host 0.0.0.0
+	bundle exec jekyll serve --unpublished --drafts --livereload --host 0.0.0.0
 
 demo:
 	bundle exec jekyll serve --livereload --host 0.0.0.0
