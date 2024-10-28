@@ -13,7 +13,7 @@ gem "rouge"
 gem "jekyll-sitemap"
 gem "jekyll-spaceship"
 gem "nokogiri", ">= 1.13.9"
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1"
 
